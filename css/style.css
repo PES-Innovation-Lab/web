@@ -1,0 +1,16 @@
+.hide-on-med-and-down {
+    margin-left: 5rem;
+}
+ .btn-floating {
+     position: relative;
+     float: bottom;
+ }
+
+ body {
+     position: relative;
+ }
+
+ .carousel {
+     margin-bottom: 20px;
+     height : 50vh;
+ }
