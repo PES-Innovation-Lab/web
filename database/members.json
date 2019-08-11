@@ -1,0 +1,44 @@
+{
+    "1":{
+        "name":"Ananya Ravikumar",
+        "branch":"ECE",
+        "graduationYear":"2019",
+        "internshipYear":"2015",
+        "imageURL":"../images/members/unknown.png"
+    },
+    "2":{
+        "name":"Deepesh Sahoo",
+        "branch":"ECE",
+        "graduationYear":"2021",
+        "internshipYear":"2018",
+        "imageURL":"../images/members/unknown.png"
+    },
+    "3":{
+        "name":"Manish Kumar K",
+        "branch":"ECE",
+        "graduationYear":"2018",
+        "internshipYear":"2015",
+        "imageURL":"../images/members/unknown.png"
+    },
+    "4":{
+        "name":"Hariharan",
+        "branch":"CSE",
+        "graduationYear":"2018",
+        "internshipYear":"2015,2016",
+        "imageURL":"../images/members/unknown.png"
+    },
+    "5":{
+        "name":"Varun Ranganathan",
+        "branch":"CSE",
+        "graduationYear":"2019",
+        "internshipYear":"2017",
+        "imageURL":"../images/members/unknown.png"
+    },
+    "6":{
+        "name":"Aiswarya Sriram",
+        "branch":"CSE",
+        "graduationYear":"2020",
+        "internshipYear":"2017",
+        "imageURL":"../images/members/unknown.png"
+    }        
+}
