@@ -1,5 +1,7 @@
 # Microsoft Innovation Lab
 
+<img src="images/mlab/mlab_logo_black.png" alt="logo" width="100px" height="90px"><br/>
+
  We are a student community dedicated to cultivating the spirit of research and innovation in budding engineers.<br/>
 
 
