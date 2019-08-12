@@ -9,7 +9,7 @@ body {
 .navbar .item {
     margin: 10px;
     margin-left: 0px;
-    
+    margin-bottom: 2px;
 }
 
 
@@ -25,9 +25,8 @@ body {
 }
 
 .intro {
-    background-image: linear-gradient(to bottom right, rgb(0, 0, 0),rgba(43, 38, 38, 0.616)), url(../images/mlab/intro.jpg);
+    background-image: linear-gradient(to bottom , hsla(0, 0%, 0%, 0.89),#2018189d), url(../images/mlab/intro.jpg);
     background-size: cover;  
-    filter: contrast(100%);
     padding-top: 2rem;
     color: white;
     transition: all 1s;
@@ -41,7 +40,16 @@ body {
     animation: moveInLeft 1s ease;
     font-size: 3rem;
     margin-top: 20px;
-    /* padding-bottom: 5rem; */
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 1rem;
+    transition: all 1s ease-in-out;
+    padding-bottom: 5rem;
+}
+
+.intro__header:hover {
+    letter-spacing: 5px;
+    border-bottom: 1px solid white; 
 }
 
 .intro__content {
@@ -56,20 +64,28 @@ body {
 }
 
 .about {
-    background-image: linear-gradient(to bottom right,#08e608,hsla(120, 30%, 45%, 0.418)), url(../images/mlab/about.jpg);
+    background-image: linear-gradient(to bottom right,#359635,hsla(120, 30%, 45%, 0.418)), url(../images/mlab/about.jpg);
     background-size: cover; 
     transition: all 1s;
     margin-top: 10px;
-    
 }
 
 .about__header {
+    margin-left: 35%;
+    margin-right: 35%;
     padding: 2rem;
     text-decoration: uppercase;
     text-align: center;
     font-size: 4rem;
     padding-top: 4rem;
     animation: moveInLeft 1s ease;
+    transition: all 1s;
+    display: block;
+}
+
+.about__header:hover {
+    letter-spacing: 10px;
+    border-bottom: 1px solid white; 
 }
 
 .about__content {
@@ -77,21 +93,27 @@ body {
     text-decoration: uppercase;
     text-align: center;
     font-size: 1.5rem;
+    font-weight: 500;
     padding-top: 4rem;
     line-height: 3rem;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 20%;
+    transition: all 1s ease-in;
 }
+
+.about__content:hover {
+    transform: scale(1.2);
+}
+
 
 .hws {
     margin-top: 10px;
     color: white;
-    background-image: linear-gradient(to bottom right, rgb(0, 0, 0),rgba(43, 38, 38, 0.616)), url(../images/mlab/hws.jpg);
+    background-image: linear-gradient(to bottom , #000000c9,rgba(43, 38, 38, 0.616)), url(../images/mlab/hws.jpg);
     background-size: cover;  
-    filter: contrast(100%);
     transition: all 1s;
-    
+    margin-bottom: 0px;
 }
 
 .hws__header {
@@ -115,39 +137,79 @@ body {
 }
 
 
+.faculty{
+    background-image: linear-gradient(to bottom right,hsl(120, 48%, 41%),rgba(57, 170, 57, 0.418)), url(../images/mlab/fac.jpg);
+    background-size: cover; 
+    transition: all 1s;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
 
+.faculty__header {
+    font-size: 3rem;
+    padding-top: 2rem;
+}
 
+.faculty__content {
+    font-size: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+    margin-top: 2rem;
+    transition: all 1s ease;
+    margin-bottom: 5rem;
+}
+
+.faculty__card {
+    text-align: left;
+    margin-left: 5rem;
+    color: black;
+    background-color: hsla(0, 0%, 70%, 0.63);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+    transition: all 1s ease;
+}
+
+.faculty__card--name {
+    text-align: center;
+    line-height: 1rem;
+    display: block;
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.faculty__card:first-child {
+    margin-left: 15rem;
+}
+
+.faculty__card:hover {
+    transform: scale(1.5);
+    background-color: rgb(48, 155, 22);
+    box-shadow:  0 1.5rem 4rem rgba(0, 0, 0, 0.575);
+    border: 2px solid #000000;
+}
+.faculty__icon {
+    margin-left: 30%;
+    clip-path: circle(35%);
+    width: 40%;
+    height: 40%;
+}
+
+.faculty__card--content {
+    padding-bottom: 4rem;
+}
 
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-10rem);
-
-    }
-
+        transform: translateX(-10rem); }
     80% {
         opactiy: 0.8;
-        transform: translateX(1rem);
-    }
-
+        transform: translateX(1rem); }
     100% {
         opacity: 1;
-        transform: translate(0);
-    }
-}
-
-.faculty{
-
-}
-
-.faculty__header {
-
-}
-
-.faculty__card {
-    
-}
-
+        transform: translate(0); } }
+        
 @keyframes moveInRight {
     0% {
       opacity: 0;
