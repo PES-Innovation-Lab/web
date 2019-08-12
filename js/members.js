@@ -31,7 +31,7 @@ class MembersContainer extends React.Component {
     }
     componentDidMount(){
         const self = this;
-        fetch('../../database/members.json')
+        fetch('../database/members.json')
             .then(function(response) {
                 return response.json();
             })
