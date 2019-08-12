@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
 
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
 
     <link rel="stylesheet" type="text/css" href="./css/semantic.min.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="script" href="./js/index.js">
@@ -17,14 +24,16 @@
 </head>
 <body>
 
-        <div class=" navbar ui inverted stackable menu">
-            <div class="header item">
-                <img src="./images/mlab/mlab_logo.png">
-            </div>
+            <div class=" navbar ui inverted stackable menu">
+                <a href="./index.html">
+                    <div class="header item">
+                        <img src="./images/mlab/mlab_logo.png">
+                    </div>
+                </a>
             <a class="item">Events</a>
             <a class="item">Projects</a>
             <a class="item">Achievements</a>
-            <a class="item" href="/pages/members.html">Members</a>
+            <a class="item" href="./pages/members.html">Members</a>
             <a class="item">About Us</a>
         </div>
 
@@ -112,7 +121,48 @@
 
             
         </div>
+        
+        <footer>
+            <div class="ui grid">
+                <div class="six wide column footer__card">
+                    <img class="footer__image" src="./images/mlab/mlab_logo.png" alt="">
+                    <div class="footer__conten">
 
+                            <div class="contact__where">
+                                    Where to Find Us :<br>
+                            </div>
+                            <div class="contact__address">
+                                PES University , Main Campus <br>
+                                Banshankri 3rd stage<br>
+                                560085 IND              <br>   
+                            </div>
+                              
+                    </div>
+                </div>
+
+                <div class="eight wide column">
+                    <div class="footer__contact">
+                        <div class="contact__email">
+                                Email Us at pes.mlab@gmail.com 
+                        </div>
+                        <ul>
+                            Phone No. :
+                            <li class="contact__phone">+91 1234567890</li>
+                            <li class="contact__phone">+91 1234567890</li>
+                        </ul>
+                        <div class="contact__social">
+                            Connect with Us :
+                            <ul>
+                                <a href="https://www.instagram.com/mlab_pes/"><li class="contact__social--link contact__social--link-1"></li></a>
+                                <a href="https://www.facebook.com/microsoftlabpes/?ref=br_rs"><li class="contact__social--link contact__social--link-2"></li></a>
+                                <a href="https://www.linkedin.com/company/microsoft-innovation-labs/"><li class="contact__social--link contact__social--link-3"></li></a>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>

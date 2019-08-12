@@ -1,7 +1,17 @@
 body {
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.714);;
+    background-color: #000000;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
+
+main {
+flex: 1 0 auto;
+}
+
+
+
 .main{
     margin:10px;
 }
@@ -9,12 +19,13 @@ body {
 .navbar .item {
     margin: 10px;
     margin-left: 0px;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 
 
 .carousel {
     margin-top: -14px;
+    color: white;
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 60vh;
@@ -45,11 +56,13 @@ body {
     padding-bottom: 1rem;
     transition: all 1s ease-in-out;
     padding-bottom: 5rem;
+    line-height: 5rem;
 }
 
 .intro__header:hover {
     letter-spacing: 5px;
     border-bottom: 1px solid white; 
+    
 }
 
 .intro__content {
@@ -100,10 +113,11 @@ body {
     padding-right: 10%;
     padding-bottom: 20%;
     transition: all 1s ease-in;
+    display: block;;
 }
 
 .about__content:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
@@ -142,6 +156,7 @@ body {
     background-size: cover; 
     transition: all 1s;
     margin: 10px;
+    margin-bottom: 0;
     color: black;
     text-align: center;
 }
@@ -174,7 +189,7 @@ body {
     line-height: 1rem;
     display: block;
     border-bottom: 1px solid white;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     padding-bottom: 1rem;
 }
 
@@ -184,7 +199,7 @@ body {
 
 .faculty__card:hover {
     transform: scale(1.5);
-    background-color: rgb(48, 155, 22);
+    background-color: hsla(107, 16%, 76%, 0.61);
     box-shadow:  0 1.5rem 4rem rgba(0, 0, 0, 0.575);
     border: 2px solid #000000;
 }
@@ -197,6 +212,91 @@ body {
 
 .faculty__card--content {
     padding-bottom: 4rem;
+}
+
+footer {
+    color: white;
+    background-color: black;
+}
+
+.footer__card {
+    margin: 4rem;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    text-align: left;
+    letter-spacing: auto;
+    border-right: 2px solid hsla(0, 0%, 100%, 0.356);
+}
+
+.footer__content {
+    padding-right:4rem;
+    
+}
+.footer__image {
+    transform: translateX(50%);
+    width: 40%;
+    height: 40%;
+}
+
+.footer__contact {
+    padding: 5rem;
+    padding-bottom: 3rem;
+    line-height: 2rem;
+    letter-spacing: 5px;
+}
+.contact__where {
+    color: #3fc52d;
+    transform: translateX(30%);
+}
+
+.contact__address {
+    transform: translateX(30%);
+}
+
+.contact__email {
+    font-size:1.5rem;
+    margin-bottom: 4rem;
+    letter-spacing: 2px;
+}
+
+.contact__social {
+    margin-top: 5rem;
+    position: absolute;
+}
+
+.contact__social ul {
+    transition: all 2s;
+}
+
+.contact__social--link:hover {
+    transform: scale(1.25);
+}
+
+.contact__social--link-1 {
+    background-image: url('../images/mlab/insta.png');
+    background-size: cover;  
+    margin-right: 30px;
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+
+.contact__social--link-2 {
+    background-image: url('../images/mlab/facebook.png');
+    background-size: cover;  
+    margin-right: 30px;
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+
+.contact__social--link-3 {
+    background-image: url('../images/mlab/linkedin.png');
+    background-size: cover;  
+    margin-right: 30px;
+    float: left;
+    height: 30px;
+    width: 30px;
 }
 
 @keyframes moveInLeft {
