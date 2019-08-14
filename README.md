@@ -5,7 +5,7 @@
  We are a student community dedicated to cultivating the spirit of research and innovation in budding engineers.<br/>
 
 
-This is the main repository for the website hosted at - [Microsoft Innovation Labs website](https://mlabpesu.azurewebsites.net/). Be sure to head out to our website and take a look at some of the exciting projects carried out at the lab.
+This is the main repository for the website hosted at - [Microsoft Innovation Labs website](http://www.mlab.pes.edu/). Be sure to head out to our website and take a look at some of the exciting projects carried out at the lab.
 
 # Development
 The development version upto date with the current version of master can be found here - [MIL Github pages](https://microsoftmobileinnovationlab.github.io/Mlab_website_2.0/.).
@@ -37,6 +37,6 @@ Reviewing other PR's is good practice. Easy-to-use scripts in `tools/` have been
 Contact
 -----
 email : pes.mlab@gmail.com <br/>
-Website : https://mlabpesu.azurewebsites.net/ <br/>
+Website : http://www.mlab.pes.edu/ <br/>
 
 ----
