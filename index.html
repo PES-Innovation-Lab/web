@@ -1,90 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-
-
-    <link rel="stylesheet" type="text/css" href="./css/semantic.min.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="script" href="./js/index.js">
-
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Microsoft Innovation Lab</title>
-
-
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Materialize -->
+    <script src="./js/materialize.js"></script>
+    <!-- Font awesome - Icons -->
+    <script src="https://kit.fontawesome.com/6580006ed0.js"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Changa&display=swap" rel="stylesheet">
+    <!-- CSS  -->
+    <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
+
 <body>
-
-        <div class=" navbar ui inverted stackable menu">
-            <div class="item">
-            <img src="./images/mlab/mlab_logo.png">
+    <nav class="black" role="navigation">
+        <div class="nav-wrapper container">
+            <div id="logo-container" href="#" class="brand-logo">
+                <img class="mlab_logo" src="./images/mlab/mlab_logo_icon.png" />
             </div>
-            <a class="item">Events</a>
-            <a class="item">Projects</a>
-            <a class="item">Achievements</a>
-            <a class="item" href="./pages/members.html">Members</a>
-            <a class="item">About Us</a>
-        </div>
+            <ul class="right hide-on-med-and-down">
+                <li><a style="color:white;" href="./pages/events.html">Events</a></li>
+                <li><a style="color:white;" href="#">Projects</a></li>
+                <li><a style="color:white;" href="#">Achievements</a></li>
+                <li><a style="color:white;" href="./pages/members.html">Members</a></li>
+            </ul>
 
-        <div class="carousel">
-            Carousel goes here
+            <ul id="nav-mobile" class="sidenav">
+                <div id="nav-mobile-header" class="user-view">
+                    <div id="nav-mobile-background" class="background"></div>
+                    <a href="#user"><img class="circle" src="./images/mlab/mlab_logo.png"></a>
+                    <a href="#name"><span class="white-text name">Microsoft Innovation Labs</span></a>
+                </div>
+                <li><a id="mobile-link" href="#">Events</a></li>
+                <li><a id="mobile-link" href="#">Projects</a></li>
+                <li><a id="mobile-link" href="#">Achievements</a></li>
+                <li><a id="mobile-link" href="#">Members</a></li>
+            </ul>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><span style="color:white"><i
+                        class="fas fa-bars"></i></span></a>
         </div>
+    </nav>
 
-        <div class="main">
-                <div class="intro">
-                        <div class="intro__header">
-                            Welcome  to  Microsoft  Innovation  Lab
-                        </div>
-                        <div class="intro__content">
-                            We are a student community dedicated to cultivating the spirit of research and innovation in budding engineers.
-                        </div>
-                    </div>
-            
-                    <div class="about">
-            
-                        <div class="about__header">
-            
-                            About Us
-            
-                        </div>
-            
-                        <div class="about__content">
-                                MIL is a unique community which inculcates the spirit of student research. Students work with like-minded peers to try and solve carefully chosen real-world problems. 
-                                The Lab’s activities include the flagship summer internship, #Code (a hackathon) and other enriching opportunities such as workshops and tutorials. Students here routinely push the boundaries of research by developing products to benefit the masses and publishing their work in conferences and journals of repute. Interns continue working with the lab while in college, sharing insights, starting new projects and mentoring subsequent batches of interns. 
-                                Over the years, the members of MIL have grown into a close-knit family which contributes to the lab long after graduation.
-                        </div>
-            
-                    </div>
-            
-                    <div class="hws">
-                        <div class="hws__header">
-                            How did we start?
-                        </div>
-                        <div class="hws__content">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, rerum quibusdam. Maxime error expedita vero praesentium fugiat. Commodi aut unde quasi iusto. Rem libero esse ducimus. Cum libero fuga consectetur.
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam vel atque sit error quae corporis, ducimus assumenda aperiam, recusandae beatae aut perspiciatis reiciendis numquam? Quia, odio sed. Deserunt, distinctio adipisci?
-                        </div>
-                    </div>
-            
+    <div id="index-banner" class="parallax-container">
+        <div class="container">
+            <p class="main_title">
+                Microsoft Innovation Labs
+            </p>
+            <blockquote class="main_content" align="center">
+                We are a student community dedicated to cultivating the spirit of research and innovation in budding
+                engineers.</p>
+            </blockquote>
+            <p align="center">
+                <span style="font-size: 3em; color: #7cb342;">
+                    <i class="fab fa-facebook"></i>&nbsp;&nbsp;
+                    <i class="fab fa-instagram"></i>&nbsp;&nbsp;
+                    <i class="fab fa-linkedin"></i>
+                </span>
+            </p>
+
         </div>
+        <div class="parallax"><img src="./images/mlab/intro.jpg" alt="Intro Image"></div>
+    </div>
 
-        <!-- <div class="faculty">
-            <div class="faculty__header">
-                    Faculty 
+
+    <div id="about_container" class="container">
+        <div class="section">
+            <div class="row">
+                <p id="about_title" style="font-family: Changa, sans-serif;color:#2e7d32;font-size:3rem" class="center">
+                    ABOUT US</p>
+                <p id="about_content" style="color:#7cb342;font-size:1.8rem;" class="light">
+                    MIL is a unique community which inculcates the spirit of student research.
+                    Students work with like-minded peers to try and solve carefully chosen real-world problems.
+                    The Lab’s activities include the flagship summer internship, #Code (a hackathon) and other enriching
+                    opportunities such as workshops and tutorials.
+                    Students here routinely push the boundaries of research by developing products to benefit the masses
+                    and publishing their work in conferences and journals of repute. Interns continue working with the
+                    lab while in college, sharing insights, starting new projects and mentoring subsequent batches of
+                    interns.
+                    Over the years, the members of MIL have grown into a close-knit family which contributes to the lab
+                    long after graduation.
+                </p>
             </div>
-            <div class="faculty__card">
-                    <div class="ui grid">
-                        <div class="three wide column">1</div>
-                        <div class="three wide column">2</div>
-                        <div class="three wide column">3</div>
+        </div>
+    </div>
+
+    <div id="group_banner" class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l3">
+                        <div class="icon-block">
+                            <h2 class="center white-text">8</h2>
+                            <h5 class="center white-text">Years of excellence</h5>
+                        </div>
                     </div>
+                    <div class="col s12 l3">
+                        <div class="icon-block">
+                            <h2 class="center white-text">207</h2>
+                            <h5 class="center white-text">Members</h5>
+                        </div>
+                    </div>
+
+                    <div class="col s12 l3">
+                        <div class="icon-block">
+                            <h2 class="center white-text">63</h2>
+                            <h5 class="center white-text">Projects Completed</h5>
+                        </div>
+                    </div>
+
+                    <div class="col s12 l3">
+                        <div class="icon-block">
+                            <h2 class="center white-text">21</h2>
+                            <h5 class="center white-text">Events Organised</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div> -->
+            <div class="parallax"><img src="./images/mlab/hws.jpg" alt="Unsplashed background img 2"></div>
+        </div>
+    </div>
 
+    <div id="prof-container" class="container">
+        <div class="section">
+            <p align="center" id="about_title" style="font-family: Changa, sans-serif;color:#2e7d32;font-size:3rem">
+                OUR PROFESSORS
+            </p>
+            <div id="prof-carousel" class="carousel">
+                <div id="prof-carousel-item" class="carousel-item modal-trigger" data-target="modal_raj">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./images/mlab/Rajasekar_profile.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p class="prof-name">Prof. Rajasekar M</p>
+                            <p class="prof-tagline">Head of Microsoft Innovation Lab</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="prof-carousel-item" class="carousel-item modal-trigger" data-target="modal_sri">
+                    <div class="col m4">
+                        <div class="card sticky-action">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./images/mlab/Srinivas_profile.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p class="prof-name">Dr. A Srinivas</p>
+                                <p class="prof-tagline">Founder of Microsoft Innovation Lab</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="prof-carousel-item" class="carousel-item modal-trigger" data-target="modal_ven">
+                    <div class="card sticky-action">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./images/mlab/Venkatarangan_profile.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p class="prof-name">Dr. Venkatarangan M</p>
+                            <p class="prof-tagline">Head of Microsoft Innovation Lab</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <img class="footer__image" src="./images/mlab/mlab_logo.png" alt="">
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="green-text">Address</h5> <br />
+                    PES University , Main Campus <br />
+                    Banshankri 3rd stage <br />
+                    560085 IND <br />
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="green-text">Connect</h5><br />
+                    pes.mlab@gmail.com<br>
+                    +91 1234567890 <br>
+                    +91 1234567890 <br>
+                    <br>
+                    <span style="font-size: 3em; color: #7cb342;">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </span>
 
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <a class="brown-text text-lighten-3">Microsoft Innovation Labs</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal_raj" class="modal">
+        <div class="modal-content">
+            <h4>Prof. Rajasekar M</h4>
+            <p>
+                Prof. M Rajasekar is an Associate Professor in the department of
+                Eletronics and Communication Engineering at PES University. He
+                is an alumnus of IIT Madras (Computer Science and Engineering).
+                He brings with him over two decades of rich and varied
+                experience ranging from combatant in Indian Air Force to Systems
+                Engineer and Project Manager in the IT Industry. He manages the
+                Microsoft Innovation Lab at the PES University. He has been
+                actively involved in various projects undertaken at Microsoft
+                Innovation Lab. His research interests include wireless
+                communications, embedded systems and healthcare systems. He
+                handholds student projects in several domains viz. Robotics,
+                IoT, Machine Learning, Sensor Networks and Virtual Reality.
+                Recently, he presented his project works in the International
+                Conferences (TENCON) held in Singapore, Malaysia and Jeju,South
+                Korea. He is an astute listener and motivator.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal_sri" class="modal">
+        <div class="modal-content">
+            <h4>Dr. A Srinivas</h4>
+            <p>
+                Dr. A Srinivas is the faculty founder of Microsoft Innovation
+                Lab. He is presently the Dean, School of Engineering in
+                Dayananda Sagar University. He has worked for 10 years in
+                Companies/Research Organizations Such as Tata Consulting
+                Engineers, Centre for AI &amp; amp; Robotics (DRDO), Philips
+                Software Centre and Nortel Networks (Sydney,Australia). Academic
+                experience of 19 yrs with KREC, Surathkal, Amrita University,
+                PES University and Monash University (Melbourne, Australia). His
+                Areas of Research Interest: Wireless Networks, Healthcare
+                Informatics. He is extremely passionate about promoting
+                Undergraduate Research.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal_ven" class="modal">
+        <div class="modal-content">
+            <h4>Dr. Venkatarangan M</h4>
+            <p>
+                After leaving Philips in 2015 to follow his passion towards
+                teaching and research, Dr. Venkatarangan joined PES University
+                as the Associate Professor in EEE to focus on Embedded Systems
+                stream. Prior to joining PES University, he spent 20 years in
+                Tektronix, Siemens, HCL Technologies and Philips working in
+                India and abroad serving in roles right from Software Engineer
+                to System Architect. As System Architect he was on technical
+                lead for projects across sites and also supported cross
+                functions like program or purchase management, quality and
+                product strategy for platform evaluation, supplier evaluation
+                and product road-mapping. A significant achievement has been to
+                lead as Architect for first Digital TV for US market and also to
+                develop MP3 Audio products adhering to Microsoft PlaysForSure
+                specifications. Rangan is an alumnus of Chinese University of
+                Hong Kong where he completed is PhD and holds M.Tech and B.E
+                from Mysore University. He current teaches Microcontroller and
+                Applications, Signals and Systems, 'C' Programming and
+                Intoduction to Robotics. His research interests include embedded
+                systems, IoT, Robotics, Automation and Sensor networks.He
+                supports the Microsoft Innovation Lab activities and summer
+                internship projects in domains of embedded systems, IoT Robotics
+                and Automation.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+    <!--  Scripts-->        
+    <script src="./js/index.js"></script>
+    <script> 
+        // Initialise carousel and modal
+        $(document).ready(function () {
+            $('.carousel').carousel();
+            $('.modal').modal();
+        });
+    </script>
 
 </body>
 
