@@ -17,6 +17,8 @@
     <!-- CSS  -->
     <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="./css/navbar.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="./css/tap-menu.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
@@ -27,7 +29,7 @@
             </div>
             <ul class="right hide-on-med-and-down">
                 <li><a style="color:white;" href="./pages/events.html">Events</a></li>
-                <li><a style="color:white;" href="#">Projects</a></li>
+                <li><a style="color:white;" href="./pages/projects.html">Projects</a></li>
                 <li><a style="color:white;" href="#">Achievements</a></li>
                 <li><a style="color:white;" href="./pages/members.html">Members</a></li>
             </ul>
@@ -287,13 +289,28 @@
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
         </div>
     </div>
-    <!--  Scripts-->        
+
+
+    <a onclick="$('.tap-target').tapTarget('open')" id="tap-menu"
+        class="waves-effect waves-light pulse btn btn-floating">
+        <span style="color:white"><i class="fas fa-bars"></i></span>
+    </a>
+
+    <!-- Tap Target Structure -->
+    <div id="tap-target" class="tap-target" data-target="tap-menu">
+        <div class="tap-target-content">
+            <h5>Notifications!</h5>
+            <p>No notifications to display</p>
+        </div>
+    </div>
+    <!--  Scripts-->
     <script src="./js/index.js"></script>
-    <script> 
+    <script>
         // Initialise carousel and modal
         $(document).ready(function () {
             $('.carousel').carousel();
             $('.modal').modal();
+            $('.tap-target').tapTarget();
         });
     </script>
 
