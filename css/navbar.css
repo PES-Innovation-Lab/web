@@ -1,0 +1,22 @@
+nav ul a,
+nav .brand-logo {
+	color: #444;
+}
+#nav-mobile {
+	background-color:black;	
+}
+#nav-mobile-background {
+	background-image: url("../images/mlab/prism.png");
+	background-repeat: repeat;
+}
+#mobile-link {
+	color:#7cb342;
+}
+
+#nav-mobile-header{
+	border-bottom: 1px solid white;
+	padding-bottom:15px;
+}
+.sidenav-trigger {
+	color: #26a69a;
+}
