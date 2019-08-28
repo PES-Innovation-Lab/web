@@ -1,0 +1,34 @@
+{
+    "project1":{
+        "name":"Roadmap",
+        "interns":[],
+        "mentors":[],
+        "year":"2019",
+        "description":"This was an amazing project!",
+        "imageURL":"../images/mlab/roadmap.jpg"
+    },    
+    "project2":{
+        "name":"Project2",
+        "interns":[],
+        "mentors":[],
+        "year":"2019",
+        "description":"This was an amazing project!",
+        "imageURL":"../images/members/unknown.png"
+    },
+    "project3":{
+        "name":"Project3",
+        "interns":[],
+        "mentors":[],
+        "year":"2019",
+        "description":"This was an amazing project!",
+        "imageURL":"../images/members/unknown.png"
+    },
+    "project4":{
+        "name":"Project4",
+        "interns":[],
+        "mentors":[],
+        "year":"2019",
+        "description":"This was an amazing project!",
+        "imageURL":"../images/members/unknown.png"
+    }           
+}

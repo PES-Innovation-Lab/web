@@ -1,169 +1,174 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+	color: #444;
+}
+
+#nav-mobile {
+	background-color:black;	
+}
+#nav-mobile-background {
+	background-image: url("../images/mlab/prism.png");
+	background-repeat: repeat;
+}
+#mobile-link {
+	color:#7cb342;
+}
+
+#nav-mobile-header{
+	border-bottom: 1px solid white;
+	padding-bottom:15px;
+}
+.main_content {
+	font-size: 2rem;
+	color:white;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.main_title{	
+	text-align: center;	
+	font-size: 7rem;
+	font-family: 'Changa', sans-serif;
+	color:#7cb342;
+}
+
+.sidenav-trigger {
+	color: #26a69a;
+}
+
+#index-banner {
+	min-height:80vh;	
+	clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+#group_banner {		
+	clip-path: polygon(0% 20%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+
+#index-banner .section {
+	margin-top:10px;
+}
+
+
+.parallax-container {
+	min-height: 380px;	
+	height: auto;
+}
+
+.footer__image {    
+    width: 40%;
+    height: 40%;
+}
+.contact__where {
+    color: #3fc52d;    
+}
+.contact__email {
+    font-size:1.5rem;
+    margin-bottom: 4rem;
+    letter-spacing: 2px;
+}
+
+.contact__social {
+    margin-top: 5rem;
+    position: absolute;
+}
+
+.contact__social ul {
+    transition: all 2s;
+}
+
+.contact__social--link:hover {
+    transform: scale(1.25);
+}
+
+.contact__social--link-1 {
+    background-image: url('../images/mlab/insta.png');
+    background-size: cover;  
+    margin-right: 30px;
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+
+.contact__social--link-2 {
+    background-image: url('../images/mlab/facebook.png');
+    background-size: cover;  
+    margin-right: 30px;
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+
+.contact__social--link-3 {
+    background-image: url('../images/mlab/linkedin.png');
+    background-size: cover;  
+    margin-right: 30px;
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+.parallax-container .section {
+	width: 100%;
+}
+
+#prof-carousel-item {
+	margin-top:-50px;
+	width:250px;
+	height:auto;
+}
+
+.prof-tagline {
+	color:grey;
+	font-size:12px;
+}
+
+.prof-name {
+	font-size:21px;
+}
+
 body {
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.714);;
-}
-.main{
-    margin:10px;
+	background-image: url("../images/mlab/prism.png");
+	background-repeat: repeat;
 }
 
-.navbar .item {
-    margin: 10px;
-    margin-left: 0px;
-    
+@media only screen and (max-width : 992px) {
+	.parallax-container .section {
+		position: absolute;
+		top: 40%;
+	}
+
+	#index-banner .section {
+		top: 10%;
+	}
+	.main_title {	
+		text-align: center;	
+		font-size: 3rem;
+		font-family: 'Changa', sans-serif;
+		color:#7cb342;
+	}
+
+	#group_banner{
+		min-height:120vh;
+	}
+	#group_banner .section{
+		top:10%;
+	}
 }
 
-
-.carousel {
-    margin-top: -14px;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 60vh;
-    padding-top: 20px;
-    border: 2px solid black;
-    box-shadow : 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
-    font-size: 30px;
-}
-
-.intro {
-    background-image: linear-gradient(to bottom right, rgb(0, 0, 0),rgba(43, 38, 38, 0.616)), url(../images/mlab/intro.jpg);
-    background-size: cover;  
-    filter: contrast(100%);
-    padding-top: 2rem;
-    color: white;
-    transition: all 1s;
-    padding-bottom: 2rem;
-}
-
-.intro__header {
-    color: rgb(160, 159, 159);
-    text-transform: uppercase;
-    text-align: center;
-    animation: moveInLeft 1s ease;
-    font-size: 3rem;
-    margin-top: 20px;
-    /* padding-bottom: 5rem; */
-}
-
-.intro__content {
-    color: rgb(76, 175, 101);
-    text-align: center;
-    font-size: 4rem;
-    line-height: 6rem;
-    padding-left: 25vw;
-    padding-right: 25vw;
-    margin-top: 20px;
-    animation: moveInBottom 1s ease; 
-}
-
-.about {
-    background-image: linear-gradient(to bottom right,#08e608,hsla(120, 30%, 45%, 0.418)), url(../images/mlab/about.jpg);
-    background-size: cover; 
-    transition: all 1s;
-    margin-top: 10px;
-    
-}
-
-.about__header {
-    padding: 2rem;
-    text-decoration: uppercase;
-    text-align: center;
-    font-size: 4rem;
-    padding-top: 4rem;
-    animation: moveInLeft 1s ease;
-}
-
-.about__content {
-    padding: 2rem;
-    text-decoration: uppercase;
-    text-align: center;
-    font-size: 1.5rem;
-    padding-top: 4rem;
-    line-height: 3rem;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 20%;
-}
-
-.hws {
-    margin-top: 10px;
-    color: white;
-    background-image: linear-gradient(to bottom right, rgb(0, 0, 0),rgba(43, 38, 38, 0.616)), url(../images/mlab/hws.jpg);
-    background-size: cover;  
-    filter: contrast(100%);
-    transition: all 1s;
-    
-}
-
-.hws__header {
-    padding: 2rem;
-    text-decoration: uppercase;
-    text-align: center;
-    font-size: 4rem;
-    padding-top: 4rem;
-    animation: moveInLeft 1s ease;
-}
-
-.hws__content {
-    padding: 2rem;
-    text-decoration: uppercase;
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 4rem;
-    line-height: 3rem;
-    padding-left: 20%;
-    padding-right: 20%;
+@media only screen and (max-width : 600px) {
+	#index-banner .section {
+		top: 0;
+	}
 }
 
 
-
-
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-
-    }
-
-    80% {
-        opactiy: 0.8;
-        transform: translateX(1rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
+footer.page-footer {
+	margin: 0;
 }
-
-.faculty{
-
-}
-
-.faculty__header {
-
-}
-
-.faculty__card {
-    
-}
-
-@keyframes moveInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(10rem); }
-    80% {
-      opactiy: 0.8;
-      transform: translateX(-1rem); }
-    100% {
-      opacity: 1;
-      transform: translate(0); } }
-  
-  @keyframes moveInBottom {
-    0% {
-      opacity: 0;
-      transform: translateY(3rem); }
-    80% {
-      transform: translateY(-0.5rem); }
-    100% {
-      transform: translate(0); } }
