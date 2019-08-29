@@ -19,18 +19,19 @@
     <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="./css/navbar.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="./css/tap-menu.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <nav class="black" role="navigation">
         <div class="nav-wrapper container">
-            <div id="logo-container" href="#" class="brand-logo">
+            <div id="logo-container" class="brand-logo">
                 <img class="mlab_logo" src="./images/mlab/mlab_logo_icon.png" />
             </div>
             <ul class="right hide-on-med-and-down">
                 <li><a style="color:white;" href="./pages/events.html">Events</a></li>
-                <li><a style="color:white;" href="./pages/projects.html">Projects</a></li>
-                <li><a style="color:white;" href="#">Achievements</a></li>
+                <li><a style="color:white;" href="./pages/projects.html">Projects</a></li>                
                 <li><a style="color:white;" href="./pages/members.html">Members</a></li>
             </ul>
 
@@ -38,12 +39,11 @@
                 <div id="nav-mobile-header" class="user-view">
                     <div id="nav-mobile-background" class="background"></div>
                     <a href="#user"><img class="circle" src="./images/mlab/mlab_logo.png"></a>
-                    <a href="#name"><span class="white-text name">Microsoft Innovation Labs</span></a>
+                    <a href="#name"><span class="white-text name">Microsoft Innovation Lab</span></a>
                 </div>
-                <li><a id="mobile-link" href="#">Events</a></li>
-                <li><a id="mobile-link" href="#">Projects</a></li>
-                <li><a id="mobile-link" href="#">Achievements</a></li>
-                <li><a id="mobile-link" href="#">Members</a></li>
+                <li><a id="mobile-link" href="./pages/events.html">Events</a></li>
+                <li><a id="mobile-link" href="./pages/projects.html">Projects</a></li>                
+                <li><a id="mobile-link" href="./pages/members.html">Members</a></li>
             </ul>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><span style="color:white"><i
@@ -54,17 +54,17 @@
     <div id="index-banner" class="parallax-container">
         <div class="container">
             <p class="main_title">
-                Microsoft Innovation Labs
+                Microsoft Innovation Lab
             </p>
-            <blockquote class="main_content" align="center">
+            <blockquote style="border-left:transparent;" class="main_content" align="center">
                 We are a student community dedicated to cultivating the spirit of research and innovation in budding
                 engineers.</p>
             </blockquote>
             <p align="center">
-                <span style="font-size: 3em; color: #7cb342;">
-                    <i class="fab fa-facebook"></i>&nbsp;&nbsp;
-                    <i class="fab fa-instagram"></i>&nbsp;&nbsp;
-                    <i class="fab fa-linkedin"></i>
+                <span style="font-size: 3em; color: #7cb342;cursor: pointer;">
+                    <a style="color: #7cb342;" target="_blank" href="https://www.facebook.com/microsoftlabpes"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;
+                    <a style="color: #7cb342;" target="_blank" href="https://www.instagram.com/mlab_pes/"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
+                    <a style="color: #7cb342;" target="_blank" href="https://www.linkedin.com/company/microsoft-innovation-labs/"><i  class="fab fa-linkedin"></i></a>
                 </span>
             </p>
 
@@ -100,13 +100,13 @@
                 <div class="row">
                     <div class="col s12 l3">
                         <div class="icon-block">
-                            <h2 class="center white-text">8</h2>
+                            <h2 class="center white-text">9</h2>
                             <h5 class="center white-text">Years of excellence</h5>
                         </div>
                     </div>
                     <div class="col s12 l3">
                         <div class="icon-block">
-                            <h2 class="center white-text">207</h2>
+                            <h2 class="center white-text">244</h2>
                             <h5 class="center white-text">Members</h5>
                         </div>
                     </div>
@@ -138,8 +138,9 @@
             <div id="prof-carousel" class="carousel">
                 <div id="prof-carousel-item" class="carousel-item modal-trigger" data-target="modal_raj">
                     <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
+                        <div class="card-image waves-block waves-light">
                             <img class="activator" src="./images/mlab/Rajasekar_profile.jpg">
+                            <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
                         </div>
                         <div class="card-content">
                             <p class="prof-name">Prof. Rajasekar M</p>
@@ -149,9 +150,10 @@
                 </div>
                 <div id="prof-carousel-item" class="carousel-item modal-trigger" data-target="modal_sri">
                     <div class="col m4">
-                        <div class="card sticky-action">
-                            <div class="card-image waves-effect waves-block waves-light">
+                        <div class="card">
+                            <div class="card-image">
                                 <img class="activator" src="./images/mlab/Srinivas_profile.jpg">
+                                <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
                             </div>
                             <div class="card-content">
                                 <p class="prof-name">Dr. A Srinivas</p>
@@ -162,8 +164,9 @@
                 </div>
                 <div id="prof-carousel-item" class="carousel-item modal-trigger" data-target="modal_ven">
                     <div class="card sticky-action">
-                        <div class="card-image waves-effect waves-block waves-light">
+                        <div class="card-image">
                             <img class="activator" src="./images/mlab/Venkatarangan_profile.jpg">
+                            <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
                         </div>
                         <div class="card-content">
                             <p class="prof-name">Dr. Venkatarangan M</p>
@@ -190,13 +193,13 @@
                 <div class="col l3 s12">
                     <h5 class="green-text">Connect</h5><br />
                     pes.mlab@gmail.com<br>
-                    +91 1234567890 <br>
-                    +91 1234567890 <br>
+                    +91 87621 73056 <br>
+                    +91 80957 38849 <br>
                     <br>
-                    <span style="font-size: 3em; color: #7cb342;">
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-linkedin"></i>
+                    <span style="font-size: 3em; color: #7cb342;cursor: pointer;">
+                        <a style="color: #7cb342;" target="_blank" href="https://www.facebook.com/microsoftlabpes"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;
+                        <a style="color: #7cb342;" target="_blank" href="https://www.instagram.com/mlab_pes/"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
+                        <a style="color: #7cb342;" target="_blank" href="https://www.linkedin.com/company/microsoft-innovation-labs/"><i  class="fab fa-linkedin"></i></a>
                     </span>
 
                 </div>
@@ -209,10 +212,10 @@
         </div>
     </footer>
 
-    <div id="modal_raj" class="modal">
+    <div id="modal_raj" class="modal modal-fixed-footer">
         <div class="modal-content">
-            <h4>Prof. Rajasekar M</h4>
-            <p>
+            <h4>Prof. Rajasekar M</h4> <br>
+            <blockquote class="flow-text">
                 Prof. M Rajasekar is an Associate Professor in the department of
                 Eletronics and Communication Engineering at PES University. He
                 is an alumnus of IIT Madras (Computer Science and Engineering).
@@ -228,17 +231,17 @@
                 Recently, he presented his project works in the International
                 Conferences (TENCON) held in Singapore, Malaysia and Jeju,South
                 Korea. He is an astute listener and motivator.
-            </p>
+            </blockquote>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat">Close</a>
         </div>
     </div>
 
-    <div id="modal_sri" class="modal">
+    <div id="modal_sri" class="modal modal-fixed-footer">
         <div class="modal-content">
-            <h4>Dr. A Srinivas</h4>
-            <p>
+            <h4>Dr. A Srinivas</h4> <br>
+            <blockquote class="flow-text">
                 Dr. A Srinivas is the faculty founder of Microsoft Innovation
                 Lab. He is presently the Dean, School of Engineering in
                 Dayananda Sagar University. He has worked for 10 years in
@@ -250,17 +253,17 @@
                 Areas of Research Interest: Wireless Networks, Healthcare
                 Informatics. He is extremely passionate about promoting
                 Undergraduate Research.
-            </p>
+            </blockquote>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat">Close</a>
         </div>
     </div>
 
-    <div id="modal_ven" class="modal">
+    <div id="modal_ven" class="modal modal-fixed-footer">
         <div class="modal-content">
             <h4>Dr. Venkatarangan M</h4>
-            <p>
+            <blockquote class="flow-text">
                 After leaving Philips in 2015 to follow his passion towards
                 teaching and research, Dr. Venkatarangan joined PES University
                 as the Associate Professor in EEE to focus on Embedded Systems
@@ -283,10 +286,10 @@
                 supports the Microsoft Innovation Lab activities and summer
                 internship projects in domains of embedded systems, IoT Robotics
                 and Automation.
-            </p>
+            </blockquote>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat">Close</a>
         </div>
     </div>
 
@@ -299,8 +302,8 @@
     <!-- Tap Target Structure -->
     <div id="tap-target" class="tap-target" data-target="tap-menu">
         <div class="tap-target-content">
-            <h5>Notifications!</h5>
-            <p>No notifications to display</p>
+            <h5>Roadshow is on!</h5>
+            <p>At MRD Auditorium</p>
         </div>
     </div>
     <!--  Scripts-->

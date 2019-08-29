@@ -5,7 +5,18 @@ body {
     overflow: hidden;
 }
 .projects-container{
-    width:100%;
     max-height: 100%;
-    overflow-y: auto;
+    overflow-y: auto;    
+}
+
+.intern-list{
+    list-style-type: circle;
+}
+
+.project-year-header {
+    color:white;
+}
+blockquote {
+    border-left: 5px solid #7cb342;
+	font-family: 'Calibri', sans-serif;
 }

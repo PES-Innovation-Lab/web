@@ -1,0 +1,10 @@
+{
+    "project1":{
+        "name":"Project1",
+        "interns":["Intern1", "Intern2", "Intern3", "Intern4"],
+        "mentors":["Mentor1", "Mentor2"],
+        "year":"2019",
+        "description":"Description Description Description Description Description Description Description Description Description Description Description Description",
+        "imageURL":"../images/mlab/roadmap.jpg"
+    }    
+}

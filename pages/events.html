@@ -17,11 +17,12 @@
     <link href="https://fonts.googleapis.com/css?family=Changa&display=swap" rel="stylesheet">
     <!-- CSS  -->
     <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="../css/navbar.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="../css/tap-menu.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" href="../css/events.css">
     <link rel="script" href="../js/events.js">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Microsoft Innovation Lab</title>
 </head>
 
@@ -29,13 +30,12 @@
     <nav class="black" role="navigation">
         <div class="nav-wrapper container">
             <div id="logo-container" href="./members.html" class="brand-logo">
-                <img class="mlab_logo" src="../images/mlab/mlab_logo_icon.png" />
+                <a href="/"><img class="mlab_logo" src="../images/mlab/mlab_logo_icon.png" /></a>
             </div>
             <ul class="right hide-on-med-and-down">
                 <li><a style="color:white;" href="#">Events</a></li>
-                <li><a style="color:white;" href="#">Projects</a></li>
-                <li><a style="color:white;" href="#">Achievements</a></li>
-                <li><a style="color:white;" href="./members.html">Members</a></li>
+                <li><a style="color:white;" href="../pages/projects.html">Projects</a></li>                
+                <li><a style="color:white;" href="../pages/members.html">Members</a></li>
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
@@ -45,108 +45,126 @@
                     <a href="#name"><span class="white-text name">Microsoft Innovation Labs</span></a>
                 </div>
                 <li><a id="mobile-link" href="#">Events</a></li>
-                <li><a id="mobile-link" href="#">Projects</a></li>
-                <li><a id="mobile-link" href="#">Achievements</a></li>
-                <li><a id="mobile-link" href="#">Members</a></li>
+                <li><a id="mobile-link" href="../pages/projects.html">Projects</a></li>                
+                <li><a id="mobile-link" href="../pages/members.html">Members</a></li>
             </ul>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><span style="color:white"><i
                         class="fas fa-bars"></i></span></a>
         </div>
     </nav>
+    <div class="container">
+        <div class="events row">
+            <div class="events-header">
+                <br>
+                <h2 align="center" style="color:#7cb342;font-family: 'Changa', sans-serif;">WHAT WE DO <br>
+                </h2>
+                <p align="center" style="margin:5px;">
+                    We've got the perfect platform and events for your skills and ideas to explore new heights
+                </p>
+                <br>
+            </div>
 
-    <div class="events row">
-        <div class="col s12 m12 l6 xl6">
-            <div class="events__card">
-                <div class="event__logo">
-                    Image Goes here
+            <div class="carousel">
+                <div class="carousel-item event-carousel-item">
+                    <div class="card sticky-action event-card">
+                        <div class="card-image" style="padding:20px;border-bottom:1px solid grey;">
+                            <img src="../images/mlab/internship.png">
+                            <a class="btn-floating halfway-fab waves-effect waves-light green activator"><i
+                                    class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p class="event-name">Summer internship Program</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Summer internship<i
+                                    class="material-icons right">close</i></span>
+                            <p class="event-description">
+                                We, at Microsoft Innovation Lab, organise an annual summer internship for new recruits 
+                                to work on cutting-edge research projects in varied domains such as Robotics, Machine Learning,
+                                Artificial Intelligence, Sensor Networking, Virtual Reality, Brain-Computer Interface and App Development. 
+                                The results and prototype demonstrations of these projects are presented at Roadshow, an event attended by a large number
+                                of students across disciplines at PES University.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="event__title">
-                    Title
+                <div class="carousel-item event-carousel-item">
+                    <div class="card sticky-action event-card">
+                        <div class="card-image" style="padding:20px;border-bottom:1px solid grey;">
+                            <img src="../images/mlab/roadshow.png">
+                            <a class="btn-floating halfway-fab waves-effect waves-light green activator"><i
+                                    class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p class="event-name">Roadshow</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Roadshow<i
+                                    class="material-icons right">close</i></span>
+                            <p class="event-description">
+                                Roadshow is an Innovation Expo organized by the Lab each year after the Summer Internship Program. 
+                                Microsoft Lab summer interns present the projects that they have worked on during the internship. 
+                                This serves as a great platform for students from PES University to interact with MIL members and 
+                                gain knowledge about the cutting-edge technologies that we work on. Roadshow also serves as a platform 
+                                where our interns receive constructive feedback and further insights on their projects from experienced professionals, 
+                                professors and their peers.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="event__content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta doloribus debitis in consequuntur ea
-                    tempore corrupti repellat eligendi quibusdam maxime. Odio cum mollitia deleniti voluptas iure. Ad
-                    provident ipsam natus?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae neque, eum alias eveniet
-                    officiis recusandae ducimus, minus dolorum maiores unde ullam iure quisquam illum laudantium! Eum ex
-                    voluptatum blanditiis quam.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam inventore ab eligendi sint
-                    tenetur quia, fuga, odit dolore dolor dolorem iste aspernatur quod labore vel minus pariatur sequi
-                    mollitia aliquam!
+                <div class="carousel-item event-carousel-item">
+                    <div class="card sticky-action event-card">
+                        <div class="card-image" style="padding:20px;border-bottom:1px solid grey;">
+                            <img src="../images/mlab/hackathon.png">
+                            <a class="btn-floating halfway-fab waves-effect waves-light green activator"><i
+                                    class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p class="event-name">#Code</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">#Code<i
+                                    class="material-icons right">close</i></span>
+                            <p class="event-description">
+                                #Code is the annual 24-hour hackathon organised by the Lab, with students proposing
+                                interesting ideas and presenting projects from several domains. The hackathon also 
+                                provides a learning platform to participating teams, with mentors and members of academia 
+                                assisting them. Esteemed personalities from different industrial backgrounds come to judge 
+                                the show, evaluating projects from all possible angles. #Code 2019 would be the 8th edition 
+                                of the annual hackathon. The winners bag cash prizes totalling up to Rs. one lakh.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item event-carousel-item">
+                    <div class="card sticky-action event-card">
+                        <div class="card-image" style="padding:20px;border-bottom:1px solid grey;">
+                            <img src="../images/mlab/ideathon.png">
+                            <a class="btn-floating halfway-fab waves-effect waves-light green activator"><i
+                                    class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p class="event-name">Incito</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Incito<i
+                                    class="material-icons right">close</i></span>
+                            <p class="event-description">
+                                Incito is the ideathon organized by Microsoft Lab last organised in the year 2017.
+                                It is a conglomerate of brilliant minds, all incubating innovative ideas. 
+                                The shortlisted 10 best ideas battle it out in the final round to win cash prizes up to Rs. 10,000 
+                                in all. The participants test the design and feasibility of their ideas without the constraints 
+                                of implementing the same, hence encouraging innovative thinking. The best ideas are also provided
+                                the platform and resources to implement their ideas and make these a reality.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
         </div>
-        <div class="col s12 m12 l6 xl6">
-            <div class="events__card">
-                <div class="event__logo">
-                    Image Goes here
-                </div>
-
-                <div class="event__title    ">
-                    Title
-                </div>
-                <div class="event__content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta doloribus debitis in consequuntur ea
-                    tempore corrupti repellat eligendi quibusdam maxime. Odio cum mollitia deleniti voluptas iure. Ad
-                    provident ipsam natus?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae neque, eum alias eveniet
-                    officiis recusandae ducimus, minus dolorum maiores unde ullam iure quisquam illum laudantium! Eum ex
-                    voluptatum blanditiis quam.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam inventore ab eligendi sint
-                    tenetur quia, fuga, odit dolore dolor dolorem iste aspernatur quod labore vel minus pariatur sequi
-                    mollitia aliquam!
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m12 l6 xl6">
-            <div class="events__card">
-                <div class="event__logo">
-                    Image Goes here
-                </div>
-
-                <div class="event__title    ">
-                    Title
-                </div>
-                <div class="event__content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta doloribus debitis in consequuntur ea
-                    tempore corrupti repellat eligendi quibusdam maxime. Odio cum mollitia deleniti voluptas iure. Ad
-                    provident ipsam natus?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae neque, eum alias eveniet
-                    officiis recusandae ducimus, minus dolorum maiores unde ullam iure quisquam illum laudantium! Eum ex
-                    voluptatum blanditiis quam.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam inventore ab eligendi sint
-                    tenetur quia, fuga, odit dolore dolor dolorem iste aspernatur quod labore vel minus pariatur sequi
-                    mollitia aliquam!
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m12 l6 xl6">
-            <div class="events__card">
-                <div class="event__logo">
-                    Image Goes here
-                </div>
-
-                <div class="event__title    ">
-                    Title
-                </div>
-                <div class="event__content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta doloribus debitis in consequuntur ea
-                    tempore corrupti repellat eligendi quibusdam maxime. Odio cum mollitia deleniti voluptas iure. Ad
-                    provident ipsam natus?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae neque, eum alias eveniet
-                    officiis recusandae ducimus, minus dolorum maiores unde ullam iure quisquam illum laudantium! Eum ex
-                    voluptatum blanditiis quam.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam inventore ab eligendi sint
-                    tenetur quia, fuga, odit dolore dolor dolorem iste aspernatur quod labore vel minus pariatur sequi
-                    mollitia aliquam!
-                </div>
-            </div>
-        </div>
-
-
-
     </div>
 
     <a onclick="$('.tap-target').tapTarget('open')" id="tap-menu"
@@ -157,15 +175,16 @@
     <!-- Tap Target Structure -->
     <div id="tap-target" class="tap-target" data-target="tap-menu">
         <div class="tap-target-content">
-            <h5>Notifications!</h5>
-            <p>No notifications to display</p>
+            <h5>Roadshow is on!</h5>
+            <p>At MRD Auditorium</p>
         </div>
     </div>
 
     <script>
         // Initialise carousel and modal
-        $(document).ready(function () {            
+        $(document).ready(function () {
             $('.tap-target').tapTarget();
+            $('.carousel').carousel();
         });
     </script>
 </body>
