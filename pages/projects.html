@@ -20,6 +20,7 @@
     <link href="../css/navbar.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="../css/tap-menu.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="../css/projects.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- React Scripts -->
     <script type="application/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
@@ -32,13 +33,12 @@
     <nav class="black" role="navigation">
         <div class="nav-wrapper container">
             <div id="logo-container" href="#" class="brand-logo">
-                <img class="mlab_logo" src="../images/mlab/mlab_logo_icon.png" />
+                <a href="/"><img class="mlab_logo" src="../images/mlab/mlab_logo_icon.png" /></a>
             </div>
             <ul class="right hide-on-med-and-down">
-                <li><a style="color:white;" href="./pages/events.html">Events</a></li>
-                <li><a style="color:white;" href="#">Projects</a></li>
-                <li><a style="color:white;" href="#">Achievements</a></li>
-                <li><a style="color:white;" href="./pages/members.html">Members</a></li>
+                <li><a style="color:white;" href="../pages/events.html">Events</a></li>
+                <li><a style="color:white;" href="#">Projects</a></li>                
+                <li><a style="color:white;" href="../pages/members.html">Members</a></li>
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
@@ -47,27 +47,28 @@
                     <a href="#user"><img class="circle" src="../images/mlab/mlab_logo.png"></a>
                     <a href="#name"><span class="white-text name">Microsoft Innovation Labs</span></a>
                 </div>
-                <li><a id="mobile-link" href="#">Events</a></li>
-                <li><a id="mobile-link" href="#">Projects</a></li>
-                <li><a id="mobile-link" href="#">Achievements</a></li>
-                <li><a id="mobile-link" href="#">Members</a></li>
+                <li><a id="mobile-link" href="../pages/events.html">Events</a></li>
+                <li><a id="mobile-link" href="#">Projects</a></li>                
+                <li><a id="mobile-link" href="../pages/members.html">Members</a></li>
             </ul>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><span style="color:white"><i
                         class="fas fa-bars"></i></span></a>
         </div>
-    </nav>    
+    </nav>
     <div id="projects-carousel" class="carousel carousel-slider center">
-        <div class="carousel-item red white-text" href="#one!">
-            <div id="projects2018" class="projects-container">
-                
-                    
+        <div class="carousel-item">
+            <div class="projects-container">
+                <h3 class="project-year-header">2019</h3>
+                <div id="projects2019" class="projects-view container">
+                </div>
             </div>
-            
         </div>
-        <div class="carousel-item amber white-text" href="#two!">
-            <div id="projects-container">
-                <div id="projects2019"></div>
+        <div class="carousel-item">
+            <div class="projects-container">
+                <div id="projects2018" class="container">
+                <h3 class="project-year-header">2018</h3>
+                </div>
             </div>
         </div>
     </div>
@@ -83,8 +84,8 @@
     <!-- Tap Target Structure -->
     <div id="tap-target" class="tap-target" data-target="tap-menu">
         <div class="tap-target-content">
-            <h5>Notifications!</h5>
-            <p>No notifications to display</p>
+            <h5>Roadshow is on!</h5>
+            <p>At MRD Auditorium</p>
         </div>
     </div>
     <!--  Scripts-->
@@ -99,8 +100,8 @@
                 indicators: true
             });
         });
-        $('.projects2018').ready(function () {            
-            $('.modal').modal();            
+        $('.projects2018').ready(function () {
+            $('.modal').modal();
         });
     </script>
 

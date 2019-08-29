@@ -1,12 +1,9 @@
 body {
     text-decoration: none;
-    background-color: black;
+    background-image: url("../images/mlab/prism.png");
+	background-repeat: repeat;
     color: white;
 }
-.main {
-    
-}
-
 .navbar .item {
     margin-top:0px;
     margin: 10px;
@@ -14,34 +11,26 @@ body {
 }
 
 
-.events__card {
-    margin: 1rem;
-    padding: 2rem;
-    background-color: white;
-    color: rgb(67, 218, 67);
-    
+.event-tagline {
+	color:grey;
+	font-size:12px;
 }
 
-.event__logo {
-    text-align: center;
-    margin-bottom: 1rem;
+.event-name {
+    color:darkgrey;
+	font-size:18px;
 }
 
-.event__title {
-    text-align: center;
-    padding: 2rem;
-    font-size: 2rem;
-    line-height: 3rem;
-    letter-spacing: 0.5rem;
-
-    border-bottom: 1px solid grey;
+.event-carousel-item {
+	margin-top:-50px;
+	width:300px;
+	height:auto;
 }
 
-.event__content {
+.event-card{
+    width:250px;    
+}
 
-    padding: 2rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    letter-spacing: 0.1rem;
-
+.event-description {
+    color:grey;
 }

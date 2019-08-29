@@ -5,10 +5,13 @@
  *
  * Made By MaterializeCSS.com
  */
-
+blockquote{
+	border-left: 5px solid #7cb342;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
 nav ul a,
 nav .brand-logo {
-	color: #444;
+	color: #444;	
 }
 
 #nav-mobile {
