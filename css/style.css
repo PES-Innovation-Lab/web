@@ -11,11 +11,11 @@ blockquote{
 }
 nav ul a,
 nav .brand-logo {
-	color: #444;	
+	color: #444;
 }
 
 #nav-mobile {
-	background-color:black;	
+	background-color:black;
 }
 #nav-mobile-background {
 	background-image: url("../images/mlab/prism.png");
@@ -32,12 +32,12 @@ nav .brand-logo {
 .main_content {
 	font-size: 2rem;
 	color:white;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Red Hat Display', sans-serif;
 }
-.main_title{	
-	text-align: center;	
-	font-size: 7rem;
-	font-family: 'Changa', sans-serif;
+.main_title{
+	text-align: center;
+	font-size: 5rem;
+	font-family: 'Poppins', sans-serif;
 	color:#7cb342;
 }
 
@@ -46,11 +46,11 @@ nav .brand-logo {
 }
 
 #index-banner {
-	min-height:80vh;	
+	min-height:80vh;
 	clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
-#group_banner {		
+#group_banner {
 	clip-path: polygon(0% 20%, 100% 0%, 100% 90%, 0% 100%);
 }
 
@@ -61,16 +61,16 @@ nav .brand-logo {
 
 
 .parallax-container {
-	min-height: 380px;	
+	min-height: 380px;
 	height: auto;
 }
 
-.footer__image {    
+.footer__image {
     width: 40%;
     height: 40%;
 }
 .contact__where {
-    color: #3fc52d;    
+    color: #3fc52d;
 }
 .contact__email {
     font-size:1.5rem;
@@ -93,7 +93,7 @@ nav .brand-logo {
 
 .contact__social--link-1 {
     background-image: url('../images/mlab/insta.png');
-    background-size: cover;  
+    background-size: cover;
     margin-right: 30px;
     float: left;
     height: 30px;
@@ -102,7 +102,7 @@ nav .brand-logo {
 
 .contact__social--link-2 {
     background-image: url('../images/mlab/facebook.png');
-    background-size: cover;  
+    background-size: cover;
     margin-right: 30px;
     float: left;
     height: 30px;
@@ -111,7 +111,7 @@ nav .brand-logo {
 
 .contact__social--link-3 {
     background-image: url('../images/mlab/linkedin.png');
-    background-size: cover;  
+    background-size: cover;
     margin-right: 30px;
     float: left;
     height: 30px;
@@ -150,8 +150,8 @@ body {
 	#index-banner .section {
 		top: 10%;
 	}
-	.main_title {	
-		text-align: center;	
+	.main_title {
+		text-align: center;
 		font-size: 3rem;
 		font-family: 'Changa', sans-serif;
 		color:#7cb342;
