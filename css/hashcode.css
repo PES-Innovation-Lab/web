@@ -1,0 +1,46 @@
+body {
+    text-decoration: none;
+    background-image: url("../images/mlab/prism.png");
+	background-repeat: repeat;
+    color: white;
+}
+.navbar .item {
+    margin-top:0px;
+    margin: 10px;
+    margin-left: -6px;    
+}
+
+.header {
+    color: #1cd11c;
+    text-align: center;
+    font-size: 5rem;
+}
+.header-content {
+    color: red;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main {
+    width: 100vw;
+}
+
+.year-header {
+    text-align: center;
+    font-size: 2rem;
+    color: #2dda2d;
+}
+
+.poster img {
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+.materialboxed {
+    transform: scale(1.2) translate(5%,5%);
+}
+
+.poster-disable img {
+    filter: blur(5px);
+}
