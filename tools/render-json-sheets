@@ -44,8 +44,6 @@ def fetch_all_fields():
     #Access all of the record inside that
 
     result = worksheet.get_all_records() # List[Dict[str, str]]
-    for element in result:
-        element['imageURL'] = 'https://drive.google.com/uc?id='+element['imageURL'][32:-17]
     convert_to_json = {element['Name']:element for element in result}
 
     original = sys.stdout
