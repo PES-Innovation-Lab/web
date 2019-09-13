@@ -7,17 +7,19 @@ body {
 .navbar .item {
     margin-top:0px;
     margin: 10px;
-    margin-left: -6px;    
+    margin-left: -6px;
 }
 
 .header {
-    color: #1cd11c;
+    color: #5ed14f;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
     font-size: 5rem;
 }
 .header-content {
-    color: red;
+    color:white;
     text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
     font-size: 2rem;
 }
 
@@ -42,5 +44,5 @@ body {
 }
 
 .poster-disable img {
-    filter: blur(5px);
+    filter: blur(3px);
 }
