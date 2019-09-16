@@ -32,5 +32,16 @@ body {
 }
 
 .event-description {
-    color:grey;
+    color:white;
+}
+
+
+@media only screen and (max-width : 992px) {
+    #onPhoneChangeOrder{
+        display: flex; 
+        flex-direction: column;   
+    }
+    #smallContainer {
+        order: -1;
+    }
 }
