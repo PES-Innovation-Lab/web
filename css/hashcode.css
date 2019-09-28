@@ -21,14 +21,28 @@ body {
     text-align: center;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 2rem;
+    font-weight: 700;
 }
 
 .description {
     font-family: 'Red Hat Display', sans-serif;
-    color: green;
-    font-size: 1.4rem;
-    padding: 40px;
-    font-weight: 500;
+    color: rgb(39, 129, 39);
+    font-size: 1.8rem;
+    padding: 10vw;
+    text-align: justify;
+    padding-top: 30px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+@media (max-width: 600px){
+    .description {
+        font-size: 1rem;
+    }
+}
+
+.parallax img {
+    filter: blur(5px);
 }
 
 .images {
@@ -42,15 +56,22 @@ body {
 .year__header {
     font-size: 3rem;
     color: green;
+    margin: 11px;
 }
 
 .year__sponsors {
     font-size: 1.5rem;
+    margin: 11px;
 }
 
 .poster img {
     
-    height: 100%;
-    width: 100%;
+    height: 95%;
+    width: 95%;
     margin-bottom: 20px;
+}
+
+
+.parallax-container {
+    border-top: 10px solid black;
 }
