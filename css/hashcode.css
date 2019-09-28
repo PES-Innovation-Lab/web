@@ -23,26 +23,34 @@ body {
     font-size: 2rem;
 }
 
-.main {
-    width: 100vw;
+.description {
+    font-family: 'Red Hat Display', sans-serif;
+    color: green;
+    font-size: 1.4rem;
+    padding: 40px;
+    font-weight: 500;
 }
 
-.year-header {
-    text-align: center;
-    font-size: 2rem;
-    color: #2dda2d;
+.images {
+
+    height: 100%;
+    float: bottom;
+    object-fit: cover;
+    
+}
+
+.year__header {
+    font-size: 3rem;
+    color: green;
+}
+
+.year__sponsors {
+    font-size: 1.5rem;
 }
 
 .poster img {
-    padding: 50px;
+    
     height: 100%;
     width: 100%;
-}
-
-.materialboxed {
-    transform: scale(1.2) translate(5%,5%);
-}
-
-.poster-disable img {
-    filter: blur(3px);
+    margin-bottom: 20px;
 }
