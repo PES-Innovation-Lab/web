@@ -55,22 +55,25 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="header">
-            hashCode
-        </div>
-        <div class="header-content">
-            Hungry to Innovate? Grab a Byte.
-        </div>
-    
-        <div class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempora obcaecati corrupti dolorum itaque? Illo laborum et aut saepe nemo fugiat id temporibus, praesentium labore iusto minima deserunt soluta quaerat?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nam perspiciatis error aperiam soluta praesentium deleniti expedita. Quisquam perferendis officia tenetur dicta, odit, porro quod nesciunt velit nisi eligendi dolorum!
-    
-        </div>
-        <br/>
-    
 
+        
+        <div class="parallax-container">
+            <div class="header">
+                hashCode
+            </div>
+            <div class="header-content">
+                Hungry to Innovate? Grab a Byte.
+            </div>
+            
+            <div class="description">
+                    hashCode is the annual 24-hour hackathon organised by the Lab, with students proposing interesting ideas and presenting projects from several domains. The hackathon also provides a learning platform to participating teams, with mentors and members of academia assisting them. Esteemed personalities from different industrial backgrounds come to judge the show, evaluating projects from all possible angles. hashCode 2019 would be the 8th edition of the annual hackathon. The winners bag cash prizes totalling up to Rs. one lakh.            </div>
+            <div class="parallax">
+                <img src="../images/events/hashcode/hashback.jpg" alt="">
+            </div>
+        </div>
+
+    
+        <div class="container">
         <div class="year">
             <div class="row">
                 <div class="year__header">
@@ -203,26 +206,17 @@
     <script>
         $(document).ready(function(){
         $('.tabs').tabs();
-        });
          // Initialise carousel and modal
-         $(document).ready(function () {
-            $('.tap-target').tapTarget();
-            $('.carousel').carousel();
-        });
-        $(document).ready(function(){
+        $('.tap-target').tapTarget();
+        $('.carousel').carousel();
         $('.materialboxed').materialbox();
-        });
         $('.carousel.carousel-slider').carousel({
             fullWidth: true
-
         });
-        $(document).ready(function(){
         $('.carousel').carousel();
-        });
-        $(document).ready(function(){
         $('.slider').slider();
+        $('.parallax').parallax();
         });
-        
     </script>
     </body>
 
