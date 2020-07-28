@@ -5,10 +5,10 @@
  We are a student community dedicated to cultivating the spirit of research and innovation in budding engineers.<br/>
 
 
-This is the main repository for the website hosted at - [PES Innovation Lab website](https://pes-innovation-lab.github.io/pesil-web-2.0/). Be sure to head out to our website and take a look at some of the exciting projects carried out at the lab.
+This is the main repository for the website hosted at - [PES Innovation Lab website](https://pes-innovation-lab.github.io/web/). Be sure to head out to our website and take a look at some of the exciting projects carried out at the lab.
 
 # Development
-The development version upto date with the current version of master can be found here - [PIL Github pages](https://github.com/PES-Innovation-Lab/pesil-web-2.0).
+The development version upto date with the current version of master can be found here - [PIL Github pages](https://pes-innovation-lab.github.io/web/).
 ## Setting up your development environment :
 
 1. Clone the repository after forking.
@@ -37,6 +37,6 @@ Reviewing other PR's is good practice. Easy-to-use scripts in `tools/` have been
 Contact
 -----
 email : pes.mlab@gmail.com <br/>
-Website : https://pes-innovation-lab.github.io/pesil-web-2.0/ <br/>
+Website : https://pes-innovation-lab.github.io/web/ <br/>
 
 ----
