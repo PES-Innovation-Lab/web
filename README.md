@@ -1,6 +1,8 @@
 # PES Innovation Lab (formerly Microsoft Innovation Lab)
 
-<img src="toPort/imagesToPort/images/mlab/mlab_logo_black.png" alt="logo" width="100px" height="90px"><br/>
+[![Build Status](https://travis-ci.com/LaRuim/web.svg?branch=master)](https://travis-ci.com/LaRuim/web)
+
+<img src="toPort/imagesToPort/mlab/mlab_logo_black.png" alt="logo" width="100px" height="90px"><br/>
 
  We are a student community dedicated to cultivating the spirit of research and innovation in budding engineers.<br/>
 
