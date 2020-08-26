@@ -1,0 +1,47 @@
+body {
+    text-decoration: none;
+    background-image: url("../images/mlab/prism.png");
+	background-repeat: repeat;
+    color: white;
+}
+.navbar .item {
+    margin-top:0px;
+    margin: 10px;
+    margin-left: -6px;    
+}
+
+
+.event-tagline {
+	color:grey;
+	font-size:12px;
+}
+
+.event-name {
+    color:darkgrey;
+	font-size:18px;
+}
+
+.event-carousel-item {
+	margin-top:-50px;
+	width:300px;
+	height:auto;
+}
+
+.event-card{
+    width:250px;    
+}
+
+.event-description {
+    color:white;
+}
+
+
+@media only screen and (max-width : 992px) {
+    #onPhoneChangeOrder{
+        display: flex; 
+        flex-direction: column;   
+    }
+    #smallContainer {
+        order: -1;
+    }
+}

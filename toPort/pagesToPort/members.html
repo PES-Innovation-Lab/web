@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Members</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../css/navbar.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../css/tap-menu.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!-- Materialize -->
+    <script src="../js/materialize.js"></script>
+
+    <!-- React Scripts -->
+    <script type="application/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js">
+    </script>
+    <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>PES Innovation Lab</title>
+</head>
+
+<body>
+    <nav class="black" role="navigation">
+        <div class="nav-wrapper container">
+            <div id="logo-container" href="#" class="brand-logo">
+                <a href="/"><img class="mlab_logo" src="../images/mlab/mlab_logo_icon.png" /></a>
+            </div>
+            <ul class="right hide-on-med-and-down">
+                
+                <li><a style="color:white;" href="../pages/events.html">Events</a></li>
+                <li><a style="color:white;" href="../pages/projects.html">Projects</a></li>
+                <li><a style="color:white;" href="#">Members</a></li>
+                <li><a style="color:white;" href="../pages/hashcode.html">HashCode</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <div id="nav-mobile-header" class="user-view">
+                    <div id="nav-mobile-background" class="background"></div>
+                    <a href="#user"><img class="circle" src="../images/mlab/mlab_logo.png"></a>
+                    <a href="#name"><span class="white-text name">PES Innovation Lab</span></a>
+                </div>
+                
+                <li><a id="mobile-link" href="../pages/events.html">Events</a></li>
+                <li><a id="mobile-link" href="../pages/projects.html">Projects</a></li>
+                <li><a id="mobile-link" href="#">Members</a></li>
+                <li><a id="mobile-link" href="../pages/hashcode.html">HashCode</a></li>
+            </ul>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><span style="color:white"><i class="material-icons">dehaze</i></span></a>
+        </div>
+    </nav>
+
+    <div id="root" class="ui container"></div>
+    <script src="../js/index.js"></script>
+    <script type="text/babel" src="../js/members.js"></script>
+</body>
+
+</html>

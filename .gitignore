@@ -1,3 +1,7 @@
 # Credential file for google sheets
 database/mil_projects_auth.json
 database/mil_website_link
+
+node_modules
+.next
+.vscode

@@ -1,0 +1,177 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+blockquote{
+	border-left: 5px solid #7cb342;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+nav ul a,
+nav .brand-logo {
+	color: #444;
+}
+
+#nav-mobile {
+	background-color:black;
+}
+#nav-mobile-background {
+	background-image: url("../images/mlab/prism.png");
+	background-repeat: repeat;
+}
+#mobile-link {
+	color:#7cb342;
+}
+
+#nav-mobile-header{
+	border-bottom: 1px solid white;
+	padding-bottom:15px;
+}
+.main_content {
+	font-size: 2rem;
+	color:white;
+	font-family: 'Red Hat Display', sans-serif;
+}
+.main_title{
+	text-align: center;
+	font-size: 5rem;
+	font-family: 'Poppins', sans-serif;
+	color:#7cb342;
+}
+
+.sidenav-trigger {
+	color: #26a69a;
+}
+
+#index-banner {
+	min-height:80vh;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+#group_banner {
+	clip-path: polygon(0% 20%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+
+#index-banner .section {
+	margin-top:10px;
+}
+
+
+.parallax-container {
+	min-height: 380px;
+	height: auto;
+}
+
+.footer__image {
+    width: 40%;
+    height: 40%;
+}
+.contact__where {
+    color: #3fc52d;
+}
+.contact__email {
+    font-size:1.5rem;
+    margin-bottom: 4rem;
+    letter-spacing: 2px;
+}
+
+.contact__social {
+    margin-top: 5rem;
+    position: absolute;
+}
+
+.contact__social ul {
+    transition: all 2s;
+}
+
+.contact__social--link:hover {
+    transform: scale(1.25);
+}
+
+.contact__social--link-1 {
+    background-image: url('../images/mlab/insta.png');
+    background-size: cover;
+    margin-right: 30px;
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+
+.contact__social--link-2 {
+    background-image: url('../images/mlab/facebook.png');
+    background-size: cover;
+    margin-right: 30px;
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+
+.contact__social--link-3 {
+    background-image: url('../images/mlab/linkedin.png');
+    background-size: cover;
+    margin-right: 30px;
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+.parallax-container .section {
+	width: 100%;
+}
+
+#prof-carousel-item {
+	margin-top:-50px;
+	width:250px;
+	height:auto;
+}
+
+.prof-tagline {
+	color:grey;
+	font-size:12px;
+}
+
+.prof-name {
+	font-size:21px;
+}
+
+body {
+	background-image: url("../images/mlab/prism.png");
+	background-repeat: repeat;
+}
+
+@media only screen and (max-width : 992px) {
+	.parallax-container .section {
+		position: absolute;
+		top: 40%;
+	}
+
+	#index-banner .section {
+		top: 10%;
+	}
+	.main_title {
+		text-align: center;
+		font-size: 3rem;
+		font-family: 'Changa', sans-serif;
+		color:#7cb342;
+	}
+
+	#group_banner{
+		min-height:120vh;
+	}
+	#group_banner .section{
+		top:10%;
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	#index-banner .section {
+		top: 0;
+	}
+}
+
+
+footer.page-footer {
+	margin: 0;
+}

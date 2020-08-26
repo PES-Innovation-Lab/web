@@ -1,0 +1,28 @@
+{
+  "name": "Website-Overhaul",
+  "version": "1.0.0",
+  "description": "<img src=\"images/mlab/mlab_logo_black.png\" alt=\"logo\" width=\"100px\" height=\"90px\"><br/>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaRuim/MIL-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaRuim/MIL-Website/issues"
+  },
+  "homepage": "https://github.com/LaRuim/MIL-Website#readme",
+  "dependencies": {
+    "next": "^9.5.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
