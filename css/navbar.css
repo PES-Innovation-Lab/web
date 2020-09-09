@@ -1,0 +1,65 @@
+.navbar {
+    background-color: black !important;
+}
+
+.menuButton {
+    color: white !important;
+    display: none !important;
+}
+
+.title {
+    flex-grow: 1;
+}
+
+.logo{
+    max-width: 160;
+}
+
+.navButton {
+    margin-left: 20;
+    color: white !important;
+    background-color: black !important;
+}
+
+.navButton:hover {
+    color: #8bc34a !important;
+}
+
+.navButton.active {
+    color: #8bc34a !important;
+}
+
+.logoButton {
+    background-color: black;
+}
+
+.logoButton:hover {
+    background-color: black;
+}
+
+.drawerMenu {
+    width: 250px !important;
+    color: white;
+}
+
+.navDrawer {
+    background-color: black;
+    height: 100%;
+}
+
+.drawerNavText {
+    color: white;
+}
+
+.drawerNavText.active {
+    color: #8bc34a !important;
+}
+
+@media only screen and (max-device-width: 540px) {
+    .navButton {
+        display: none !important;
+    }
+    .menuButton {
+        display: inline-flex !important;
+    }
+}

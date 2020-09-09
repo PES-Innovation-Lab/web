@@ -1,66 +1,62 @@
 // components/NavBar.js
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
+import React, { useState } from 'react'
+import { AppBar, Toolbar, Button, IconButton, SwipeableDrawer, List, ListItem, ListItemText } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import Link from 'next/link';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-    },
-    menuButton: {
-      marginRight: theme.spacing(2),
-    },
-    title: {
-      flexGrow: 1,
-    },
-    logo:{
-        maxWidth: 160,
-    },
-    toolbarButtons: {
-        marginLeft: "auto",
-        color: "white",
-        backgroundColor: "black",
-        '&:hover': {
-            backgroundColor: "green",
-        },
-    },
-    logoButton: {
-        backgroundColor: "black",
-        '&:hover': {
-            backgroundColor: "black",
-        },
-    },
-  }));
 
-function NavBar(){
-    const classes = useStyles();
+function NavBar({ active }) {
+	const [ drawerOpen, setDrawerOpen ] = useState(false);
+	console.log(active);
+	const navs = [
+		{ title: 'Events', route: '/events' },
+		{ title: 'Members', route: '/members' },
+		{ title: 'Projects', route: '/projects' },
+		{ title: 'Hashcode', route: '/hashcode' }
+	]
+	
     return (
-        <div className={classes.root}>
-          <AppBar position="static" style={{backgroundColor:"black",color:"white"}}>
+        <AppBar position="static" className='navbar'>
             <Toolbar>
-              <IconButton edge="start" className={classes.menuButton} style={{backgroundColor:"black", color:"white"}} aria-label="menu">
-                <MenuIcon />
-              </IconButton>
-            <Link href="/">
-              <IconButton edge="start" className={classes.logoButton} >
-                    <img className={classes.logo} src="images/mlab/mlab_logo_icon.png"/>
-              </IconButton>
-            </Link>
+              	<IconButton onClick={() => { setDrawerOpen(true) }} edge="start" className='menuButton' >
+                	<MenuIcon />
+              	</IconButton>
+				<Link href="/">
+					<IconButton disableFocusRipple edge="start" className='logoButton'>
+						<img className='logo' src="images/mlab/mlab_logo_icon.png"/>
+					</IconButton>
+				</Link>
         
-            <Link href="/events"><Button className={classes.toolbarButtons}>Events</Button></Link>
-            <Link href="/members"><Button className={classes.toolbarButtons}>Members</Button></Link>
-            <Link href="/projects"><Button className={classes.toolbarButtons}>Projects</Button></Link>
-            <Link href="/hashcode"><Button className={classes.toolbarButtons}>Hashcode</Button></Link>
+				{navs.map((nav) => (
+					<Link href={nav.route}>
+						<Button disableRipple disableFocusRipple className={`navButton${active == nav.title ? ' active' : ''}`}>
+							{nav.title}
+						</Button>
+					</Link>
+				))}				
 
             </Toolbar>
-          </AppBar>
-        </div>
-      );
+			<SwipeableDrawer
+      			anchor={'left'}
+      			open={ drawerOpen }
+      			onClose={ () => { setDrawerOpen(false) } }
+				onOpen={ () => { setDrawerOpen(true) } }				
+    		>
+				<List className='navDrawer'>
+					<ListItem button className='drawerMenu' style={{borderBottom: '1px solid grey'}}>
+						<img className='logo' src="images/mlab/mlab_logo.png" style={{width: 250}}/>
+					</ListItem>
+					{navs.map((nav) => (
+						<Link href={nav.route}>
+							<ListItem button key={nav.title} className='drawerMenu'>
+								<ListItemText className={`drawerNavText${active == nav.title ? ' active' : ''}`} primary={nav.title} />
+							</ListItem>
+						</Link>
+					))}
+				</List>      			
+    		</SwipeableDrawer>
+        </AppBar>
+    );
 }
 
 export default NavBar;

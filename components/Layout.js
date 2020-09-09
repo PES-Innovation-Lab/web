@@ -1,7 +1,6 @@
-// components/Layout.js
-
 import Header from "./Header";
 import NavBar from "./NavBar";
+import Head from 'next/head';
 
 const layoutStyle = {
     display: "flex",
@@ -16,13 +15,15 @@ const contentStyle = {
     flexDirection: "column"
 };
 
-const Layout = props => (
-    <div className="Layout" style={layoutStyle}>
-        <Header />
+const Layout = (props) => (
+    <div style={layoutStyle}>
+        <Head>
+            <title>{props.title}</title>
+        </Head>
+        <NavBar active={props.active}/>
         <div className="content" style={contentStyle}>
             {props.children}
         </div>
-        <NavBar />
     </div>
 );
 

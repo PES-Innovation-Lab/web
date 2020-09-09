@@ -1,8 +1,10 @@
 // pages/members.js
-import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 
 const Members = () => (
-    <NavBar />
+    <Layout title={'PESIL | Members'} active={'Members'}>
+        Members
+    </Layout>
 );
 
 export default Members;

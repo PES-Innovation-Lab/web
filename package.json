@@ -23,7 +23,6 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
-    "materialize-css": "^1.0.0-rc.2",
     "next": "^9.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

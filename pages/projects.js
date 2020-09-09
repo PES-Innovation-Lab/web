@@ -1,8 +1,10 @@
 // pages/projects.js
-import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 
 const Projects = () => (
-    <NavBar />
+    <Layout title={'PESIL | Projects'} active={'Projects'}>
+        Projects
+    </Layout>
 );
 
 export default Projects;

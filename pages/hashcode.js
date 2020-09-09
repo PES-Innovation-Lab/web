@@ -1,8 +1,10 @@
 // pages/hashcode.js
-import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 
 const HashCode = () => (
-    <NavBar />
+    <Layout title={'PESIL | Hashcode'} active={'Hashcode'}>
+        Hashcode
+    </Layout>
 );
 
 export default HashCode;
