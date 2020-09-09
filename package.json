@@ -1,0 +1,31 @@
+{
+  "name": "web2",
+  "version": "1.0.0",
+  "description": "<img src=\"images/mlab/mlab_logo_black.png\" alt=\"logo\" width=\"100px\" height=\"90px\"><br/>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarkAEther/web.git"
+  },
+  "keywords": [],
+  "author": "DarkAEther",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarkAEther/web/issues"
+  },
+  "homepage": "https://github.com/DarkAEther/web#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
