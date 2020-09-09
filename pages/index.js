@@ -1,5 +1,5 @@
 // pages/index.js
-import NavBar from "../components/NavBar";
+import Layout from '../components/Layout';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -17,14 +17,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 class Index extends React.Component{
-    componentDidMount(){
-        document.body.style.backgroundImage="/images/mlab/prism.png";
-        document.body.style.backgroundRepeat="repeat";
-    }
     render(){
-        return(
-            <>
-            <NavBar />
+        return (            
+        <Layout title={'PES Innovation Lab'}>
             <div>
                 <p className={useStyles.main_title}>PES Innovation Lab</p>
             </div>
@@ -32,7 +27,7 @@ class Index extends React.Component{
                 We are a student community dedicated to cultivating the spirit of research and innovation in budding
                 engineers.
             </blockquote>
-            </>
+        </Layout>
         );
     }
 }

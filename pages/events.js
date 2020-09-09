@@ -1,8 +1,10 @@
 // pages/events.js
-import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 
 const Events = () => (
-    <NavBar />
+    <Layout title={'PESIL | Events'} active={'Events'}>
+        Events
+    </Layout>
 );
 
 export default Events;
