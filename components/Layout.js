@@ -1,4 +1,4 @@
-import Header from "./Header";
+import Footer from "./Footer";
 import NavBar from "./NavBar";
 import Head from 'next/head';
 
@@ -24,6 +24,7 @@ const Layout = (props) => (
         <div className="content" style={contentStyle}>
             {props.children}
         </div>
+        <Footer/>
     </div>
 );
 
