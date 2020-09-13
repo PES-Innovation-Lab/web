@@ -20,7 +20,7 @@ const Layout = (props) => (
         <Head>
             <title>{props.title}</title>
         </Head>
-        <NavBar active={props.active}/>
+        <NavBar active={props.active} search={props.search} searchSettings={props.searchSettings} />
         <div className="content" style={contentStyle}>
             {props.children}
         </div>

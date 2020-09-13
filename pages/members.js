@@ -10,7 +10,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 function Members({ members }) {
     return (
-    <Layout title={'PIL | Members'} active={'Members'}>
+    <Layout title={'PIL | Members'} active={'Members'} search={true} searchSettings={{ targetClass: 'memberCardContainer', default: 'block'}}>
         <Typography className={'pageHeader'}>
             Members
         </Typography>
@@ -22,7 +22,7 @@ function Members({ members }) {
                     </Typography>
                     <Grid container spacing={3}>
                         {item.data.members.map((member)=> //each member is one member
-                            <Grid item sm={3}>
+                            <Grid item sm={3} className='memberCardContainer'>
                                 <Card className={'memberCard'}>
                                     <CardActionArea>
                                         <CardMedia

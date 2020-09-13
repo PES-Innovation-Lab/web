@@ -26,6 +26,7 @@ body {
     color: #8bc34a;
     font-family: 'Red Hat Display', sans-serif !important;
     font-size: 2rem !important;
+    margin-bottom: 20px !important;
 }
 
 @import "../node_modules/react-alice-carousel/lib/alice-carousel.css";
