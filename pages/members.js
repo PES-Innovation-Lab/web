@@ -47,7 +47,7 @@ function Members({ members }) {
                                                 </a>
                                             </Grid>
                                             <Grid item xs={4} style={{textAlign: 'center'}}>
-                                                <a href={`mailto:${member.mail}`}>
+                                                <a href={`mailto:${member.email}`}>
                                                     <IconButton><EmailIcon className='memberCardSocialIcons'/></IconButton>
                                                 </a>
                                             </Grid>
