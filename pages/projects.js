@@ -6,16 +6,22 @@ import { Card, CardActionArea, CardContent,
          CardMedia, Dialog, AppBar, Toolbar, IconButton,
          Slide, Chip } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
+import ReactMarkdown from "react-markdown";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
 
-  
+const designStyles = makeStyles({
+    heading_style: {
+        fontSize : "2rem",
+    },
+});
+
 function Projects({ projects }) {
     const [open, setOpen] = React.useState(false);
-    const [selectedProject, setSelectedProject] = React.useState({});
-
+    const [selectedProject, setSelectedProject] = React.useState({"keywords":[],"interns":[], "mentors":[]});
+    const designstyles = designStyles();
     const viewProject = (project) => {
         setSelectedProject(project);
         setOpen(true);
@@ -47,7 +53,7 @@ function Projects({ projects }) {
                                                     {project.title}
                                                 </Typography>
                                                 <Typography className='projectCardDescription'>
-                                                    {project.description}
+                                                    {project.short_description}
                                                 </Typography>
                                                 {project.keywords.map((item) => 
                                                     <Chip
@@ -75,7 +81,54 @@ function Projects({ projects }) {
                         <CloseIcon style={{float: 'right', color: '#8bc34a'}}/>
                     </IconButton>
                 </Toolbar>
-                </AppBar>   
+                </AppBar>
+                <Grid style={{marginTop:"4em", marginLeft:"1em", width:"90%"}} container spacing={5}>
+                    <Grid item xs={8}>
+                        <ReactMarkdown source={selectedProject.long_description}>
+                        </ReactMarkdown>
+                        <Typography className={designstyles.heading_style}>
+                            Domains:
+                        </Typography>
+                        {
+                            selectedProject.keywords.map((keyword)=>
+                                <Chip
+                                    label={keyword}
+                                    className="projectKeywordChip"
+                                >
+                                </Chip>
+                            )
+                        }
+                        <Typography className={designstyles.heading_style} style={{marginTop:"1em"}}>
+                            Interns:
+                        </Typography>
+                        {
+                            selectedProject.interns.map((intern)=>
+                                <Chip
+                                    label={intern}
+                                    color="primary"
+                                    style={{fontSize:"1rem", marginRight:"0.5em"}}
+                                >
+                                </Chip>
+                            )
+                        }
+                        <Typography className={designstyles.heading_style} style={{marginTop:"1em"}}>
+                            Mentors:
+                        </Typography>
+                        {
+                            selectedProject.mentors.map((mentor)=>
+                                <Chip
+                                    label={mentor}
+                                    color="secondary"
+                                    style={{fontSize:"1rem", marginRight:"0.5em"}}
+                                >
+                                </Chip>
+                            )
+                        }
+                    </Grid>
+                    <Grid item xs={4}>
+                        <img style={{width:"95%"}} src={selectedProject.poster_url || '/images/mlab/no_project_image.png'}></img>
+                    </Grid>
+                </Grid>
             </Dialog>
         </Layout>
     );
@@ -88,6 +141,8 @@ export async function getServerSideProps(context){
     for (let key in output){
         for (let chipKey in output[key].projects){
             output[key].projects[chipKey].keywords = output[key].projects[chipKey].keywords.split(",");
+            output[key].projects[chipKey].interns = output[key].projects[chipKey].interns.split(",");
+            output[key].projects[chipKey].mentors = output[key].projects[chipKey].mentors.split(",");
         }
         projects.push({key:key,data:output[key]});
     }
