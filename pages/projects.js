@@ -28,7 +28,7 @@ function Projects({ projects }) {
     }
 
     return(
-        <Layout title={'PIL | Projects'} active={'Projects'}>
+        <Layout title={'PIL | Projects'} active={'Projects'} search={true} searchSettings={{targetClass: 'projectCardContainer', default: 'block'}}>
             <Typography className='pageHeader'>
                 Projects
             </Typography>
@@ -40,7 +40,7 @@ function Projects({ projects }) {
                         </Typography>
                         <Grid container spacing={3}>
                             {item.data.projects.map((project)=> //each project is one project
-                                <Grid item sm={4}>
+                                <Grid item sm={4} className='projectCardContainer'>
                                     <Card className='projectCard' onClick={() => {viewProject(project)}}>
                                         <CardActionArea>
                                             <CardMedia
