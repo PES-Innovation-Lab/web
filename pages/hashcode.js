@@ -33,26 +33,17 @@ const designstyles = makeStyles({
         textAlign: "left",
     },
     event_body_style: {
-        fontSize : "1rem",
+        fontSize : "1.5rem",
         fontFamily: "Red Hat Display, sans-serif",
         color: "white",
         textAlign: "left",
         marginTop: "1em",
+        marginBottom: "1em",
     },
 });
 
 function HashCode(){
     const styles = designstyles();
-    var hashCode2019Pictures = [
-        {
-            name: "Random Name #1",
-            description: "Probably the most random thing you have ever seen!"
-        },
-        {
-            name: "Random Name #2",
-            description: "Hello World!"
-        }
-    ];
 
     return (
         <Layout title={'PIL | Hashcode'} active={'Hashcode'}>
@@ -85,9 +76,15 @@ function HashCode(){
                         <Grid item xs={8}>
                             <Typography className={styles.event_body_style}>
                                 Event Link: https://hashcode.hackerearth.com
-                                Sponsors:
                             </Typography>
-                            <img style={{width:"90%"}} src="/images/events/hashcode/technical.jpg"/>
+                            <AliceCarousel autoPlay autoPlayInterval="3000" buttonsDisabled>
+                                    <img  src="/images/events/hashcode/2019/hashcode2019_1.jpg" className={"sliderimg"}/>
+                                    <img  src="/images/events/hashcode/2019/hashcode2019_2.jpg" className={"sliderimg"}/>
+                                    <img  src="/images/events/hashcode/2019/hashcode2019_3.jpg" className={"sliderimg"}/>
+                                    <img  src="/images/events/hashcode/2019/hashcode2019_4.jpg" className={"sliderimg"}/>
+                                    <img  src="/images/events/hashcode/2019/hashcode2019_5.jpg" className={"sliderimg"}/>
+                                    <img  src="/images/events/hashcode/2019/hashcode2019_6.jpg" className={"sliderimg"}/>
+                            </AliceCarousel>
                         </Grid>
                         <Grid item xs={4}>
                             <img style={{width:"95%"}} src="/images/events/hashcode/HashCode2019.jpg"/>
