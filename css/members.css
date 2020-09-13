@@ -1,0 +1,20 @@
+.memberCard {
+    max-width: 345px;
+    background-color: black !important;
+}
+
+.memberCardImage {
+    height: 180px;
+}
+
+.memberCardTitle {
+    color: white;
+}
+
+.memberCardDescription {
+    color: white;
+}
+
+.memberCardSocialIcons {
+    color: #7cb342;
+}

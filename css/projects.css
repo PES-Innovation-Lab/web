@@ -1,0 +1,35 @@
+.projectCard {
+    max-width: 345px;
+    background-color: black !important;
+}
+
+.projectCardTitle {
+    color: white;
+}
+
+.projectCardDescription {
+    color: white;
+}
+
+.projectCardImage {
+    min-height: 500px;
+    max-height: 500px;
+}
+
+.projectDialogAppBar {
+    position: 'relative';
+    background-color: black !important;
+}
+
+.projectDialogTitle {
+    flex: 1;
+    margin-left: 24px;
+    color: #8bc34a;
+}
+
+.projectKeywordChip {
+    margin: 6px 3px;
+    background-color: #7cb342 !important;
+    color: black !important;
+    font-size: 15px !important;
+}
