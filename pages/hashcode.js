@@ -2,7 +2,7 @@
 import Layout from "../components/Layout";
 
 const HashCode = () => (
-    <Layout title={'PESIL | Hashcode'} active={'Hashcode'}>
+    <Layout title={'PIL | Hashcode'} active={'Hashcode'}>
         Hashcode
     </Layout>
 );
