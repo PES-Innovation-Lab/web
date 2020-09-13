@@ -80,7 +80,8 @@ function NavBar({ active, search, searchSettings }) {
 		{ title: 'Events', route: '/events' },
 		{ title: 'Members', route: '/members' },
 		{ title: 'Projects', route: '/projects' },
-		{ title: 'Hashcode', route: '/hashcode' }
+		{ title: 'Hashcode', route: '/hashcode' },
+		{ title: 'About Us', route: '/about_us'},
 	]
 	
     return (
