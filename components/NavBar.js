@@ -77,11 +77,13 @@ function NavBar({ active, search, searchSettings }) {
 	const classes = useStyles();
 
 	const navs = [
+		{ title: 'Home', route:"/"},
 		{ title: 'Events', route: '/events' },
 		{ title: 'Members', route: '/members' },
 		{ title: 'Projects', route: '/projects' },
+		{ title: 'Publications', route: '/publications'},
 		{ title: 'Hashcode', route: '/hashcode' },
-		{ title: 'About Us', route: '/about_us'},
+		{ title: 'Our History', route: '/about_us'},
 	]
 	
     return (
