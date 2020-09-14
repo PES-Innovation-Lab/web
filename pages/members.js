@@ -76,7 +76,7 @@ export async function getServerSideProps(context){
     for (let key in output){
         members.push({key:key,data:output[key]});
     }
-    console.log(members);
+    members.reverse();
     return {props:{members}};
 }
 

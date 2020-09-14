@@ -149,6 +149,7 @@ export async function getServerSideProps(context){
         }
         projects.push({key:key,data:output[key]});
     }
+    projects.reverse();
     return {props:{projects}};
 }
 
