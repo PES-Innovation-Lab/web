@@ -1,6 +1,6 @@
-import Header from "./Header";
 import NavBar from "./NavBar";
 import Head from 'next/head';
+import Footer from "./Footer";
 
 const layoutStyle = {
     display: "flex",
@@ -24,6 +24,7 @@ const Layout = (props) => (
         <div className="content" style={contentStyle}>
             {props.children}
         </div>
+        <Footer/>
     </div>
 );
 
