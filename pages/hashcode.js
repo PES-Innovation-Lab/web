@@ -89,6 +89,8 @@ function HashCode(){
                                     <img  src="/images/events/hashcode/2019/hashcode2019_4.jpg" className={"sliderimg"}/>
                                     <img  src="/images/events/hashcode/2019/hashcode2019_5.jpg" className={"sliderimg"}/>
                                     <img  src="/images/events/hashcode/2019/hashcode2019_6.jpg" className={"sliderimg"}/>
+                                    <img  src="/images/events/hashcode/2019/hashcode2019_7.jpg" className={"sliderimg"}/>
+                                    <img  src="/images/events/hashcode/2019/hashcode2019_8.jpg" className={"sliderimg"}/>
                             </AliceCarousel>
                         </Grid>
                         <Grid item xs={4}>
