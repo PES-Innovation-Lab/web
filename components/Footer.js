@@ -14,8 +14,9 @@ const headerStyle = {
 };
 
 const contentTitleStyle ={
-    color: "green",
+    color: "#8bc34a",
     fontSize: "1.5rem",
+    textAlign: "center",
 };
 
 const contentBodyStyle ={
@@ -30,8 +31,8 @@ const Footer = () => (
         <Container maxWidth="md" style={{marginTop:"2em"}}>
             <Grid container spacing={2}>
                 <Grid item xs={4}>
-                    <Link href="/">
-                        <IconButton disableFocusRipple edge="start" className='logoButton'>
+                    <Link href="/" >
+                        <IconButton disableFocusRipple edge="start" className='logoButton' >
                             <img width="80%" src="images/mlab/mlab_logo.png"/>
                         </IconButton>
                     </Link>
@@ -41,7 +42,7 @@ const Footer = () => (
                 </Grid>
                 <Grid item xs={4}>
                     <Typography style={contentTitleStyle}>
-                        Address:
+                        Address
                     </Typography>
                     <Typography style={contentBodyStyle}>
                         PES University, RR Campus
@@ -53,7 +54,7 @@ const Footer = () => (
                 </Grid>
                 <Grid item xs={4}>
                     <Typography style={contentTitleStyle}>
-                        Connect:
+                        Connect
                     </Typography>
                     <Typography style={contentBodyStyle}>
                         pes.mlab@gmail.com

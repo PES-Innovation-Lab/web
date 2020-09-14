@@ -22,6 +22,11 @@ const useStyles = makeStyles((theme) => ({
     secondaryTail: {
       backgroundColor: theme.palette.secondary.main,
     },
+    date:{
+        margin: '5px',
+        color: "white",
+        fontSize: "1rem",
+    },
     content:{
         margin: '5px',
     }
@@ -30,9 +35,9 @@ const useStyles = makeStyles((theme) => ({
 function AboutUs({ timeline }) {
     const classes = useStyles();
     return (
-    <Layout title={'PIL | About Us'} active={'About Us'}>
+    <Layout title={'PIL | History'} active={'Our History'}>
         <Typography className={'pageHeader'}>
-            About Us
+            Our History
         </Typography>
         <Container>
             
@@ -43,7 +48,7 @@ function AboutUs({ timeline }) {
                     timeline.map((event) => 
                         <TimelineItem>
                             <TimelineOppositeContent>
-                                <Typography variant="body2" color="textSecondary" className={classes.content}>
+                                <Typography variant="body2" className={classes.date}>
                                     {event.year}
                                 </Typography>
                             </TimelineOppositeContent>

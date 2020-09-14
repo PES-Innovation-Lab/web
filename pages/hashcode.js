@@ -8,7 +8,7 @@ const designstyles = makeStyles({
     title_style: {
         fontSize : "4rem",
         fontFamily: "Changa, sans-serif",
-        color: "green",
+        color: "#8bc34a",
         textAlign: "center",
         marginTop: "0.5em",
     },
@@ -22,7 +22,7 @@ const designstyles = makeStyles({
     event_title_style: {
         fontSize : "2.5rem",
         fontFamily: "Changa, sans-serif",
-        color: "green",
+        color: "#8bc34a",
         textAlign: "left",
         marginTop: "1em",
     },
@@ -47,15 +47,17 @@ function HashCode(){
 
     return (
         <Layout title={'PIL | Hashcode'} active={'Hashcode'}>
-            <Typography className={styles.title_style}>
-                HashCode
-            </Typography>
-            <Typography className={styles.subtitle_style}>
-                 Hungry to Innovate? Grab a Byte.
-            </Typography>
-            <Typography className={styles.subtitle_style} style={{color:"green"}}>
-                HashCode is the annual 24-hour hackathon organised by the Lab, with students proposing interesting ideas and presenting projects from several domains. The hackathon also provides a learning platform to participating teams, with mentors and members of academia assisting them. Esteemed personalities from different industrial backgrounds come to judge the show, evaluating projects from all possible angles. HashCode 2019 would be the 8th edition of the annual hackathon. The winners bag cash prizes totalling up to Rs. one lakh.
-            </Typography>
+            <Container maxWidth="lg">
+                <Typography className={styles.title_style}>
+                    HashCode
+                </Typography>
+                <Typography className={styles.subtitle_style}>
+                    Hungry to Innovate? Grab a Byte.
+                </Typography>
+                <Typography className={styles.subtitle_style} style={{color:"white"}}>
+                    HashCode is the annual 24-hour hackathon organised by the Lab, with students proposing interesting ideas and presenting projects from several domains. The hackathon also provides a learning platform to participating teams, with mentors and members of academia assisting them. Esteemed personalities from different industrial backgrounds come to judge the show, evaluating projects from all possible angles. HashCode 2019 would be the 8th edition of the annual hackathon. The winners bag cash prizes totalling up to Rs. one lakh.
+                </Typography>
+            </Container>
             <Container maxWidth="lg">
                 <Container>
                     <Typography className={styles.event_title_style}>
@@ -63,6 +65,9 @@ function HashCode(){
                     </Typography>
                     <Typography className={styles.event_sponsor_style}>
                         Sponsored by: RedHat
+                    </Typography>
+                    <Typography className={styles.event_sponsor_style}>
+                        More information coming soon!
                     </Typography>
                 </Container>
                 <Container>
@@ -75,7 +80,7 @@ function HashCode(){
                     <Grid container spacing={3}>
                         <Grid item xs={8}>
                             <Typography className={styles.event_body_style}>
-                                Event Link: https://hashcode.hackerearth.com
+                                Event Link: <a href="https://hashcode.hackerearth.com" style={{color:"#8bc34a"}}>https://hashcode.hackerearth.com</a>
                             </Typography>
                             <AliceCarousel autoPlay autoPlayInterval="3000" buttonsDisabled>
                                     <img  src="/images/events/hashcode/2019/hashcode2019_1.jpg" className={"sliderimg"}/>

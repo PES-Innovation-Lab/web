@@ -17,13 +17,13 @@ const main_title_style = {
     fontFamily:'Poppins, sans-serif',
     textAlign: "center",
     fontSize: "3.5rem",
-    color: '#7cb342',
+    color: '#8bc34a',
 }
 const former_style = {
     fontFamily:'Poppins, sans-serif',
     textAlign: "center",
     fontSize: "2rem",
-    color: '#7cb342',
+    color: '#8bc34a',
 }
 const main_content_style = {
     fontFamily:'Red Hat Display, sans-serif',
@@ -35,13 +35,13 @@ const main_content_style = {
 const body_content_style ={
     fontSize: '1.25rem',
     textAlign: "left",
-    color: '#74a342',
+    color: '#8bc34a',
 }
 
 const body_heading_style={
     fontSize: '3rem',
     textAlign: "center",
-    color: '#2e7d32',
+    color: '#8bc34a',
     textAlign:"center",
 }
 
@@ -86,7 +86,7 @@ const cover={
 
 function Index({stats}){
         return (
-            <Layout title={'PES Innovation Lab'}>
+            <Layout title={'PES Innovation Lab'} active={'Home'}>
                 <div>
                     <p style={main_title_style}>PES Innovation Lab</p>
                     <p style={former_style} >(formerly known as Microsoft Innovation Lab)</p>

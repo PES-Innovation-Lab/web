@@ -32,6 +32,9 @@ function Projects({ projects }) {
             <Typography className='pageHeader'>
                 Projects
             </Typography>
+            <Typography style={{color: "white", fontSize:"2rem", textAlign:"center"}}>
+                Click on a project to learn more
+            </Typography>
             <Container>
                 {projects.map((item) => //each item is the data for one year
                     <Container>

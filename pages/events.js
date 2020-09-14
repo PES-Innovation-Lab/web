@@ -7,7 +7,7 @@ const useStyles = makeStyles({
     typography_heading: {
       fontSize : "3rem",
       fontFamily: "Changa, sans-serif",
-      color: "green",
+      color: "#8bc34a",
       textAlign: "center",
       marginTop: "1em",
     },
