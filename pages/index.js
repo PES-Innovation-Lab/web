@@ -12,6 +12,12 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Box from '@material-ui/core/Box';
 import { Component } from 'react';
 import fetch from 'isomorphic-unfetch';
+import Dialog from '@material-ui/core/Dialog';
+import MuiDialogTitle from '@material-ui/core/DialogTitle';
+import MuiDialogContent from '@material-ui/core/DialogContent';
+import MuiDialogActions from '@material-ui/core/DialogActions';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
 
 const main_title_style = {
     fontFamily:'Poppins, sans-serif',
@@ -75,15 +81,30 @@ const details= {
       flexDirection: 'column',
 }
 
-const content={
-      flex: '1 0 auto',
-}
-    
-const cover={
-      width: 200,
-      height: 200,
-}
 
+const prof_data = [
+    {
+        "name":"Prof. Rajasekar M",
+        "designation":"Associate Professor",
+        "org":"PES University",
+        "description":"Prof. M Rajasekar is an Associate Professor in the department of Electronics and Communication Engineering at PES University. He is an alumnus of IIT Madras (Computer Science and Engineering). He brings with him over two decades of rich and varied experience ranging from combatant in Indian Air Force to Systems Engineer and Project Manager in the IT Industry. He manages the PES Innovation Lab at the PES University. He has been actively involved in various projects undertaken at PES Innovation Lab. His research interests include wireless communications, embedded systems and healthcare systems. He handholds student projects in several domains viz. Robotics, IoT, Machine Learning, Sensor Networks and Virtual Reality. Recently, he presented his project works in the International Conferences (TENCON) held in Singapore, Malaysia and Jeju,South Korea. He is an astute listener and motivator.",
+        "image":"/images/mlab/Rajasekar_profile.jpg",
+    },
+    {
+        "name":"Dr. Venkatarangan MJ",
+        "designation":"Professor",
+        "org":"PES University",
+        "description":"After leaving Philips in 2015 to follow his passion towards teaching and research, Dr. Venkatarangan joined PES University as the Associate Professor in EEE to focus on Embedded Systems stream. Prior to joining PES University, he spent 20 years in Tektronix, Siemens, HCL Technologies and Philips working in India and abroad serving in roles right from Software Engineer to System Architect. As System Architect he was on technical lead for projects across sites and also supported cross functions like program or purchase management, quality and product strategy for platform evaluation, supplier evaluation and product road-mapping. A significant achievement has been to lead as Architect for first Digital TV for US market and also to develop MP3 Audio products adhering to Microsoft PlaysForSure specifications. Rangan is an alumnus of Chinese University of Hong Kong where he completed is PhD and holds M.Tech and B.E from Mysore University. He current teaches Microcontroller and Applications, Signals and Systems, 'C' Programming and Intoduction to Robotics. His research interests include embedded systems, IoT, Robotics, Automation and Sensor networks.He supports the PES Innovation Lab activities and summer internship projects in domains of embedded systems, IoT Robotics and Automation.",
+        "image":"/images/mlab/Venkatarangan_profile.jpg",
+    },
+    {
+        "name":"Dr. A Srinivas",
+        "designation":"Founder",
+        "org":"PES Innovation Lab",
+        "description":"Dr. A Srinivas is the faculty founder of PES Innovation Lab (formerly known as Microsoft Innovation Lab). He is presently the Dean, School of Engineering in Dayananda Sagar University. He has worked for 10 years in Companies/Research Organizations Such as Tata Consulting Engineers, Centre for AI & amp; Robotics (DRDO), Philips Software Centre and Nortel Networks (Sydney,Australia). Academic experience of 19 yrs with KREC, Surathkal, Amrita University, PES University and Monash University (Melbourne, Australia). His Areas of Research Interest: Wireless Networks, Healthcare Informatics. He is extremely passionate about promoting Undergraduate Research.",
+        "image":"/images/mlab/Srinivas_profile.jpg",
+    }
+]
 function Index({stats}){
         return (
             <Layout title={'PES Innovation Lab'} active={'Home'}>
@@ -129,69 +150,35 @@ function Index({stats}){
                         
                     </Grid>
                 </Container>
-                <Container>
+                <Container style={{textAlign:"center", alignItems:"center"}} maxWidth="md">
                     <p id="about_title" style={body_heading_style}>
                             PROFESSORS</p>
-                    <Grid container direction="column" alignItems="center" spacing={3}>
-                        <Grid item>
-                            <Card style={root_style}>
-                                <div style={details}>
-                                    <CardContent style={content}>
-                                        <Typography component="h5" variant="h5">
-                                            Prof. Rajasekar M
-                                        </Typography>
-                                        <Typography variant="subtitle1" color="textSecondary">
-                                            Faculty Head of PES Innovation Lab
-                                        </Typography>
-                                    </CardContent>
-                                </div>
-                                <CardMedia
-                                    style={cover}
-                                    image="/images/mlab/Rajasekar_profile.jpg"
-                                    title="Faculty Head of PES Innovation Lab"
-                                />
-                            </Card>
+                        <Grid container spacing={2}>
+                        {
+                            prof_data.map((prof)=>
+                                <Grid item xs={4}>
+                                    <Card className="profCard">
+                                        <CardMedia
+                                            className="profCardImage"
+                                            image={prof.image}
+                                            title={prof.designation}
+                                        />
+                                        <div style={details}>
+                                            <CardContent>
+                                                <Typography component="h5" variant="h5"  className={"profCardDescription"}>
+                                                    {prof.name}
+                                                </Typography>
+                                                <Typography className={"profCardDescription"}>
+                                                    {prof.designation}
+                                                </Typography>
+                                            </CardContent>
+                                        </div>
+                                        
+                                    </Card>
+                                </Grid>
+                            )
+                        }
                         </Grid>
-                        <Grid item>
-                            <Card style={root_style}>
-                                    <div style={details}>
-                                        <CardContent style={content}>
-                                            <Typography component="h5" variant="h5">
-                                                Dr. Venkatarangan M
-                                            </Typography>
-                                            <Typography variant="subtitle1" color="textSecondary">
-                                                Faculty Head of PES Innovation Lab
-                                            </Typography>
-                                        </CardContent>
-                                    </div>
-                                    <CardMedia
-                                        style={cover}
-                                        image="/images/mlab/Venkatarangan_profile.jpg"
-                                        title="Faculty Head of PES Innovation Lab"
-            
-                                    />
-                            </Card>
-                        </Grid>
-                        <Grid item>
-                            <Card style={root_style}>
-                                <div style={details}>
-                                    <CardContent style={content}>
-                                        <Typography component="h5" variant="h5">
-                                            Dr. A. Srinivas
-                                        </Typography>
-                                        <Typography variant="subtitle1" color="textSecondary">
-                                            Founder of PES Innovation Lab
-                                        </Typography>
-                                    </CardContent>
-                                </div>
-                                <CardMedia
-                                    style={cover}
-                                    image="/images/mlab/Srinivas_profile.jpg"
-                                    title="Founder of PES Innovation Lab"
-                                />
-                            </Card>
-                        </Grid>
-                    </Grid>
                 </Container>
             </Layout>
         );

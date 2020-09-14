@@ -29,4 +29,21 @@ body {
     margin-bottom: 20px !important;
 }
 
+.profCard {
+    max-width: 250px;
+    background-color: black !important;
+}
+
+.profCardImage {
+    height: 200px;
+}
+
+.profCardTitle {
+    color: white;
+}
+
+.profCardDescription {
+    color: white;
+}
+
 @import "../node_modules/react-alice-carousel/lib/alice-carousel.css";
