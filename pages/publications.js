@@ -2,7 +2,6 @@
 
 import Layout from "../components/Layout";
 import fetch from 'isomorphic-unfetch';
-import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Collapse from '@material-ui/core/Collapse';
@@ -90,26 +89,26 @@ function Row(props) {
 function Publications({ publications }) {
     return (
     <Layout title={'PIL | Publications'} active={'Publications'}>
-        <Typography className={'pageHeader'}>
+        <Typography className='pageHeader'>
             Publications
         </Typography>
         <Container>
-            <TableContainer component={Paper}>
-            <Table aria-label="collapsible table">
-                <TableHead>
-                <TableRow>
-                    <TableCell />
-                    <TableCell><strong>Title</strong></TableCell>
-                    <TableCell align="center"><strong>Year</strong></TableCell>
-                    <TableCell align="center"><strong>Conference</strong></TableCell>
-                </TableRow>
-                </TableHead>
-                <TableBody>
-                {publications.map((pub) => (
-                    <Row key={pub.title} row={pub} />
-                ))}
-                </TableBody>
-            </Table>
+            <TableContainer component={Paper} style={{marginBottom: 50, marginTop: 50}}>
+                <Table aria-label="collapsible table">
+                    <TableHead>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell><strong>Title</strong></TableCell>
+                            <TableCell align="center"><strong>Year</strong></TableCell>
+                            <TableCell align="center"><strong>Conference</strong></TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        {publications.map((pub) => (
+                            <Row key={pub.title} row={pub} />
+                        ))}
+                    </TableBody>
+                </Table>
             </TableContainer>
         </Container>
     </Layout>
