@@ -1,7 +1,6 @@
 // pages/about_us.js
 
 import Layout from "../components/Layout";
-import fetch from 'isomorphic-unfetch';
 import { makeStyles } from '@material-ui/core/styles';
 import Timeline from '@material-ui/lab/Timeline';
 import TimelineItem from '@material-ui/lab/TimelineItem';
@@ -14,6 +13,7 @@ import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { Container } from "@material-ui/core";
+import {useEffect, useState} from 'react';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -32,7 +32,18 @@ const useStyles = makeStyles((theme) => ({
     }
   }));
 
-function AboutUs({ timeline }) {
+function AboutUs() {
+    const [data, setData] = useState({ "timeline" :[]});
+        
+    useEffect(() => {
+        const fetchData = async() =>{
+            const result = await fetch("http://pil-api.herokuapp.com/about");
+            const timeline = await result.json();
+            setData({"timeline": timeline});
+        }
+        fetchData();
+    }, []);
+
     const classes = useStyles();
     return (
     <Layout title={'PIL | History'} active={'Our History'}>
@@ -45,7 +56,7 @@ function AboutUs({ timeline }) {
         <Container>
             <Timeline align="alternate">
                 {
-                    timeline.map((event) => 
+                    data.timeline.map((event) => 
                         <TimelineItem>
                             <TimelineOppositeContent>
                                 <Typography variant="body2" className={classes.date}>
@@ -75,10 +86,10 @@ function AboutUs({ timeline }) {
     );
 }
 
-export async function getServerSideProps(context){
-    const res = await fetch("https://pil-api.herokuapp.com/about");
-    const timeline = await res.json();
-    return {props:{timeline}};
-}
+// export async function getServerSideProps(context){
+//     const res = await fetch("https://pil-api.herokuapp.com/about");
+//     const timeline = await res.json();
+//     return {props:{timeline}};
+// }
 
 export default AboutUs;

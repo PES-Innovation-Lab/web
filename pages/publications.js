@@ -1,7 +1,6 @@
 // pages/publications.js
 
 import Layout from "../components/Layout";
-import fetch from 'isomorphic-unfetch';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Collapse from '@material-ui/core/Collapse';
@@ -17,6 +16,7 @@ import Paper from '@material-ui/core/Paper';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import { Chip, Container } from "@material-ui/core";
+import {useEffect, useState} from 'react';
 
 const useRowStyles = makeStyles({
     root: {
@@ -38,7 +38,7 @@ function Row(props) {
     const { row } = props;
     const [open, setOpen] = React.useState(false);
     const classes = useRowStyles();
-
+    
     return (
         <React.Fragment>
         <TableRow className={classes.root}>
@@ -86,7 +86,21 @@ function Row(props) {
     );
 }
 
-function Publications({ publications }) {
+function Publications() {
+    const [data, setData] = useState({ "publications" :[]});
+        
+    useEffect(() => {
+        const fetchData = async() =>{
+            const result = await fetch("http://pil-api.herokuapp.com/publications");
+            let publications = await result.json();
+            for (let key in publications){
+                publications[key].authors = publications[key].authors.split(",");
+            }
+            setData({"publications": publications});
+        }
+        fetchData();
+    }, []);
+    
     return (
     <Layout title={'PIL | Publications'} active={'Publications'}>
         <Typography className='pageHeader'>
@@ -104,7 +118,7 @@ function Publications({ publications }) {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {publications.map((pub) => (
+                        {data.publications.map((pub) => (
                             <Row key={pub.title} row={pub} />
                         ))}
                     </TableBody>
@@ -115,13 +129,13 @@ function Publications({ publications }) {
     );
 }
 
-export async function getServerSideProps(context){
-    const res = await fetch("https://pil-api.herokuapp.com/publications");
-    const publications = await res.json();
-    for (let key in publications){
-        publications[key].authors = publications[key].authors.split(",");
-    }
-    return {props:{publications}};
-}
+// export async function getServerSideProps(context){
+//     const res = await fetch("https://pil-api.herokuapp.com/publications");
+//     const publications = await res.json();
+//     for (let key in publications){
+//         publications[key].authors = publications[key].authors.split(",");
+//     }
+//     return {props:{publications}};
+// }
 
 export default Publications;

@@ -1,21 +1,48 @@
 // pages/members.js
 import Layout from "../components/Layout";
-import fetch from 'isomorphic-unfetch';
 import { Card, CardActionArea, CardActions, 
          CardContent, CardMedia, Typography,
          Container, Grid, IconButton } from '@material-ui/core';
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import {useEffect, useState} from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
-function Members({ members }) {
+const designStyles = makeStyles({
+    spinner_text_style: {
+        textAlign:"center",
+        color:"#7cb342",
+    }
+});
+
+function Members() {
+    const [data, setData] = useState({ "members" :[]});
+    const [isDataLoaded, setDataLoaded] = useState(false);
+    const designstyles = designStyles();
+    useEffect(() => {
+        const fetchData = async() =>{
+            const result = await fetch("http://pil-api.herokuapp.com/members");
+            const output = await result.json();
+            let members = [];
+            for (let key in output){
+                members.push({key:key,data:output[key]});
+            }
+            members.reverse();
+            setData({"members": members});
+            setDataLoaded(true);
+        }
+        fetchData();
+    }, []);
+
     return (
     <Layout title={'PIL | Members'} active={'Members'} search={true} searchSettings={{ targetClass: 'memberCardContainer', default: 'block'}}>
         <Typography className='pageHeader'>
             Members
         </Typography>
         <Container>
-            {members.map((item) => //each item is the data for one year
+            { !isDataLoaded ? <div className={designstyles.spinner_text_style}><Typography style={{fontSize: "1.5rem"}}>Loading Data</Typography> <CircularProgress style={{"color":"#7cb342", marginTop: "1em"}} /></div> : data.members.map((item) => //each item is the data for one year
                 <Container>
                     <Typography className='pageSubHeader'>
                         {item.key}
@@ -69,15 +96,15 @@ function Members({ members }) {
     );
 }
 
-export async function getServerSideProps(context){
-    const res = await fetch("https://pil-api.herokuapp.com/members");
-    const output = await res.json();
-    let members = [];
-    for (let key in output){
-        members.push({key:key,data:output[key]});
-    }
-    members.reverse();
-    return {props:{members}};
-}
+// export async function getServerSideProps(context){
+//     const res = await fetch("https://pil-api.herokuapp.com/members");
+//     const output = await res.json();
+//     let members = [];
+//     for (let key in output){
+//         members.push({key:key,data:output[key]});
+//     }
+//     members.reverse();
+//     return {props:{members}};
+// }
 
 export default Members;

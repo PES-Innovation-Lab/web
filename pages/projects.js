@@ -7,6 +7,8 @@ import { Card, CardActionArea, CardContent,
          Slide, Chip } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
 import ReactMarkdown from "react-markdown";
+import {useEffect, useState} from 'react';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -16,9 +18,35 @@ const designStyles = makeStyles({
     heading_style: {
         fontSize : "2rem",
     },
+    spinner_text_style: {
+        textAlign:"center",
+        color:"#7cb342",
+    }
 });
 
-function Projects({ projects }) {
+function Projects() {
+    const [data, setData] = useState({ "projects" :[]});
+    const [isDataLoaded, setDataLoaded] = useState(false);
+    useEffect(() => {
+        const fetchData = async() =>{
+            const result = await fetch("http://pil-api.herokuapp.com/projects");
+            const output = await result.json();
+            let projects = [];
+            for (let key in output){
+                for (let chipKey in output[key].projects){
+                    output[key].projects[chipKey].keywords = output[key].projects[chipKey].keywords.split(",");
+                    output[key].projects[chipKey].interns = output[key].projects[chipKey].interns.split(",");
+                    output[key].projects[chipKey].mentors = output[key].projects[chipKey].mentors.split(",");
+                }
+                projects.push({key:key,data:output[key]});
+            }
+            projects.reverse();
+            setData({"projects": projects});
+            setDataLoaded(true);
+        }
+        fetchData();
+    }, []);
+
     const [open, setOpen] = React.useState(false);
     const [selectedProject, setSelectedProject] = React.useState({"keywords":[],"interns":[], "mentors":[]});
     const designstyles = designStyles();
@@ -36,7 +64,7 @@ function Projects({ projects }) {
                 Click on a project to learn more
             </Typography>
             <Container>
-                {projects.map((item) => //each item is the data for one year
+                { !isDataLoaded ? <div className={designstyles.spinner_text_style}><Typography style={{fontSize: "1.5rem"}}>Loading Data</Typography> <CircularProgress style={{"color":"#7cb342", marginTop: "1em"}} /></div> : data.projects.map((item) => //each item is the data for one year
                     <Container>
                         <Typography className='pageSubHeader'>
                             {item.key}
@@ -137,20 +165,20 @@ function Projects({ projects }) {
     );
 }
 
-export async function getServerSideProps(context){
-    const res = await fetch("https://pil-api.herokuapp.com/projects");
-    const output = await res.json();
-    let projects = [];
-    for (let key in output){
-        for (let chipKey in output[key].projects){
-            output[key].projects[chipKey].keywords = output[key].projects[chipKey].keywords.split(",");
-            output[key].projects[chipKey].interns = output[key].projects[chipKey].interns.split(",");
-            output[key].projects[chipKey].mentors = output[key].projects[chipKey].mentors.split(",");
-        }
-        projects.push({key:key,data:output[key]});
-    }
-    projects.reverse();
-    return {props:{projects}};
-}
+// export async function getServerSideProps(context){
+//     const res = await fetch("https://pil-api.herokuapp.com/projects");
+//     const output = await res.json();
+//     let projects = [];
+//     for (let key in output){
+//         for (let chipKey in output[key].projects){
+//             output[key].projects[chipKey].keywords = output[key].projects[chipKey].keywords.split(",");
+//             output[key].projects[chipKey].interns = output[key].projects[chipKey].interns.split(",");
+//             output[key].projects[chipKey].mentors = output[key].projects[chipKey].mentors.split(",");
+//         }
+//         projects.push({key:key,data:output[key]});
+//     }
+//     projects.reverse();
+//     return {props:{projects}};
+// }
 
 export default Projects;

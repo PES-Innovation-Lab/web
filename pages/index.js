@@ -1,9 +1,8 @@
 // pages/index.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
 import Container from '@material-ui/core/Container';
 import { light } from '@material-ui/core/styles/createPalette';
-import fetch from 'isomorphic-unfetch';
 import CloseIcon from '@material-ui/icons/Close';
 import { Card, CardContent, Typography, Grid,
          CardMedia, Dialog, AppBar, Toolbar, 
@@ -76,7 +75,22 @@ const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
 
-function Index({ stats }) {
+function Index() {
+        const [data, setData] = useState({ "stats" :[]});
+        
+        useEffect(() => {
+            const fetchData = async() =>{
+                const result = await fetch("http://pil-api.herokuapp.com/stats");
+                const output = await result.json();
+                let stats = [];
+                for (let key in output){
+                    stats.push({key:key,data:output[key]});
+                }
+                setData({"stats": stats});
+            }
+            fetchData();
+        }, []);
+        
         const [open, setOpen] = useState(false);
         const [selectedProf, setSelectedProf] = useState(prof_data[0]);
 
@@ -115,7 +129,7 @@ function Index({ stats }) {
                 <div className='statSection'>
                     <Container>
                         <Grid container justify="center">
-                            {stats.map((key) => 
+                            {data.stats.map((key) => 
                                 <Grid item sm={3} xs={12} justify="center">
                                     <CardContent style={{textAlign: 'center'}}>
                                         <Typography className='statValue' component="p">
@@ -196,16 +210,16 @@ function Index({ stats }) {
         );
 }
 
-export async function getServerSideProps(context){
-    const res = await fetch("https://pil-api.herokuapp.com/stats");
-    const output = await res.json();
-    let stats = [];
-    for (let key in output){
-        stats.push({key:key,data:output[key]});
-    }
-    console.log(stats);
-    return {props:{stats}};
-}
+// export async function getServerSideProps(context){
+//     const res = await fetch("https://pil-api.herokuapp.com/stats");
+//     const output = await res.json();
+//     let stats = [];
+//     for (let key in output){
+//         stats.push({key:key,data:output[key]});
+//     }
+//     console.log(stats);
+//     return {props:{stats}};
+// }
 
 
 export default Index;
