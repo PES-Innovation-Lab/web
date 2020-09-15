@@ -1,6 +1,6 @@
 # PES Innovation Lab (formerly Microsoft Innovation Lab)
 
-<img src="images/mlab/mlab_logo_black.png" alt="logo" width="100px" height="90px"><br/>
+<img src="./public/images/mlab/mlab_logo_black.png" alt="logo" width="100px" height="90px"><br/>
 
  We are a student community dedicated to cultivating the spirit of research and innovation in budding engineers.<br/>
 
@@ -8,13 +8,22 @@
 This is the main repository for the website hosted at - [PES Innovation Lab website](https://pes-innovation-lab.github.io/web/). Be sure to head out to our website and take a look at some of the exciting projects carried out at the lab.
 
 # Development
-The development version upto date with the current version of master can be found here - [PIL Github pages](https://pes-innovation-lab.github.io/web/).
+The development version up to date with the current version of the `gh-pages` branch can be found here - [PES Innovation Lab Github pages](https://pes-innovation-lab.github.io/web/). This application is written in Javascript and is powered by NextJS and consequently, by ReactJS.
+
+Dynamic data is fetched from an API server running on Heroku. Refer to: [PES Innovation Lab API Repository](https://github.com/PES-Innovation-Lab/api) for more information on the API.
+
 ## Setting up your development environment :
 
 1. Clone the repository after forking.
-2. Run a HTTP server from within the directory using python3, xampp or any other utility.\
-Example: ```python3 -m http.server 8080```
-3. Access website from `http://localhost:port` where `port` is the listening port of your http server.
+2. Ensure you have nodeJS and npm installed.
+3. Run `npm install` to fetch and install all the necessary packages
+4. Run `npm run dev` to run the development server.
+5. Access website at `http://localhost:3000/`.
+
+## Build and export
+
+1. Run `npm run build` to build the application.
+2. Run `npm run export` to export the application as a set of static pages.
 
 ## Contributing
 
@@ -26,13 +35,6 @@ instead of regular `git pull`. It’s best to write your commits prefacing the f
 ```
 index: Fix UI layout in mobile view.
 ```
-
-## Reviewing other PR's :
-Reviewing other PR's is good practice. Easy-to-use scripts in `tools/` have been provided to fetch PR's . Here's how you make use of them :
-```
-./tools/fetch-pull-request 123
-```
-(*where `123` is the PR number*).
 
 Contact
 -----
