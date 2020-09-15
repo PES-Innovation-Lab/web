@@ -1,11 +1,12 @@
 import NavBar from "./NavBar";
 import Head from 'next/head';
 import Footer from "./Footer";
+import { Container } from '@material-ui/core';
 
 const layoutStyle = {
     display: "flex",
     flexDirection: "column",
-    height: "100%",
+    minHeight: "50vh",
     width: "100%"
 };
 
@@ -21,7 +22,7 @@ const Layout = (props) => (
             <title>{props.title}</title>
         </Head>
         <NavBar active={props.active} search={props.search} searchSettings={props.searchSettings} />
-        <div className="content" style={contentStyle}>
+        <div style={layoutStyle}>
             {props.children}
         </div>
         <Footer/>

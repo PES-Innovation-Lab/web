@@ -27,58 +27,59 @@ const contentBodyStyle ={
 };
 
 const Footer = () => (
-    <div className="Footer" style={headerStyle}>
-        <Container maxWidth="md" style={{marginTop:"2em"}}>
-            <Grid container spacing={2}>
-                <Grid item xs={4}>
+    <div className='footer'>
+        <div className='footerContent'>
+            <div className='footerSection'>
+            </div>
+            <div className='footerSection'>
+                <Grid container justify="center">
                     <Link href="/" >
-                        <IconButton disableFocusRipple edge="start" className='logoButton' >
-                            <img width="80%" src="images/mlab/mlab_logo.png"/>
+                        <IconButton disableFocusRipple edge="start">
+                            <img style={{width: '80%'}} className='footerLogo' src="images/mlab/mlab_logo.png"/>
                         </IconButton>
                     </Link>
-                    <Typography style={{textAlign: "center"}}>
-                        PES Innovation Lab
-                    </Typography>
                 </Grid>
-                <Grid item xs={4}>
-                    <Typography style={contentTitleStyle}>
-                        Address
-                    </Typography>
-                    <Typography style={contentBodyStyle}>
-                        PES University, RR Campus
-                        Banshankari 3rd stage
-                        560085
-                        Bangalore, Karnataka,
-                        India
-                    </Typography>
-                </Grid>
-                <Grid item xs={4}>
-                    <Typography style={contentTitleStyle}>
-                        Connect
-                    </Typography>
-                    <Typography style={contentBodyStyle}>
-                        pes.mlab@gmail.com
-                    </Typography>
-                    <Grid container spacing={3} style={{marginTop:"1em"}}>
-                        <Grid item xs={4} style={{textAlign: 'center'}}>
-                            <a href="https://www.linkedin.com/company/pes-innovation-lab" target='_blank'>
-                                <IconButton><LinkedInIcon className='memberCardSocialIcons'/></IconButton>
-                            </a>
-                        </Grid>
-                        <Grid item xs={4} style={{textAlign: 'center'}}>
-                            <a href="https://www.instagram.com/pes.lab/">
-                                <IconButton><InstagramIcon className='memberCardSocialIcons'/></IconButton>
-                            </a>
-                        </Grid>
-                        <Grid item xs={4} style={{textAlign: 'center'}}>
-                            <a href="https://github.com/PES-Innovation-Lab" target='_blank'>
-                                <IconButton><GitHubIcon className='memberCardSocialIcons'/></IconButton>
-                            </a>
-                        </Grid>
+            </div>
+            <div className='footerSection'>
+                <Typography style={contentTitleStyle}>
+                    Address
+                </Typography>
+                <Typography style={contentBodyStyle}>
+                    PES University, RR Campus
+                    Banshankari 3rd stage
+                    560085
+                    Bangalore, Karnataka,
+                    India
+                </Typography>                                        
+            </div>
+            <div className='footerSection'>
+                <Typography style={contentTitleStyle}>
+                    Connect
+                </Typography>
+                <Typography style={contentBodyStyle}>
+                    pes.mlab@gmail.com
+                </Typography>
+                <Grid container justify="center">
+                    <Grid item xs={2} style={{textAlign: 'center'}}>
+                        <a href="https://www.linkedin.com/company/pes-innovation-lab" target='_blank'>
+                            <IconButton><LinkedInIcon className='memberCardSocialIcons'/></IconButton>
+                        </a>
                     </Grid>
-                </Grid>
-            </Grid>
-        </Container>
+                    <Grid item xs={2} style={{textAlign: 'center'}}>
+                        <a href="https://www.instagram.com/pes.lab/">
+                            <IconButton><InstagramIcon className='memberCardSocialIcons'/></IconButton>
+                        </a>
+                    </Grid>
+                    <Grid item xs={2} style={{textAlign: 'center'}}>
+                        <a href="https://github.com/PES-Innovation-Lab" target='_blank'>
+                            <IconButton><GitHubIcon className='memberCardSocialIcons'/></IconButton>
+                        </a>
+                    </Grid>
+                </Grid>                
+            </div>
+            <div className='footerSection'>
+            </div>
+        </div>
     </div>
 );
 

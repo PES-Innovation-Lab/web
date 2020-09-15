@@ -75,9 +75,9 @@ function Projects({ projects }) {
                 )}
             </Container>
             <Dialog fullScreen open={open} onClose={() => {setOpen(false)}} TransitionComponent={Transition}>
-                <AppBar className='projectDialogAppBar'>
+                <AppBar className='dialogAppBar'>
                 <Toolbar>
-                    <Typography variant="h6" className='projectDialogTitle'>
+                    <Typography variant="h6" className='dialogTitle'>
                         {selectedProject.title}
                     </Typography>
                     <IconButton edge="start" color="inherit" onClick={() => {setOpen(false)}}>

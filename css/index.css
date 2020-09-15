@@ -1,8 +1,9 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
     background-image: url("/images/mlab/prism.png");
     background-repeat: repeat;
+    min-height: 100vh;
 }
 
 * {
@@ -29,13 +30,46 @@ body {
     margin-bottom: 20px !important;
 }
 
-.profCard {
-    max-width: 250px;
-    background-color: black !important;
+.introSection {
+    background-image: url("/images/mlab/intro.jpg");
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
-.profCardImage {
+.profContainer {
+    margin-bottom: 40px;
+}
+
+.statBlob {    
+    text-align:"center";
+    background-color: transparent !important;
+    height: 150px;
+}
+
+.statSection {
+    background-image: url("/images/mlab/hws.jpg");
+    padding: 70px 0px;
+    clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.statValue {
+    color: white;
+    font-size: 3rem !important;
+}
+
+.statTitle {
+    color: white;
+    font-size: 1.2rem !important;
+}
+
+.profCard {
+    width: 250px;
+    background-color: black !important;    
+    margin: 20px auto !important;
+}
+
+.profImage {
     height: 200px;
+    border-radius: 0.2em;
 }
 
 .profCardTitle {
@@ -46,4 +80,61 @@ body {
     color: white;
 }
 
+.footer {
+    background-color: black;
+    min-height: 400px;
+}
+
+.footerLogo {
+    max-width: 300px;
+}
+
+.footerSection {
+    flex: 1;
+    padding: 40px 40px !important;
+}
+
+.footerContent {
+    display: flex;
+}
+
+.dialogAppBar {
+    position: 'relative';
+    background-color: black !important;
+}
+
+.dialogTitle {
+    flex: 1;
+    margin-left: 24px;
+    color: #8bc34a;
+}
+
+.dialogContainer {
+    background-color: rgb(44, 44, 44) !important;
+    color: white !important;
+}
+
+.profDialogContentHeading {
+    color: #8bc34a;
+    font-size: 2rem !important;
+}
+
+.profDialogContentSubHeading {
+    font-size: 1.5rem !important;
+}
+
+.profDialogContentDescription {
+    font-size: 1.2rem !important;
+}
+
+
+
+@media only screen and (max-device-width: 540px) {
+    .footerContent {
+        flex-direction: column;
+    }
+    .footerSection {
+        padding: 10px 10px !important;
+    }
+}
 @import "../node_modules/react-alice-carousel/lib/alice-carousel.css";
