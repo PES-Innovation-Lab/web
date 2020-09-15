@@ -11,22 +11,22 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 function Members({ members }) {
     return (
     <Layout title={'PIL | Members'} active={'Members'} search={true} searchSettings={{ targetClass: 'memberCardContainer', default: 'block'}}>
-        <Typography className={'pageHeader'}>
+        <Typography className='pageHeader'>
             Members
         </Typography>
         <Container>
             {members.map((item) => //each item is the data for one year
                 <Container>
-                    <Typography className={'pageSubHeader'}>
+                    <Typography className='pageSubHeader'>
                         {item.key}
                     </Typography>
-                    <Grid container spacing={3}>
+                    <Grid container spacing={3} justify="center">
                         {item.data.members.map((member)=> //each member is one member
                             <Grid item sm={3} className='memberCardContainer'>
-                                <Card className={'memberCard'}>
+                                <Card className='memberCard'>
                                     <CardActionArea>
                                         <CardMedia
-                                            className={'memberCardImage'}
+                                            className='memberCardImage'
                                             image={member.picture_url || './images/members/unknown.png'}
                                             title={member.name}
                                         />

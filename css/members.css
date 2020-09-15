@@ -1,6 +1,7 @@
-.memberCard {
-    max-width: 345px;
+.memberCard {    
+    width: 275px;
     background-color: black !important;
+    margin-bottom: 20px;
 }
 
 .memberCardImage {

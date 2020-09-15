@@ -134,6 +134,7 @@ function Index({ stats }) {
                 <p id="about_title" style={body_heading_style}>
                     PROFESSORS
                 </p>
+                <Container>
                 <Grid container justify="center" className='profContainer'>
                     {prof_data.map((prof)=>
                         <Grid item md={4} sm={12} xs={12} justify="center" style={{textAlign:"center", alignItems:"center"}}>
@@ -158,6 +159,7 @@ function Index({ stats }) {
                         </Grid>
                     )}
                 </Grid>
+                </Container>
 
                 <Dialog fullScreen open={open} onClose={() => {setOpen(false)}} TransitionComponent={Transition} PaperProps={{ className: 'dialogContainer' }}>
                     <AppBar className='dialogAppBar'>
