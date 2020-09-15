@@ -6,20 +6,21 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DarkAEther/web.git"
+    "url": "git+https://github.com/PES-Innovation-Lab/web.git"
   },
   "keywords": [],
-  "author": "DarkAEther",
+  "author": "PES-Innovation-Lab",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DarkAEther/web/issues"
+    "url": "https://github.com/PES-Innovation-Lab/web/issues"
   },
-  "homepage": "https://github.com/DarkAEther/web#readme",
+  "homepage": "https://github.com/PES-Innovation-Lab/web#readme",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
