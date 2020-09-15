@@ -85,8 +85,8 @@ function Projects({ projects }) {
                     </IconButton>
                 </Toolbar>
                 </AppBar>
-                <Grid style={{marginTop:"4em", marginLeft:"1em", width:"90%"}} container spacing={5}>
-                    <Grid item xs={8}>
+                <div className='projectViewContainer'>
+                    <div className='projectViewSectionText'>
                         <ReactMarkdown source={selectedProject.long_description}>
                         </ReactMarkdown>
                         <Typography className={designstyles.heading_style}>
@@ -127,11 +127,11 @@ function Projects({ projects }) {
                                 </Chip>
                             )
                         }
-                    </Grid>
-                    <Grid item xs={4}>
+                    </div>
+                    <div className='projectViewSectionImage'>
                         <img style={{width:"95%"}} src={selectedProject.poster_url || '/images/mlab/no_project_image.png'}></img>
-                    </Grid>
-                </Grid>
+                    </div>
+                </div>
             </Dialog>
         </Layout>
     );

@@ -22,3 +22,28 @@
     color: black !important;
     font-size: 15px !important;
 }
+
+.projectViewContainer {
+    margin-top: 6em;
+    display: flex;
+}
+
+.projectViewSectionImage {
+    text-align: center;
+    flex: 1;
+}
+
+.projectViewSectionImage img {
+    border-radius: 0.4em;
+}
+
+.projectViewSectionText {
+    padding: 20px;
+    flex: 3;
+}
+
+@media only screen and (max-device-width: 540px) {
+    .projectViewContainer {
+        flex-direction: column-reverse !important;
+    }
+}
