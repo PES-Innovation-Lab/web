@@ -76,7 +76,7 @@ function Projects() {
                                         <CardActionArea>
                                             <CardMedia
                                                 className='projectCardImage'
-                                                image={project.poster_url || `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`}
+                                                image={process.env.ASSET_PREFIX+project.poster_url || `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`}
                                                 title={project.title}
                                             />
                                             <CardContent>
