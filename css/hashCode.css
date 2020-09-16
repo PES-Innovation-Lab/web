@@ -2,11 +2,11 @@
     padding: 50px;
     padding-bottom: 100px;
 }
-
+/* 
 .hashCodeSection:nth-child(even) {
     background-image: url("/images/mlab/shattered.png");    
     clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
-}
+} */
 
 .hashCodeTitle {
     font-size: 2.5rem !important;

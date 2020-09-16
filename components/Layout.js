@@ -20,6 +20,7 @@ function Layout(props){
     const background_img = `${process.env.ASSET_PREFIX}/images/mlab/prism.png`;
     const intro_img = `${process.env.ASSET_PREFIX}/images/mlab/intro.jpg`;
     const hws_img = `${process.env.ASSET_PREFIX}/images/mlab/hws.jpg`;
+    const shattered = `${process.env.ASSET_PREFIX}/images/mlab/shattered.png`;
     return(
     <div style={layoutStyle}>
         <Head>
@@ -41,6 +42,11 @@ function Layout(props){
                     background-image: url(${hws_img});
                     padding: 70px 0px;
                     clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
+                }
+
+                .hashCodeSection:nth-child(even) {
+                    background-image: url(${shattered});    
+                    clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
                 }
                                 
             `}</style>
