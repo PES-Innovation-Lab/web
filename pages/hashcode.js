@@ -73,19 +73,19 @@ function HashCode(){
             </Typography>
             <Grid container spacing={3} style={{marginTop: 20}} justify="center">
                 <Grid item xs={12} sm={4}>
-                    <img style={{width:"95%"}} src="/images/events/hashcode/HashCode2019.jpg"/>
+                    <img style={{width:"95%"}} src={`${process.env.ASSET_PREFIX}/images/events/hashcode/HashCode2019.jpg`}/>
                 </Grid>
                 <Grid item xs={12} sm={8}>
                     <AliceCarousel autoPlay autoPlayInterval="3000" buttonsDisabled>
-                        <CarouselImage img="/images/events/hashcode/2019/hashcode2019_1.jpg" />
-                        <CarouselImage img="/images/events/hashcode/2019/hashcode2019_1.jpg" />
-                        <CarouselImage img="/images/events/hashcode/2019/hashcode2019_2.jpg" />
-                        <CarouselImage img="/images/events/hashcode/2019/hashcode2019_3.jpg" />
-                        <CarouselImage img="/images/events/hashcode/2019/hashcode2019_4.jpg" />
-                        <CarouselImage img="/images/events/hashcode/2019/hashcode2019_5.jpg" />
-                        <CarouselImage img="/images/events/hashcode/2019/hashcode2019_6.jpg" />
-                        <CarouselImage img="/images/events/hashcode/2019/hashcode2019_7.jpg" />
-                        <CarouselImage img="/images/events/hashcode/2019/hashcode2019_8.jpg" />
+                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_1.jpg`} />
+                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_1.jpg`} />
+                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_2.jpg`} />
+                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_3.jpg`} />
+                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_4.jpg`} />
+                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_5.jpg`} />
+                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_6.jpg`} />
+                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_7.jpg`} />
+                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_8.jpg`} />
                     </AliceCarousel>
                 </Grid>
             </Grid>
@@ -103,14 +103,14 @@ function HashCode(){
             </Typography>
             <Grid container spacing={3} style={{marginTop: 20}} justify="center">
                 <Grid item xs={12} sm={4}>
-                    <img style={{width:"95%"}} src="/images/events/hashcode/HashCode2018.jpg"/>
+                    <img style={{width:"95%"}} src={`${process.env.ASSET_PREFIX}/images/events/hashcode/HashCode2018.jpg`}/>
                 </Grid>
                 <Grid item xs={12} sm={8}>
                     <AliceCarousel autoPlay autoPlayInterval="3000" buttonsDisabled>
-                            <CarouselImage img="/images/events/hashcode/2018/Copy of IMG_20181104_135244.jpg" />
-                            <CarouselImage img="/images/events/hashcode/2018/IMG_20181104_071741.jpg" />
-                            <CarouselImage img="/images/events/hashcode/2018/IMG_20181104_123648.jpg" />
-                            <CarouselImage img="/images/events/hashcode/2018/IMG_20181103_200317625.jpg" />
+                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2018/Copy of IMG_20181104_135244.jpg`} />
+                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2018/IMG_20181104_071741.jpg`} />
+                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2018/IMG_20181104_123648.jpg`} />
+                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2018/IMG_20181103_200317625.jpg`} />
                     </AliceCarousel>
                 </Grid>                
             </Grid>
@@ -128,14 +128,14 @@ function HashCode(){
             </Typography>
             <Grid container spacing={3} style={{marginTop: 20}} justify="center">
                 <Grid item xs={12} sm={4}>
-                    <img style={{width:"95%"}} src="/images/events/hashcode/HashCode2017.jpg"/>
+                    <img style={{width:"95%"}} src={`${process.env.ASSET_PREFIX}/images/events/hashcode/HashCode2017.jpg`}/>
                 </Grid>
                 <Grid item xs={12} sm={8}>
                     <AliceCarousel autoPlay autoPlayInterval="3000" buttonsDisabled>
-                            <CarouselImage img="/images/events/hashcode/2017/HashCode2017_1.jpg" />
-                            <CarouselImage img="/images/events/hashcode/2017/HashCode2017_2.jpg" />
-                            <CarouselImage img="/images/events/hashcode/2017/HashCode2017_3.jpg" />
-                            <CarouselImage img="/images/events/hashcode/2017/HashCode2017_4.jpg" />
+                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2017/HashCode2017_1.jpg`} />
+                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2017/HashCode2017_2.jpg`} />
+                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2017/HashCode2017_3.jpg`} />
+                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2017/HashCode2017_4.jpg`} />
                     </AliceCarousel>
                 </Grid>
             </Grid>
@@ -152,15 +152,15 @@ function HashCode(){
             </Typography>
             <Grid container spacing={3} style={{marginTop: 20}} justify="center">
                 <Grid item xs={12} sm={4}>
-                    <img style={{width:"95%"}} src="/images/events/hashcode/HashCode2016.jpg"/>
+                    <img style={{width:"95%"}} src={`${process.env.ASSET_PREFIX}/images/events/hashcode/HashCode2016.jpg`}/>
                 </Grid>
                 <Grid item xs={12} sm={8}>
                     <AliceCarousel autoPlay autoPlayInterval="3000" buttonsDisabled>
-                            <CarouselImage img="/images/events/hashcode/2016/DSCN5078.JPG" />
-                            <CarouselImage img="/images/events/hashcode/2016/Copy of DSCN4888.JPG" />
-                            <CarouselImage img="/images/events/hashcode/2016/DSCN4891.JPG" />
-                            <CarouselImage img="/images/events/hashcode/2016/DSCN4987.JPG" />
-                            <CarouselImage img="/images/events/hashcode/2016/DSCN5007.JPG" />
+                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2016/DSCN5078.JPG`} />
+                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2016/Copy of DSCN4888.JPG`} />
+                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2016/DSCN4891.JPG`} />
+                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2016/DSCN4987.JPG`} />
+                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2016/DSCN5007.JPG`} />
                     </AliceCarousel>
                 </Grid>
             </Grid>

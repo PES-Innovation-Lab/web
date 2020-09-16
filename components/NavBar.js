@@ -94,7 +94,7 @@ function NavBar({ active, search, searchSettings }) {
               	</IconButton>
 				<Link href={`${process.env.ASSET_PREFIX}/`}>
 					<IconButton disableFocusRipple edge="start" className='logoButton'>
-						<img className='logo' src="images/mlab/mlab_logo_icon.png"/>
+						<img className='logo' src={`${process.env.ASSET_PREFIX}/images/mlab/mlab_logo_icon.png`}/>
 					</IconButton>
 				</Link>
         
@@ -131,7 +131,7 @@ function NavBar({ active, search, searchSettings }) {
     		>
 				<List className='navDrawer'>
 					<ListItem button className='drawerMenu' style={{borderBottom: '1px solid grey'}}>
-						<img className='logo' src="images/mlab/mlab_logo.png" style={{width: 250}}/>
+						<img className='logo' src={`${process.env.ASSET_PREFIX}/images/mlab/mlab_logo.png`} style={{width: 250}}/>
 					</ListItem>
 					{navs.map((nav) => (
 						<Link href={nav.route}>

@@ -1,7 +1,7 @@
-import NavBar from "./NavBar";
-import Head from 'next/head';
+import NavBar from "./NavBar";;
 import Footer from "./Footer";
-import { Container } from '@material-ui/core';
+import Head from "next/head";
+
 
 const layoutStyle = {
     display: "flex",
@@ -20,6 +20,7 @@ const Layout = (props) => (
     <div style={layoutStyle}>
         <Head>
             <title>{props.title}</title>
+            <link rel="shortcut icon" href={`${process.env.ASSET_PREFIX}/images/favicon.ico`} />
         </Head>
         <NavBar active={props.active} search={props.search} searchSettings={props.searchSettings} />
         <div style={layoutStyle}>

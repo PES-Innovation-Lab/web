@@ -16,7 +16,7 @@ function Events() {
 
             <div className='eventSection'>
                 <div className='eventSectionImage'>
-                    <img src="/images/mlab/hackathon.png"/>
+                    <img src={`${process.env.ASSET_PREFIX}/images/mlab/hackathon.png`}/>
                 </div>
                 <div className='eventSectionText'>
                     <Typography className='eventHeading'>
@@ -47,13 +47,13 @@ function Events() {
                     </Typography>                
                 </div>
                 <div className='eventSectionImage'>
-                    <img src="/images/mlab/internship.png"/>
+                    <img src={`${process.env.ASSET_PREFIX}/images/mlab/internship.png`}/>
                 </div>
             </div>
 
             <div className='eventSection'>
                 <div className='eventSectionImage'>
-                    <img src="/images/mlab/roadshow.png"/>
+                    <img src={`${process.env.ASSET_PREFIX}/images/mlab/roadshow.png`}/>
                 </div>
                 <div className='eventSectionText'>
                     <Typography className='eventHeading'>
@@ -85,7 +85,7 @@ function Events() {
                     </Typography>
                 </div>
                 <div className='eventSectionImage'>
-                    <img src="/images/mlab/ideathon.png"/>
+                    <img src={`${process.env.ASSET_PREFIX}/images/mlab/ideathon.png`}/>
                 </div>
             </div>
         </Container>

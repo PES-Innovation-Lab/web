@@ -1,5 +1,5 @@
 // components/Footer.js
-import {Grid, Typography, IconButton, Container} from "@material-ui/core";
+import {Grid, Typography, IconButton} from "@material-ui/core";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -35,7 +35,7 @@ const Footer = () => (
                 <Grid container justify="center">
                     <Link href={`${process.env.ASSET_PREFIX}/`} >
                         <IconButton disableFocusRipple edge="start">
-                            <img style={{width: '80%'}} className='footerLogo' src="images/mlab/mlab_logo.png"/>
+                            <img style={{width: '80%'}} className='footerLogo' src={`${process.env.ASSET_PREFIX}/images/mlab/mlab_logo.png`}/>
                         </IconButton>
                     </Link>
                 </Grid>
