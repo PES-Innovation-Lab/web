@@ -23,7 +23,7 @@ function Members() {
     const designstyles = designStyles();
     useEffect(() => {
         const fetchData = async() =>{
-            const result = await fetch("http://pil-api.herokuapp.com/members");
+            const result = await fetch("https://pil-api.herokuapp.com/members");
             const output = await result.json();
             let members = [];
             for (let key in output){

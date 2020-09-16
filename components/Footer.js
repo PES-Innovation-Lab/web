@@ -33,7 +33,7 @@ const Footer = () => (
             </div>
             <div className='footerSection'>
                 <Grid container justify="center">
-                    <Link href="/" >
+                    <Link href={`${process.env.ASSET_PREFIX}/`} >
                         <IconButton disableFocusRipple edge="start">
                             <img style={{width: '80%'}} className='footerLogo' src="images/mlab/mlab_logo.png"/>
                         </IconButton>

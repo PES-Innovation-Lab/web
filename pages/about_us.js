@@ -37,7 +37,7 @@ function AboutUs() {
         
     useEffect(() => {
         const fetchData = async() =>{
-            const result = await fetch("http://pil-api.herokuapp.com/about");
+            const result = await fetch("https://pil-api.herokuapp.com/about");
             const timeline = await result.json();
             setData({"timeline": timeline});
         }

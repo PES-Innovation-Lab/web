@@ -91,7 +91,7 @@ function Publications() {
         
     useEffect(() => {
         const fetchData = async() =>{
-            const result = await fetch("http://pil-api.herokuapp.com/publications");
+            const result = await fetch("https://pil-api.herokuapp.com/publications");
             let publications = await result.json();
             for (let key in publications){
                 publications[key].authors = publications[key].authors.split(",");

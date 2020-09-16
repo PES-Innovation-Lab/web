@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-image: url("/images/mlab/prism.png");
+    background-image: url(`${process.env.ASSET_PREFIX}/images/mlab/prism.png`);
     background-repeat: repeat;
     min-height: 100vh;
 }
@@ -25,7 +25,7 @@ html, body {
 }
 
 .introSection {
-    background-image: url("/images/mlab/intro.jpg");
+    background-image: url(`${process.env.ASSET_PREFIX}/images/mlab/intro.jpg`);
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
@@ -40,7 +40,7 @@ html, body {
 }
 
 .statSection {
-    background-image: url("/images/mlab/hws.jpg");
+    background-image: url(`${process.env.ASSET_PREFIX}/images/mlab/hws.jpg`);
     padding: 70px 0px;
     clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
 }

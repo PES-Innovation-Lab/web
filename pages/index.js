@@ -80,7 +80,7 @@ function Index() {
         
         useEffect(() => {
             const fetchData = async() =>{
-                const result = await fetch("http://pil-api.herokuapp.com/stats");
+                const result = await fetch("https://pil-api.herokuapp.com/stats");
                 const output = await result.json();
                 let stats = [];
                 for (let key in output){

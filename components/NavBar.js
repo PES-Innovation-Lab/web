@@ -77,13 +77,13 @@ function NavBar({ active, search, searchSettings }) {
 	const classes = useStyles();
 
 	const navs = [
-		{ title: 'Home', route:"/"},
-		{ title: 'Events', route: '/events' },
-		{ title: 'Members', route: '/members' },
-		{ title: 'Projects', route: '/projects' },
-		{ title: 'Publications', route: '/publications'},
-		{ title: 'Hashcode', route: '/hashcode' },
-		{ title: 'Our History', route: '/about_us'},
+		{ title: 'Home', route:`${process.env.ASSET_PREFIX}/`},
+		{ title: 'Events', route: `${process.env.ASSET_PREFIX}/events` },
+		{ title: 'Members', route: `${process.env.ASSET_PREFIX}/members` },
+		{ title: 'Projects', route: `${process.env.ASSET_PREFIX}/projects` },
+		{ title: 'Publications', route: `${process.env.ASSET_PREFIX}/publications`},
+		{ title: 'Hashcode', route: `${process.env.ASSET_PREFIX}/hashcode` },
+		{ title: 'Our History', route: `${process.env.ASSET_PREFIX}/about_us`},
 	]
 	
     return (
@@ -92,7 +92,7 @@ function NavBar({ active, search, searchSettings }) {
               	<IconButton onClick={() => { setDrawerOpen(true) }} edge="start" className='menuButton' >
                 	<MenuIcon />
               	</IconButton>
-				<Link href="/">
+				<Link href={`${process.env.ASSET_PREFIX}/`}>
 					<IconButton disableFocusRipple edge="start" className='logoButton'>
 						<img className='logo' src="images/mlab/mlab_logo_icon.png"/>
 					</IconButton>

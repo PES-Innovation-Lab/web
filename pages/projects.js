@@ -29,7 +29,7 @@ function Projects() {
     const [isDataLoaded, setDataLoaded] = useState(false);
     useEffect(() => {
         const fetchData = async() =>{
-            const result = await fetch("http://pil-api.herokuapp.com/projects");
+            const result = await fetch("https://pil-api.herokuapp.com/projects");
             const output = await result.json();
             let projects = [];
             for (let key in output){
