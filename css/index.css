@@ -6,11 +6,11 @@
     min-height: 100vh;
 } */
 
-* {
+/* * {
     font-family: 'Red Hat Display', sans-serif !important;
-}
+} */
 
-.pageHeader {
+/* .pageHeader {
     color: #8bc34a;
     font-family: 'Red Hat Display', sans-serif !important;
     text-align: center;
@@ -22,7 +22,7 @@
     font-family: 'Red Hat Display', sans-serif !important;
     font-size: 2rem !important;
     margin-bottom: 20px !important;
-}
+} */
 
 /* .introSection {
     background-image: url("/images/mlab/intro.jpg");
@@ -38,8 +38,8 @@
     background-color: transparent !important;
     height: 150px;
 }
-
-/* .statSection {
+/* 
+.statSection {
     background-image: url("/images/mlab/hws.jpg");
     padding: 70px 0px;
     clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
@@ -74,7 +74,7 @@
     color: white;
 }
 
-.footer {
+/* .footer {
     background-color: black;
     min-height: 400px;
 }
@@ -90,8 +90,8 @@
 
 .footerContent {
     display: flex;
-}
-
+} */
+/* 
 .dialogAppBar {
     position: 'relative';
     background-color: black !important;
@@ -106,7 +106,7 @@
 .dialogContainer {
     background-color: rgb(44, 44, 44) !important;
     color: white !important;
-}
+} */
 
 .profDialogContentHeading {
     color: #8bc34a;
@@ -122,7 +122,7 @@
 }
 
 
-
+/* 
 @media only screen and (max-device-width: 540px) {
     .footerContent {
         flex-direction: column;
@@ -130,4 +130,4 @@
     .footerSection {
         padding: 10px 10px !important;
     }
-}
+} */

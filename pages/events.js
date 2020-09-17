@@ -1,6 +1,7 @@
 // pages/events.js
 import Layout from "../components/Layout";
 import { Container, Typography } from "@material-ui/core";
+import "../css/events.css";
 
 function Events() {    
     return(

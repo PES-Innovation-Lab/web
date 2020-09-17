@@ -9,6 +9,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import ReactMarkdown from "react-markdown";
 import {useEffect, useState} from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import '../css/projects.css';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;

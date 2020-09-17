@@ -1,10 +1,10 @@
 const webpack = require('webpack');
-
+const withCSS = require('@zeit/next-css');
 const isProduction = (process.env.NODE_ENV || 'production') === 'production';
 
 const assetPrefix = isProduction ? '/web' : '';
 
-module.exports = {
+module.exports = withCSS({
     trailingSlash: true,
     assetPrefix: assetPrefix,
     webpack: config => {
@@ -15,4 +15,4 @@ module.exports = {
         )    
         return config
     },
-}
+})

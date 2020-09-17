@@ -56,7 +56,7 @@ function Layout(props){
         <div style={layoutStyle}>
             {props.children}
         </div>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
     );
 }

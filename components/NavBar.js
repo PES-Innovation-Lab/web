@@ -7,6 +7,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import Link from 'next/link';
+import css from '../css/navbar.css';
 
 const useStyles = makeStyles((theme) => ({
 	root: {

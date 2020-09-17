@@ -17,6 +17,7 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import { Chip, Container } from "@material-ui/core";
 import {useEffect, useState} from 'react';
+import "../css/projects.css";
 
 const useRowStyles = makeStyles({
     root: {

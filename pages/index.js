@@ -7,6 +7,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import { Card, CardContent, Typography, Grid,
          CardMedia, Dialog, AppBar, Toolbar, 
          IconButton, Slide } from '@material-ui/core';
+import '../css/index.css';
 
 const main_title_style = {
     fontFamily:'Poppins, sans-serif',

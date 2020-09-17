@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Container, Grid, CardMedia } from "@material-ui/core";
 import AliceCarousel from 'react-alice-carousel';
+import '../css/hashCode.css';
+import "../node_modules/react-alice-carousel/lib/alice-carousel.css";
 
 const designstyles = makeStyles({
     subtitle_style: {
