@@ -80,7 +80,6 @@ function HashCode(){
                 <Grid item xs={12} sm={8}>
                     <AliceCarousel autoPlay autoPlayInterval="3000" buttonsDisabled>
                         <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_1.jpg`} />
-                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_1.jpg`} />
                         <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_2.jpg`} />
                         <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_3.jpg`} />
                         <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_4.jpg`} />
