@@ -4,7 +4,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Link from 'next/link';
-import css from '../css/footer.css';
+import '../css/footer.css';
 
 const headerStyle = {
     backgroundColor: "black",
