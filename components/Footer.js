@@ -47,10 +47,10 @@ const Footer = () => (
                 </Typography>
                 <Typography style={contentBodyStyle}>
                     PES University, RR Campus
-                    Banshankari 3rd stage
-                    560085
-                    Bangalore, Karnataka,
-                    India
+                    100 Feet Ring Road,<br/>
+                    BSK III Stage,<br/>
+                    Bangalore-560085<br/>
+                    Karnataka, India
                 </Typography>                                        
             </div>
             <div className='footerSection'>
