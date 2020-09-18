@@ -77,7 +77,7 @@ function Row(props) {
                             {row.short_description}
                         </Typography>
                         <Typography className={classes.contentStyle}>
-                            <strong>Link to publication:</strong> {row.link}
+                            <strong>Link to publication: </strong> <a style={{color: "#8bc34a"}} href={row.link} target='_blank'>{row.link}</a>
                         </Typography>
                     </Box>
                 </Collapse>
