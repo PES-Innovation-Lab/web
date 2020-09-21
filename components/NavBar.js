@@ -1,5 +1,5 @@
 // components/NavBar.js
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { AppBar, Toolbar, Button, 
 		 IconButton, SwipeableDrawer, List,
 		 ListItem, ListItemText, InputBase } from '@material-ui/core';
@@ -77,6 +77,39 @@ function NavBar({ active, search, searchSettings }) {
 	const [ drawerOpen, setDrawerOpen ] = useState(false);
 	const classes = useStyles();
 
+    /* For fancy navbar */
+	const [_document, set_document] = useState(null)
+	const [sticky, setSticky] = useState(true);
+	const [hasInitialised, setHasInitialised] = useState(false)
+	const [scrollPosition, setScrollPosition] = useState(null);
+
+	useEffect(() => {
+		set_document(document)
+		setScrollPosition(1)
+	}, [])	
+
+	useEffect(() => {
+		if (scrollPosition) setHasInitialised(true);
+	}, [scrollPosition])
+
+	const getScrollPosition = () => {
+		const scrollPosition = _document.body.getBoundingClientRect()
+        return scrollPosition.y;
+        
+    }
+	
+    useEffect(() => {
+		if (_document && scrollPosition != null){
+			const handleScroll = () => {
+				const currentScrollPosition = getScrollPosition();
+				setSticky(currentScrollPosition > scrollPosition);
+				setScrollPosition(currentScrollPosition);
+			}
+			window.addEventListener('scroll', handleScroll);
+			return () => window.removeEventListener('scroll', handleScroll);
+		}
+	}, [sticky, hasInitialised, scrollPosition]);
+
 	const navs = [
 		{ title: 'Home', route:`${process.env.ASSET_PREFIX}/`},
 		{ title: 'Events', route: `${process.env.ASSET_PREFIX}/events` },
@@ -88,7 +121,12 @@ function NavBar({ active, search, searchSettings }) {
 	]
 	
     return (
-        <AppBar position="static" className='navbar'>
+        <AppBar className='navbar' style={
+				{transform: sticky ? "translateY(0%)" : "translateY(-100%)",
+				transition: 'transform 0.3s ease-in',
+			    position: 'sticky',
+    			top: '0'}
+            }>
             <Toolbar>
               	<IconButton onClick={() => { setDrawerOpen(true) }} edge="start" className='menuButton' >
                 	<MenuIcon />
