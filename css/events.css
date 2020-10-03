@@ -1,46 +1,51 @@
 .eventSection {
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .eventSectionImage {
-    flex: 1;
-    padding: 0px 30px;
+  flex: 1;
+  padding: 0px 30px;
 }
 
 .eventSectionImage:nth-child(odd) {
-    text-align: right;
+  text-align: right;
 }
 
 .eventHeading {
-    color: #7cb342 !important;
-    font-size: 2rem !important;
-    font-family: Changa, sans-serif;
+  color: #7cb342 !important;
+  font-size: 2rem !important;
+  font-family: Changa, sans-serif;
+  cursor: pointer;
+}
+
+.eventPageLink {
+  text-decoration: none;
 }
 
 .eventText {
-    color: white !important;
+  color: white !important;
 }
 
 .eventSectionText {
-    flex: 1;
+  flex: 1;
 }
 
 @media only screen and (max-device-width: 540px) {
-    .eventSection {
-        flex-direction: column;
-        text-align: center;
-    }
+  .eventSection {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .eventSectionImage:nth-child(odd) {
-        text-align: center;
-    }
+  .eventSectionImage:nth-child(odd) {
+    text-align: center;
+  }
 
-    .eventSection:nth-child(odd) {
-        flex-direction: column-reverse !important;        
-    }
-    .footerSection {
-        padding: 10px 10px !important;
-    }
+  .eventSection:nth-child(odd) {
+    flex-direction: column-reverse !important;
+  }
+  .footerSection {
+    padding: 10px 10px !important;
+  }
 }
