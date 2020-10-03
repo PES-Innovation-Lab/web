@@ -20,6 +20,10 @@
   cursor: pointer;
 }
 
+.eventHeading:hover{
+  animation : 200ms onhover ease-in-out forwards;
+}
+
 .eventPageLink {
   text-decoration: none;
 }
@@ -30,6 +34,13 @@
 
 .eventSectionText {
   flex: 1;
+}
+
+@keyframes onhover{
+  to{
+    font-weight: bold;
+    transform: scale(1.025);
+  }
 }
 
 @media only screen and (max-device-width: 540px) {
