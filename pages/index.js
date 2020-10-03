@@ -82,12 +82,16 @@ function Index() {
         useEffect(() => {
             const fetchData = async() =>{
                 const result = await fetch("https://pil-api.herokuapp.com/stats");
-                const output = await result.json();
-                let stats = [];
-                for (let key in output){
-                    stats.push({key:key,data:output[key]});
+                if (await result.status != 200){
+                    alert("API Error. Try again later");
+                }else{
+                    const output = await result.json();
+                    let stats = [];
+                    for (let key in output){
+                        stats.push({key:key,data:output[key]});
+                    }
+                    setData({"stats": stats});
                 }
-                setData({"stats": stats});
             }
             fetchData();
         }, []);

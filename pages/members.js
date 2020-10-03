@@ -25,13 +25,17 @@ function Members() {
     useEffect(() => {
         const fetchData = async() =>{
             const result = await fetch("https://pil-api.herokuapp.com/members");
-            const output = await result.json();
-            let members = [];
-            for (let key in output){
-                members.push({key:key,data:output[key]});
+            if (await result.status != 200){
+                alert("API Error. Try again later");
+            }else{
+                const output = await result.json();
+                let members = [];
+                for (let key in output){
+                    members.push({key:key,data:output[key]});
+                }
+                members.reverse();
+                setData({"members": members});
             }
-            members.reverse();
-            setData({"members": members});
             setDataLoaded(true);
         }
         fetchData();

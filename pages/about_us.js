@@ -38,8 +38,12 @@ function AboutUs() {
     useEffect(() => {
         const fetchData = async() =>{
             const result = await fetch("https://pil-api.herokuapp.com/about");
-            const timeline = await result.json();
-            setData({"timeline": timeline});
+            if (await result.status != 200){
+                alert("API Error. Try again later");
+            }else{
+                const timeline = await result.json();
+                setData({"timeline": timeline});
+            }
         }
         fetchData();
     }, []);

@@ -31,18 +31,22 @@ function Projects() {
     useEffect(() => {
         const fetchData = async() =>{
             const result = await fetch("https://pil-api.herokuapp.com/projects");
-            const output = await result.json();
-            let projects = [];
-            for (let key in output){
-                for (let chipKey in output[key].projects){
-                    output[key].projects[chipKey].keywords = output[key].projects[chipKey].keywords.split(",");
-                    output[key].projects[chipKey].interns = output[key].projects[chipKey].interns.split(",");
-                    output[key].projects[chipKey].mentors = output[key].projects[chipKey].mentors.split(",");
+            if (await result.status != 200){
+                alert("API Error. Try again later");
+            }else{
+                const output = await result.json();
+                let projects = [];
+                for (let key in output){
+                    for (let chipKey in output[key].projects){
+                        output[key].projects[chipKey].keywords = output[key].projects[chipKey].keywords.split(",");
+                        output[key].projects[chipKey].interns = output[key].projects[chipKey].interns.split(",");
+                        output[key].projects[chipKey].mentors = output[key].projects[chipKey].mentors.split(",");
+                    }
+                    projects.push({key:key,data:output[key]});
                 }
-                projects.push({key:key,data:output[key]});
+                projects.reverse();
+                setData({"projects": projects});
             }
-            projects.reverse();
-            setData({"projects": projects});
             setDataLoaded(true);
         }
         fetchData();

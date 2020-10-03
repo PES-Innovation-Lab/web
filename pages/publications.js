@@ -93,11 +93,15 @@ function Publications() {
     useEffect(() => {
         const fetchData = async() =>{
             const result = await fetch("https://pil-api.herokuapp.com/publications");
-            let publications = await result.json();
-            for (let key in publications){
-                publications[key].authors = publications[key].authors.split(",");
+            if (await result.status != 200){
+                alert("API Error. Try again later");
+            }else{
+                let publications = await result.json();
+                for (let key in publications){
+                    publications[key].authors = publications[key].authors.split(",");
+                }
+                setData({"publications": publications});
             }
-            setData({"publications": publications});
         }
         fetchData();
     }, []);
