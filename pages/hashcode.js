@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Container, Grid, CardMedia } from "@material-ui/core";
 import AliceCarousel from 'react-alice-carousel';
+import {useEffect, useState} from 'react';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import '../css/hashCode.css';
 import "../node_modules/react-alice-carousel/lib/alice-carousel.css";
 
@@ -19,6 +21,10 @@ const designstyles = makeStyles({
         marginTop: "1em",
         marginBottom: "1em",
     },
+    spinner_text_style: {
+        textAlign:"center",
+        color:"#7cb342",
+    }
 });
 
 const CarouselImage = ({img}) => (
@@ -30,7 +36,21 @@ const CarouselImage = ({img}) => (
 
 function HashCode(){
     const styles = designstyles();
-
+    const [data, setData] = useState({ "events" :[]});
+    const [isDataLoaded, setDataLoaded] = useState(false);    
+    useEffect(() => {
+        const fetchData = async() =>{
+            const result = await fetch("https://pil-api.herokuapp.com/events/hashcode");
+            if (await result.status != 200){
+                alert("API Error. Try again later");
+            }else{
+                let events = await result.json();
+                setData({"events": events});
+            }
+            setDataLoaded(true);
+        }
+        fetchData();
+    }, []);
     return (
     <Layout title={'PIL | Hashcode'} active={'Hashcode'}>
 
@@ -50,22 +70,9 @@ function HashCode(){
 
 
         <div className='hashCodeContainer'>
-        
-        <div className='hashCodeSection'>
-            <Container>
-                <Typography className='hashCodeTitle'>
-                    HashCode 2020
-                </Typography>
-                <Typography className='hashCodeSponsors'>
-                    Sponsored by: RedHat
-                </Typography>
-                <Typography className='hashCodeSponsors'>
-                    More information coming soon!
-                </Typography>
-            </Container>
-        </div>
 
-        <div className='hashCodeSection'>
+        {/* This is a sample for reference*/}
+        {/* <div className='hashCodeSection'>
         <Container>
             <Typography className='hashCodeTitle'>
                 HashCode 2019
@@ -82,92 +89,42 @@ function HashCode(){
                         <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_1.jpg`} />
                         <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_2.jpg`} />
                         <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_3.jpg`} />
-                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_4.jpg`} />
-                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_5.jpg`} />
-                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_6.jpg`} />
-                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_7.jpg`} />
-                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_8.jpg`} />
                     </AliceCarousel>
                 </Grid>
             </Grid>
         </Container>
-        </div>
-
-
-        <div className='hashCodeSection'>
-        <Container>
-            <Typography className='hashCodeTitle'>
-                HashCode 2018
-            </Typography>
-            <Typography className='hashCodeSponsors'>
-                Sponsored by IEEE CAS and amper AXP
-            </Typography>
-            <Grid container spacing={3} style={{marginTop: 20}} justify="center">
-                <Grid item xs={12} sm={4}>
-                    <img style={{width:"95%"}} src={`${process.env.ASSET_PREFIX}/images/events/hashcode/HashCode2018.jpg`}/>
+        </div> */}
+        {
+           !isDataLoaded ? <div className={styles.spinner_text_style}><Typography style={{fontSize: "1.5rem"}}>Loading Data</Typography> <CircularProgress style={{"color":"#7cb342", marginTop: "1em"}} /></div> :data.events.map(event => (
+           <div className='hashCodeSection'>
+            <Container>
+                <Typography className='hashCodeTitle'>
+                    {event.event_name}
+                </Typography>
+                <Typography className='hashCodeDate'>
+                    {event.event_date + " " + event.year}
+                </Typography>
+                <Typography className='hashCodeSponsors'>
+                    {event.sponsor_text}
+                </Typography>
+                <Grid container spacing={3} style={{marginTop: 20}} justify="center">
+                    <Grid item xs={12} sm={4}>
+                        <img style={{width:"95%"}} src={`${process.env.ASSET_PREFIX}${event.poster_link}`}/>
+                    </Grid>
+                    <Grid item xs={12} sm={8}>
+                        <AliceCarousel autoPlay autoPlayInterval="3000" buttonsDisabled>
+                            {
+                                event.image_links.map(image => (
+                                    <CarouselImage img={`${process.env.ASSET_PREFIX}${image}`} />
+                                ))
+                            }
+                        </AliceCarousel>
+                    </Grid>
                 </Grid>
-                <Grid item xs={12} sm={8}>
-                    <AliceCarousel autoPlay autoPlayInterval="3000" buttonsDisabled>
-                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2018/Copy of IMG_20181104_135244.jpg`} />
-                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2018/IMG_20181104_071741.jpg`} />
-                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2018/IMG_20181104_123648.jpg`} />
-                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2018/IMG_20181103_200317625.jpg`} />
-                    </AliceCarousel>
-                </Grid>                
-            </Grid>
-        </Container>
-        </div>
-
-
-        <div className='hashCodeSection'>
-        <Container>
-            <Typography className='hashCodeTitle'>
-                HashCode 2017
-            </Typography>
-            <Typography className='hashCodeSponsors'>
-                Sponsored by RedBull and HackerEarth
-            </Typography>
-            <Grid container spacing={3} style={{marginTop: 20}} justify="center">
-                <Grid item xs={12} sm={4}>
-                    <img style={{width:"95%"}} src={`${process.env.ASSET_PREFIX}/images/events/hashcode/HashCode2017.jpg`}/>
-                </Grid>
-                <Grid item xs={12} sm={8}>
-                    <AliceCarousel autoPlay autoPlayInterval="3000" buttonsDisabled>
-                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2017/HashCode2017_1.jpg`} />
-                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2017/HashCode2017_2.jpg`} />
-                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2017/HashCode2017_3.jpg`} />
-                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2017/HashCode2017_4.jpg`} />
-                    </AliceCarousel>
-                </Grid>
-            </Grid>
-        </Container>
-        </div>
-
-        <div className='hashCodeSection'>
-        <Container>
-            <Typography className='hashCodeTitle'>
-                HashCode 2016
-            </Typography>
-            <Typography className='hashCodeSponsors'>
-                Sponsored by Itie and HackerEarth
-            </Typography>
-            <Grid container spacing={3} style={{marginTop: 20}} justify="center">
-                <Grid item xs={12} sm={4}>
-                    <img style={{width:"95%"}} src={`${process.env.ASSET_PREFIX}/images/events/hashcode/HashCode2016.jpg`}/>
-                </Grid>
-                <Grid item xs={12} sm={8}>
-                    <AliceCarousel autoPlay autoPlayInterval="3000" buttonsDisabled>
-                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2016/DSCN5078.JPG`} />
-                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2016/Copy of DSCN4888.JPG`} />
-                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2016/DSCN4891.JPG`} />
-                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2016/DSCN4987.JPG`} />
-                            <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2016/DSCN5007.JPG`} />
-                    </AliceCarousel>
-                </Grid>
-            </Grid>
-        </Container>
-        </div>
-                                            
+            </Container>
+            </div>
+           ))
+        }                               
         </div>
     </Layout>
     );

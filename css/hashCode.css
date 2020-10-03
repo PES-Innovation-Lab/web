@@ -20,7 +20,17 @@
     text-align: left;
 }
 
+.hashCodeDate {
+    font-size : 2rem !important;
+    color: white;
+    text-align: left;
+}
+
 .hashCodeSection:nth-child(even)  .hashCodeSponsors {
+    color: black !important;
+}
+
+.hashCodeSection:nth-child(even)  .hashCodeDate {
     color: black !important;
 }
 
