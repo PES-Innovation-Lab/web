@@ -48,7 +48,7 @@ function Events() {
           <div className="eventSectionText">
             <Link
               className="eventPageLink"
-              href={`${process.env.ASSET_PREFIX}/comingSoon`}
+              href={`${process.env.ASSET_PREFIX}/summer`}
             >
               <Typography className="eventHeading">
                 Summer Internship Program
@@ -79,7 +79,7 @@ function Events() {
           <div className="eventSectionText">
             <Link
               className="eventPageLink"
-              href={`${process.env.ASSET_PREFIX}/comingSoon`}
+              href={`${process.env.ASSET_PREFIX}/roadshow`}
             >
               <Typography className="eventHeading">Roadshow</Typography>
             </Link>
@@ -101,7 +101,7 @@ function Events() {
           <div className="eventSectionText">
             <Link
               className="eventPageLink"
-              href={`${process.env.ASSET_PREFIX}/comingSoon`}
+              href={`${process.env.ASSET_PREFIX}/incito`}
             >
               <Typography className="eventHeading">Incito</Typography>
             </Link>
