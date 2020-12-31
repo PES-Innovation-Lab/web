@@ -80,15 +80,18 @@ function HashCode(){
             <Typography className='hashCodeSponsors'>
                 Sponsored by RedHat, IEEE CAS and Rotary Club
             </Typography>
+            <Typography className='hashCodeDescription'>
+                    {event.description}
+            </Typography>
             <Grid container spacing={3} style={{marginTop: 20}} justify="center">
                 <Grid item xs={12} sm={4}>
-                    <img style={{width:"95%"}} src={`${process.env.ASSET_PREFIX}/images/events/hashcode/HashCode2019.jpg`}/>
+                    <img style={{width:"95%"}} src={`GOOGLE_DRIVE_LINK`}/>
                 </Grid>
                 <Grid item xs={12} sm={8}>
                     <AliceCarousel autoPlay autoPlayInterval="3000" buttonsDisabled>
-                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_1.jpg`} />
-                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_2.jpg`} />
-                        <CarouselImage img={`${process.env.ASSET_PREFIX}/images/events/hashcode/2019/hashcode2019_3.jpg`} />
+                        <CarouselImage img={`GOOGLE_DRIVE_LINK`} />
+                        <CarouselImage img={`GOOGLE_DRIVE_LINK`} />
+                        <CarouselImage img={`GOOGLE_DRIVE_LINK`} />
                     </AliceCarousel>
                 </Grid>
             </Grid>
@@ -107,15 +110,18 @@ function HashCode(){
                 <Typography className='hashCodeSponsors'>
                     {event.sponsor_text}
                 </Typography>
+                <Typography className='hashCodeDescription'>
+                    {event.description}
+                </Typography>
                 <Grid container spacing={3} style={{marginTop: 20}} justify="center">
                     <Grid item xs={12} sm={4}>
-                        <img style={{width:"95%"}} src={`${process.env.ASSET_PREFIX}${event.poster_link}`}/>
+                        <img style={{width:"95%"}} src={`${event.poster_link}`}/>
                     </Grid>
                     <Grid item xs={12} sm={8}>
                         <AliceCarousel autoPlay autoPlayInterval="3000" buttonsDisabled>
                             {
                                 event.image_links.map(image => (
-                                    <CarouselImage img={`${process.env.ASSET_PREFIX}${image}`} />
+                                    <CarouselImage img={`${image}`} />
                                 ))
                             }
                         </AliceCarousel>
