@@ -8,6 +8,11 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import Link from 'next/link';
 import css from '../css/navbar.css';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -63,6 +68,71 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
+const makeMenu = (nav, active, mobile) => {
+	if(!nav.subMenus) {
+		if(mobile) {
+			return (
+				<Link href={nav.route}>
+					<ListItem button key={nav.title} className='drawerMenu'>
+						<ListItemText className={`drawerNavText${active == nav.title ? ' active' : ''}`} primary={nav.title} />
+					</ListItem>
+				</Link>
+			)
+		} else {
+			return (
+				<Link href={nav.route}>
+					<Button disableRipple disableFocusRipple className={`navButton${active == nav.title ? ' active' : ''}`}>
+						{nav.title}
+					</Button>
+				</Link>
+			) 
+		}		
+	} else {
+		return (
+			<PopupState variant="popover" popupId="demo-popup-menu">
+				{(popupState) => (
+					<React.Fragment>
+						{mobile ? 
+								<ListItem button key={nav.title} className='drawerMenu'>
+									<Link href={nav.route}>
+										<ListItemText className={`drawerNavText${active == nav.title ? ' active' : ''}`} primary={nav.title} />
+									</Link>
+									<IconButton size="small" {...bindTrigger(popupState)}>
+							  			<ExpandMoreIcon fontSize="inherit" style={{'color': 'white'}}/>
+									</IconButton>
+								</ListItem>
+							:
+							<Link href={nav.route}>
+								<Button disableRipple disableFocusRipple className={`navButton${active == nav.title ? ' active' : ''}`}>
+									{nav.title}
+								</Button>
+							</Link>
+						}						
+						{!mobile? <IconButton size="small" {...bindTrigger(popupState)} className='dropdown-desktop'>
+							  <ExpandMoreIcon fontSize="inherit" style={{'color': 'white'}}/>
+						</IconButton>: null}
+						<Menu {...bindMenu(popupState)} className='navDropdownMenu'>
+							{nav.subMenus.map(subMenu => (
+								<MenuItem>
+									{ mobile? <Link href={subMenu.route}>
+										<ListItem button key={nav.title} className='drawerMenu'>
+											<ListItemText className={`drawerNavText${active == subMenu.title ? ' active' : ''}`} primary={subMenu.title} />
+										</ListItem>
+									</Link>: <Link href={subMenu.route}>
+										<Button disableRipple disableFocusRipple className={`navButton`}>
+											{subMenu.title}
+										</Button>
+									</Link> }
+								</MenuItem>
+							))}
+						</Menu>
+					</React.Fragment>
+				)}
+			</PopupState>
+		)
+	}			
+}
+
 const handleSearch = (query, searchSettings) => {
 	const elements = document.getElementsByClassName(searchSettings.targetClass);
 	for(let ele of elements) {
@@ -82,6 +152,7 @@ function NavBar({ active, search, searchSettings }) {
 	const [sticky, setSticky] = useState(true);
 	const [hasInitialised, setHasInitialised] = useState(false)
 	const [scrollPosition, setScrollPosition] = useState(null);
+	const [navbarMenu, setNavbarMenu] = useState(null, [false, false, false]);
 
 	useEffect(() => {
 		set_document(document)
@@ -112,17 +183,19 @@ function NavBar({ active, search, searchSettings }) {
 
 	const navs = [
 		{ title: 'Home', route:`${process.env.ASSET_PREFIX}/`},
-		{ title: 'Events', route: `${process.env.ASSET_PREFIX}/events` },
 		{ title: 'Members', route: `${process.env.ASSET_PREFIX}/members` },
 		{ title: 'Projects', route: `${process.env.ASSET_PREFIX}/projects` },
 		{ title: 'Publications', route: `${process.env.ASSET_PREFIX}/publications`},
 		{ title: 'Hashcode', route: `${process.env.ASSET_PREFIX}/hashcode` },
-		{ title: 'Incito', route: `${process.env.ASSET_PREFIX}/incito` },
-		{ title: 'Summer', route: `${process.env.ASSET_PREFIX}/summer` },
-		{ title: 'RoadShow', route: `${process.env.ASSET_PREFIX}/roadshow` },
 		{ title: 'Our History', route: `${process.env.ASSET_PREFIX}/about_us`},
+		{ title: 'Events', route: `${process.env.ASSET_PREFIX}/events` , subMenus: [
+			{ title: 'Incito', route: `${process.env.ASSET_PREFIX}/incito` },
+			{ title: 'Summer', route: `${process.env.ASSET_PREFIX}/summer` },
+			{ title: 'RoadShow', route: `${process.env.ASSET_PREFIX}/roadshow` }
+		]},
 	]
-	
+
+		
     return (
         <AppBar className='navbar' style={
 				{transform: sticky ? "translateY(0%)" : "translateY(-100%)",
@@ -141,11 +214,7 @@ function NavBar({ active, search, searchSettings }) {
 				</Link>
         
 				{navs.map((nav) => (
-					<Link href={nav.route}>
-						<Button disableRipple disableFocusRipple className={`navButton${active == nav.title ? ' active' : ''}`}>
-							{nav.title}
-						</Button>
-					</Link>
+					makeMenu(nav, active, false)
 				))}
 
 				{search ? (
@@ -176,11 +245,7 @@ function NavBar({ active, search, searchSettings }) {
 						<img className='logo' src={`${process.env.ASSET_PREFIX}/images/mlab/mlab_logo.png`} style={{width: 250}}/>
 					</ListItem>
 					{navs.map((nav) => (
-						<Link href={nav.route}>
-							<ListItem button key={nav.title} className='drawerMenu'>
-								<ListItemText className={`drawerNavText${active == nav.title ? ' active' : ''}`} primary={nav.title} />
-							</ListItem>
-						</Link>
+						makeMenu(nav, active, true)
 					))}
 				</List>      			
     		</SwipeableDrawer>
