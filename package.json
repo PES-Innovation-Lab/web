@@ -26,6 +26,7 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.56",
     "@zeit/next-css": "^1.0.1",
+    "material-ui-popup-state": "^1.7.1",
     "next": "^9.5.4",
     "react": "^16.13.1",
     "react-alice-carousel": "^1.19.3",

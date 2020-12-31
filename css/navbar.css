@@ -55,11 +55,19 @@
     color: #8bc34a !important;
 }
 
+.MuiMenu-list {
+    background-color: black;
+}
+
+
 @media only screen and (max-device-width: 540px) {
     .navButton {
         display: none !important;
     }
     .menuButton {
         display: inline-flex !important;
+    }
+    .dropdown-desktop {
+        display: none !important;
     }
 }
