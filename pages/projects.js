@@ -81,7 +81,7 @@ function Projects() {
                                         <CardActionArea>
                                             <CardMedia
                                                 className='projectCardImage'
-                                                image={process.env.ASSET_PREFIX+project.poster_url || `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`}
+                                                image={project.poster_url || `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`}
                                                 title={project.title}
                                             />
                                             <CardContent>
@@ -162,7 +162,7 @@ function Projects() {
                         }
                     </div>
                     <div className='projectViewSectionImage'>
-                        <img style={{width:"95%"}} src={process.env.ASSET_PREFIX + selectedProject.poster_url || `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`}></img>
+                        <img style={{width:"95%"}} src={selectedProject.poster_url || `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`}></img>
                     </div>
                 </div>
             </Dialog>
