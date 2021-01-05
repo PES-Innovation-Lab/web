@@ -33,7 +33,8 @@ const useStyles = makeStyles((theme) => ({
 
 function Events() {
 	const data = [
-		{"month":"February", "event_name":"Incito Ideathon", "key": "incito"},		
+		{"month":"February", "event_name":"Incito Ideathon", "key": "incito"},
+		{"month":"March-April", "event_name":"Summer Internship Recruitment", "key": "recruitment"},	
 		{"month":"June-July", "event_name":"Summer Internship", "key": "internship"},
 		{"month":"August", "event_name":"RoadShow", "key": "roadshow"},
 		{"month":"October/November","event_name":"#Code Hackathon", "key": "hashcode"},
@@ -72,6 +73,36 @@ function Events() {
 				<div className="eventSectionImage">
             		<img src={`${process.env.ASSET_PREFIX}/images/mlab/ideathon.png`} />
           		</div>
+			)
+		},
+		"recruitment": {
+			"text": (
+				<div className="eventSection">
+					<div className="eventSectionText">
+						<Link
+							className="eventPageLink"
+							href={`${process.env.ASSET_PREFIX}/join_us`}
+						>
+							<Typography className="eventHeading">
+								Summer Internship Recruitment
+							</Typography>
+						</Link>
+						<Typography className="eventText">
+							Every year, we look for enthusiastic and passion-driven people to become
+							a part of our community. To find those among you who are a good fit,
+							we conduct an aptitude challenge and give you an opportunity to show
+							us how passionate you are about engineering and building solutions to 
+							real-world problems.
+						</Typography>
+					</div>
+				</div>
+			),
+			"image": (
+				<div className="eventSectionImage">
+					<img
+						src={`${process.env.ASSET_PREFIX}/images/mlab/recruitment.png`}
+					/>
+				</div>
 			)
 		},
 		"internship": {
