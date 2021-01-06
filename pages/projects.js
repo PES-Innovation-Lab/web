@@ -1,4 +1,5 @@
 // pages/projects.js
+import React from 'react';
 import Layout from "../components/Layout";
 import { Typography, Container, Grid } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
