@@ -39,7 +39,7 @@ function articles() {
     }
     useEffect(() => {
         const fetchData = async() =>{
-            const result = await fetch("http://localhost:8100/articles");
+            const result = await fetch("https://pil-api.herokuapp.com/articles");
             if (await result.status != 200){
                 alert("API Error. Try again later");
             }else{
