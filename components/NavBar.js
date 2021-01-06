@@ -194,7 +194,7 @@ function NavBar({ active, search, searchSettings }) {
 			{ title: 'RoadShow', route: `${process.env.ASSET_PREFIX}/roadshow` }
 		]},
 		{ title: 'Join Us', route: `${process.env.ASSET_PREFIX}/join_us`},
-		
+		{ title: 'Articles', route: `${process.env.ASSET_PREFIX}/articles`},
 	]
 
 		
