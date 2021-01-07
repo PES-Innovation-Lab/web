@@ -32,6 +32,7 @@
     "react-alice-carousel": "^2.2.0",
     "react-dom": "^17.0.1",
     "react-markdown": "^5.0.3",
+    "react-responsive": "^8.2.0",
     "webpack": "^4.44.1"
   }
 }
