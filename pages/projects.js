@@ -34,11 +34,22 @@ const designStyles = makeStyles({
     textAlign: 'center',
     color: '#7cb342',
   },
+  linkStyle: {
+    textDecoration: 'none',
+  },
 });
 
 function Projects() {
   const [data, setData] = useState({ projects: [] });
+  const [open, setOpen] = React.useState(false);
   const [isDataLoaded, setDataLoaded] = useState(false);
+  const [isProjectFromURL, setIsProjectFromURL] = useState(true);
+
+  const viewProject = (project) => {
+    setSelectedProject(project);
+    setOpen(true);
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch('https://pil-api.herokuapp.com/projects');
@@ -58,6 +69,11 @@ function Projects() {
             output[key].projects[chipKey].mentors = output[key].projects[
               chipKey
             ].mentors.split(',');
+            output[key].projects[chipKey].id = output[key].projects[
+              chipKey
+            ].title
+              .replace(/\s+/g, '-')
+              .toLowerCase();
           }
           projects.push({ key: key, data: output[key] });
         }
@@ -69,17 +85,45 @@ function Projects() {
     fetchData();
   }, []);
 
-  const [open, setOpen] = React.useState(false);
+  const checkProjectHashString = () => {
+    if (!data.projects.length) return;
+    const projectId = window.location.hash.substring(1);
+
+    let project;
+
+    data.projects.forEach((item) => {
+      item.data.projects.forEach((proj) => {
+        if (proj.id === projectId) project = proj;
+      });
+    });
+
+    if (project) viewProject(project);
+    else if (isDataLoaded) setOpen(false);
+  };
+
+  useEffect(() => {
+    if (isDataLoaded)
+      window.addEventListener('hashchange', checkProjectHashString, false);
+  }, [isDataLoaded]);
+
+  useEffect(() => {
+    checkProjectHashString();
+  }, [data]);
+
+  useEffect(() => {
+    if (isDataLoaded && !open) {
+      setSelectedProject({ keywords: [], interns: [], mentors: [] });
+      window.location.hash = '';
+    }
+    checkProjectHashString();
+  }, [open]);
+
   const [selectedProject, setSelectedProject] = React.useState({
     keywords: [],
     interns: [],
     mentors: [],
   });
   const designstyles = designStyles();
-  const viewProject = (project) => {
-    setSelectedProject(project);
-    setOpen(true);
-  };
 
   return (
     <Layout
@@ -94,6 +138,7 @@ function Projects() {
       >
         Click on a project to learn more
       </Typography>
+
       <Container>
         {!isDataLoaded ? (
           <div className={designstyles.spinnerTextStyle}>
@@ -112,48 +157,50 @@ function Projects() {
                 ) => (
                   <Grid
                     key={project.title}
+                    id={project.id}
                     item
                     sm={4}
                     className="projectCardContainer"
                   >
-                    <Card
-                      className="projectCard"
-                      onClick={() => {
-                        viewProject(project);
-                      }}
+                    <a
+                      onClick={() => setIsProjectFromURL(false)}
+                      href={'#' + project.id}
+                      className={designstyles.linkStyle}
                     >
-                      <CardActionArea>
-                        <CardMedia
-                          className="projectCardImage"
-                          component="img"
-                          image={
-                            project.poster_url ||
-                            `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`
-                          }
-                          title={project.title}
-                        />
-                        <CardContent>
-                          <Typography
-                            className="projectCardTitle"
-                            gutterBottom
-                            variant="h5"
-                            component="h2"
-                          >
-                            {project.title}
-                          </Typography>
-                          <Typography className="projectCardDescription">
-                            {project.short_description}
-                          </Typography>
-                          {project.keywords.map((item) => (
-                            <Chip
-                              key={item}
-                              label={item}
-                              className="projectKeywordChip"
-                            ></Chip>
-                          ))}
-                        </CardContent>
-                      </CardActionArea>
-                    </Card>
+                      <Card className="projectCard">
+                        <CardActionArea>
+                          <CardMedia
+                            className="projectCardImage"
+                            component="img"
+                            image={
+                              process.env.ASSET_PREFIX + project.poster_url ||
+                              `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`
+                            }
+                            title={project.title}
+                          />
+                          <CardContent>
+                            <Typography
+                              className="projectCardTitle"
+                              gutterBottom
+                              variant="h5"
+                              component="h2"
+                            >
+                              {project.title}
+                            </Typography>
+                            <Typography className="projectCardDescription">
+                              {project.short_description}
+                            </Typography>
+                            {project.keywords.map((item) => (
+                              <Chip
+                                key={item}
+                                label={item}
+                                className="projectKeywordChip"
+                              ></Chip>
+                            ))}
+                          </CardContent>
+                        </CardActionArea>
+                      </Card>
+                    </a>
                   </Grid>
                 ))}
               </Grid>
@@ -164,9 +211,7 @@ function Projects() {
       <Dialog
         fullScreen
         open={open}
-        onClose={() => {
-          setOpen(false);
-        }}
+        onClose={() => (isProjectFromURL ? setOpen(false) : history.back())}
         TransitionComponent={Transition}
       >
         <AppBar className="dialogAppBar">
@@ -177,9 +222,9 @@ function Projects() {
             <IconButton
               edge="start"
               color="inherit"
-              onClick={() => {
-                setOpen(false);
-              }}
+              onClick={() =>
+                isProjectFromURL ? setOpen(false) : history.back()
+              }
             >
               <CloseIcon style={{ float: 'right', color: '#8bc34a' }} />
             </IconButton>
