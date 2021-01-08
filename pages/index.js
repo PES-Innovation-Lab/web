@@ -109,7 +109,6 @@ function Index() {
                 <div className='introSection'>
                     <Container>
                         <p style={main_title_style}>PES Innovation Lab</p>
-                        <p style={former_style} >(formerly known as Microsoft Innovation Lab)</p>
                                         
                         <blockquote style={main_content_style}>
                             We are a student community dedicated to cultivating the spirit of research and innovation in budding
