@@ -92,13 +92,13 @@ function Projects() {
                                                 <Typography className='projectCardDescription'>
                                                     {project.short_description}
                                                 </Typography>
-                                                {project.keywords.map((item) => 
+                                                {project.keywords.map((item) =>
                                                     <Chip
                                                         label={item}
                                                         className='projectKeywordChip'
                                                     >
                                                     </Chip>
-                                                )}                                                
+                                                )}
                                             </CardContent>
                                         </CardActionArea>
                                     </Card>
@@ -131,6 +131,7 @@ function Projects() {
                                 <Chip
                                     label={keyword}
                                     className="projectKeywordChip"
+                                    style={{fontSize:"1rem", marginRight:"0.5em", marginTop:"0.5em"}}
                                 >
                                 </Chip>
                             )
@@ -143,7 +144,7 @@ function Projects() {
                                 <Chip
                                     label={intern}
                                     color="primary"
-                                    style={{fontSize:"1rem", marginRight:"0.5em"}}
+                                    style={{fontSize:"1rem", marginRight:"0.5em", marginTop:"0.5em"}}
                                 >
                                 </Chip>
                             )
@@ -156,7 +157,7 @@ function Projects() {
                                 <Chip
                                     label={mentor}
                                     color="secondary"
-                                    style={{fontSize:"1rem", marginRight:"0.5em"}}
+                                    style={{fontSize:"1rem", marginRight:"0.5em", marginTop:"0.5em"}}
                                 >
                                 </Chip>
                             )
