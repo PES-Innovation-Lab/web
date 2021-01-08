@@ -18,6 +18,7 @@ import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import { Chip, Container } from "@material-ui/core";
 import {useEffect, useState} from 'react';
 import "../css/projects.css";
+import React from 'react';
 
 const useRowStyles = makeStyles({
     root: {

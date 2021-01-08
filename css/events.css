@@ -44,6 +44,9 @@
 }
 
 @media only screen and (max-device-width: 540px) {
+  .MuiTimelineItem-missingOppositeContent:before {
+    display: none !important;
+  }
   .eventSection {
     flex-direction: column;
     text-align: center;
@@ -58,5 +61,8 @@
   }
   .footerSection {
     padding: 10px 10px !important;
+  }
+  .event-timelineOppositeContent {
+    display: none !important;
   }
 }
