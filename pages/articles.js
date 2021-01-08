@@ -4,7 +4,9 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
-import ListSubheader from '@material-ui/core/ListSubheader';
+import { Dialog, DialogActions, DialogContent, Button } from '@material-ui/core';
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
+import InnerImageZoom from 'react-inner-image-zoom';
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import { makeStyles } from '@material-ui/core/styles';
@@ -33,10 +35,15 @@ function articles() {
     const styles = designstyles();
     const [data, setData] = useState({ "articles" :[]});
     const [isDataLoaded, setDataLoaded] = useState(false);
-    const openInNewTab = (url) => {
-        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-        if (newWindow) newWindow.opener = null
+    const [open, setOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
+    
+    const setDialog = (url) => {
+      console.log(url);
+      setSelectedImage(url);
+      setOpen(true);
     }
+
     useEffect(() => {
         const fetchData = async() =>{
             const result = await fetch("https://pil-api.herokuapp.com/articles");
@@ -52,24 +59,24 @@ function articles() {
     }, []);
   return (
     <Layout title={"PIL | Articles"}>
-         <div className='hashCodeHeadSection'>
-            <Container>
-                <Typography className='pageHeader'>
-                    PES Innovation Lab in the news
-                </Typography>
-                <Typography className={styles.subtitle_style}>
-                    A collection of media articles about us
-                </Typography>
-                <Typography className={styles.subtitle_style} style={{marginTop: 40}}>
-                    Click an article to read more
-                </Typography>
-            </Container>
+        <div className='hashCodeHeadSection'>
+          <Container>
+              <Typography className='pageHeader'>
+                  PES Innovation Lab in the news
+              </Typography>
+              <Typography className={styles.subtitle_style}>
+                  A collection of media articles about us
+              </Typography>
+              <Typography className={styles.subtitle_style} style={{marginTop: 40}}>
+                  Click an article to read more
+              </Typography>
+          </Container>
         </div>        
       <Container style={{display:"flex",justifyContent: "center", alignItems: "center"}}>
            { !isDataLoaded ? <div className={styles.spinner_text_style}><Typography style={{fontSize: "1.5rem"}}>Loading Data</Typography> <CircularProgress style={{"color":"#7cb342", marginTop: "1em"}} /></div> :
                <GridList cellHeight={400} className={styles.gridList} >
                {data.articles.map((article) => (
-                 <GridListTile key={article.thumbnail_link} onClick={() => openInNewTab(article.image_link)}>
+                 <GridListTile key={article.thumbnail_link} onClick={() => setDialog(article.image_link)}>
                    <img src={article.thumbnail_link} alt={article.article_name} />
                    <GridListTileBar
                      title={article.article_name}
@@ -84,6 +91,21 @@ function articles() {
                ))}
              </GridList>
            }
+          <Dialog
+            open={open}
+            onClose={() => {setOpen(false)}}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+          >            
+            <DialogContent>
+              <InnerImageZoom src={selectedImage} zoomScale={6} />
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={() => {setOpen(false)}} color="primary">
+                Close
+              </Button>
+            </DialogActions>
+          </Dialog>
       </Container>
     </Layout>
   );
