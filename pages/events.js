@@ -1,4 +1,5 @@
  // pages/events.js
+import "../css/events.css";
 import Layout from "../components/Layout";
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Typography } from "@material-ui/core";
@@ -11,7 +12,6 @@ import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import { useMediaQuery } from 'react-responsive'
-import "../css/events.css";
 import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
@@ -203,7 +203,31 @@ function Events() {
 			)
 		}
 	}
-
+	const timelineElements =
+		data.map((event) => 
+			<TimelineItem style={{textAlign: 'left '}}>				
+				<TimelineOppositeContent className='event-timelineOppositeContent'>
+					<Typography variant="body2" className={classes.date}>
+						{event.month}
+					</Typography>
+					{timelineContent[event.key].image}
+				</TimelineOppositeContent>				
+				<TimelineSeparator style={{float: 'left'}}>
+				<TimelineDot style={{color: "white", backgroundColor:"green"}}>
+					<ArrowDownwardIcon />
+				</TimelineDot>							
+				<TimelineConnector />							
+				</TimelineSeparator>
+				<TimelineContent>
+					{isDesktop? null: <Typography variant="body2" className={`${classes.date} event-timelineDate`}>
+							{event.month}
+					</Typography>}
+					{isDesktop? null: timelineContent[event.key].image}
+					{timelineContent[event.key].text}
+				</TimelineContent>
+		</TimelineItem>
+	);
+	
   	return (
 	    <Layout title={"PIL | Events"} active={"Events"}>
       	<Container>
@@ -218,33 +242,7 @@ function Events() {
 			
 							        				
 			<Timeline align={isDesktop? 'alternate': 'left'}>
-                {
-                    data.map((event) => 
-                        <TimelineItem style={{textAlign: 'left '}}>
-							{isDesktop?
-								<TimelineOppositeContent>
-									<Typography variant="body2" className={classes.date}>
-										{event.month}
-									</Typography>
-									{timelineContent[event.key].image}
-								</TimelineOppositeContent>: null
-							}                            
-                            <TimelineSeparator style={{float: 'left'}}>
-                            <TimelineDot style={{color: "white", backgroundColor:"green"}}>
-                                <ArrowDownwardIcon />
-                            </TimelineDot>							
-                            <TimelineConnector />							
-                            </TimelineSeparator>
-                            <TimelineContent>
-								{isDesktop? null: <Typography variant="body2" className={classes.date}>
-										{event.month}
-								</Typography>}
-								{isDesktop? null: timelineContent[event.key].image}
-                                {timelineContent[event.key].text}
-                            </TimelineContent>
-                    </TimelineItem>
-                    )
-                }
+                { timelineElements }
             </Timeline>
     	</Container>
     	</Layout>

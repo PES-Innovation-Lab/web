@@ -62,4 +62,7 @@
   .footerSection {
     padding: 10px 10px !important;
   }
+  .event-timelineOppositeContent {
+    display: none !important;
+  }
 }
