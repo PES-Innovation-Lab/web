@@ -18,7 +18,15 @@ import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import { Chip, Container } from "@material-ui/core";
 import {useEffect, useState} from 'react';
 import "../css/projects.css";
+import CircularProgress from '@material-ui/core/CircularProgress';
 import React from 'react';
+
+const designStyles = makeStyles({
+    spinner_text_style: {
+        textAlign:"center",
+        color:"#7cb342",
+    }
+});
 
 const useRowStyles = makeStyles({
     root: {
@@ -40,7 +48,7 @@ function Row(props) {
     const { row } = props;
     const [open, setOpen] = React.useState(false);
     const classes = useRowStyles();
-    
+
     return (
         <React.Fragment>
         <TableRow className={classes.root}>
@@ -85,12 +93,13 @@ function Row(props) {
             </TableCell>
         </TableRow>
         </React.Fragment>
-    );
+      );
 }
 
 function Publications() {
     const [data, setData] = useState({ "publications" :[]});
-        
+    const [isDataLoaded, setDataLoaded] = useState(false);
+    const designstyles = designStyles();
     useEffect(() => {
         const fetchData = async() =>{
             const result = await fetch("https://pil-api.herokuapp.com/publications");
@@ -102,17 +111,20 @@ function Publications() {
                     publications[key].authors = publications[key].authors.split(",");
                 }
                 setData({"publications": publications});
+                setDataLoaded(true);
             }
         }
         fetchData();
     }, []);
-    
+
     return (
     <Layout title={'PIL | Publications'} active={'Publications'}>
         <Typography className='pageHeader'>
-            Publications
+            Recent Publications
         </Typography>
         <Container>
+        {
+            !isDataLoaded ? <div className={designstyles.spinner_text_style}><Typography style={{fontSize: "1.5rem"}}>Loading Data</Typography> <CircularProgress style={{"color":"#7cb342", "marginTop": "1em"}} /></div> :
             <TableContainer component={Paper} style={{marginBottom: 50, marginTop: 50}}>
                 <Table aria-label="collapsible table">
                     <TableHead>
@@ -130,6 +142,7 @@ function Publications() {
                     </TableBody>
                 </Table>
             </TableContainer>
+        }
         </Container>
     </Layout>
     );
