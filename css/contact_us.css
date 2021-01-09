@@ -1,0 +1,20 @@
+.contact_text {
+  color : #ffffff;
+  font-size: 1.3rem !important;
+}
+
+.contactPageSubHeader {
+    color: #ffffff;
+    font-family: 'Red Hat Display', sans-serif !important;
+    font-size: 2rem !important;
+    margin-bottom: 20px !important;
+}
+
+.contactIcon {
+  color: #ffffff;
+  font-size: "large";
+}
+
+a, u {
+    text-decoration: none;
+}

@@ -1,6 +1,6 @@
 // components/NavBar.js
 import React, { useState, useEffect } from 'react'
-import { AppBar, Toolbar, Button, 
+import { AppBar, Toolbar, Button,
 		 IconButton, SwipeableDrawer, List,
 		 ListItem, ListItemText, InputBase } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
 	  	color: 'inherit',
 	},
 	inputInput: {
-	  	padding: theme.spacing(1, 1, 1, 0),	  	
+	  	padding: theme.spacing(1, 1, 1, 0),
 	  	paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
 	  	transition: theme.transitions.create('width'),
 	  	width: '100%',
@@ -85,14 +85,14 @@ const makeMenu = (nav, active, mobile) => {
 						{nav.title}
 					</Button>
 				</Link>
-			) 
-		}		
+			)
+		}
 	} else {
 		return (
 			<PopupState variant="popover" popupId="demo-popup-menu">
 				{(popupState) => (
 					<React.Fragment>
-						{mobile ? 
+						{mobile ?
 								<ListItem button key={nav.title} className='drawerMenu'>
 									<Link href={nav.route}>
 										<ListItemText className={`drawerNavText${active == nav.title ? ' active' : ''}`} primary={nav.title} />
@@ -107,7 +107,7 @@ const makeMenu = (nav, active, mobile) => {
 									{nav.title}
 								</Button>
 							</Link>
-						}						
+						}
 						{!mobile? <IconButton size="small" {...bindTrigger(popupState)} className='dropdown-desktop'>
 							  <ExpandMoreIcon fontSize="inherit" style={{'color': 'white'}}/>
 						</IconButton>: null}
@@ -130,7 +130,7 @@ const makeMenu = (nav, active, mobile) => {
 				)}
 			</PopupState>
 		)
-	}			
+	}
 }
 
 const handleSearch = (query, searchSettings) => {
@@ -157,7 +157,7 @@ function NavBar({ active, search, searchSettings }) {
 	useEffect(() => {
 		set_document(document)
 		setScrollPosition(1)
-	}, [])	
+	}, [])
 
 	useEffect(() => {
 		if (scrollPosition) setHasInitialised(true);
@@ -166,9 +166,9 @@ function NavBar({ active, search, searchSettings }) {
 	const getScrollPosition = () => {
 		const scrollPosition = _document.body.getBoundingClientRect()
         return scrollPosition.y;
-        
+
     }
-	
+
     useEffect(() => {
 		if (_document && scrollPosition != null){
 			const handleScroll = () => {
@@ -195,9 +195,10 @@ function NavBar({ active, search, searchSettings }) {
 		]},
 		{ title: 'Join Us', route: `${process.env.ASSET_PREFIX}/join_us`},
 		{ title: 'Articles', route: `${process.env.ASSET_PREFIX}/articles`},
+		{ title: 'Contact Us', route: `${process.env.ASSET_PREFIX}/contact_us`},
 	]
 
-		
+
     return (
         <AppBar className='navbar' style={
 				{transform: sticky ? "translateY(0%)" : "translateY(-100%)",
@@ -214,7 +215,7 @@ function NavBar({ active, search, searchSettings }) {
 						<img className='logo' src={`${process.env.ASSET_PREFIX}/images/mlab/mlab_logo_icon.png`}/>
 					</IconButton>
 				</Link>
-        
+
 				{navs.map((nav) => (
 					makeMenu(nav, active, false)
 				))}
@@ -240,7 +241,7 @@ function NavBar({ active, search, searchSettings }) {
       			anchor={'left'}
       			open={ drawerOpen }
       			onClose={ () => { setDrawerOpen(false) } }
-				onOpen={ () => { setDrawerOpen(true) } }				
+				onOpen={ () => { setDrawerOpen(true) } }
     		>
 				<List className='navDrawer'>
 					<ListItem button className='drawerMenu' style={{borderBottom: '1px solid grey'}}>
@@ -249,7 +250,7 @@ function NavBar({ active, search, searchSettings }) {
 					{navs.map((nav) => (
 						makeMenu(nav, active, true)
 					))}
-				</List>      			
+				</List>
     		</SwipeableDrawer>
         </AppBar>
     );
