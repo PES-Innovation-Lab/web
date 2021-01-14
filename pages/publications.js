@@ -1,6 +1,6 @@
 // pages/publications.js
 
-import Layout from "../components/Layout";
+import Layout from '../components/Layout';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Collapse from '@material-ui/core/Collapse';
@@ -15,137 +15,157 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
-import { Chip, Container } from "@material-ui/core";
-import {useEffect, useState} from 'react';
-import "../css/projects.css";
+import { Chip, Container } from '@material-ui/core';
+import React, { useEffect, useState } from 'react';
+import '../css/projects.css';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import React from 'react';
 
 const designStyles = makeStyles({
-    spinner_text_style: {
-        textAlign:"center",
-        color:"#7cb342",
-    }
+  spinnerTextStyle: {
+    textAlign: 'center',
+    color: '#7cb342',
+  },
 });
 
 const useRowStyles = makeStyles({
-    root: {
-      '& > *': {
-        borderBottom: 'unset',
-      },
+  root: {
+    '& > *': {
+      borderBottom: 'unset',
     },
-    headingStyle: {
-        fontSize: "1.5rem",
-        marginTop: "1em",
-    },
-    contentStyle:{
-        fontSize: "1rem",
-        marginTop: "1em",
-    }
-  });
+  },
+  headingStyle: {
+    fontSize: '1.5rem',
+    marginTop: '1em',
+  },
+  contentStyle: {
+    fontSize: '1rem',
+    marginTop: '1em',
+  },
+});
 
 function Row(props) {
-    const { row } = props;
-    const [open, setOpen] = React.useState(false);
-    const classes = useRowStyles();
+  const { row } = props;
+  const [open, setOpen] = React.useState(false);
+  const classes = useRowStyles();
 
-    return (
-        <React.Fragment>
-        <TableRow className={classes.root}>
-            <TableCell>
-            <IconButton aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
-                {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-            </IconButton>
-            </TableCell>
-            <TableCell component="th" scope="row">
-            <strong>{row.title}</strong>
-            </TableCell>
-            <TableCell align="center">{row.year}</TableCell>
-            <TableCell align="center">{row.conference}</TableCell>
-        </TableRow>
-        <TableRow>
-            <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
-                <Collapse in={open} timeout="auto" unmountOnExit>
-                    <Box margin={1}>
-                        <Typography variant="h6" gutterBottom component="div">
-                            Authors:
-                        </Typography>
-                        {
-                            row.authors.map((person)=>
-                                <Chip
-                                    label={person}
-                                    className='projectKeywordChip'
-                                >
-                                </Chip>
-                            )
-                        }
-                        <Typography className={classes.headingStyle}>
-                            Description:
-                        </Typography>
-                        <Typography className={classes.contentStyle}>
-                            {row.short_description}
-                        </Typography>
-                        <Typography className={classes.contentStyle}>
-                            <strong>Link to publication: </strong> <a style={{color: "#8bc34a"}} href={row.link} target='_blank'>{row.link}</a>
-                        </Typography>
-                    </Box>
-                </Collapse>
-            </TableCell>
-        </TableRow>
-        </React.Fragment>
-      );
+  return (
+    <React.Fragment>
+      <TableRow className={classes.root}>
+        <TableCell>
+          <IconButton
+            aria-label="expand row"
+            size="small"
+            onClick={() => setOpen(!open)}
+          >
+            {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+          </IconButton>
+        </TableCell>
+        <TableCell component="th" scope="row">
+          <strong>{row.title}</strong>
+        </TableCell>
+        <TableCell align="center">{row.year}</TableCell>
+        <TableCell align="center">{row.conference}</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
+          <Collapse in={open} timeout="auto" unmountOnExit>
+            <Box margin={1}>
+              <Typography variant="h6" gutterBottom component="div">
+                Authors:
+              </Typography>
+              {row.authors.map((person) => (
+                <Chip
+                  key={person}
+                  label={person}
+                  className="projectKeywordChip"
+                ></Chip>
+              ))}
+              <Typography className={classes.headingStyle}>
+                Description:
+              </Typography>
+              <Typography className={classes.contentStyle}>
+                {row.short_description}
+              </Typography>
+              <Typography className={classes.contentStyle}>
+                <strong>Link to publication: </strong>{' '}
+                <a
+                  style={{ color: '#8bc34a' }}
+                  href={row.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {row.link}
+                </a>
+              </Typography>
+            </Box>
+          </Collapse>
+        </TableCell>
+      </TableRow>
+    </React.Fragment>
+  );
 }
 
 function Publications() {
-    const [data, setData] = useState({ "publications" :[]});
-    const [isDataLoaded, setDataLoaded] = useState(false);
-    const designstyles = designStyles();
-    useEffect(() => {
-        const fetchData = async() =>{
-            const result = await fetch("https://pil-api.herokuapp.com/publications");
-            if (await result.status != 200){
-                alert("API Error. Try again later");
-            }else{
-                let publications = await result.json();
-                for (let key in publications){
-                    publications[key].authors = publications[key].authors.split(",");
-                }
-                setData({"publications": publications});
-                setDataLoaded(true);
-            }
+  const [data, setData] = useState({ publications: [] });
+  const [isDataLoaded, setDataLoaded] = useState(false);
+  const designstyles = designStyles();
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await fetch('https://pil-api.herokuapp.com/publications');
+      if ((await result.status) !== 200) {
+        alert('API Error. Try again later');
+      } else {
+        const publications = await result.json();
+        for (const key in publications) {
+          publications[key].authors = publications[key].authors.split(',');
         }
-        fetchData();
-    }, []);
+        setData({ publications: publications });
+        setDataLoaded(true);
+      }
+    };
+    fetchData();
+  }, []);
 
-    return (
+  return (
     <Layout title={'PIL | Publications'} active={'Publications'}>
-        <Typography className='pageHeader'>
-            Recent Publications
-        </Typography>
-        <Container>
-        {
-            !isDataLoaded ? <div className={designstyles.spinner_text_style}><Typography style={{fontSize: "1.5rem"}}>Loading Data</Typography> <CircularProgress style={{"color":"#7cb342", "marginTop": "1em"}} /></div> :
-            <TableContainer component={Paper} style={{marginBottom: 50, marginTop: 50}}>
-                <Table aria-label="collapsible table">
-                    <TableHead>
-                        <TableRow>
-                            <TableCell />
-                            <TableCell><strong>Title</strong></TableCell>
-                            <TableCell align="center"><strong>Year</strong></TableCell>
-                            <TableCell align="center"><strong>Conference</strong></TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {data.publications.map((pub) => (
-                            <Row key={pub.title} row={pub} />
-                        ))}
-                    </TableBody>
-                </Table>
-            </TableContainer>
-        }
-        </Container>
+      <Typography className="pageHeader">Recent Publications</Typography>
+      <Container>
+        {!isDataLoaded ? (
+          <div className={designstyles.spinnerTextStyle}>
+            <Typography style={{ fontSize: '1.5rem' }}>Loading Data</Typography>{' '}
+            <CircularProgress style={{ color: '#7cb342', marginTop: '1em' }} />
+          </div>
+        ) : (
+          <TableContainer
+            component={Paper}
+            style={{ marginBottom: 50, marginTop: 50 }}
+          >
+            <Table aria-label="collapsible table">
+              <TableHead>
+                <TableRow>
+                  <TableCell />
+                  <TableCell>
+                    <strong>Title</strong>
+                  </TableCell>
+                  <TableCell align="center">
+                    <strong>Year</strong>
+                  </TableCell>
+                  <TableCell align="center">
+                    <strong>Conference</strong>
+                  </TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {data.publications.map((pub) => (
+                  <Row key={pub.title} row={pub} />
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        )}
+      </Container>
     </Layout>
-    );
+  );
 }
 
 // export async function getServerSideProps(context){
