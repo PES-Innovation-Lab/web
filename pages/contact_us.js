@@ -17,8 +17,8 @@ function contactUs() {
           <Typography className='contactPageSubHeader'>
               Contact Us
           </Typography>
-          <Grid container justify="center">
-              <Grid item xs={6} style={{textAlign: 'center'}}>
+          <Grid container justify="center" spacing={5}>
+              <Grid item xs={12} sm={6} style={{textAlign: 'center'}}>
                   <a href="mailto:innovationlab@pes.edu" target='_blank'>
                       <IconButton><EmailIcon className='contactIcon' fontSize="large"/></IconButton>
                   </a>
@@ -28,7 +28,7 @@ function contactUs() {
                       </Typography>
                   </a>
               </Grid>
-              <Grid item xs={6} style={{textAlign: 'center'}}>
+              <Grid item xs={12} sm={6} style={{textAlign: 'center'}}>
                   <a href="mailto:pes.mlab@gmail.com">
                       <IconButton><EmailIcon className='contactIcon' fontSize="large"/></IconButton>
                   </a>
@@ -45,8 +45,8 @@ function contactUs() {
           <Typography className="contactPageSubHeader">
               Social
           </Typography>
-          <Grid container justify="center">
-              <Grid item xs={6} style={{textAlign: 'center'}}>
+          <Grid container justify="center" spacing={5}>
+              <Grid item xs={12} sm={6} style={{textAlign: 'center'}}>
                   <a href="https://www.linkedin.com/company/pes-innovation-lab" target='_blank'>
                       <IconButton><LinkedInIcon className='contactIcon' fontSize="large"/></IconButton>
                   </a>
@@ -56,7 +56,7 @@ function contactUs() {
                       </Typography>
                   </a>
               </Grid>
-              <Grid item xs={6} style={{textAlign: 'center'}}>
+              <Grid item xs={12} sm={6} style={{textAlign: 'center'}}>
                   <a href="https://www.instagram.com/pes.lab/">
                       <IconButton><InstagramIcon className='contactIcon' fontSize="large"/></IconButton>
                   </a>
@@ -66,7 +66,7 @@ function contactUs() {
                       </Typography>
                   </a>
               </Grid>
-              <Grid item xs={6} style={{textAlign: 'center'}}>
+              <Grid item xs={12} sm={6} style={{textAlign: 'center'}}>
                   <a href="https://github.com/PES-Innovation-Lab" target='_blank'>
                       <IconButton><GitHubIcon className='contactIcon' fontSize="large"/></IconButton>
                   </a>
@@ -76,7 +76,7 @@ function contactUs() {
                       </Typography>
                   </a>
               </Grid>
-              <Grid item xs={6} style={{textAlign: 'center'}}>
+              <Grid item xs={12} sm={6} style={{textAlign: 'center'}}>
                   <a href="http://bit.ly/pil-yt" target='_blank'>
                       <IconButton><YouTubeIcon className='contactIcon' fontSize="large"/></IconButton>
                   </a>
