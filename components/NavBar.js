@@ -20,6 +20,10 @@ import MenuItem from '@material-ui/core/MenuItem';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
+// eslint-disable-next-line prettier/prettier
+// eslint-disable-next-line no-unused-vars
+import css from '../css/navbar.css';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
