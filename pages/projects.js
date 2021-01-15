@@ -125,6 +125,7 @@ function Projects() {
                       <CardActionArea>
                         <CardMedia
                           className="projectCardImage"
+                          component="img"
                           image={
                             project.poster_url ||
                             `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`
