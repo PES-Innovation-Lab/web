@@ -83,6 +83,7 @@ function Members() {
                       <CardActionArea>
                         <CardMedia
                           className="memberCardImage"
+                          component="img"
                           image={
                             member.picture_url || './images/members/unknown.png'
                           }
