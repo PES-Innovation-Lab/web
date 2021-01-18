@@ -173,7 +173,7 @@ function Projects() {
                             className="projectCardImage"
                             component="img"
                             image={
-                              process.env.ASSET_PREFIX + project.poster_url ||
+                              project.poster_url ||
                               `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`
                             }
                             title={project.title}
