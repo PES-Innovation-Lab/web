@@ -1,6 +1,6 @@
 .hashCodeSection {
-    padding: 50px;
-    padding-bottom: 100px;
+  padding: 50px;
+  padding-bottom: 100px;
 }
 /* 
 .hashCodeSection:nth-child(even) {
@@ -9,53 +9,147 @@
 } */
 
 .hashCodeTitle {
-    font-size: 2.5rem !important;
-    color: #8bc34a;
-    text-align: left;
+  font-size: 2.5rem !important;
+  color: #8bc34a;
+  text-align: left;
 }
 
 .hashCodeSponsors {
-    font-size : 1.5rem !important;
-    color: white;
-    text-align: left;
+  font-size: 1.5rem !important;
+  color: white;
+  text-align: left;
 }
 
 .hashCodeDescription {
-    font-size : 1.2rem !important;
-    color: white;
-    text-align: left;
+  font-size: 1.2rem !important;
+  color: white;
+  text-align: left;
 }
 
 .hashCodeDate {
-    font-size : 2rem !important;
-    color: white;
-    text-align: left;
+  font-size: 2rem !important;
+  color: white;
+  text-align: left;
 }
 
-.hashCodeSection:nth-child(even)  .hashCodeSponsors {
-    color: black !important;
+.hashCodeSection:nth-child(even) .hashCodeSponsors {
+  color: black !important;
 }
 
-.hashCodeSection:nth-child(even)  .hashCodeDescription {
-    color: black !important;
+.hashCodeSection:nth-child(even) .hashCodeDescription {
+  color: black !important;
 }
 
-.hashCodeSection:nth-child(even)  .hashCodeDate {
-    color: black !important;
+.hashCodeSection:nth-child(even) .hashCodeDate {
+  color: black !important;
 }
 
 .sliderImage {
-    width: 100%;
-    height: 450px;
-    margin: 30px 0px !important;
+  width: 100%;
+  height: 450px;
+  margin: 30px 0px !important;
 }
 
 @media only screen and (max-device-width: 540px) {
-    .hashCodeSection {        
-        padding: 100px 10px;
+  .hashCodeSection {
+    padding: 100px 10px;
+  }
+  .sliderImage {
+    height: 200px;
+  }
+}
 
-    }
-    .sliderImage {        
-        height: 200px;        
-    }
+/* CSS For the Temporary Hashcode 2021 Section's Register Now Button */
+.regButton,
+.regButton::after {
+  width: 345px;
+  height: 86px;
+  font-size: 36px;
+  font-family: 'Bebas Neue', cursive;
+  background: linear-gradient(45deg, transparent 5%, #8bc34a 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 88px;
+  box-shadow: 6px 0px 0px #8bc34a;
+  outline: transparent;
+  position: relative;
+}
+
+.regButton::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: 'COMING SOON';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    #ff013c 5%
+  );
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  clip-path: var(--slice-0);
+}
+
+.regButton:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
 }
