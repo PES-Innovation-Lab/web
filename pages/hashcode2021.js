@@ -9,7 +9,7 @@ import {
 const HashCode2021 = () => {
     React.useEffect(() => {
         const script = document.createElement('script');
-        script.src = 'https://apply.devfolio.co/v2/sdk.js';
+        script.src = `https://apply.devfolio.co/v2/sdk.js`;
         script.async = true;
         script.defer = true;
         document.body.appendChild(script);
@@ -18,7 +18,7 @@ const HashCode2021 = () => {
         }
     }, []);
 
-    return (        
+    return (
         <Layout title={'PIL | HashCode2021'} active={'Hashcode 2021'}>
             <div className='h-screen w-full' style={{clipPath: 'polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%)', background:`url('${process.env.ASSET_PREFIX}/images/mlab/hashcode.JPG')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
                 <div className='flex w-4/5 mx-auto mt-60'>
