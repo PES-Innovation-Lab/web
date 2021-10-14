@@ -1,49 +1,48 @@
 .projectCard {
-    max-width: 345px;
-    background-color: black !important;
+  max-width: 345px;
+  background-color: black !important;
 }
 
 .projectCardTitle {
-    color: white;
+  color: white;
 }
 
 .projectCardDescription {
-    color: white;
+  color: white;
 }
 
 .projectCardImage {
-    min-height: 500px;
-    max-height: 500px;
+  max-height: 500px;
 }
 
 .projectKeywordChip {
-    margin: 6px 3px;
-    background-color: #7cb342 !important;
-    color: black !important;
-    font-size: 15px !important;
+  margin: 6px 3px;
+  background-color: #7cb342 !important;
+  color: black !important;
+  font-size: 15px !important;
 }
 
 .projectViewContainer {
-    margin-top: 6em;
-    display: flex;
+  margin-top: 6em;
+  display: flex;
 }
 
 .projectViewSectionImage {
-    text-align: center;
-    flex: 1;
+  text-align: center;
+  flex: 1;
 }
 
 .projectViewSectionImage img {
-    border-radius: 0.4em;
+  border-radius: 0.4em;
 }
 
 .projectViewSectionText {
-    padding: 20px;
-    flex: 3;
+  padding: 20px;
+  flex: 3;
 }
 
 @media only screen and (max-device-width: 540px) {
-    .projectViewContainer {
-        flex-direction: column-reverse !important;
-    }
+  .projectViewContainer {
+    flex-direction: column-reverse !important;
+  }
 }
