@@ -34,5 +34,10 @@
     "react-markdown": "^5.0.3",
     "react-responsive": "^8.2.0",
     "webpack": "^4.44.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }

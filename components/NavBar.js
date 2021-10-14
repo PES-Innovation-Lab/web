@@ -186,11 +186,12 @@ function NavBar({ active, search, searchSettings }) {
 		{ title: 'Members', route: `${process.env.ASSET_PREFIX}/members` },
 		{ title: 'Projects', route: `${process.env.ASSET_PREFIX}/projects` },
 		{ title: 'Publications', route: `${process.env.ASSET_PREFIX}/publications`},
-		{ title: 'Hashcode', route: `${process.env.ASSET_PREFIX}/hashcode` },
+		{ title: 'Hashcode 2021', route: `${process.env.ASSET_PREFIX}/hashcode2021` },
 		{ title: 'Our History', route: `${process.env.ASSET_PREFIX}/about_us`},
 		{ title: 'Events', route: `${process.env.ASSET_PREFIX}/events` , subMenus: [
 			{ title: 'Incito', route: `${process.env.ASSET_PREFIX}/incito` },
 			{ title: 'Summer', route: `${process.env.ASSET_PREFIX}/summer` },
+			{ title: 'HashCode', route: `${process.env.ASSET_PREFIX}/hashcode` },
 			{ title: 'RoadShow', route: `${process.env.ASSET_PREFIX}/roadshow` }
 		]},
 		{ title: 'Join Us', route: `${process.env.ASSET_PREFIX}/join_us`},
