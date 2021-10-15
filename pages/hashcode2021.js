@@ -29,7 +29,7 @@ const HashCode2021 = () => {
                         <p className='text-3xl mt-6 mb-12 text-white'>Let's hash it out</p>
                         <div 
                             className="apply-button" 
-                            data-hackathon-slug="YOUR-HACKATHON-SLUG" 
+                            data-hackathon-slug="pes-innovation-lab-hashcode"
                             data-button-theme="dark-inverted"
                             style={{height: '44px', width: '312px'}}
                         ></div>
