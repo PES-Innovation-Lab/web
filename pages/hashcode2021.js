@@ -22,7 +22,7 @@ const HashCode2021 = () => {
         <Layout title={'PIL | HashCode2021'} active={'Hashcode 2021'}>
             <div className='lg:h-screen w-full ph:pb-20' style={{clipPath: 'polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%)', background:`url('${process.env.ASSET_PREFIX}/images/mlab/hashcode.JPG')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
                 <div className='flex lg:w-4/5 lg:mx-auto mt-60 ph:mt-12 ph:flex-col ph:px-4 ph:pl-8'>
-                    <div>
+                    <div className='mb-12'>
                         <p className='text-4xl text-white'>PES Innovation Lab presents</p>
                         <p className='text-6xl mt-6' style={{color: '#8bc34a'}}>HashCode 2021</p>
                         <p className='text-xl text-white'>A 24 hour hackathon</p>
@@ -33,6 +33,7 @@ const HashCode2021 = () => {
                             data-button-theme="dark-inverted"
                             style={{height: '44px', width: '312px'}}
                         ></div>
+                        <a href="https://pes-innovation-lab-hashcode.devfolio.co/" target="_blank" className='rounded p-2 bg-white relative top-8 text-xl px-6 font-bold' style={{width: '312px'}}>View details</a>
                     </div>
                     <div className='flex-grow flex flex-col justify-center items-center ph:mt-12'>
                         <p className='text-4xl text-center' style={{color: '#8bc34a'}}>Sponsors</p>                        
@@ -53,12 +54,12 @@ const HashCode2021 = () => {
             </div>
 
             <div className='lg:w-3/5 mx-auto mt-12 ph:px-4'>
-                <p className='text-3xl text-white font-bold text-justify' style={{color: '#8bc34a'}}>
+                <p className='text-2xl text-white font-bold' style={{color: '#8bc34a'}}>
                     Inviting all undergraduate developers to participate 
                     in an epic 24-hour technical showdown - HashCode 2021 by PES Innovation Lab, PES University.
                 </p>
 
-                <p className='text-2xl mt-8 text-justify text-white'>
+                <p className='text-xl mt-8 text-justify text-white'>
                     We at PES Innovation Lab are proud to present the 10th iteration of HashCode, 
                     the flagship Hackathon of PES University. We invite fellow students pursuing 
                     B.Tech to the challenge. Spend 24 hours in this epic showdown of innovating, 
