@@ -33,7 +33,7 @@ const HashCode2021 = () => {
                             data-button-theme="dark-inverted"
                             style={{height: '44px', width: '312px'}}
                         ></div>
-                        <a href="https://pes-innovation-lab-hashcode.devfolio.co/" target="_blank" className='rounded p-2 bg-white relative top-8 text-xl px-6 font-bold' style={{width: '312px'}}>View details</a>
+                        <a href="https://pes-innovation-lab-hashcode.devfolio.co/" target="_blank" className='rounded p-2 bg-white relative top-8 text-xl px-6 font-bold ph:w-full block text-center lg:w-30' style={{width: '312px'}}>View details</a>
                     </div>
                     <div className='flex-grow flex flex-col justify-center items-center ph:mt-12'>
                         <p className='text-4xl text-center' style={{color: '#8bc34a'}}>Sponsors</p>                        
