@@ -37,8 +37,11 @@ const HashCode2021 = () => {
                     </div>
                     <div className='flex-grow flex flex-col justify-center items-center ph:mt-12'>
                         <p className='text-4xl text-center' style={{color: '#8bc34a'}}>Sponsors</p>                        
-                        <div className='flex my-4 mt-8 justify-center'>
+                        <div className='flex my-4 mt-8 justify-center align-center'>
                             <img src={`${process.env.ASSET_PREFIX}/images/sponsors/nokia_logo_color.png`} className='lg:h-16 mx-4 ph:w-1/2'/>
+                        </div>
+                        <div style={{backgroundColor:"rgba(255,255,255,0.8)", padding: '4px 4px'}}>
+                            <img src={`${process.env.ASSET_PREFIX}/images/sponsors/logo-dark-groww.83f43714.svg`} className='lg:h-16 ph:w-1/3'/>
                         </div>
                         <div className='flex my-4 justify-center'>
                             <img src={`${process.env.ASSET_PREFIX}/images/sponsors/Devfolio_Logo-White.png`} className='lg:h-16 mx-4 ph:w-1/3'/>
