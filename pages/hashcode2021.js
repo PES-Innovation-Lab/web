@@ -21,7 +21,7 @@ const HashCode2021 = () => {
     return (
         <Layout title={'PIL | HashCode2021'} active={'Hashcode 2021'}>
             <div className='lg:h-screen w-full ph:pb-20' style={{clipPath: 'polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%)', background:`url('${process.env.ASSET_PREFIX}/images/mlab/hashcode.JPG')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
-                <div className='flex lg:w-4/5 lg:mx-auto mt-60 ph:mt-12 ph:flex-col ph:px-4 ph:pl-8'>
+                <div className='flex lg:w-4/5 lg:mx-auto mt-40 ph:mt-12 ph:flex-col ph:px-4 ph:pl-8'>
                     <div className='mb-12'>
                         <p className='text-4xl text-white'>PES Innovation Lab presents</p>
                         <p className='text-6xl mt-6' style={{color: '#8bc34a'}}>HashCode 2021</p>
