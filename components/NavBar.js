@@ -134,9 +134,10 @@ const makeMenu = (nav, active, mobile) => {
 }
 
 const handleSearch = (query, searchSettings) => {
+	query = query.toLowerCase();
 	const elements = document.getElementsByClassName(searchSettings.targetClass);
 	for(let ele of elements) {
-		if(ele.textContent.search(query) === -1)
+		if(ele.textContent.toLowerCase().search(query) === -1)
 			ele.style.display = 'none';
 		else
 			ele.style.display = searchSettings.default;
