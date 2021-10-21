@@ -74,6 +74,47 @@ function HashCode() {
         </Container>
       </div>
 
+      {/* Hashcode 2021 Temporary Section */}
+      <div
+        className="hashCodeSection"
+        key="hcode-2021"
+        style={{ marginTop: 40 }}
+      >
+        <Container>
+          <Typography className="hashCodeTitle">HashCode 2021</Typography>
+          <Typography className="hashCodeDate">
+            October 30 - October 31 2021
+          </Typography>
+          <Typography className="hashCodeSponsors"></Typography>
+          <Typography className="hashCodeDescription"></Typography>
+          <Grid
+            container
+            spacing={3}
+            style={{ marginTop: 20 }}
+            justify="center"
+          >
+            <Grid item xs={12} sm={4}>
+              <img
+                style={{ width: '95%' }}
+                src={`https://drive.google.com/uc?export=view&id=1kig_LncOJCw3ASmv4FbPRKvloyRkjEXz`}
+              />
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={8}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
+              <a href="https://pes-innovation-lab-hashcode.devfolio.co/" target="_blank"><button className="regButton">REGISTER NOW</button></a>
+            </Grid>
+          </Grid>
+        </Container>
+      </div>
+
       <div className="hashCodeContainer">
         {/* This is a sample for reference */}
         {/* <div className='hashCodeSection'>
