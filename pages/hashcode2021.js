@@ -6,17 +6,20 @@ import {
     TimelineOppositeContent
 } from '@material-ui/lab';
 
-const HashCode2021 = () => {
-    React.useEffect(() => {
-        const script = document.createElement('script');
-        script.src = `https://apply.devfolio.co/v2/sdk.js`;
-        script.async = true;
-        script.defer = true;
-        document.body.appendChild(script);
-        return () => {
-          document.body.removeChild(script);
-        }
-    }, []);
+import {
+    Dialog, AppBar, Toolbar, Typography, 
+    IconButton, Slide
+} from '@material-ui/core'
+
+import CloseIcon from '@material-ui/icons/Close';
+
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+});
+  
+const HashCode2021 = () => {    
+    const [open, setOpen] = React.useState(false);
 
     return (
         <Layout title={'PIL | HashCode2021'} active={'Hashcode 2021'}>
@@ -27,12 +30,7 @@ const HashCode2021 = () => {
                         <p className='text-6xl mt-6' style={{color: '#8bc34a'}}>HashCode 2021</p>
                         <p className='text-xl text-white'>A 24 hour hackathon</p>
                         <p className='text-3xl mt-6 mb-12 text-white'>Let's hash it out</p>
-                        <div 
-                            className="apply-button" 
-                            data-hackathon-slug="pes-innovation-lab-hashcode"
-                            data-button-theme="dark-inverted"
-                            style={{height: '44px', width: '312px'}}
-                        ></div>
+                        <div onClick={() => setOpen(true)} href="https://pes-innovation-lab-hashcode.devfolio.co/" target="_blank" className='cursor-pointer rounded p-2 bg-white text-xl px-6 font-bold ph:w-full block text-center lg:w-30' style={{width: '312px'}}>View shortlisted teams</div>
                         <a href="https://pes-innovation-lab-hashcode.devfolio.co/" target="_blank" className='rounded p-2 bg-white relative top-8 text-xl px-6 font-bold ph:w-full block text-center lg:w-30' style={{width: '312px'}}>View details</a>
                     </div>
                     <div className='flex-grow flex flex-col justify-center items-center ph:mt-12'>
@@ -153,7 +151,74 @@ const HashCode2021 = () => {
                     </TimelineItem>
                 </Timeline>
             </div>
-
+            <Dialog
+                fullScreen
+                open={open}
+                onClose={() => (setOpen(false))}
+                TransitionComponent={Transition}
+            >
+                <AppBar className="dialogAppBar">
+                    <Toolbar>
+                        <Typography variant="h6" className="dialogTitle">
+                            Shortlisted Teams
+                        </Typography>
+                        <IconButton
+                            edge="start"
+                            color="inherit"
+                            onClick={() => setOpen(false)}
+                        >
+                            <CloseIcon style={{ float: 'right', color: '#8bc34a' }} />
+                        </IconButton>
+                    </Toolbar>
+                
+                </AppBar>
+                <div className='lg:w-3/5 mt-24 mx-auto flex ph:w-full'>
+                    <div className='w-1/2 flex flex-col items-end lg:px-8 ph:px-4'>
+                        <p className='lg:text-xl ph:text-sm'>(A)lso (K)nown (A)s</p>
+                        <p className='lg:text-xl ph:text-sm'>ANUI</p>
+                        <p className='lg:text-xl ph:text-sm'>Apple Pi</p>
+                        <p className='lg:text-xl ph:text-sm'>BetterButter</p>
+                        <p className='lg:text-xl ph:text-sm'>Block Ops</p>
+                        <p className='lg:text-xl ph:text-sm'>BruteForcers</p>
+                        <p className='lg:text-xl ph:text-sm'>Change seekers</p>
+                        <p className='lg:text-xl ph:text-sm'>Code of Duty </p>
+                        <p className='lg:text-xl ph:text-sm'>CodeIndies</p>
+                        <p className='lg:text-xl ph:text-sm'>CSium</p>
+                        <p className='lg:text-xl ph:text-sm'>Deep-N-Dense</p>
+                        <p className='lg:text-xl ph:text-sm'>Don't panic</p>
+                        <p className='lg:text-xl ph:text-sm'>Dragon glass</p>
+                        <p className='lg:text-xl ph:text-sm'>EDITH </p>
+                        <p className='lg:text-xl ph:text-sm'>Epiphany</p>
+                        <p className='lg:text-xl ph:text-sm'>Falcon </p>
+                        <p className='lg:text-xl ph:text-sm'>Foodocus</p>
+                        <p className='lg:text-xl ph:text-sm'>Hackstreet Boys</p>
+                        <p className='lg:text-xl ph:text-sm'>hackstreet_boys</p>
+                        <p className='lg:text-xl ph:text-sm'>HashBrowns</p>
+                    </div>
+                    <div className='w-1/2'>
+                        <p className='lg:text-xl ph:text-sm'>Hungry Pandas</p>
+                        <p className='lg:text-xl ph:text-sm'>Jack Rabbits </p>
+                        <p className='lg:text-xl ph:text-sm'>MARS</p>
+                        <p className='lg:text-xl ph:text-sm'>Mixer Grinders</p>
+                        <p className='lg:text-xl ph:text-sm'>Naive Linguists</p>
+                        <p className='lg:text-xl ph:text-sm'>newmonic</p>
+                        <p className='lg:text-xl ph:text-sm'>PeterCat</p>
+                        <p className='lg:text-xl ph:text-sm'>Pirates</p>
+                        <p className='lg:text-xl ph:text-sm'>R Slickerz </p>
+                        <p className='lg:text-xl ph:text-sm'>R_Squared_S</p>
+                        <p className='lg:text-xl ph:text-sm'>Ro-dolf</p>
+                        <p className='lg:text-xl ph:text-sm'>Ryzen</p>
+                        <p className='lg:text-xl ph:text-sm'>SegFault</p>
+                        <p className='lg:text-xl ph:text-sm'>ShellStorm</p>
+                        <p className='lg:text-xl ph:text-sm'>Shift Ctrl</p>
+                        <p className='lg:text-xl ph:text-sm'>Sovellus</p>
+                        <p className='lg:text-xl ph:text-sm'>Team Ethconnect</p>
+                        <p className='lg:text-xl ph:text-sm'>Tetris</p>
+                        <p className='lg:text-xl ph:text-sm'>The Baked Brownies</p>
+                        <p className='lg:text-xl ph:text-sm'>Trojan hammers</p>
+                    </div>
+                </div>
+            </Dialog>
 
         </Layout>        
     )
