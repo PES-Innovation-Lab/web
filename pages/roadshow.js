@@ -1,10 +1,13 @@
 // pages/roadshow.js
 import Layout from '../components/Layout';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Container, Grid, CardMedia } from '@material-ui/core';
+import { Typography, Container, Grid, CardMedia, IconButton } from '@material-ui/core';
 import AliceCarousel from 'react-alice-carousel';
 import { useEffect, useState } from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
+
+import cookieCutter from 'cookie-cutter'
+
 import '../css/hashCode.css';
 import '../node_modules/react-alice-carousel/lib/alice-carousel.css';
 
@@ -32,6 +35,13 @@ const CarouselImage = ({ img }) => (
 );
 
 function RoadShow() {
+  try {
+    cookieCutter.set('TreasureHunt', 'pastebin.com/K6w7pz5J')
+  }
+  catch (err) {
+
+  }
+
   const styles = designstyles();
   const [data, setData] = useState({ events: [] });
   const [isDataLoaded, setDataLoaded] = useState(false);
@@ -139,8 +149,21 @@ function RoadShow() {
                       ))}
                     </AliceCarousel>
                   </Grid>
+
+                  <a href={`https://www.google.com/search?q=Cookie+Reader`} target="_blank">
+                    <IconButton disableFocusRipple edge="start">
+                      <img
+                        style={{ width: '80%' }}
+                        className="footerLogo"
+                        src={`${process.env.ASSET_PREFIX}/images/treasure_hunt/cookie.png`}
+                      />
+                    </IconButton>
+                  </a>
+                  
                 </Grid>
+                
               </Container>
+            
             </div>
           ))
         )}

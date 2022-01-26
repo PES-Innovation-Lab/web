@@ -27,6 +27,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
     "@zeit/next-css": "^1.0.1",
+    "cookie-cutter": "^0.2.0",
     "material-ui-popup-state": "^1.7.1",
     "next": "^10.0.4",
     "react": "^17.0.1",
