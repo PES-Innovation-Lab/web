@@ -143,6 +143,7 @@ function Members() {
           ))
         )}
       </Container>
+      <div className='Congrats on finding this! Your next clue is , ...' style={{display:"none"}}></div>
     </Layout>
   );
 }
