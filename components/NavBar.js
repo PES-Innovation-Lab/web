@@ -14,6 +14,13 @@ import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 
+//For Dialog displaying hint
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+
 const useStyles = makeStyles((theme) => ({
 	root: {
 	  	flexGrow: 1,
@@ -144,6 +151,7 @@ const handleSearch = (query, searchSettings) => {
 	}
 }
 
+
 function NavBar({ active, search, searchSettings }) {
 	const [ drawerOpen, setDrawerOpen ] = useState(false);
 	const classes = useStyles();
@@ -199,6 +207,31 @@ function NavBar({ active, search, searchSettings }) {
 		{ title: 'Articles', route: `${process.env.ASSET_PREFIX}/articles`},
 	]
 
+	//Custom func to handle clicks
+	const [clickCnt,setClickCnt] = useState(1);
+	const onLogoClick = (e)=>{
+		// console.log(clickCnt);
+		setClickCnt(clickCnt+1);
+		// console.log(clickCnt);
+		if(clickCnt === 10)
+		{
+			handleClickOpen();
+			setClickCnt(1);
+		}
+	}
+
+	const [open, setOpen] = React.useState(false);
+	
+	const handleClickOpen = () => {
+		setOpen(true);
+	};
+	
+	const handleClose = (e,r) => {
+		if(r && r=="backdropClick")
+			return;
+		setOpen(false);
+	};
+
 		
     return (
         <AppBar className='navbar' style={
@@ -211,11 +244,29 @@ function NavBar({ active, search, searchSettings }) {
               	<IconButton onClick={() => { setDrawerOpen(true) }} edge="start" className='menuButton' >
                 	<MenuIcon />
               	</IconButton>
-				<Link href={`${process.env.ASSET_PREFIX}/`}>
-					<IconButton disableFocusRipple edge="start" className='logoButton'>
+				{/* <Link href={`${process.env.ASSET_PREFIX}/`}> */}
+					<IconButton disableFocusRipple edge="start" className='logoButton' onClick={onLogoClick}>
 						<img className='logo' src={`${process.env.ASSET_PREFIX}/images/mlab/mlab_logo_icon.png`}/>
 					</IconButton>
-				</Link>
+					<Dialog
+						open={open}
+						onClose={handleClose}
+						aria-labelledby="alert-dialog-title"
+						aria-describedby="alert-dialog-description"
+					>
+						<DialogTitle id="alert-dialog-title">
+						{"Congrats on finding this !!"}
+						</DialogTitle>
+						<DialogContent>
+						<DialogContentText id="alert-dialog-description">
+							Your next clue is, ...
+						</DialogContentText>
+						</DialogContent>
+						<DialogActions>
+						<Button onClick={handleClose}>OK</Button>
+						</DialogActions>
+					</Dialog>
+				{/* </Link> */}
         
 				{navs.map((nav) => (
 					makeMenu(nav, active, false)
