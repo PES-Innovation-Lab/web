@@ -255,11 +255,11 @@ function NavBar({ active, search, searchSettings }) {
 						aria-describedby="alert-dialog-description"
 					>
 						<DialogTitle id="alert-dialog-title">
-						{"Congrats on finding this !!"}
+						{"You're making progress!"}
 						</DialogTitle>
 						<DialogContent>
 						<DialogContentText id="alert-dialog-description">
-							Your next clue is, ...
+							Your next clue is, CHESS PLACEHOLDER
 						</DialogContentText>
 						</DialogContent>
 						<DialogActions>

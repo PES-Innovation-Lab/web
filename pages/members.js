@@ -143,7 +143,7 @@ function Members() {
           ))
         )}
       </Container>
-      <div className='Congrats on finding this! Your next clue is , ...' style={{display:"none"}}></div>
+      <div className='Congrats on finding this! Your next clue is, think Android Developer Options, except with the Logo of this website.' style={{display:"none"}}></div>
     </Layout>
   );
 }

@@ -39,16 +39,38 @@ const designStyles = makeStyles({
   },
 });
 
+const useStickyState = (defaultValue, key) => {
+  const [value, setValue] = React.useState(defaultValue);
+
+  React.useEffect(() => {
+    const stickyValue = window.localStorage.getItem(key);
+
+    if (stickyValue !== null) {
+      setValue(JSON.parse(stickyValue));
+    }
+  }, [key]);
+
+  React.useEffect(() => {
+    window.localStorage.setItem(key, JSON.stringify(value));
+  }, [key, value]);
+
+  return [value, setValue];
+}
+
 function Projects() {
   const [data, setData] = useState({ projects: [] });
   const [open, setOpen] = React.useState(false);
   const [isDataLoaded, setDataLoaded] = useState(false);
   const [isProjectFromURL, setIsProjectFromURL] = useState(true);
 
+  const [uniqueCode, setUniqueCode] = useStickyState("", "uq5");
   const viewProject = (project) => {
     setSelectedProject(project);
     setOpen(true);
   };
+
+
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -163,8 +185,11 @@ function Projects() {
                     className="projectCardContainer"
                   >
                     <a
-                      onClick={() => setIsProjectFromURL(false)}
-                      href={'#' + project.id}
+                      onClick={() => {
+                        
+                        setIsProjectFromURL(false)
+                      }}
+                      href={uniqueCode.length > 0 && project.id == 'neural-music' ? 'https://youtu.be/3ROQ8WSzByc' : '#' + project.id}
                       className={designstyles.linkStyle}
                     >
                       <Card className="projectCard">
