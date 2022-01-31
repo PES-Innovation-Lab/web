@@ -190,6 +190,7 @@ function Projects() {
                         setIsProjectFromURL(false)
                       }}
                       href={uniqueCode.length > 0 && project.id == 'neural-music' ? 'https://youtu.be/3ROQ8WSzByc' : '#' + project.id}
+
                       className={designstyles.linkStyle}
                     >
                       <Card className="projectCard">
