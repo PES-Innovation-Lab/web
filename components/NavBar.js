@@ -259,7 +259,9 @@ function NavBar({ active, search, searchSettings }) {
 						</DialogTitle>
 						<DialogContent>
 						<DialogContentText id="alert-dialog-description">
+
 							Now click <a href="https://pes-innovation-lab.github.io/TheHunt/chess" style={{color: "blue"}}>here</a> to continue.
+
 						</DialogContentText>
 						</DialogContent>
 						<DialogActions>
