@@ -4,9 +4,9 @@ name: NextJS GitHub Pages deployment
 
 on:
   push:
-    branches: [ treasure_hunt ]
+    branches: [ treasure-hunt ]
   workflow_dispatch:
-    branches: [ treasure_hunt ]
+    branches: [ treasure-hunt ]
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: treasure_hunt
+        ref: treasure-hunt
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
