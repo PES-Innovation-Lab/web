@@ -207,8 +207,28 @@ function NavBar({ active, search, searchSettings }) {
 		{ title: 'Articles', route: `${process.env.ASSET_PREFIX}/articles`},
 	]
 
+	const useStickyState = (defaultValue, key) => {
+		const [value, setValue] = React.useState(defaultValue);
+	  
+		React.useEffect(() => {
+		  const stickyValue = window.localStorage.getItem(key);
+	  
+		  if (stickyValue !== null) {
+			setValue(JSON.parse(stickyValue));
+		  }
+		}, [key]);
+	  
+		React.useEffect(() => {
+		  window.localStorage.setItem(key, JSON.stringify(value));
+		}, [key, value]);
+	  
+		return [value, setValue];
+	  }
+
 	//Custom func to handle clicks
 	const [clickCnt,setClickCnt] = useState(1);
+	const [clicked, setClicked] = useStickyState(false, "clicked");
+	
 	const onLogoClick = (e)=>{
 		// console.log(clickCnt);
 		setClickCnt(clickCnt+1);
@@ -216,6 +236,7 @@ function NavBar({ active, search, searchSettings }) {
 		if(clickCnt === 10)
 		{
 			handleClickOpen();
+			setClicked(true);
 			setClickCnt(1);
 		}
 	}
@@ -260,7 +281,7 @@ function NavBar({ active, search, searchSettings }) {
 						<DialogContent>
 						<DialogContentText id="alert-dialog-description">
 
-							Now click <a href="https://pes-innovation-lab.github.io/TheHunt/chess" style={{color: "blue"}}>here</a> to continue.
+							Now click <a href="https://the-hunt.vercel.app/chess" style={{color: "blue"}}>here</a> to continue.
 
 						</DialogContentText>
 						</DialogContent>
