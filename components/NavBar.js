@@ -280,7 +280,9 @@ function NavBar({ active, search, searchSettings }) {
 						</DialogTitle>
 						<DialogContent>
 						<DialogContentText id="alert-dialog-description">
+
 							Now click <a href="https://the-hunt.vercel.app/chess" style={{color: "blue"}}>here</a> to continue.
+
 						</DialogContentText>
 						</DialogContent>
 						<DialogActions>
