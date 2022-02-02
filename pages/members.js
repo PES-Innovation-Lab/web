@@ -56,9 +56,10 @@ function Members() {
       search={true}
       searchSettings={{ targetClass: 'memberCardContainer', default: 'block' }}
     >
+      
       <Typography className="pageHeader">Members</Typography>
       <Container>
-        <div className='Congrats on finding this! Your next clue is, think Android Developer Options, except with the Logo of this website.' style={{display:"none"}}></div>
+        
         {!isDataLoaded ? (
           <div className={designstyles.spinnerTextStyle}>
             <Typography style={{ fontSize: '1.5rem' }}>Loading Data</Typography>{' '}
