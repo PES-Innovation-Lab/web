@@ -233,7 +233,7 @@ function NavBar({ active, search, searchSettings }) {
 		// console.log(clickCnt);
 		setClickCnt(clickCnt+1);
 		// console.log(clickCnt);
-		if(clickCnt === 10)
+		if(clickCnt === 5)
 		{
 			handleClickOpen();
 			setClicked(true);
