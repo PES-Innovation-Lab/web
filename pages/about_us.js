@@ -37,7 +37,7 @@ function AboutUs() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('https://pil-api.herokuapp.com/about');
+      const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/about');
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');
       } else {
@@ -93,7 +93,7 @@ function AboutUs() {
 }
 
 // export async function getServerSideProps(context){
-//     const res = await fetch("https://pil-api.herokuapp.com/about");
+//     const res = await fetch("https://api-vercel-mlabwebdev.vercel.app/about");
 //     const timeline = await res.json();
 //     return {props:{timeline}};
 // }

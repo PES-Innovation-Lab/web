@@ -38,7 +38,7 @@ function HashCode() {
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch(
-        'https://pil-api.herokuapp.com/events/hashcode'
+        'https://api-vercel-mlabwebdev.vercel.app/events/hashcode'
       );
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');

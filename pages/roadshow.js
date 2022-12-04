@@ -38,7 +38,7 @@ function RoadShow() {
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch(
-        'https://pil-api.herokuapp.com/events/roadshow'
+        'https://api-vercel-mlabwebdev.vercel.app/events/roadshow'
       );
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');
@@ -51,10 +51,10 @@ function RoadShow() {
     fetchData();
   }, []);
   return (
-    <Layout title={'PIL | RoadShow'} active={'RoadShow'}>
+    <Layout title={'PIL | Roadshow'} active={'Roadshow'}>
       <div className="hashCodeHeadSection">
         <Container>
-          <Typography className="pageHeader">RoadShow</Typography>
+          <Typography className="pageHeader">Roadshow</Typography>
           <Typography className={styles.subtitleStyle}>
             Project Exhibition
           </Typography>
@@ -62,7 +62,7 @@ function RoadShow() {
             className={styles.subtitleStyle}
             style={{ marginTop: 40 }}
           >
-            RoadShow is a project exhibition where summer interns showcase their
+            Roadshow is a project exhibition where summer interns showcase their
             projects to their peers and faculty.
           </Typography>
         </Container>

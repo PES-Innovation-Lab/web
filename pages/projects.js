@@ -52,7 +52,7 @@ function Projects() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('https://pil-api.herokuapp.com/projects');
+      const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/projects');
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');
       } else {
@@ -303,7 +303,7 @@ function Projects() {
 }
 
 // export async function getServerSideProps(context){
-//     const res = await fetch("https://pil-api.herokuapp.com/projects");
+//     const res = await fetch("https://api-vercel-mlabwebdev.vercel.app/projects");
 //     const output = await res.json();
 //     let projects = [];
 //     for (let key in output){

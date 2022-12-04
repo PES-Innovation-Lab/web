@@ -86,7 +86,7 @@ function Index() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('https://pil-api.herokuapp.com/stats');
+      const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/stats');
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');
       } else {
@@ -265,7 +265,7 @@ function Index() {
 }
 
 // export async function getServerSideProps(context){
-//     const res = await fetch("https://pil-api.herokuapp.com/stats");
+//     const res = await fetch("https://api-vercel-mlabwebdev.vercel.app/stats");
 //     const output = await res.json();
 //     let stats = [];
 //     for (let key in output){

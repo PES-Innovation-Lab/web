@@ -37,7 +37,7 @@ function Incito() {
   const [isDataLoaded, setDataLoaded] = useState(false);
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('https://pil-api.herokuapp.com/events/incito');
+      const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/events/incito');
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');
       } else {

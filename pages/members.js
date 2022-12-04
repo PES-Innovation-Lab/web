@@ -32,7 +32,7 @@ function Members() {
   const designstyles = designStyles();
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('https://pil-api.herokuapp.com/members');
+      const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/members');
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');
       } else {
@@ -148,7 +148,7 @@ function Members() {
 }
 
 // export async function getServerSideProps(context){
-//     const res = await fetch("https://pil-api.herokuapp.com/members");
+//     const res = await fetch("https://api-vercel-mlabwebdev.vercel.app/members");
 //     const output = await res.json();
 //     let members = [];
 //     for (let key in output){

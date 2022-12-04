@@ -111,7 +111,7 @@ function Publications() {
   const designstyles = designStyles();
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('https://pil-api.herokuapp.com/publications');
+      const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/publications');
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');
       } else {
@@ -169,7 +169,7 @@ function Publications() {
 }
 
 // export async function getServerSideProps(context){
-//     const res = await fetch("https://pil-api.herokuapp.com/publications");
+//     const res = await fetch("https://api-vercel-mlabwebdev.vercel.app/publications");
 //     const publications = await res.json();
 //     for (let key in publications){
 //         publications[key].authors = publications[key].authors.split(",");
