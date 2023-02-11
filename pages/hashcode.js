@@ -68,8 +68,8 @@ function HashCode() {
             participating teams, with mentors and members of academia assisting
             them. Esteemed personalities from different industrial backgrounds
             come to judge the show, evaluating projects from all possible
-            angles. HashCode 2019 would be the 8th edition of the annual
-            hackathon. The winners bag cash prizes totalling up to Rs. one lakh.
+            angles. HashCode 2022 will be the 11th edition of the annual
+            hackathon. Stay tuned for news about when it's happening!
           </Typography>
         </Container>
       </div>
