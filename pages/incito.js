@@ -7,6 +7,8 @@ import AliceCarousel from 'react-alice-carousel';
 import Layout from '../components/Layout';
 import '../css/hashCode.css';
 import '../node_modules/react-alice-carousel/lib/alice-carousel.css';
+import '../public/data/events/incito.json';
+import incitoData from '../public/data/events/incito.json';
 
 const designstyles = makeStyles({
   subtitleStyle: {
@@ -47,7 +49,14 @@ function Incito() {
       }
       setDataLoaded(true);
     };
-    fetchData();
+    // fetchData();
+
+    const fetch = () => {
+      const events = incitoData;
+      setData({ events: events });
+      setDataLoaded(true);
+    };
+    fetch();
   }, []);
   return (
     <Layout title={'PIL | Incito'} active={'Incito'}>

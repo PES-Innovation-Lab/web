@@ -19,6 +19,7 @@ import { useEffect, useState } from 'react';
 import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import '../css/hashCode.css';
+import articlesData from '../public/data/articles.json';
 
 const designstyles = makeStyles({
   gridList: {
@@ -63,7 +64,14 @@ function articles() {
       }
       setDataLoaded(true);
     };
-    fetchData();
+    // fetchData();
+
+    const fetch = () => {
+      const articles = articlesData;
+      setData({ articles: articles });
+      setDataLoaded(true);
+    };
+    fetch();
   }, []);
   return (
     <Layout title={'PIL | Articles'}>

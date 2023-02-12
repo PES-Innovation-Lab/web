@@ -19,6 +19,7 @@ import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import React, { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import '../css/projects.css';
+import publicationsData from '../public/data/publications.json';
 
 const designStyles = makeStyles({
   spinnerTextStyle: {
@@ -124,7 +125,16 @@ function Publications() {
         setDataLoaded(true);
       }
     };
-    fetchData();
+    // fetchData();
+    const fetch = () => {
+      const publications = publicationsData;
+      for (const key in publications) {
+        publications[key].authors = publications[key].authors.split(',');
+      }
+      setData({ publications: publications });
+      setDataLoaded(true);
+    };
+    fetch();
   }, []);
 
   return (

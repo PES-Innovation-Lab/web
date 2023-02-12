@@ -18,6 +18,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import '../css/members.css';
+import membersData from '../public/data/members.json';
 
 const designStyles = makeStyles({
   spinnerTextStyle: {
@@ -33,7 +34,7 @@ function Members() {
   useEffect(() => {
     const fetchData = async () => {
       // const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/members');
-      const result = await fetch('/data/members.json');
+      // const result = await fetch('/data/members.json');
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');
       } else {
@@ -47,7 +48,19 @@ function Members() {
       }
       setDataLoaded(true);
     };
-    fetchData();
+    // fetchData();
+
+    const fetch = () => {
+      const output = membersData;
+      const members = [];
+      for (const key in output) {
+        members.push({ key: key, data: output[key] });
+      }
+      members.reverse();
+      setData({ members: members });
+      setDataLoaded(true);
+    };
+    fetch();
   }, []);
 
   return (

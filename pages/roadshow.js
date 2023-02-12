@@ -7,6 +7,7 @@ import AliceCarousel from 'react-alice-carousel';
 import Layout from '../components/Layout';
 import '../css/hashCode.css';
 import '../node_modules/react-alice-carousel/lib/alice-carousel.css';
+import roadshowData from '../public/data/events/roadshow.json';
 
 const designstyles = makeStyles({
   subtitleStyle: {
@@ -49,7 +50,15 @@ function RoadShow() {
       }
       setDataLoaded(true);
     };
-    fetchData();
+    // fetchData();
+
+    const fetch = () => {
+      const events = roadshowData;
+      setData({ events: events });
+      setDataLoaded(true);
+    };
+
+    fetch();
   }, []);
   return (
     <Layout title={'PIL | Roadshow'} active={'Roadshow'}>

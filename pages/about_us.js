@@ -14,6 +14,7 @@ import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
+import timelineData from '../public/data/about.json';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -46,7 +47,13 @@ function AboutUs() {
         setData({ timeline: timeline });
       }
     };
-    fetchData();
+    // fetchData();
+
+    const fetch = () => {
+      const timeline = timelineData;
+      setData({ timeline: timeline });
+    };
+    fetch();
   }, []);
 
   const classes = useStyles();

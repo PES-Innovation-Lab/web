@@ -7,6 +7,7 @@ import AliceCarousel from 'react-alice-carousel';
 import Layout from '../components/Layout';
 import '../css/hashCode.css';
 import '../node_modules/react-alice-carousel/lib/alice-carousel.css';
+import hashcodeData from '../public/data/events/hashcode.json';
 
 const designstyles = makeStyles({
   subtitleStyle: {
@@ -49,7 +50,13 @@ function HashCode() {
       }
       setDataLoaded(true);
     };
-    fetchData();
+    // fetchData();
+    const fetch = () => {
+      const events = hashcodeData;
+      setData({ events: events });
+      setDataLoaded(true);
+    };
+    fetch();
   }, []);
   return (
     <Layout title={'PIL | Hashcode'} active={'Hashcode'}>
