@@ -1,19 +1,19 @@
 // pages/about_us.js
 
-import Layout from '../components/Layout';
-import { makeStyles } from '@material-ui/core/styles';
-import Timeline from '@material-ui/lab/Timeline';
-import TimelineItem from '@material-ui/lab/TimelineItem';
-import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
-import TimelineConnector from '@material-ui/lab/TimelineConnector';
-import TimelineContent from '@material-ui/lab/TimelineContent';
-import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
-import TimelineDot from '@material-ui/lab/TimelineDot';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import { Container } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import { Container } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import Timeline from '@material-ui/lab/Timeline';
+import TimelineConnector from '@material-ui/lab/TimelineConnector';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineDot from '@material-ui/lab/TimelineDot';
+import TimelineItem from '@material-ui/lab/TimelineItem';
+import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
+import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import { useEffect, useState } from 'react';
+import Layout from '../components/Layout';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -37,7 +37,8 @@ function AboutUs() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/about');
+      // const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/about');
+      const result = await fetch('/data/about.json');
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');
       } else {
