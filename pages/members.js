@@ -1,22 +1,22 @@
 // pages/members.js
+import Layout from '../components/Layout';
 import {
   Card,
   CardActionArea,
   CardActions,
   CardContent,
   CardMedia,
+  Typography,
   Container,
   Grid,
   IconButton,
-  Typography,
 } from '@material-ui/core';
-import CircularProgress from '@material-ui/core/CircularProgress';
-import { makeStyles } from '@material-ui/core/styles';
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { useEffect, useState } from 'react';
-import Layout from '../components/Layout';
+import { makeStyles } from '@material-ui/core/styles';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import '../css/members.css';
 
 const designStyles = makeStyles({
@@ -32,8 +32,7 @@ function Members() {
   const designstyles = designStyles();
   useEffect(() => {
     const fetchData = async () => {
-      // const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/members');
-      const result = await fetch('/data/members.json');
+      const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/members');
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');
       } else {
@@ -65,88 +64,83 @@ function Members() {
             <CircularProgress style={{ color: '#7cb342', marginTop: '1em' }} />
           </div>
         ) : (
-          data.members.map(
-            (
-              item // each item is the data for one year
-            ) => (
-              <Container key={item.key}>
-                <Typography className="pageSubHeader">{item.key}</Typography>
-                <Grid container spacing={3} justify="center">
-                  {item.data.members.map(
-                    (
-                      member // each member is one member
-                    ) => (
-                      <Grid
-                        key={member.name}
-                        item
-                        sm={3}
-                        className="memberCardContainer"
-                      >
-                        <Card className="memberCard">
-                          <CardActionArea>
-                            <CardMedia
-                              className="memberCardImage"
-                              component="img"
-                              image={
-                                member.picture_url ||
-                                './images/members/unknown.png'
-                              }
-                              title={member.name}
-                            />
-                            <CardContent>
-                              <Typography
-                                gutterBottom
-                                variant="h5"
-                                className="memberCardTitle"
-                              >
-                                {member.name}
-                              </Typography>
-                              <Typography className="memberCardDescription">
-                                {member.branch} | {member.grad_batch}
-                              </Typography>
-                            </CardContent>
-                          </CardActionArea>
-                          <CardActions>
-                            <Grid container>
-                              <Grid item xs={4} style={{ textAlign: 'center' }}>
-                                <a
-                                  href={member.linkedin}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                >
-                                  <IconButton>
-                                    <LinkedInIcon className="memberCardSocialIcons" />
-                                  </IconButton>
-                                </a>
-                              </Grid>
-                              <Grid item xs={4} style={{ textAlign: 'center' }}>
-                                <a href={`mailto:${member.email}`}>
-                                  <IconButton>
-                                    <EmailIcon className="memberCardSocialIcons" />
-                                  </IconButton>
-                                </a>
-                              </Grid>
-                              <Grid item xs={4} style={{ textAlign: 'center' }}>
-                                <a
-                                  href={member.github}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                >
-                                  <IconButton>
-                                    <GitHubIcon className="memberCardSocialIcons" />
-                                  </IconButton>
-                                </a>
-                              </Grid>
-                            </Grid>
-                          </CardActions>
-                        </Card>
-                      </Grid>
-                    )
-                  )}
-                </Grid>
-              </Container>
-            )
-          )
+          data.members.map((
+            item // each item is the data for one year
+          ) => (
+            <Container key={item.key}>
+              <Typography className="pageSubHeader">{item.key}</Typography>
+              <Grid container spacing={3} justify="center">
+                {item.data.members.map((
+                  member // each member is one member
+                ) => (
+                  <Grid
+                    key={member.name}
+                    item
+                    sm={3}
+                    className="memberCardContainer"
+                  >
+                    <Card className="memberCard">
+                      <CardActionArea>
+                        <CardMedia
+                          className="memberCardImage"
+                          component="img"
+                          image={
+                            member.picture_url || './images/members/unknown.png'
+                          }
+                          title={member.name}
+                        />
+                        <CardContent>
+                          <Typography
+                            gutterBottom
+                            variant="h5"
+                            className="memberCardTitle"
+                          >
+                            {member.name}
+                          </Typography>
+                          <Typography className="memberCardDescription">
+                            {member.branch} | {member.grad_batch}
+                          </Typography>
+                        </CardContent>
+                      </CardActionArea>
+                      <CardActions>
+                        <Grid container>
+                          <Grid item xs={4} style={{ textAlign: 'center' }}>
+                            <a
+                              href={member.linkedin}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <IconButton>
+                                <LinkedInIcon className="memberCardSocialIcons" />
+                              </IconButton>
+                            </a>
+                          </Grid>
+                          <Grid item xs={4} style={{ textAlign: 'center' }}>
+                            <a href={`mailto:${member.email}`}>
+                              <IconButton>
+                                <EmailIcon className="memberCardSocialIcons" />
+                              </IconButton>
+                            </a>
+                          </Grid>
+                          <Grid item xs={4} style={{ textAlign: 'center' }}>
+                            <a
+                              href={member.github}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <IconButton>
+                                <GitHubIcon className="memberCardSocialIcons" />
+                              </IconButton>
+                            </a>
+                          </Grid>
+                        </Grid>
+                      </CardActions>
+                    </Card>
+                  </Grid>
+                ))}
+              </Grid>
+            </Container>
+          ))
         )}
       </Container>
     </Layout>
