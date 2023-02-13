@@ -132,7 +132,7 @@ function Index() {
               justifyContent: 'center',
             }}
           >
-            <a href="/hashcode">
+            <a href={process.env.ASSET_PREFIX + '/hashcode'}>
               <button className="regButton">HASHCODE</button>
             </a>
           </Grid>
