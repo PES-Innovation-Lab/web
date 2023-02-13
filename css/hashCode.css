@@ -62,8 +62,8 @@
 /* CSS For the Temporary Hashcode 2021 Section's Register Now Button */
 .regButton,
 .regButton::after {
-  width: 345px;
-  height: 86px;
+  width: 400px;
+  height: 150px;
   font-size: 36px;
   font-family: 'Bebas Neue', cursive;
   background: linear-gradient(45deg, transparent 5%, #8bc34a 5%);
@@ -74,6 +74,7 @@
   box-shadow: 6px 0px 0px #8bc34a;
   outline: transparent;
   position: relative;
+  margin: 0 auto;
 }
 
 .regButton::after {
@@ -84,7 +85,7 @@
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
 
-  content: 'REGISTER NOW';
+  content: 'CHECK IT OUT';
   display: block;
   position: absolute;
   top: 0;
