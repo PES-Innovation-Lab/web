@@ -1,24 +1,25 @@
-import Layout from '../components/Layout';
 import {
+  Button,
   Container,
-  Typography,
   Dialog,
   DialogActions,
   DialogContent,
-  Button,
+  Typography,
 } from '@material-ui/core';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
+import Layout from '../components/Layout';
 
-import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
-import InnerImageZoom from 'react-inner-image-zoom';
 import IconButton from '@material-ui/core/IconButton';
-import InfoIcon from '@material-ui/icons/Info';
 import { makeStyles } from '@material-ui/core/styles';
+import InfoIcon from '@material-ui/icons/Info';
 import { useEffect, useState } from 'react';
+import InnerImageZoom from 'react-inner-image-zoom';
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import '../css/hashCode.css';
+import articlesData from '../public/data/articles.json';
 
 const designstyles = makeStyles({
   gridList: {
@@ -53,7 +54,8 @@ function articles() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/articles');
+      // const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/articles');
+      const result = await fetch('/data/articles.json');
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');
       } else {
@@ -62,7 +64,14 @@ function articles() {
       }
       setDataLoaded(true);
     };
-    fetchData();
+    // fetchData();
+
+    const fetch = () => {
+      const articles = articlesData;
+      setData({ articles: articles });
+      setDataLoaded(true);
+    };
+    fetch();
   }, []);
   return (
     <Layout title={'PIL | Articles'}>

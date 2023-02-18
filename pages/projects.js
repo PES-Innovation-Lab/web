@@ -1,26 +1,27 @@
 // pages/projects.js
-import React, { useEffect, useState } from 'react';
-import Layout from '../components/Layout';
 import {
-  Typography,
-  Container,
-  Grid,
+  AppBar,
   Card,
   CardActionArea,
   CardContent,
   CardMedia,
+  Chip,
+  Container,
   Dialog,
-  AppBar,
-  Toolbar,
+  Grid,
   IconButton,
   Slide,
-  Chip,
+  Toolbar,
+  Typography,
 } from '@material-ui/core';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import { makeStyles } from '@material-ui/core/styles';
 import CloseIcon from '@material-ui/icons/Close';
+import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import CircularProgress from '@material-ui/core/CircularProgress';
+import Layout from '../components/Layout';
 import '../css/projects.css';
+import projectsData from '../public/data/projects.json';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -52,7 +53,8 @@ function Projects() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/projects');
+      // const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/projects');
+      const result = await fetch('/data/projects.json');
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');
       } else {
@@ -60,15 +62,12 @@ function Projects() {
         const projects = [];
         for (const key in output) {
           for (const chipKey in output[key].projects) {
-            output[key].projects[chipKey].keywords = output[key].projects[
-              chipKey
-            ].keywords.split(',');
-            output[key].projects[chipKey].interns = output[key].projects[
-              chipKey
-            ].interns.split(',');
-            output[key].projects[chipKey].mentors = output[key].projects[
-              chipKey
-            ].mentors.split(',');
+            output[key].projects[chipKey].keywords =
+              output[key].projects[chipKey].keywords.split(',');
+            output[key].projects[chipKey].interns =
+              output[key].projects[chipKey].interns.split(',');
+            output[key].projects[chipKey].mentors =
+              output[key].projects[chipKey].mentors.split(',');
             output[key].projects[chipKey].id = output[key].projects[
               chipKey
             ].title
@@ -82,7 +81,30 @@ function Projects() {
       }
       setDataLoaded(true);
     };
-    fetchData();
+    // fetchData();
+
+    const fetch = () => {
+      const output = projectsData;
+      const projects = [];
+      for (const key in output) {
+        for (const chipKey in output[key].projects) {
+          output[key].projects[chipKey].keywords =
+            output[key].projects[chipKey].keywords.split(',');
+          output[key].projects[chipKey].interns =
+            output[key].projects[chipKey].interns.split(',');
+          output[key].projects[chipKey].mentors =
+            output[key].projects[chipKey].mentors.split(',');
+          output[key].projects[chipKey].id = output[key].projects[chipKey].title
+            .replace(/\s+/g, '-')
+            .toLowerCase();
+        }
+        projects.push({ key: key, data: output[key] });
+      }
+      projects.reverse();
+      setData({ projects: projects });
+      setDataLoaded(true);
+    };
+    fetch();
   }, []);
 
   const checkProjectHashString = () => {
@@ -146,66 +168,70 @@ function Projects() {
             <CircularProgress style={{ color: '#7cb342', marginTop: '1em' }} />
           </div>
         ) : (
-          data.projects.map((
-            item // each item is the data for one year
-          ) => (
-            <Container key={item.key}>
-              <Typography className="pageSubHeader">{item.key}</Typography>
-              <Grid container spacing={3}>
-                {item.data.projects.map((
-                  project // each project is one project
-                ) => (
-                  <Grid
-                    key={project.title}
-                    id={project.id}
-                    item
-                    sm={4}
-                    className="projectCardContainer"
-                  >
-                    <a
-                      onClick={() => setIsProjectFromURL(false)}
-                      href={'#' + project.id}
-                      className={designstyles.linkStyle}
-                    >
-                      <Card className="projectCard">
-                        <CardActionArea>
-                          <CardMedia
-                            className="projectCardImage"
-                            component="img"
-                            image={
-                              project.poster_url ||
-                              `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`
-                            }
-                            title={project.title}
-                          />
-                          <CardContent>
-                            <Typography
-                              className="projectCardTitle"
-                              gutterBottom
-                              variant="h5"
-                              component="h2"
-                            >
-                              {project.title}
-                            </Typography>
-                            <Typography className="projectCardDescription">
-                              {project.short_description}
-                            </Typography>
-                            {project.keywords.map((item) => (
-                              <Chip
-                                key={item}
-                                label={item}
-                                className="projectKeywordChip"
-                              ></Chip>
-                            ))}
-                          </CardContent>
-                        </CardActionArea>
-                      </Card>
-                    </a>
-                  </Grid>
-                ))}
-              </Grid>
-            </Container>
-          ))
+          data.projects.map(
+            (
+              item // each item is the data for one year
+            ) => (
+              <Container key={item.key}>
+                <Typography className="pageSubHeader">{item.key}</Typography>
+                <Grid container spacing={3}>
+                  {item.data.projects.map(
+                    (
+                      project // each project is one project
+                    ) => (
+                      <Grid
+                        key={project.title}
+                        id={project.id}
+                        item
+                        sm={4}
+                        className="projectCardContainer"
+                      >
+                        <a
+                          onClick={() => setIsProjectFromURL(false)}
+                          href={'#' + project.id}
+                          className={designstyles.linkStyle}
+                        >
+                          <Card className="projectCard">
+                            <CardActionArea>
+                              <CardMedia
+                                className="projectCardImage"
+                                component="img"
+                                image={
+                                  project.poster_url ||
+                                  `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`
+                                }
+                                title={project.title}
+                              />
+                              <CardContent>
+                                <Typography
+                                  className="projectCardTitle"
+                                  gutterBottom
+                                  variant="h5"
+                                  component="h2"
+                                >
+                                  {project.title}
+                                </Typography>
+                                <Typography className="projectCardDescription">
+                                  {project.short_description}
+                                </Typography>
+                                {project.keywords.map((item) => (
+                                  <Chip
+                                    key={item}
+                                    label={item}
+                                    className="projectKeywordChip"
+                                  ></Chip>
+                                ))}
+                              </CardContent>
+                            </CardActionArea>
+                          </Card>
+                        </a>
+                      </Grid>
+                    )
+                  )}
+                </Grid>
+              </Container>
+            )
+          )
         )}
       </Container>
       <Dialog

@@ -1,12 +1,13 @@
 // pages/hashcode.js
-import Layout from '../components/Layout';
-import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Container, Grid, CardMedia } from '@material-ui/core';
-import AliceCarousel from 'react-alice-carousel';
-import { useEffect, useState } from 'react';
+import { CardMedia, Container, Grid, Typography } from '@material-ui/core';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import { makeStyles } from '@material-ui/core/styles';
+import { useEffect, useState } from 'react';
+import AliceCarousel from 'react-alice-carousel';
+import Layout from '../components/Layout';
 import '../css/hashCode.css';
 import '../node_modules/react-alice-carousel/lib/alice-carousel.css';
+import hashcodeData from '../public/data/events/hashcode.json';
 
 const designstyles = makeStyles({
   subtitleStyle: {
@@ -37,9 +38,10 @@ function HashCode() {
   const [isDataLoaded, setDataLoaded] = useState(false);
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch(
-        'https://api-vercel-mlabwebdev.vercel.app/events/hashcode'
-      );
+      // const result = await fetch(
+      //   'https://api-vercel-mlabwebdev.vercel.app/events/hashcode'
+      // );
+      const result = await fetch('/data/events/hashcode.json');
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');
       } else {
@@ -48,7 +50,13 @@ function HashCode() {
       }
       setDataLoaded(true);
     };
-    fetchData();
+    // fetchData();
+    const fetch = () => {
+      const events = hashcodeData;
+      setData({ events: events });
+      setDataLoaded(true);
+    };
+    fetch();
   }, []);
   return (
     <Layout title={'PIL | Hashcode'} active={'Hashcode'}>
@@ -73,8 +81,6 @@ function HashCode() {
           </Typography>
         </Container>
       </div>
-
-
 
       <div className="hashCodeContainer">
         {/* This is a sample for reference */}
