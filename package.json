@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/PES-Innovation-Lab/web/issues"
   },
-  "homepage": "https://github.com/PES-Innovation-Lab/web",
+  "homepage": "https://theinnovationlab.in",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
