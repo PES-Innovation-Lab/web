@@ -122,7 +122,7 @@ function Index() {
             We are a student community dedicated to cultivating the spirit of
             research and innovation in budding engineers.
           </blockquote>
-          <Grid
+          {/* <Grid
             item
             xs={12}
             // sm={8}
@@ -135,7 +135,7 @@ function Index() {
             <a href={process.env.ASSET_PREFIX + '/hashcode'}>
               <button className="regButton">HASHCODE</button>
             </a>
-          </Grid>
+          </Grid> */}
         </Container>
       </div>
 

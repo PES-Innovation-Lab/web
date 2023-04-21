@@ -33,7 +33,11 @@ const useStyles = makeStyles((theme) => ({
 
 function Events() {
   const data = [
-    { month: 'February', event_name: 'Incito Ideathon', key: 'incito' },
+    {
+      month: 'Jan-Feb',
+      event_name: 'HashCode - Our flagship Hackathon',
+      key: 'hashcode',
+    },
     {
       month: 'March-April',
       event_name: 'Summer Internship Recruitment',
@@ -41,11 +45,8 @@ function Events() {
     },
     { month: 'June-July', event_name: 'Summer Internship', key: 'internship' },
     { month: 'August', event_name: 'RoadShow', key: 'roadshow' },
-    {
-      month: 'October/November',
-      event_name: '#Code Hackathon',
-      key: 'hashcode',
-    },
+    { month: 'September-October', event_name: 'Incito Ideathon', key: 'incito' },
+
   ];
 
   const classes = useStyles();
@@ -132,8 +133,7 @@ function Events() {
               Intelligence, Sensor Networking, Virtual Reality, Brain-Computer
               Interface, Cloud computing and App Development. The results and
               prototype demonstrations of these projects are presented at
-              Roadshow, an event attended by a large number of students across
-              disciplines at PES University. The recruitments for the same are
+              Roadshow, an event attended by a lwas recruitments for the same are
               carried out between March and April.
             </Typography>
           </div>
@@ -181,7 +181,7 @@ function Events() {
           <div className="eventSectionText">
             <Link
               className="eventPageLink"
-              href={`${process.env.ASSET_PREFIX}/hashcode`}
+              href={`https://hashcode.theinnovationlab.in`}
             >
               <Typography className="eventHeading">HashCode</Typography>
             </Link>
@@ -192,9 +192,8 @@ function Events() {
               platform to participating teams, with mentors and members of
               academia assisting them. Esteemed personalities from different
               industrial backgrounds come to judge the show, evaluating projects
-              from all possible angles. HashCode 2020 is the 9th edition of the
-              annual hackathon. The winners bag cash prizes worth up to one lakh
-              indian rupees.
+              from all possible angles. HashCode 11.0 was the 11th edition of the
+              annual hackathon. The winners bagged cash prizes worth up to Rs. 1,25,000.
             </Typography>
           </div>
         </div>

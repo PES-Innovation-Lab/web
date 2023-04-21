@@ -188,14 +188,14 @@ function NavBar({ active, search, searchSettings }) {
 		{ title: 'Projects', route: `${process.env.ASSET_PREFIX}/projects` },
 		{ title: 'Publications', route: `${process.env.ASSET_PREFIX}/publications`},
 		{ title: 'Our History', route: `${process.env.ASSET_PREFIX}/about_us`},
-		{ title: 'Events', route: `${process.env.ASSET_PREFIX}/events` , subMenus: [
+		{ title: 'HashCode', route: `https://hashcode.theinnovationlab.in` },
+		{ title: 'Summer Internship', route: `${process.env.ASSET_PREFIX}/summer` },
+		{ title: 'Other Events', route: `${process.env.ASSET_PREFIX}/events` , subMenus: [		
 			{ title: 'Incito', route: `${process.env.ASSET_PREFIX}/incito` },
-			{ title: 'Summer', route: `${process.env.ASSET_PREFIX}/summer` },
-			{ title: 'HashCode', route: `${process.env.ASSET_PREFIX}/hashcode` },
-			{ title: 'RoadShow', route: `${process.env.ASSET_PREFIX}/roadshow` }
+			{ title: 'Roadshow', route: `${process.env.ASSET_PREFIX}/roadshow` }
 		]},
 		{ title: 'Join Us', route: `${process.env.ASSET_PREFIX}/join_us`},
-		{ title: 'Articles', route: `${process.env.ASSET_PREFIX}/articles`},
+		//{ title: 'Articles', route: `${process.env.ASSET_PREFIX}/articles`},
 	]
 
 		
