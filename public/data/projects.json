@@ -1,1 +1,708 @@
-{"2016":{"projects":[{"year":"2016","title":"Arrhythmia Classification","short_description":"Classification of Cardiac Arrhythmia using Machine Learning Techniques","long_description":"","keywords":"innovation","mentors":"Parag Jain","interns":"Chetan P, Nidhin A, Sahana M, Shivakumar G","poster_url":"https://pil-web.web.app/images/projects/posters2016/ArrhythmiaClassification.jpg"},{"year":"2016","title":"Green Corridor","short_description":"IoT based Green corridor for emergency vehicles","long_description":"","keywords":"innovation","mentors":"R Ramapriya","interns":"Anusha Kamath, Goutham A.P, Pallavi M.P","poster_url":"https://pil-web.web.app/images/projects/posters2016/GreenCorridor.jpg"},{"year":"2016","title":"GynoCare","short_description":"A Mobile based Data Mining Application for Gynaecology and Obstetrics Field Studies","long_description":"","keywords":"innovation","mentors":"","interns":"Anmol Patil, Sangeetha M, Raja Mathanky S, Ajay S, Shruthi Ramesh","poster_url":"https://pil-web.web.app/images/projects/posters2016/GynoCare.jpg"},{"year":"2016","title":"Kuppam","short_description":"Data Analytics and Visualization in Rural Child Healthcare Management","long_description":"","keywords":"innovation","mentors":"Aamir Hasaan, Anush S Kumar, Amogh Manjunath","interns":"Shravanya G, Swati N H","poster_url":"https://pil-web.web.app/images/projects/posters2016/kuppam.jpg"},{"year":"2016","title":"Multi-Hop Dynamic Sensor Routing","short_description":"Multi-Hop Dynamic Routing Algorithms for Sensor Networks","long_description":"","keywords":"innovation","mentors":"Sanjay P Josh","interns":"Amogh K.M, Chandrika B.H, Sagar. V. Belavadi, Sukruthi S. Rao","poster_url":"https://pil-web.web.app/images/projects/posters2016/dynamicroutingposter.jpg"},{"year":"2016","title":"OxySat","short_description":"An IoT based Wearable for Sleep Disorder Studies","long_description":"","keywords":"innovation","mentors":"Parag Jain, Ramapriya","interns":"Ninad Vivek P, K.S Rakesh Kumar, Ganesh P, Shridhar Raikar R","poster_url":"https://pil-web.web.app/images/projects/posters2016/oxysat.jpg"},{"year":"2016","title":"Sensor Network Security","short_description":"Low Weight Data Encryption Algorithms for Sensor Networks","long_description":"","keywords":"innovation","mentors":"Vasist Guru Prasad","interns":"Adithya P Mallar, Mansukh Pamarath, Akarsh K Urs, Sanjith Athlur, Ananya Ravikumar","poster_url":"https://pil-web.web.app/images/projects/posters2016/SensorNetworkSecurity.jpg"},{"year":"2016","title":"Speaker Recognition System","short_description":"Speaker Recognition System using Artificial Neural Networks","long_description":"","keywords":"innovation","mentors":"Suhas Ganesh","interns":"K.Prasanna Kumar, Nishanth S Hegde, Pranav Kashyap H, Avinash Kumar","poster_url":"https://pil-web.web.app/images/projects/posters2016/SpeakerRecognition.jpg"},{"year":"2016","title":"Voice Robot","short_description":"A Voice Controlled Navigation Robot for Traveling Salesman Problem (TSP) Applications","long_description":"","keywords":"innovation","mentors":"R Hariharan, Shashi Kiran M R","interns":"Amith Kashyap, K N Namratha, Srividhya R","poster_url":"https://pil-web.web.app/images/projects/posters2016/VoiceRobot.jpg"},{"year":"2016","title":"Zenon","short_description":"Kinect Camera based Virtual Reality Applications with Haptic Glove","long_description":"","keywords":"innovation","mentors":"Suhas Ganesh","interns":"Aniruddh Iyer, Gagan G, Pratik Rajesh Sampal, Pratik R, Rahul Ragesh","poster_url":"https://pil-web.web.app/images/projects/posters2016/Zenon.jpg"}],"length":10},"2017":{"projects":[{"year":"2017","title":"Brainchild: A Kinect-VR joint venture","short_description":"Kinect VR - Physiotherapy and Gait Analysis; Gamify Tedious excersises in VR to hasten Rehab. Diagnose Motor skill disorder and monitor improvements.","long_description":"Gait and posture are important parameters of human movement that are impaired in the case of movement disorders, such as cerebral palsy. In such disorders, aspects of motor movement like balance and co-ordination are adversely aected. Cerebral palsy, in particular, can be treated by physical, occupational and speech therapy. But there is no cure. Physiotherapy is often prescribed to aected patients, but the rate of follow through is usually very low as patients nd very little incentive to complete their routines. We present a two-fold solution to this problem. We have developed a suite of virtual reality games that aim to gamify the physiotherapy routines, thereby providing incentive for patients to regularly engage in their prescribed exercises. We have also used the data obtained from the player's motions during the game to analyse joint angles and aid in the diagnosis of cerebral palsy. Additionally, the data so obtained was used to track a player's progress in posture and gait through the course of the physiotherapy regimen. This progress chart can be made available to the doctor overseeing the patient, who can then use this information to alter the physiotherapy as per the individual's requirement.","keywords":"innovation","mentors":"Vasisht Guru Prasad, Rahul Ragesh, Pratik Shiyal","interns":"Karan Rao, Manasa Jadadeesh, Nikitha Rao, Rohan Mohaptra, Sreenivas M Kandhade","poster_url":"https://pil-web.web.app/images/projects/posters2017/BrainChild.jpg"},{"year":"2017","title":"Emotion Analysis using machine learning","short_description":"Detection of emotion patterns based on social media platforms and chats.","long_description":"Our application determines if a person is falling into depression based on his twitter feed and gives him suggestions based on what data he has entered previously.","keywords":"innovation","mentors":"Nishanth Hegde, Shashwath S Bharadwaj","interns":"Deepali Prabhu, Manish Soni, Sree Hari K","poster_url":"https://pil-web.web.app/images/projects/posters2017/EmotionAnalysis.jpg"},{"year":"2017","title":"Explodroid","short_description":"To create a robot from scratch, which can map any unknown environment and then navigate around it autonomously.","long_description":"Creating a development platform from scratch, using Kinect to generate a laser-scan which generates a map to navigate autonomously","keywords":"innovation","mentors":"Adith Kumar Urs","interns":"Prasanna Venaktesan K S, Manoj Surya K, Tarun Bhargav Sriram, Dweepa Prasad","poster_url":"https://pil-web.web.app/images/projects/posters2017/ExploDroid.jpg"},{"year":"2017","title":"Logophile's Companion","short_description":"A Customized Vocabulary Assistant","long_description":"Built a Customized Vocabulary Assistant, titled Logophile's Companion. Imagine the arduous task of pausing a video every time you hear a \"complex\" work and looking up its meaning? Wouldn't it be a lot easier to automate this process, but at the same time ensure that you learn the word and its usage? Logophiles' Companion tags meanings to \"Non-Trivial\" words which occur in a video to ensure that the viewer gets a fun and an informative learning experience when watching. At the heart of it, the project uses a neural network trained to categorize words (based on difficulty) with a feedback mechanism to account for the viewers improving vocabulary in the learn-as-you-go model.","keywords":"Machine Learning, NLP,  ANN","mentors":"Shashwath S Bharadwaj, Nishanth Hegde","interns":"Sumanth V Rao, Suraj Aralihalli, Tanmaya Udupa","poster_url":"https://pil-web.web.app/images/projects/posters2017/Logophiles%20Companion.jpg"},{"year":"2017","title":"Mapping of Textual Description to Facial Image","short_description":"Mapping of Textual Description to Facial Image","long_description":"Our idea involves the creation of a software application which helps the user retrieve the face of a person from a database just by inputting a description of his facial features. Our implementation makes use of image processing principles in conjunction with a neural network to extract and classify features from a given database of facial images at its core while, the complete application will also make use of NLP concepts. This application can be used as an assistant to sketch artists in the criminal investigation procedure, to reduce the time required to develop a sketch by searching for the suspect from a database of images of known criminals. It can also work like a shazam for celebrities and in other similar applications where an image is to be retrieved based on its textual/verbal description.","keywords":"innovation","mentors":"Nishanth Hegde, Shashwath S Bharadwaj","interns":"Piyush Surana, Varun Ranganathan","poster_url":"https://pil-web.web.app/images/projects/posters2017/MappingFacialImage.jpg"},{"year":"2017","title":"ModCube","short_description":"A Self-reconfigurable modular robotic system using electromagnets for versatile application","long_description":"To build a modular robot with the ability to flip and attach to other units with the help of electromagnets.","keywords":"innovation","mentors":"Adith Kumar Urs","interns":"Sahiti Vallamreddy, Akshath Kachinthaya","poster_url":"https://pil-web.web.app/images/projects/posters2017/ModCube.jpg"},{"year":"2017","title":"Prosthetic Arm using myoelectric control","short_description":"Design and implementation of a fully functional artificial arm that can act as a replacement for the human arm ,with physiological speeds of response and strength as that of a human arm.","long_description":"","keywords":"innovation","mentors":"Amith Kashyap","interns":"Sumedh Baradwaj","poster_url":"https://pil-web.web.app/images/projects/posters2017/ProsthticArm.jpg"},{"year":"2017","title":"Stabiisation of a Mobile Robot in an irregular domain","short_description":"Built a robot which can stabilize itself in an uneven terrain","long_description":"","keywords":"innovation","mentors":"Vidyasagar V Gaikwad","interns":"Sudarshan CV, Shreyas K Narayan, Tanya Sharma","poster_url":"https://pil-web.web.app/images/projects/posters2017/StabilizationRobot.jpg"},{"year":"2017","title":"Tap to Order","short_description":"A Smart Stock Monitoring System","long_description":"To build an intelligent ecosystem for inventory management. A prototype including the complete technology for monitoring stocks and providing user interfaces for both suppliers and customers was built.","keywords":"innovation","mentors":"Manish Kumar, Shashwath S bharadwaj","interns":"Lavanya R, Mridula Singhal, Prajwal Kiran Kumar, Shruti V Hegde","poster_url":"https://pil-web.web.app/images/projects/posters2017/TapToOrder.jpg"},{"year":"2017","title":"Wireless sensor networks- WiSeNet","short_description":"Built a wireless sensor network using Arduino and RF24 transceivers","long_description":"Built a self discovering wireless sensor network using temperature sensors. Implemented a routing algorithm for transmission of data. Programmed the transmitter and receiver nodes to send out broadcasts and receive data. ","keywords":"Wireless, sensor network, tenperature sensor, arduino","mentors":"Vasisht, Shreyas Aaradhya, Dr. Venkatrangan M J, Prof. M Rajasekar","interns":"Aiswarya Sriram, rasya ramesh, vinayaka kamath, amogha sekhat, akshar atreya","poster_url":"https://pil-web.web.app/images/projects/posters2017/WiseNet.jpg"},{"year":"2017","title":"Work In Progress","short_description":"A Rerouting App to inform about road conditions","long_description":"Bengaluru has been facing a crucial problem of potholes and road flooding during monsoon and its erratic weather pattern gives way to a lot of problems. There is no method which has been deployed to warn drivers about road health and rising water levels due to flooding.Vehicle failure is more prone to happen due to the above reason and thus eventually lead to heavy traffic. Thus our project aims at helping daily commuters by informing them via an app about damaged and waterlogged roads they may face enroute.","keywords":"innovation","mentors":"Shashwath S Bharadwaj","interns":"Sameer Dhole, Animesh ND, Meghana V S, Maanvi Nunna","poster_url":"https://pil-web.web.app/images/projects/posters2017/workinprogress.jpg"}],"length":11},"2018":{"projects":[{"year":"2018","title":"Ball Catcher","short_description":"To estimate the trajectory of the thrown ball and collect it using a robotic arm.","long_description":"","keywords":"innovation","mentors":"Tarun, Manoj, Prasanna","interns":"Manik, Karthik PB, Pavan, Sai Krishna","poster_url":"https://pil-web.web.app/images/projects/posters2018/BallCatcher.jpg"},{"year":"2018","title":"Catch me if you GAN","short_description":"","long_description":"Synthesizing realistic human faces from a given text description as input on a trained Generative Adversarial Network model.","keywords":"innovation","mentors":"Sharvanga G","interns":"Aishwarya K, Nishanth Shetty, Tarun K, Tejvi M","poster_url":"https://pil-web.web.app/images/projects/posters2018/CatchMeIfYouGAN.jpg"},{"year":"2018","title":"Energy Aware low latency routing in wireless sensor networks","short_description":"Energy Aware low latency routing in wireless sensor networks","long_description":"","keywords":"innovation","mentors":"Ananya Ravikumar","interns":"Aakansha pant, Sarang Pramod, Deepesh Sahoo","poster_url":"https://pil-web.web.app/images/projects/posters2018/WSN.jpg"},{"year":"2018","title":"Explodroid 2.0","short_description":"","long_description":"Building a robot that maps and simultaneously labels all the obstacles in a given region.","keywords":"innovation","mentors":"Prasanna Venkatesan KS, Tarun Bhargav Sriram","interns":"Athindra Bandi, Mayank Agarwal, Nandakrishna","poster_url":"https://pil-web.web.app/images/projects/posters2018/Explodroid2.jpg"},{"year":"2018","title":"Forget me Not","short_description":"","long_description":"An Android app to help patients suffering from moderate forms of memory impairing diseases such as Alzheimer’s and dementia, and to help reduce the burden on their caretakers.","keywords":"innovation","mentors":"Animesh ND, Avinash","interns":"Anagha Ananth, Aniket Kaulavkar, Deepika Karanji, Dhruv Vohra, Puneeth Karkera, Vishnu S Murali","poster_url":"https://pil-web.web.app/images/projects/posters2018/ForgetMeNot.jpg"},{"year":"2018","title":"INDRA - Gait Generation for Humanoid","short_description":"Generation of stable and adaptive gait for humanoid robots using Central Pattern Generators","long_description":"","keywords":"innovation","mentors":"R Hariharan, Adith Kumar","interns":"Arya Rajiv Chaloli, Karthik K Bhat, Vishwas NS","poster_url":"https://pil-web.web.app/images/projects/posters2018/Indra.jpg"},{"year":"2018","title":"MakinWaves","short_description":"Motor Imagery based Brain-Computer Interface","long_description":"This project aims To develop a Brain-Computer Interface that uses changes in sensorimotor rhythms recorded from Electroencephalographic signals as control signals for an external device. Evoked Potentials from Motor Imagery are recorded and used to classify kinesthetic actions based on the EEG signal generated.","keywords":"innovation","mentors":"Amith Kashyap","interns":"Aushim Nagarkatti, Malaika Vijay, Shruti Mohanty","poster_url":"https://pil-web.web.app/images/projects/posters2018/MakinWaves.jpg"},{"year":"2018","title":"Oculus","short_description":"Classification of Ocular Signals using Electrooculography to Control External Devices","long_description":"To control the cursor on a computer screen with the movement of eyeballs using Electrooculogram (EOG) headset.","keywords":"innovation","mentors":"Amith Kashyap","interns":"Siddarth Karki, Sumedh Basarkod, Vishal S","poster_url":"https://pil-web.web.app/images/projects/posters2018/Oculus.jpg"},{"year":"2018","title":"Reinforcement Learning For Games","short_description":"Reinforcement Learning applied to train video game agents for better gaming experience.","long_description":"We used concepts of Q and Deep Q Learning to train reinforcement learning agents for training better AI in games. We explored the concepts of OpenAI design, and applied our final design to Doom 3D. After 3 days of playing itself on a commodity system, our bot could achieve 100% accuracy in the game.","keywords":"Machine Learning, Game Development, Reinforcement Learning","mentors":"Sree Hari K","interns":"Ishaan Lagwankar, Saksham Goyal, Niharika Pentapati","poster_url":"https://pil-web.web.app/images/projects/posters2018/HumanVsAI.jpg"},{"year":"2018","title":"VRchitect","short_description":"Conversion of Rudimentary Floor Plans into an Interactive Virtual Walkthrough","long_description":"Construction and Fabrication of a Building is a time consuming process. The tools required to visualize the building before construction are not easily available. This project aims to change that. The goal is to make the visualization process simple and seamless using VR technology. Taking rudimentary floor plans as input this software creates an interactive virtual environment. The application uses OpenCV to process the image of a handdrawn floor plan that has walls and doors. Using the coordinates, Unity renders this as a virtual environment. Finally this environment is made accessible via a mobile app developed by Kivy (Python Framework)","keywords":"VR, Unity, Image Processing, Floor Plans, Construction, Interactive","mentors":"Amith Kashyap","interns":"Aishwarya Venkatesh, Karan Panjabi, Aditya Girisha","poster_url":"https://pil-web.web.app/images/projects/posters2018/VRchitect.jpg"}],"length":10},"2019":{"projects":[{"year":"2019","title":"ApatheticML","short_description":"Cloud-agnostic, distributed Machine Learning","long_description":"This project aims to parallelize the computations involved in machine learning algorithms, thereby improving their efficiency. It also aims to make the framework architecture-independent by using Kubernetes for both implementation across platforms such as Google Cloud Platform, Azure, AWS etc. or a cluster of machines connected locally. This work explores the effect of parallelism on some algorithms such as Linear and Logistic Regression, K-Means Clustering, Random Forest and Artificial Neural Networks and discusses the effects of external factors such as network delays and the mode of communication used.","keywords":"docker, kubernetes, ML, distributed computing","mentors":"Animesh ND","interns":"Vishwas Rajashekar , Aditi Ahuja, Raunak Sengupta, Sparsh Temani","poster_url":"https://pil-web.web.app/images/projects/posters2019/ApatheticML.jpg"},{"year":"2019","title":"CritiQuali","short_description":"Customer review analysis to return company's critical issues.","long_description":"Built a Customer Feedback Model to analyze the customer review data of a company, and help identify critical issues based on their severity and impact on customers as well as management. Customer review data for a company is collected and classified into categories (buckets). Aspect-based sentiment/emotion analysis is performed to filter out the negative-sentiment issues; Non-granular reviews (reviews that don’t give specific/detailed issues) are removed using dependency parsing, and issues are ranked based on a severity score that is generated, to finally return the top-ranked issues.","keywords":"innovation","mentors":"Sumanth V Rao","interns":"Abhigna L Shastry, Karan Kumar G, Sumukh Aithal K","poster_url":"https://pil-web.web.app/images/projects/posters2019/CritiQali.jpg"},{"year":"2019","title":"Multi-terrain 3D Mapping Drone","short_description":"To build an unmanned aerial vehicle that goes on multiple terrains and using recorded flight data to create and map terrains for real-world applications","long_description":"The project deals with the creation of a multi-terrain, 3D-mapping unmanned aerial vehicle.It is achieved by attaching a set of modified wheels to a carbon fiber drone frame with the help of laser-cut acrylic sheets. The drone supports 3D reconstruction and mapping using a stereo-camera setup and OpenCV.","keywords":"innovation","mentors":"Athindra Bandi, Karthik PB","interns":"Aravind S, Agnibha Bhattacharyya, Rajat Hegde, Shrenik R","poster_url":"https://pil-web.web.app/images/projects/posters2019/MultiTerrainDrone.jpg"},{"year":"2019","title":"Mythodex","short_description":"Automated identification of scenes from Indian mythology using neural networks and text processing.","long_description":"The aim of the project is to automate the identification of scenes from Indian mythology in works of art. A trained neural network is used to extract image features and categorize them. Images passed through the model undergo multiple levels of filtering and result in a list of elements (characters,animals,landscapes etc) from the image that bear meaningful relationships. The outputs from this level are analysed and mapped to a scene from the epics using a graph-based model. The end result of the project is an accurate identification and description of the scene being depicted.","keywords":"innovation","mentors":"Ananya Ravikumar","interns":"Ashwin R Bharadwaj, Abdur Rahman Hatim, Devika S Nair, Shreeram Suresh Chandra","poster_url":"https://pil-web.web.app/images/projects/posters2019/MythologicalML.jpg"},{"year":"2019","title":"Pressure2Path","short_description":"Using a smartphone's barometer to track the live location of the device, thereby removing the permanent dependency on GPS.","long_description":"Advancements in technology has led to the development of countless applications that aid in areas such as navigation and positioning. Many functionalities, such as GPS, have been made accessible to the masses via mobile devices, and provide accurate results. However, the major drawback of such accuracy is the high amounts of power consumed by the phone. Given the limited battery capacity of such devices, prolonged use of the aforementioned functionalities becomes difficult. Observing this issue, it is clear that there is a need to provide accurate positioning while improving power efficiency. This project aims to achieve accurate tracking of the device location while navigating along a predefined route, relying on the pressure data collected by the barometer sensor present in the smartphone. The algorithm is made accurate using cell tower data collected by the phone on said route.","keywords":"innovation","mentors":"Sameer Raju Dhole","interns":"Anirudh S, Pranav Bhatt, Hardik Gourisaria","poster_url":"https://pil-web.web.app/images/projects/posters2019/P2P.jpg"},{"year":"2019","title":"Project X","short_description":"Autonomous car simulation using Reinforcement Learning","long_description":"The field of mobility is going through a revolution that is changing how we understand transportation. We live in the beginning of the Autonomous Driving era. The potential benefits of autonomous vehicles are immense: elimination of accidents caused by human errors, a reduction in carbon dioxide emission, more efficient use of energy and infrastructure, among others. This kind of vehicle has become a concrete reality and may pave the way for future systems where computers take over the art of driving. In this paper, we present a 2-model approach for autonomous driving of car in a cityscape. The first model is used to drive the car in a no - traffic lane from an initial start location to the destination. The second model modifies the speed and brake states of the car on detecting obstacles within a specified range. We have trained the models using Reinforcement Learning in a simulator environment provided by CARLA.","keywords":"innovation","mentors":"Saksham Goyal","interns":"Saahil Jain, Kavya S, Vishwa Pravin","poster_url":"https://pil-web.web.app/images/projects/posters2019/ProjectX.jpg"},{"year":"2019","title":"Prosthetic Actuation System","short_description":"A system which aids a disabled person confined to a wheelchair, by locating the object chosen and actuating accordingly","long_description":"The project involves developing a system which aids a disabled person confined to a wheelchair by coupling a robotic arm with the wheelchair. A stereo camera is used to localize object present in front of the wheelchair, where recognition of the objects is done using Convolutional Neural Networks. The user is allowed to choose objects via touchscreen interface after it's recognition and segmentation. The real world coordinates of the chosen object is obtained using the point cloud of the FOV of the stereo camera and they are used to find the elevation and azimuth of the servo motors of the foundation of the robotic arm, which actuates and aligns itself with the chosen object. The chosen object's pose is tracked continuously irrespective of the movement of the wheelchair.\nThis acts as a framework for a robotic arm having at least 3 DOF.","keywords":"Rehabilitation Robotics, Stereo Vision, Convolutional Neural Networks, Wheelchair","mentors":"Dr. Venkatarangan M.J","interns":"B.R Srikrishna, Prajwal Billawa","poster_url":"https://pil-web.web.app/images/projects/posters2019/ProstheticActuationSystemPoster.jpg"},{"year":"2019","title":"Roadmap","short_description":"Web tool for graphical descriptions of learning flows.","long_description":"Over the years, the ways and processes people have employed to consume information and learn have changed in innumerable ways. The biggest change perhaps, is the emergence of the internet as the clear victor as a global source of knowledge. For the sake of argument, the internet may be thought of as a big, disorganised kitchen with many chefs and no particular distribution of dish workload among them. Say chef-A fashions a particularly scrumptious starter dish-X while being moderately skilled at making the main course dish-Y and sadly, makes a rather foul dessert dish-Z. His colleague, chef-B makes a Michelin worthy main course dish-Y but is so-so at the other two components of a meal. Enter chef-C. He makes the best Poire la Beaujolaise (call it dish-Z) but is simply incapable of making anything else. Now, if you wanted a 3-course meal, what are your chances of getting an optimal dish-A, dish-B and dish-C and in that particular order? Bleak indeed. This is pre- cisely the issue that Roadmap solves. Deconstructing the analogy, the chefs are websites and the dishes are resources. Akin to a meal, information must be consumed in a particular order and from the right source(s). Roadmap identifies blocks of prerequisite information pertaining to the desired ob- jective topic and presents a platter of ranked resources procured from apt sources. These tasks are accomplished by parsing through various resources and identifying parent-child relationships between entities by virtue of varied approaches such as semantic nets, N-space clustering, ANNs that analyse the statistical occurrences of entities and even contextualised word embeddings. Going back to the analogy one last time, Roadmap takes structured learning from ”too many chefs spoil the broth” to ”the more the merrier”.","keywords":"innovation","mentors":"Siddarth Karki, Tejvi M","interns":"Akshay Vasudeva Rao, Prakruti Prakash Rao, Ruchika Shashidhara, Sourav T Raveendran","poster_url":"https://pil-web.web.app/images/projects/posters2019/Roadmap.jpg"},{"year":"2019","title":"Timetable Generation","short_description":"Development of a web application to aid the process of Timetable Generation","long_description":"Timetable scheduling can be designed as a constraint satisfaction problem and can be solved using various approaches. An optimal solution for a timetable scheduling problem is difficult to find using any generic algorithm, due to the diverse nature of hard constraints and preferences also known as soft constraints, which may vary from institution to institution. Various approaches aimed at finding optimal solutions to such constraint satisfaction problems use constraint optimization, coupled with algorithms such as genetic, swarm particle optimization, tabu search etc. but these approaches are problem dependent and hence are infeasible in real-world situations. In this project, a pure Linear Constrained Optimization approach consisting of integer programming using binary variables has been explored. The developed solver class was tested using real-world data gathered from the various departments of a university. On further inspection, the constraints of every department were strikingly different from each other. The solver class to be successful must accommodate such diversities and still generate optimal results. It was successfully able to handle all the hard constraints and optimize for almost all the soft constraints. This solution can be applied to a wide variety of real-world scheduling problems with the capability of add-on features.","keywords":"innovation","mentors":"Aishwarya Venkatesh, Ananya Ravikumar","interns":"Akash Hamirwasia, Rishit Chaudhary, Tanishq Vyas","poster_url":"https://pil-web.web.app/images/projects/posters2019/TimeTableGeneration.jpg"},{"year":"2019","title":"UniBot: A Generalised Chatbot Framework","short_description":"Designing a generalised chatbot framework for customer facing applications","long_description":"A generalised chatbot which can intelligently respond to conversation using named entity recognition (NER), sentiment analysis and an implementation of a decision system for follow up mechanism using a Seq2seq model which uses Bidirectional RNNs and Attention models.","keywords":"Machine Learning, NLP, Web","mentors":"Ishaan Lagwankar, Tejvi M","interns":"Taran, Tejas, Sonam","poster_url":"https://pil-web.web.app/images/projects/posters2019/UniBot.jpg"},{"year":"2019","title":"WSN Modelling","short_description":"Design and Comparison of Wireless Sensor Networks","long_description":"This project aims to build an application in which a user who has insufficient knowledge about the various aspects related to designing a Wireless Sensor Network can input some basic needs of their network such as area, cost and type of Wireless Sensor Network required and the User Interface will help the user in doing so by appropriately stating the aspects that need to be taken care of while setting up the user-defined Wireless Sensor Network. The application will specify various things such as the placement of the nodes, the type of nodes to be used, etc. Wireless Sensor Network node placement models are proposed which concentrate on one specific parameter viz., lifetime, latency and reliability. The user can choose the type of model according to his needs and the simulation is done accordingly. Thus, the project compares WSN Architectures to find the best architecture to setup a WSN based on the constraints provided whilst also simulating all those results infographically to aid the user in setting up a simple Wireless Sensor Network.","keywords":"innovation","mentors":"Deepesh Sahoo, Sarang Pramode","interns":"Anish Reddy Y, Akshobhya Jamadagni K R, Shreyas GS, Shriprajwal Krishnamurthy","poster_url":"https://pil-web.web.app/images/projects/posters2019/WSNModelling.jpg"}],"length":11},"2020":{"projects":[{"year":"2020","title":"Drone Forces","short_description":"An autonomous drone which monitors and localizes cracks on a building","long_description":"With  the  rapid  industrialization  going  across  the  world,  the  need  to  build strong  buildings  with  high  structural  strength  has  become  quite  evident .However numerous amounts of cases of possible cracks has led down to catastrophic disasters of severe structural damages to buildings.  Thus, the following project involves the use of drones to find an efficient way of monitoring potential pitfalls in the foundation of a building to avoid catastrophic hazards","keywords":"ROS, Drone Computing, Image Processing, Neural Network, Path Planning, PID, Kalman Filter, Simulation","mentors":"Srikishna BR, Aravind S, Sameer Dhole","interns":"Suhas Thalanki, Harshith Kumar MB, T Vijay Prashant, Shayak Bhadraray","poster_url":"https://pil-web.web.app/images/projects/posters2020/DroneForces.jpg"},{"year":"2020","title":"Aproximately Private","short_description":"A privacy preserving deep learning framework, optimized using approximate computing","long_description":"This project aims to build a privacy-preserving deep learning framework\nusing cryptographic protocols like garbled circuits and oblivious transfers.\n\nThe computational and communication cost of the model are reduced by applying approximations at various stages of computation, such as data per-processing, model pruning and activation functions. \n\nThe results from testing the model are collated to obtain information about error rate vs processing time tradeoffs.","keywords":"Deep Learning, Secure Function Evaluation, Garbled Circuit, Approximate computing","mentors":"Animesh ND, Taran Singhania","interns":"Aasim Mohammed, Chirag Kashyap S, Rehan Vipin","poster_url":"https://pil-web.web.app/images/projects/posters2020/ApproximatelyPrivate.jpg"},{"year":"2020","title":"Neural Music","short_description":"A web-app designed to help complete a user's music using Algorithmic analyses and Deep Learning.","long_description":"The process of composing a lead, or composing\nan accompaniment to an existing lead, can be a daunting process. This project aims to automate either process, allowing musicians to focus on the\naspect they are better at. The former is done via a simple RNN-LSTM deep learning model trained on a host of melodies, while the latter is done by breaking down the lead and performing various algorithmic analyses on it.","keywords":"Music Generation, Deep Learning, LSTM, Melodia, Algorithms","mentors":"Tejas S, Sourav T.R","interns":"Murali Krishna, Nihal R, Moyank Giri","poster_url":"https://pil-web.web.app/images/projects/posters2020/NeuralMusic.jpg"},{"year":"2020","title":"Smart City Control and Management","short_description":"A versatile and scalable network to manage sensors across a city.","long_description":"A scalable yet versatile cloud-based system with a custom-built dashboard built with Dash, Kafka and OpenWhisk to control and manage sensor data in a large vicinity.","keywords":"Openwhisk, Kafka, Dashboard, FaaS, IoT, Docker","mentors":"Vishwas R, Pranav Bhatt","interns":"Chetan Athni, Sakshi Vattikuti, Hemant Sathish, A Anantha Krishna","poster_url":"https://pil-web.web.app/images/projects/posters2020/SCCAM.jpg"},{"year":"2020","title":"BREVIS","short_description":"Structured Notes For Online Lecture Videos","long_description":"With education becoming virtual, studying from lecture videos can be time-consuming and tedious. Students tend to miss classes due to various reasons thereby missing out on fundamental concepts.\nBrevis is an application that aims to provide its users with a complete package of lecture notes enhanced with other online resources.\nThe lecture notes are generated for a YouTube video of the user's choice. Familiar processes such as text summarization, keyword extraction, and web scraping are performed on the transcript of the video. If the transcript for the entered video is not available, we generate the transcript by processing its audio. Further formatting is done to extract and insert video snapshots and segment text into separate paragraphs. The sole purpose of this is to structure notes generated in a way that the user can comprehend them easily.","keywords":"Automation, Lecture Videos, Transcript, NLP, Image Processing","mentors":"Tanishq Vyas, Akshay Vasudev","interns":"Mayank Agrawal, Himanshu Jain, Rahul D Makhija, Aniket Aayush","poster_url":"https://pil-web.web.app/images/projects/posters2020/Brevis.jpg"},{"year":"2020","title":"Benchmarking of NODE","short_description":"Comparison of NODE to other neural networks and Machine Learning algorithms.","long_description":"The aim of this project is to compare Neural Ordinary Differential Equations (NODE) to other neural networks and machine learning algorithms with respect to Time Series forecasting and image processing. Time Series forecasting was done in order to compare the performance of NODE when predicting COVID-19 cases and deaths. Comparisons were made with LSTMs, GRUs, RNNs, simple neural networks, Gradient Boosting algorithm, Linear Regression, and Polynomial Regression. Image processing was done in order to compare the performance of NODE with respect to the MNIST and CIFAR datasets. Comparisons were made with CNNs (with and without transfer learning) and RESNET. Additionally, the time-accuracy tradeoff for NODE was also tested.","keywords":"Neural Networks, Machine Learning","mentors":"Saahil Jain","interns":"Aanchal Narendran, Kartika Nair, Sujith K","poster_url":"https://pil-web.web.app/images/projects/posters2020/NODE.jpg"},{"year":"2020","title":"Project WiSeN","short_description":"An exploration of novel approaches to routing in wireless sensor networks.","long_description":"The project involved the study of new routing protocols and mechanisms to forward data in wireless sensor networks via the use of a mobile sink station. WSNs generally consist of a collection of sensor nodes which collect and send data to a sink node, which acts as a gateway to a base station. Different protocols for transmission of data can cause drastic differences in the lifespan of these nodes. Thus, our project aims to reduce the power consumption in these nodes by inspecting routing protocols involving a mobile sink as opposed to a static one.","keywords":"networks, sensors, wireless, routing, energy-efficiency, algorithms","mentors":"Anish Reddy, Shriprajwal Krishnamurthy","interns":"Hrishit Chaudhuri, Rithvik Rama, Amogh KM, Surya Dutta","poster_url":"https://pil-web.web.app/images/projects/posters2020/WiSeN.jpg"},{"year":"2020","title":"AQVis","short_description":"Air Quality Visualisation and Analytics on Cloud","long_description":"Air quality has always been a growing concern in today’s world. AQVis is a cloud-based visualization and analytics platform. This project (AQVis) aims to be the Cloud-based counterpart of the Air Quality sensors. The data is sent from sensors to the cloud (Google Cloud Platform) and then is visualized onto the web page as graphs that users can access. A dashboard created houses the relevant visualizations and maps to generate useful insights from the data.","keywords":" Air Quality Visualisation, Google Cloud Platform, OpenLayers, Elastic stack, Kubernetes","mentors":"Dr. Venkatarangan M.J, Animesh ND, Vishwas R, Yashas ND","interns":"Ashutosh Rao, Srinath Kesav Nallamalli, Srujan Vasudevrao Deshpande","poster_url":"https://pil-web.web.app/images/projects/posters2020/AQVis.jpg"}],"length":8},"2022":{"projects":[{"year":"2022","title":"DisContNet","short_description":"Contradiction detection in sentence pairs using NLP and Deep Learning.","long_description":"\"We are team DisContNet\"\n\"We are definitely not team DisContNet\"\nContradictory, isn't it?\n\nDisContNet is a contradiction detecting system that uses NLP and deep learning. We use a BERT based model to label sentences as per 4 labels: contradictory (general), non-contradictory, contradiction due to negation, and numeric contradiction.","keywords":"Contradiction, Sentence pairs, NLP, Deep learning, ML ","mentors":"Hrishit Chaudhuri, Suhas Thalanki, Vibha Masti","interns":"Rida Javed Kutty, Roshni P N, Shreya S Adiga","poster_url":"https://pil-web.web.app/images/projects/posters2022/DisContNet.png"},{"year":"2022","title":"VayuBhoomi","short_description":"Autonomous UAV-UGV networking framework deployed for waste disposal.","long_description":"VayuBhoomi is a framework for networking of aerial and ground based robots. The USP of the project as compared to past research is creating a robust system between an Unmanned aerial vehicle (UAV) and an unmanned ground vehicle (UGV). The use case chosen to demonstrate this is trash collection over open spaces. We use the UAV to conduct surveillance over a specified area, the UAV patrols a pre planned path and spirals inwards, in the process deploying trajectory tracking and image processing. It identifies and stores the location of the garbage and sends it to the UGV, which proceeds to travel to the garbage and collect and dispose of it while avoiding any obstacles. ","keywords":"Network, Reconnaissance, Autonomous, Robots, ROS","mentors":"Harshith Kumar, Shayak Bhadraray, T Vijay Prashant","interns":"Pramuk M P, Samuel Thomas, Sriram Radhakrishna","poster_url":"https://pil-web.web.app/images/projects/posters2022/VayuBhoomi.png"},{"year":"2022","title":"PseudoDeploy","short_description":"Emulation and monitoring of arbitrary Federated Learning setups using Kubernetes.","long_description":"Pseudodeploy is a tool that aims to make federated learning research easy by allowing researchers to create (otherwise expensive) experimental setups using powerful cloud-native technologies and orchestration, while allowing them to vary real-life parameters such as compute power limits and bandwidth limits.\nWe use Kubernetes to perform this automation, while supporting python as the implementation language given its frequency in research usage.","keywords":"Federated Learning, Kubernetes, Docker, Distributed Systems, Grafana Monitoring","mentors":"Aanchal Narendran, Animesh ND","interns":"Anirudh Rowjee, Shubhankar V Kuranagatti, Urmil Kalaria","poster_url":"https://pil-web.web.app/images/projects/posters2022/PseudoDeploy.png"},{"year":"2022","title":"Flo(v)ver","short_description":"A Static Profiler to track error propagation through C code.","long_description":"Flo(v)ver aims to categorically detect precision errors in floating-point programs arising out of the innate error associated with representing a real number in a computing system. Static analysis techniques were used to provide a user-friendly command-line tool capable of checking for common errors associated with floats, including failed assertions, inequality errors, and rounding, chopping, and other machining errors.","keywords":"Floating points, Numerical analysis, Compiler design, precision, C","mentors":"Hrishit Chaudhuri","interns":"Disha Jain, Gagan Prashanth K, Vishal J Lodha","poster_url":"https://pil-web.web.app/images/projects/posters2022/Flovver.png"},{"year":"2022","title":"Vyaakaran","short_description":"A Turing Machine Simulator for an edu-webtool.","long_description":"Vyakaran is an educational web-tool built to help anyone understand and visualize automata theory. It has support for Regular Grammar, Context Free Grammar and powerful testing tools to help the user test automata. We focus on extending this tool to enable simulation of a Turing Machine with it's tape. To be specific, we take state transitions from the user in a given syntax and compile it to generate a graph and a tape to visualize the Turing Machine.","keywords":"Turing Machine, Automata, Vue, Compiler Design, Simulaton","mentors":"Akash Hamirwasia, Hrishit Chaudhuri","interns":"Abishek Deivam, Tarun M, Thejas N U","poster_url":"https://pil-web.web.app/images/projects/posters2022/Vyaakaran.png"},{"year":"2022","title":"ViPyr","short_description":"A Python front-end framework inspired by ReactJs.","long_description":"Our project aims to make a frontend framework built with the principles of React \n[a very popular javascript framework] that will allow users to create the frontend \nfor applications in a pythonic style.","keywords":"Python, PyScript, React, WebAssembly, Frontend, Reconcilation","mentors":"Murali Krishna, Nihal Ramaswamy","interns":"B R Sinchana, Shreyas Kaundinya, Suraj Rao K P","poster_url":"https://pil-web.web.app/images/projects/posters2022/ViPyr.png"},{"year":"2022","title":"(Re)Placement","short_description":"An end-to-end software solution for the placement process in universities.","long_description":"(Re)Placement is an end-to-end software between the Training & Placement Officer (TPO) and students of a University, aimed at enhancing the placement process of the University. It is an approach for developing a better, organised and efficient system of placements in a universe. ","keywords":"Placement Process, Software, Automation, Database, Convenience ","mentors":"Akshobhya Jamadagni, Sakshi Vatikutti","interns":"Pavan Nettam, Rakshitha R, Tanishq Chugh","poster_url":"https://pil-web.web.app/images/projects/posters2022/RePlacement.png"},{"year":"2022","title":"TPML-WLAN","short_description":"Throughput prediction in WLAN dense deployments with overlapping BSSs using ML.","long_description":"TPML-WLAN or Throughput prediction in wireless local area networks using Machine Learning, is primarily based on predicting the value of throughput in dense deployments which consist of overlapping BSSs (basic service sets). The objective of this project is to utilize and compare the performance of machine learning techniques like Random forest, Linear regression, K nearest neighbors and so on, and deep learning models like artificial neural networks (ANN) and graph neural networks (GNN), by resourcefully manipulating the features of nodes (access points, for example, routers and stations for example, laptops) in a deployment, and to thus arrive at the optimal arrangement of the nodes, providing minimum interference and maximum throughput.","keywords":"Networks, Throughput, Internet, Machine Learning, Graph Neural Networks, Prediction","mentors":"Professor M Rajasekar, Venkat Ramnan K","interns":"Shreyas S, Spoorthi Kalkunte, Varun Satheesh","poster_url":"https://pil-web.web.app/images/projects/posters2022/TPML-WLAN.png"}],"length":8}}
+{
+  "2016": {
+    "projects": [
+      {
+        "year": "2016",
+        "title": "Arrhythmia Classification",
+        "short_description": "Classification of Cardiac Arrhythmia using Machine Learning Techniques",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "Parag Jain",
+        "interns": "Chetan P, Nidhin A, Sahana M, Shivakumar G",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2016/ArrhythmiaClassification.jpg"
+      },
+      {
+        "year": "2016",
+        "title": "Green Corridor",
+        "short_description": "IoT based Green corridor for emergency vehicles",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "R Ramapriya",
+        "interns": "Anusha Kamath, Goutham A.P, Pallavi M.P",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2016/GreenCorridor.jpg"
+      },
+      {
+        "year": "2016",
+        "title": "GynoCare",
+        "short_description": "A Mobile based Data Mining Application for Gynaecology and Obstetrics Field Studies",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "",
+        "interns": "Anmol Patil, Sangeetha M, Raja Mathanky S, Ajay S, Shruthi Ramesh",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2016/GynoCare.jpg"
+      },
+      {
+        "year": "2016",
+        "title": "Kuppam",
+        "short_description": "Data Analytics and Visualization in Rural Child Healthcare Management",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "Aamir Hasaan, Anush S Kumar, Amogh Manjunath",
+        "interns": "Shravanya G, Swati N H",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2016/kuppam.jpg"
+      },
+      {
+        "year": "2016",
+        "title": "Multi-Hop Dynamic Sensor Routing",
+        "short_description": "Multi-Hop Dynamic Routing Algorithms for Sensor Networks",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "Sanjay P Josh",
+        "interns": "Amogh K.M, Chandrika B.H, Sagar. V. Belavadi, Sukruthi S. Rao",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2016/dynamicroutingposter.jpg"
+      },
+      {
+        "year": "2016",
+        "title": "OxySat",
+        "short_description": "An IoT based Wearable for Sleep Disorder Studies",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "Parag Jain, Ramapriya",
+        "interns": "Ninad Vivek P, K.S Rakesh Kumar, Ganesh P, Shridhar Raikar R",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2016/oxysat.jpg"
+      },
+      {
+        "year": "2016",
+        "title": "Sensor Network Security",
+        "short_description": "Low Weight Data Encryption Algorithms for Sensor Networks",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "Vasist Guru Prasad",
+        "interns": "Adithya P Mallar, Mansukh Pamarath, Akarsh K Urs, Sanjith Athlur, Ananya Ravikumar",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2016/SensorNetworkSecurity.jpg"
+      },
+      {
+        "year": "2016",
+        "title": "Speaker Recognition System",
+        "short_description": "Speaker Recognition System using Artificial Neural Networks",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "Suhas Ganesh",
+        "interns": "K.Prasanna Kumar, Nishanth S Hegde, Pranav Kashyap H, Avinash Kumar",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2016/SpeakerRecognition.jpg"
+      },
+      {
+        "year": "2016",
+        "title": "Voice Robot",
+        "short_description": "A Voice Controlled Navigation Robot for Traveling Salesman Problem (TSP) Applications",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "R Hariharan, Shashi Kiran M R",
+        "interns": "Amith Kashyap, K N Namratha, Srividhya R",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2016/VoiceRobot.jpg"
+      },
+      {
+        "year": "2016",
+        "title": "Zenon",
+        "short_description": "Kinect Camera based Virtual Reality Applications with Haptic Glove",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "Suhas Ganesh",
+        "interns": "Aniruddh Iyer, Gagan G, Pratik Rajesh Sampal, Pratik R, Rahul Ragesh",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2016/Zenon.jpg"
+      }
+    ],
+    "length": 10
+  },
+  "2017": {
+    "projects": [
+      {
+        "year": "2017",
+        "title": "Brainchild: A Kinect-VR joint venture",
+        "short_description": "Kinect VR - Physiotherapy and Gait Analysis; Gamify Tedious excersises in VR to hasten Rehab. Diagnose Motor skill disorder and monitor improvements.",
+        "long_description": "Gait and posture are important parameters of human movement that are impaired in the case of movement disorders, such as cerebral palsy. In such disorders, aspects of motor movement like balance and co-ordination are adversely aected. Cerebral palsy, in particular, can be treated by physical, occupational and speech therapy. But there is no cure. Physiotherapy is often prescribed to aected patients, but the rate of follow through is usually very low as patients nd very little incentive to complete their routines. We present a two-fold solution to this problem. We have developed a suite of virtual reality games that aim to gamify the physiotherapy routines, thereby providing incentive for patients to regularly engage in their prescribed exercises. We have also used the data obtained from the player's motions during the game to analyse joint angles and aid in the diagnosis of cerebral palsy. Additionally, the data so obtained was used to track a player's progress in posture and gait through the course of the physiotherapy regimen. This progress chart can be made available to the doctor overseeing the patient, who can then use this information to alter the physiotherapy as per the individual's requirement.",
+        "keywords": "innovation",
+        "mentors": "Vasisht Guru Prasad, Rahul Ragesh, Pratik Shiyal",
+        "interns": "Karan Rao, Manasa Jadadeesh, Nikitha Rao, Rohan Mohaptra, Sreenivas M Kandhade",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2017/BrainChild.jpg"
+      },
+      {
+        "year": "2017",
+        "title": "Emotion Analysis using machine learning",
+        "short_description": "Detection of emotion patterns based on social media platforms and chats.",
+        "long_description": "Our application determines if a person is falling into depression based on his twitter feed and gives him suggestions based on what data he has entered previously.",
+        "keywords": "innovation",
+        "mentors": "Nishanth Hegde, Shashwath S Bharadwaj",
+        "interns": "Deepali Prabhu, Manish Soni, Sree Hari K",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2017/EmotionAnalysis.jpg"
+      },
+      {
+        "year": "2017",
+        "title": "Explodroid",
+        "short_description": "To create a robot from scratch, which can map any unknown environment and then navigate around it autonomously.",
+        "long_description": "Creating a development platform from scratch, using Kinect to generate a laser-scan which generates a map to navigate autonomously",
+        "keywords": "innovation",
+        "mentors": "Adith Kumar Urs",
+        "interns": "Prasanna Venaktesan K S, Manoj Surya K, Tarun Bhargav Sriram, Dweepa Prasad",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2017/ExploDroid.jpg"
+      },
+      {
+        "year": "2017",
+        "title": "Logophile's Companion",
+        "short_description": "A Customized Vocabulary Assistant",
+        "long_description": "Built a Customized Vocabulary Assistant, titled Logophile's Companion. Imagine the arduous task of pausing a video every time you hear a \"complex\" work and looking up its meaning? Wouldn't it be a lot easier to automate this process, but at the same time ensure that you learn the word and its usage? Logophiles' Companion tags meanings to \"Non-Trivial\" words which occur in a video to ensure that the viewer gets a fun and an informative learning experience when watching. At the heart of it, the project uses a neural network trained to categorize words (based on difficulty) with a feedback mechanism to account for the viewers improving vocabulary in the learn-as-you-go model.",
+        "keywords": "Machine Learning, NLP,  ANN",
+        "mentors": "Shashwath S Bharadwaj, Nishanth Hegde",
+        "interns": "Sumanth V Rao, Suraj Aralihalli, Tanmaya Udupa",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2017/Logophiles%20Companion.jpg"
+      },
+      {
+        "year": "2017",
+        "title": "Mapping of Textual Description to Facial Image",
+        "short_description": "Mapping of Textual Description to Facial Image",
+        "long_description": "Our idea involves the creation of a software application which helps the user retrieve the face of a person from a database just by inputting a description of his facial features. Our implementation makes use of image processing principles in conjunction with a neural network to extract and classify features from a given database of facial images at its core while, the complete application will also make use of NLP concepts. This application can be used as an assistant to sketch artists in the criminal investigation procedure, to reduce the time required to develop a sketch by searching for the suspect from a database of images of known criminals. It can also work like a shazam for celebrities and in other similar applications where an image is to be retrieved based on its textual/verbal description.",
+        "keywords": "innovation",
+        "mentors": "Nishanth Hegde, Shashwath S Bharadwaj",
+        "interns": "Piyush Surana, Varun Ranganathan",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2017/MappingFacialImage.jpg"
+      },
+      {
+        "year": "2017",
+        "title": "ModCube",
+        "short_description": "A Self-reconfigurable modular robotic system using electromagnets for versatile application",
+        "long_description": "To build a modular robot with the ability to flip and attach to other units with the help of electromagnets.",
+        "keywords": "innovation",
+        "mentors": "Adith Kumar Urs",
+        "interns": "Sahiti Vallamreddy, Akshath Kachinthaya",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2017/ModCube.jpg"
+      },
+      {
+        "year": "2017",
+        "title": "Prosthetic Arm using myoelectric control",
+        "short_description": "Design and implementation of a fully functional artificial arm that can act as a replacement for the human arm ,with physiological speeds of response and strength as that of a human arm.",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "Amith Kashyap",
+        "interns": "Sumedh Baradwaj",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2017/ProsthticArm.jpg"
+      },
+      {
+        "year": "2017",
+        "title": "Stabiisation of a Mobile Robot in an irregular domain",
+        "short_description": "Built a robot which can stabilize itself in an uneven terrain",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "Vidyasagar V Gaikwad",
+        "interns": "Sudarshan CV, Shreyas K Narayan, Tanya Sharma",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2017/StabilizationRobot.jpg"
+      },
+      {
+        "year": "2017",
+        "title": "Tap to Order",
+        "short_description": "A Smart Stock Monitoring System",
+        "long_description": "To build an intelligent ecosystem for inventory management. A prototype including the complete technology for monitoring stocks and providing user interfaces for both suppliers and customers was built.",
+        "keywords": "innovation",
+        "mentors": "Manish Kumar, Shashwath S bharadwaj",
+        "interns": "Lavanya R, Mridula Singhal, Prajwal Kiran Kumar, Shruti V Hegde",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2017/TapToOrder.jpg"
+      },
+      {
+        "year": "2017",
+        "title": "Wireless sensor networks- WiSeNet",
+        "short_description": "Built a wireless sensor network using Arduino and RF24 transceivers",
+        "long_description": "Built a self discovering wireless sensor network using temperature sensors. Implemented a routing algorithm for transmission of data. Programmed the transmitter and receiver nodes to send out broadcasts and receive data. ",
+        "keywords": "Wireless, sensor network, tenperature sensor, arduino",
+        "mentors": "Vasisht, Shreyas Aaradhya, Dr. Venkatrangan M J, Prof. M Rajasekar",
+        "interns": "Aiswarya Sriram, rasya ramesh, vinayaka kamath, amogha sekhat, akshar atreya",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2017/WiseNet.jpg"
+      },
+      {
+        "year": "2017",
+        "title": "Work In Progress",
+        "short_description": "A Rerouting App to inform about road conditions",
+        "long_description": "Bengaluru has been facing a crucial problem of potholes and road flooding during monsoon and its erratic weather pattern gives way to a lot of problems. There is no method which has been deployed to warn drivers about road health and rising water levels due to flooding.Vehicle failure is more prone to happen due to the above reason and thus eventually lead to heavy traffic. Thus our project aims at helping daily commuters by informing them via an app about damaged and waterlogged roads they may face enroute.",
+        "keywords": "innovation",
+        "mentors": "Shashwath S Bharadwaj",
+        "interns": "Sameer Dhole, Animesh ND, Meghana V S, Maanvi Nunna",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2017/workinprogress.jpg"
+      }
+    ],
+    "length": 11
+  },
+  "2018": {
+    "projects": [
+      {
+        "year": "2018",
+        "title": "Ball Catcher",
+        "short_description": "To estimate the trajectory of the thrown ball and collect it using a robotic arm.",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "Tarun, Manoj, Prasanna",
+        "interns": "Manik, Karthik PB, Pavan, Sai Krishna",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2018/BallCatcher.jpg"
+      },
+      {
+        "year": "2018",
+        "title": "Catch me if you GAN",
+        "short_description": "",
+        "long_description": "Synthesizing realistic human faces from a given text description as input on a trained Generative Adversarial Network model.",
+        "keywords": "innovation",
+        "mentors": "Sharvanga G",
+        "interns": "Aishwarya K, Nishanth Shetty, Tarun K, Tejvi M",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2018/CatchMeIfYouGAN.jpg"
+      },
+      {
+        "year": "2018",
+        "title": "Energy Aware low latency routing in wireless sensor networks",
+        "short_description": "Energy Aware low latency routing in wireless sensor networks",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "Ananya Ravikumar",
+        "interns": "Aakansha pant, Sarang Pramod, Deepesh Sahoo",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2018/WSN.jpg"
+      },
+      {
+        "year": "2018",
+        "title": "Explodroid 2.0",
+        "short_description": "",
+        "long_description": "Building a robot that maps and simultaneously labels all the obstacles in a given region.",
+        "keywords": "innovation",
+        "mentors": "Prasanna Venkatesan KS, Tarun Bhargav Sriram",
+        "interns": "Athindra Bandi, Mayank Agarwal, Nandakrishna",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2018/Explodroid2.jpg"
+      },
+      {
+        "year": "2018",
+        "title": "Forget me Not",
+        "short_description": "",
+        "long_description": "An Android app to help patients suffering from moderate forms of memory impairing diseases such as Alzheimer’s and dementia, and to help reduce the burden on their caretakers.",
+        "keywords": "innovation",
+        "mentors": "Animesh ND, Avinash",
+        "interns": "Anagha Ananth, Aniket Kaulavkar, Deepika Karanji, Dhruv Vohra, Puneeth Karkera, Vishnu S Murali",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2018/ForgetMeNot.jpg"
+      },
+      {
+        "year": "2018",
+        "title": "INDRA - Gait Generation for Humanoid",
+        "short_description": "Generation of stable and adaptive gait for humanoid robots using Central Pattern Generators",
+        "long_description": "",
+        "keywords": "innovation",
+        "mentors": "R Hariharan, Adith Kumar",
+        "interns": "Arya Rajiv Chaloli, Karthik K Bhat, Vishwas NS",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2018/Indra.jpg"
+      },
+      {
+        "year": "2018",
+        "title": "MakinWaves",
+        "short_description": "Motor Imagery based Brain-Computer Interface",
+        "long_description": "This project aims To develop a Brain-Computer Interface that uses changes in sensorimotor rhythms recorded from Electroencephalographic signals as control signals for an external device. Evoked Potentials from Motor Imagery are recorded and used to classify kinesthetic actions based on the EEG signal generated.",
+        "keywords": "innovation",
+        "mentors": "Amith Kashyap",
+        "interns": "Aushim Nagarkatti, Malaika Vijay, Shruti Mohanty",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2018/MakinWaves.jpg"
+      },
+      {
+        "year": "2018",
+        "title": "Oculus",
+        "short_description": "Classification of Ocular Signals using Electrooculography to Control External Devices",
+        "long_description": "To control the cursor on a computer screen with the movement of eyeballs using Electrooculogram (EOG) headset.",
+        "keywords": "innovation",
+        "mentors": "Amith Kashyap",
+        "interns": "Siddarth Karki, Sumedh Basarkod, Vishal S",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2018/Oculus.jpg"
+      },
+      {
+        "year": "2018",
+        "title": "Reinforcement Learning For Games",
+        "short_description": "Reinforcement Learning applied to train video game agents for better gaming experience.",
+        "long_description": "We used concepts of Q and Deep Q Learning to train reinforcement learning agents for training better AI in games. We explored the concepts of OpenAI design, and applied our final design to Doom 3D. After 3 days of playing itself on a commodity system, our bot could achieve 100% accuracy in the game.",
+        "keywords": "Machine Learning, Game Development, Reinforcement Learning",
+        "mentors": "Sree Hari K",
+        "interns": "Ishaan Lagwankar, Saksham Goyal, Niharika Pentapati",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2018/HumanVsAI.jpg"
+      },
+      {
+        "year": "2018",
+        "title": "VRchitect",
+        "short_description": "Conversion of Rudimentary Floor Plans into an Interactive Virtual Walkthrough",
+        "long_description": "Construction and Fabrication of a Building is a time consuming process. The tools required to visualize the building before construction are not easily available. This project aims to change that. The goal is to make the visualization process simple and seamless using VR technology. Taking rudimentary floor plans as input this software creates an interactive virtual environment. The application uses OpenCV to process the image of a handdrawn floor plan that has walls and doors. Using the coordinates, Unity renders this as a virtual environment. Finally this environment is made accessible via a mobile app developed by Kivy (Python Framework)",
+        "keywords": "VR, Unity, Image Processing, Floor Plans, Construction, Interactive",
+        "mentors": "Amith Kashyap",
+        "interns": "Aishwarya Venkatesh, Karan Panjabi, Aditya Girisha",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2018/VRchitect.jpg"
+      }
+    ],
+    "length": 10
+  },
+  "2019": {
+    "projects": [
+      {
+        "year": "2019",
+        "title": "ApatheticML",
+        "short_description": "Cloud-agnostic, distributed Machine Learning",
+        "long_description": "This project aims to parallelize the computations involved in machine learning algorithms, thereby improving their efficiency. It also aims to make the framework architecture-independent by using Kubernetes for both implementation across platforms such as Google Cloud Platform, Azure, AWS etc. or a cluster of machines connected locally. This work explores the effect of parallelism on some algorithms such as Linear and Logistic Regression, K-Means Clustering, Random Forest and Artificial Neural Networks and discusses the effects of external factors such as network delays and the mode of communication used.",
+        "keywords": "docker, kubernetes, ML, distributed computing",
+        "mentors": "Animesh ND",
+        "interns": "Vishwas Rajashekar , Aditi Ahuja, Raunak Sengupta, Sparsh Temani",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2019/ApatheticML.jpg"
+      },
+      {
+        "year": "2019",
+        "title": "CritiQuali",
+        "short_description": "Customer review analysis to return company's critical issues.",
+        "long_description": "Built a Customer Feedback Model to analyze the customer review data of a company, and help identify critical issues based on their severity and impact on customers as well as management. Customer review data for a company is collected and classified into categories (buckets). Aspect-based sentiment/emotion analysis is performed to filter out the negative-sentiment issues; Non-granular reviews (reviews that don’t give specific/detailed issues) are removed using dependency parsing, and issues are ranked based on a severity score that is generated, to finally return the top-ranked issues.",
+        "keywords": "innovation",
+        "mentors": "Sumanth V Rao",
+        "interns": "Abhigna L Shastry, Karan Kumar G, Sumukh Aithal K",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2019/CritiQali.jpg"
+      },
+      {
+        "year": "2019",
+        "title": "Multi-terrain 3D Mapping Drone",
+        "short_description": "To build an unmanned aerial vehicle that goes on multiple terrains and using recorded flight data to create and map terrains for real-world applications",
+        "long_description": "The project deals with the creation of a multi-terrain, 3D-mapping unmanned aerial vehicle.It is achieved by attaching a set of modified wheels to a carbon fiber drone frame with the help of laser-cut acrylic sheets. The drone supports 3D reconstruction and mapping using a stereo-camera setup and OpenCV.",
+        "keywords": "innovation",
+        "mentors": "Athindra Bandi, Karthik PB",
+        "interns": "Aravind S, Agnibha Bhattacharyya, Rajat Hegde, Shrenik R",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2019/MultiTerrainDrone.jpg"
+      },
+      {
+        "year": "2019",
+        "title": "Mythodex",
+        "short_description": "Automated identification of scenes from Indian mythology using neural networks and text processing.",
+        "long_description": "The aim of the project is to automate the identification of scenes from Indian mythology in works of art. A trained neural network is used to extract image features and categorize them. Images passed through the model undergo multiple levels of filtering and result in a list of elements (characters,animals,landscapes etc) from the image that bear meaningful relationships. The outputs from this level are analysed and mapped to a scene from the epics using a graph-based model. The end result of the project is an accurate identification and description of the scene being depicted.",
+        "keywords": "innovation",
+        "mentors": "Ananya Ravikumar",
+        "interns": "Ashwin R Bharadwaj, Abdur Rahman Hatim, Devika S Nair, Shreeram Suresh Chandra",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2019/MythologicalML.jpg"
+      },
+      {
+        "year": "2019",
+        "title": "Pressure2Path",
+        "short_description": "Using a smartphone's barometer to track the live location of the device, thereby removing the permanent dependency on GPS.",
+        "long_description": "Advancements in technology has led to the development of countless applications that aid in areas such as navigation and positioning. Many functionalities, such as GPS, have been made accessible to the masses via mobile devices, and provide accurate results. However, the major drawback of such accuracy is the high amounts of power consumed by the phone. Given the limited battery capacity of such devices, prolonged use of the aforementioned functionalities becomes difficult. Observing this issue, it is clear that there is a need to provide accurate positioning while improving power efficiency. This project aims to achieve accurate tracking of the device location while navigating along a predefined route, relying on the pressure data collected by the barometer sensor present in the smartphone. The algorithm is made accurate using cell tower data collected by the phone on said route.",
+        "keywords": "innovation",
+        "mentors": "Sameer Raju Dhole",
+        "interns": "Anirudh S, Pranav Bhatt, Hardik Gourisaria",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2019/P2P.jpg"
+      },
+      {
+        "year": "2019",
+        "title": "Project X",
+        "short_description": "Autonomous car simulation using Reinforcement Learning",
+        "long_description": "The field of mobility is going through a revolution that is changing how we understand transportation. We live in the beginning of the Autonomous Driving era. The potential benefits of autonomous vehicles are immense: elimination of accidents caused by human errors, a reduction in carbon dioxide emission, more efficient use of energy and infrastructure, among others. This kind of vehicle has become a concrete reality and may pave the way for future systems where computers take over the art of driving. In this paper, we present a 2-model approach for autonomous driving of car in a cityscape. The first model is used to drive the car in a no - traffic lane from an initial start location to the destination. The second model modifies the speed and brake states of the car on detecting obstacles within a specified range. We have trained the models using Reinforcement Learning in a simulator environment provided by CARLA.",
+        "keywords": "innovation",
+        "mentors": "Saksham Goyal",
+        "interns": "Saahil Jain, Kavya S, Vishwa Pravin",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2019/ProjectX.jpg"
+      },
+      {
+        "year": "2019",
+        "title": "Prosthetic Actuation System",
+        "short_description": "A system which aids a disabled person confined to a wheelchair, by locating the object chosen and actuating accordingly",
+        "long_description": "The project involves developing a system which aids a disabled person confined to a wheelchair by coupling a robotic arm with the wheelchair. A stereo camera is used to localize object present in front of the wheelchair, where recognition of the objects is done using Convolutional Neural Networks. The user is allowed to choose objects via touchscreen interface after it's recognition and segmentation. The real world coordinates of the chosen object is obtained using the point cloud of the FOV of the stereo camera and they are used to find the elevation and azimuth of the servo motors of the foundation of the robotic arm, which actuates and aligns itself with the chosen object. The chosen object's pose is tracked continuously irrespective of the movement of the wheelchair.\nThis acts as a framework for a robotic arm having at least 3 DOF.",
+        "keywords": "Rehabilitation Robotics, Stereo Vision, Convolutional Neural Networks, Wheelchair",
+        "mentors": "Dr. Venkatarangan M.J",
+        "interns": "B.R Srikrishna, Prajwal Billawa",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2019/ProstheticActuationSystemPoster.jpg"
+      },
+      {
+        "year": "2019",
+        "title": "Roadmap",
+        "short_description": "Web tool for graphical descriptions of learning flows.",
+        "long_description": "Over the years, the ways and processes people have employed to consume information and learn have changed in innumerable ways. The biggest change perhaps, is the emergence of the internet as the clear victor as a global source of knowledge. For the sake of argument, the internet may be thought of as a big, disorganised kitchen with many chefs and no particular distribution of dish workload among them. Say chef-A fashions a particularly scrumptious starter dish-X while being moderately skilled at making the main course dish-Y and sadly, makes a rather foul dessert dish-Z. His colleague, chef-B makes a Michelin worthy main course dish-Y but is so-so at the other two components of a meal. Enter chef-C. He makes the best Poire la Beaujolaise (call it dish-Z) but is simply incapable of making anything else. Now, if you wanted a 3-course meal, what are your chances of getting an optimal dish-A, dish-B and dish-C and in that particular order? Bleak indeed. This is pre- cisely the issue that Roadmap solves. Deconstructing the analogy, the chefs are websites and the dishes are resources. Akin to a meal, information must be consumed in a particular order and from the right source(s). Roadmap identifies blocks of prerequisite information pertaining to the desired ob- jective topic and presents a platter of ranked resources procured from apt sources. These tasks are accomplished by parsing through various resources and identifying parent-child relationships between entities by virtue of varied approaches such as semantic nets, N-space clustering, ANNs that analyse the statistical occurrences of entities and even contextualised word embeddings. Going back to the analogy one last time, Roadmap takes structured learning from ”too many chefs spoil the broth” to ”the more the merrier”.",
+        "keywords": "innovation",
+        "mentors": "Siddarth Karki, Tejvi M",
+        "interns": "Akshay Vasudeva Rao, Prakruti Prakash Rao, Ruchika Shashidhara, Sourav T Raveendran",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2019/Roadmap.jpg"
+      },
+      {
+        "year": "2019",
+        "title": "Timetable Generation",
+        "short_description": "Development of a web application to aid the process of Timetable Generation",
+        "long_description": "Timetable scheduling can be designed as a constraint satisfaction problem and can be solved using various approaches. An optimal solution for a timetable scheduling problem is difficult to find using any generic algorithm, due to the diverse nature of hard constraints and preferences also known as soft constraints, which may vary from institution to institution. Various approaches aimed at finding optimal solutions to such constraint satisfaction problems use constraint optimization, coupled with algorithms such as genetic, swarm particle optimization, tabu search etc. but these approaches are problem dependent and hence are infeasible in real-world situations. In this project, a pure Linear Constrained Optimization approach consisting of integer programming using binary variables has been explored. The developed solver class was tested using real-world data gathered from the various departments of a university. On further inspection, the constraints of every department were strikingly different from each other. The solver class to be successful must accommodate such diversities and still generate optimal results. It was successfully able to handle all the hard constraints and optimize for almost all the soft constraints. This solution can be applied to a wide variety of real-world scheduling problems with the capability of add-on features.",
+        "keywords": "innovation",
+        "mentors": "Aishwarya Venkatesh, Ananya Ravikumar",
+        "interns": "Akash Hamirwasia, Rishit Chaudhary, Tanishq Vyas",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2019/TimeTableGeneration.jpg"
+      },
+      {
+        "year": "2019",
+        "title": "UniBot: A Generalised Chatbot Framework",
+        "short_description": "Designing a generalised chatbot framework for customer facing applications",
+        "long_description": "A generalised chatbot which can intelligently respond to conversation using named entity recognition (NER), sentiment analysis and an implementation of a decision system for follow up mechanism using a Seq2seq model which uses Bidirectional RNNs and Attention models.",
+        "keywords": "Machine Learning, NLP, Web",
+        "mentors": "Ishaan Lagwankar, Tejvi M",
+        "interns": "Taran, Tejas, Sonam",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2019/UniBot.jpg"
+      },
+      {
+        "year": "2019",
+        "title": "WSN Modelling",
+        "short_description": "Design and Comparison of Wireless Sensor Networks",
+        "long_description": "This project aims to build an application in which a user who has insufficient knowledge about the various aspects related to designing a Wireless Sensor Network can input some basic needs of their network such as area, cost and type of Wireless Sensor Network required and the User Interface will help the user in doing so by appropriately stating the aspects that need to be taken care of while setting up the user-defined Wireless Sensor Network. The application will specify various things such as the placement of the nodes, the type of nodes to be used, etc. Wireless Sensor Network node placement models are proposed which concentrate on one specific parameter viz., lifetime, latency and reliability. The user can choose the type of model according to his needs and the simulation is done accordingly. Thus, the project compares WSN Architectures to find the best architecture to setup a WSN based on the constraints provided whilst also simulating all those results infographically to aid the user in setting up a simple Wireless Sensor Network.",
+        "keywords": "innovation",
+        "mentors": "Deepesh Sahoo, Sarang Pramode",
+        "interns": "Anish Reddy Y, Akshobhya Jamadagni K R, Shreyas GS, Shriprajwal Krishnamurthy",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2019/WSNModelling.jpg"
+      }
+    ],
+    "length": 11
+  },
+  "2020": {
+    "projects": [
+      {
+        "year": "2020",
+        "title": "Drone Forces",
+        "short_description": "An autonomous drone which monitors and localizes cracks on a building",
+        "long_description": "With  the  rapid  industrialization  going  across  the  world,  the  need  to  build strong  buildings  with  high  structural  strength  has  become  quite  evident .However numerous amounts of cases of possible cracks has led down to catastrophic disasters of severe structural damages to buildings.  Thus, the following project involves the use of drones to find an efficient way of monitoring potential pitfalls in the foundation of a building to avoid catastrophic hazards",
+        "keywords": "ROS, Drone Computing, Image Processing, Neural Network, Path Planning, PID, Kalman Filter, Simulation",
+        "mentors": "Srikishna BR, Aravind S, Sameer Dhole",
+        "interns": "Suhas Thalanki, Harshith Kumar MB, T Vijay Prashant, Shayak Bhadraray",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2020/DroneForces.jpg"
+      },
+      {
+        "year": "2020",
+        "title": "Aproximately Private",
+        "short_description": "A privacy preserving deep learning framework, optimized using approximate computing",
+        "long_description": "This project aims to build a privacy-preserving deep learning framework\nusing cryptographic protocols like garbled circuits and oblivious transfers.\n\nThe computational and communication cost of the model are reduced by applying approximations at various stages of computation, such as data per-processing, model pruning and activation functions. \n\nThe results from testing the model are collated to obtain information about error rate vs processing time tradeoffs.",
+        "keywords": "Deep Learning, Secure Function Evaluation, Garbled Circuit, Approximate computing",
+        "mentors": "Animesh ND, Taran Singhania",
+        "interns": "Aasim Mohammed, Chirag Kashyap S, Rehan Vipin",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2020/ApproximatelyPrivate.jpg"
+      },
+      {
+        "year": "2020",
+        "title": "Neural Music",
+        "short_description": "A web-app designed to help complete a user's music using Algorithmic analyses and Deep Learning.",
+        "long_description": "The process of composing a lead, or composing\nan accompaniment to an existing lead, can be a daunting process. This project aims to automate either process, allowing musicians to focus on the\naspect they are better at. The former is done via a simple RNN-LSTM deep learning model trained on a host of melodies, while the latter is done by breaking down the lead and performing various algorithmic analyses on it.",
+        "keywords": "Music Generation, Deep Learning, LSTM, Melodia, Algorithms",
+        "mentors": "Tejas S, Sourav T.R",
+        "interns": "Murali Krishna, Nihal R, Moyank Giri",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2020/NeuralMusic.jpg"
+      },
+      {
+        "year": "2020",
+        "title": "Smart City Control and Management",
+        "short_description": "A versatile and scalable network to manage sensors across a city.",
+        "long_description": "A scalable yet versatile cloud-based system with a custom-built dashboard built with Dash, Kafka and OpenWhisk to control and manage sensor data in a large vicinity.",
+        "keywords": "Openwhisk, Kafka, Dashboard, FaaS, IoT, Docker",
+        "mentors": "Vishwas R, Pranav Bhatt",
+        "interns": "Chetan Athni, Sakshi Vattikuti, Hemant Sathish, A Anantha Krishna",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2020/SCCAM.jpg"
+      },
+      {
+        "year": "2020",
+        "title": "BREVIS",
+        "short_description": "Structured Notes For Online Lecture Videos",
+        "long_description": "With education becoming virtual, studying from lecture videos can be time-consuming and tedious. Students tend to miss classes due to various reasons thereby missing out on fundamental concepts.\nBrevis is an application that aims to provide its users with a complete package of lecture notes enhanced with other online resources.\nThe lecture notes are generated for a YouTube video of the user's choice. Familiar processes such as text summarization, keyword extraction, and web scraping are performed on the transcript of the video. If the transcript for the entered video is not available, we generate the transcript by processing its audio. Further formatting is done to extract and insert video snapshots and segment text into separate paragraphs. The sole purpose of this is to structure notes generated in a way that the user can comprehend them easily.",
+        "keywords": "Automation, Lecture Videos, Transcript, NLP, Image Processing",
+        "mentors": "Tanishq Vyas, Akshay Vasudev",
+        "interns": "Mayank Agrawal, Himanshu Jain, Rahul D Makhija, Aniket Aayush",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2020/Brevis.jpg"
+      },
+      {
+        "year": "2020",
+        "title": "Benchmarking of NODE",
+        "short_description": "Comparison of NODE to other neural networks and Machine Learning algorithms.",
+        "long_description": "The aim of this project is to compare Neural Ordinary Differential Equations (NODE) to other neural networks and machine learning algorithms with respect to Time Series forecasting and image processing. Time Series forecasting was done in order to compare the performance of NODE when predicting COVID-19 cases and deaths. Comparisons were made with LSTMs, GRUs, RNNs, simple neural networks, Gradient Boosting algorithm, Linear Regression, and Polynomial Regression. Image processing was done in order to compare the performance of NODE with respect to the MNIST and CIFAR datasets. Comparisons were made with CNNs (with and without transfer learning) and RESNET. Additionally, the time-accuracy tradeoff for NODE was also tested.",
+        "keywords": "Neural Networks, Machine Learning",
+        "mentors": "Saahil Jain",
+        "interns": "Aanchal Narendran, Kartika Nair, Sujith K",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2020/NODE.jpg"
+      },
+      {
+        "year": "2020",
+        "title": "Project WiSeN",
+        "short_description": "An exploration of novel approaches to routing in wireless sensor networks.",
+        "long_description": "The project involved the study of new routing protocols and mechanisms to forward data in wireless sensor networks via the use of a mobile sink station. WSNs generally consist of a collection of sensor nodes which collect and send data to a sink node, which acts as a gateway to a base station. Different protocols for transmission of data can cause drastic differences in the lifespan of these nodes. Thus, our project aims to reduce the power consumption in these nodes by inspecting routing protocols involving a mobile sink as opposed to a static one.",
+        "keywords": "networks, sensors, wireless, routing, energy-efficiency, algorithms",
+        "mentors": "Anish Reddy, Shriprajwal Krishnamurthy",
+        "interns": "Hrishit Chaudhuri, Rithvik Rama, Amogh KM, Surya Dutta",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2020/WiSeN.jpg"
+      },
+      {
+        "year": "2020",
+        "title": "AQVis",
+        "short_description": "Air Quality Visualisation and Analytics on Cloud",
+        "long_description": "Air quality has always been a growing concern in today’s world. AQVis is a cloud-based visualization and analytics platform. This project (AQVis) aims to be the Cloud-based counterpart of the Air Quality sensors. The data is sent from sensors to the cloud (Google Cloud Platform) and then is visualized onto the web page as graphs that users can access. A dashboard created houses the relevant visualizations and maps to generate useful insights from the data.",
+        "keywords": " Air Quality Visualisation, Google Cloud Platform, OpenLayers, Elastic stack, Kubernetes",
+        "mentors": "Dr. Venkatarangan M.J, Animesh ND, Vishwas R, Yashas ND",
+        "interns": "Ashutosh Rao, Srinath Kesav Nallamalli, Srujan Vasudevrao Deshpande",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2020/AQVis.jpg"
+      }
+    ],
+    "length": 8
+  },
+  "2022": {
+    "projects": [
+      {
+        "year": "2022",
+        "title": "DisContNet",
+        "short_description": "Contradiction detection in sentence pairs using NLP and Deep Learning.",
+        "long_description": "\"We are team DisContNet\"\n\"We are definitely not team DisContNet\"\nContradictory, isn't it?\n\nDisContNet is a contradiction detecting system that uses NLP and deep learning. We use a BERT based model to label sentences as per 4 labels: contradictory (general), non-contradictory, contradiction due to negation, and numeric contradiction.",
+        "keywords": "Contradiction, Sentence pairs, NLP, Deep learning, ML ",
+        "mentors": "Hrishit Chaudhuri, Suhas Thalanki, Vibha Masti",
+        "interns": "Rida Javed Kutty, Roshni P N, Shreya S Adiga",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2022/DisContNet.png"
+      },
+      {
+        "year": "2022",
+        "title": "VayuBhoomi",
+        "short_description": "Autonomous UAV-UGV networking framework deployed for waste disposal.",
+        "long_description": "VayuBhoomi is a framework for networking of aerial and ground based robots. The USP of the project as compared to past research is creating a robust system between an Unmanned aerial vehicle (UAV) and an unmanned ground vehicle (UGV). The use case chosen to demonstrate this is trash collection over open spaces. We use the UAV to conduct surveillance over a specified area, the UAV patrols a pre planned path and spirals inwards, in the process deploying trajectory tracking and image processing. It identifies and stores the location of the garbage and sends it to the UGV, which proceeds to travel to the garbage and collect and dispose of it while avoiding any obstacles. ",
+        "keywords": "Network, Reconnaissance, Autonomous, Robots, ROS",
+        "mentors": "Harshith Kumar, Shayak Bhadraray, T Vijay Prashant",
+        "interns": "Pramuk M P, Samuel Thomas, Sriram Radhakrishna",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2022/VayuBhoomi.png"
+      },
+      {
+        "year": "2022",
+        "title": "PseudoDeploy",
+        "short_description": "Emulation and monitoring of arbitrary Federated Learning setups using Kubernetes.",
+        "long_description": "Pseudodeploy is a tool that aims to make federated learning research easy by allowing researchers to create (otherwise expensive) experimental setups using powerful cloud-native technologies and orchestration, while allowing them to vary real-life parameters such as compute power limits and bandwidth limits.\nWe use Kubernetes to perform this automation, while supporting python as the implementation language given its frequency in research usage.",
+        "keywords": "Federated Learning, Kubernetes, Docker, Distributed Systems, Grafana Monitoring",
+        "mentors": "Aanchal Narendran, Animesh ND",
+        "interns": "Anirudh Rowjee, Shubhankar V Kuranagatti, Urmil Kalaria",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2022/PseudoDeploy.png"
+      },
+      {
+        "year": "2022",
+        "title": "Flo(v)ver",
+        "short_description": "A Static Profiler to track error propagation through C code.",
+        "long_description": "Flo(v)ver aims to categorically detect precision errors in floating-point programs arising out of the innate error associated with representing a real number in a computing system. Static analysis techniques were used to provide a user-friendly command-line tool capable of checking for common errors associated with floats, including failed assertions, inequality errors, and rounding, chopping, and other machining errors.",
+        "keywords": "Floating points, Numerical analysis, Compiler design, precision, C",
+        "mentors": "Hrishit Chaudhuri",
+        "interns": "Disha Jain, Gagan Prashanth K, Vishal J Lodha",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2022/Flovver.png"
+      },
+      {
+        "year": "2022",
+        "title": "Vyaakaran",
+        "short_description": "A Turing Machine Simulator for an edu-webtool.",
+        "long_description": "Vyakaran is an educational web-tool built to help anyone understand and visualize automata theory. It has support for Regular Grammar, Context Free Grammar and powerful testing tools to help the user test automata. We focus on extending this tool to enable simulation of a Turing Machine with it's tape. To be specific, we take state transitions from the user in a given syntax and compile it to generate a graph and a tape to visualize the Turing Machine.",
+        "keywords": "Turing Machine, Automata, Vue, Compiler Design, Simulaton",
+        "mentors": "Akash Hamirwasia, Hrishit Chaudhuri",
+        "interns": "Abishek Deivam, Tarun M, Thejas N U",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2022/Vyaakaran.png"
+      },
+      {
+        "year": "2022",
+        "title": "ViPyr",
+        "short_description": "A Python front-end framework inspired by ReactJs.",
+        "long_description": "Our project aims to make a frontend framework built with the principles of React \n[a very popular javascript framework] that will allow users to create the frontend \nfor applications in a pythonic style.",
+        "keywords": "Python, PyScript, React, WebAssembly, Frontend, Reconcilation",
+        "mentors": "Murali Krishna, Nihal Ramaswamy",
+        "interns": "B R Sinchana, Shreyas Kaundinya, Suraj Rao K P",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2022/ViPyr.png"
+      },
+      {
+        "year": "2022",
+        "title": "(Re)Placement",
+        "short_description": "An end-to-end software solution for the placement process in universities.",
+        "long_description": "(Re)Placement is an end-to-end software between the Training & Placement Officer (TPO) and students of a University, aimed at enhancing the placement process of the University. It is an approach for developing a better, organised and efficient system of placements in a universe. ",
+        "keywords": "Placement Process, Software, Automation, Database, Convenience ",
+        "mentors": "Akshobhya Jamadagni, Sakshi Vatikutti",
+        "interns": "Pavan Nettam, Rakshitha R, Tanishq Chugh",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2022/RePlacement.png"
+      },
+      {
+        "year": "2022",
+        "title": "TPML-WLAN",
+        "short_description": "Throughput prediction in WLAN dense deployments with overlapping BSSs using ML.",
+        "long_description": "TPML-WLAN or Throughput prediction in wireless local area networks using Machine Learning, is primarily based on predicting the value of throughput in dense deployments which consist of overlapping BSSs (basic service sets). The objective of this project is to utilize and compare the performance of machine learning techniques like Random forest, Linear regression, K nearest neighbors and so on, and deep learning models like artificial neural networks (ANN) and graph neural networks (GNN), by resourcefully manipulating the features of nodes (access points, for example, routers and stations for example, laptops) in a deployment, and to thus arrive at the optimal arrangement of the nodes, providing minimum interference and maximum throughput.",
+        "keywords": "Networks, Throughput, Internet, Machine Learning, Graph Neural Networks, Prediction",
+        "mentors": "Professor M Rajasekar, Venkat Ramnan K",
+        "interns": "Shreyas S, Spoorthi Kalkunte, Varun Satheesh",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2022/TPML-WLAN.png"
+      }
+    ],
+    "length": 8
+  },
+  "2023": {
+    "projects": [
+      {
+        "year": "2023",
+        "title": "AQvis (2023)",
+        "short_description": "End-to-end air quality monitoring, analysing and visualising system",
+        "long_description": "The need for monitoring air quality in real time has been a topic of discussion and concern in recent times. AQVis is an end-to-end air quality monitoring, analysing and visualising system. It leverages Big Data and IoT technologies to provide more in-depth insights of real-time air quality.",
+        "keywords": "Air quality monitoring, AQVis, Big Data, Iot, Monitoring, Analyzing, Visualizing",
+        "mentors": "Prof. M J Venkatrangan, Shreyas Kaundinya, Gagan P",
+        "interns": "Darsh Agarwal, Rashi Bandi, Shreesh Bajpai",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2023/AQVis.png"
+      },
+
+      {
+        "year": "2023",
+        "title": "BIT* Connect",
+        "short_description": "Motion Planner that combines BIT*(Asymptotically optimal) and RRT-Connect(bidirectional)",
+        "long_description": "BIT*Connect is a bidirectional Motion planning algorithm that is a combination of BIT* (Asymptotic optimal algorithm) and RRT-Connect (Bidirectional algorithm that ouputs a solution relatively quickly)",
+        "keywords": "Motion Planning, Robotics, Algorithm Development, C++",
+        "mentors": "Srikrishna B.R, Disha Jain",
+        "interns": "Ayush Kale, Varuni H K, Vikas Menezes",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2023/BitStarConnect.png"
+      },
+      {
+        "year": "2023",
+        "title": "DistilledChaos",
+        "short_description": "Targeted Fault Injection Leveraging Application Usage Patterns",
+        "long_description": "DistilledChaos addresses challenges in chaos testing and debugging for cloud-native systems, providing developers with a solution to bolster control, observability, and efficiency during testing. By focusing on critical components using metrics like requests per second, the tool offers enhanced control and insights into system behavior, aiding in issue identification. This proactive approach improves the testing process and enables early problem detection, even for users with limited system knowledge.",
+        "keywords": "Distributed Systems, Kubernetes, Fuzzing, Observability, Reliability",
+        "mentors": "Animesh ND, Anirudh Rowjee",
+        "interns": "Anirudh Lakhotia, B Monish Moger, Sai Smaran Jawalkar",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2023/DistilledChaos.png"
+      },
+      {
+        "year": "2023",
+        "title": "FRedBots",
+        "short_description": "Solving warehouse logistics problems by using Reinforcement Learning for autonomous navigation of the robots and efficient task scheduling.",
+        "long_description": "The current intra-warehouse package delivery system faces challenges in terms of coordination and scalability. Our goal is to design and implement a Reinforcement Learning (RL) algorithm for task scheduling and optimal navigation methods in a collaborative robotic system, with a focus on package transportation within warehouses using multiple robots. ",
+        "keywords": "Reinforcement Learning, Robotics, Autonomous Robot, Task scheduling, Warehouse Management",
+        "mentors": "Sriram Radhakrishna, Samuel Thomas, Shayak Bhadraray, Harshith Kumar",
+        "interns": "Amulya Marali, Ashvin Bhat, Pradeep J, Rohan Mahesh Rao",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2023/FRedBots.png"
+      },
+      {
+        "year": "2023",
+        "title": "Marlon (Brando)",
+        "short_description": "A Comparative Analysis of Reinforcement Learning Algorithms for Traffic Signal Control",
+        "long_description": "Traffic congestion is a major problem in urban environments.  Traffic has heterogenous intersections and this complexity provides a great test bed for reinforcement learning algorithms. We have tested multiple reinforcement learning algorithms (both independent and dependent) and compared them with each other to find the algorithm that works the best on our traffic networks.",
+        "keywords": "Reinforcement Learning, Deep Learning",
+        "mentors": "Samuel Thomas",
+        "interns": "Anshul Dasyam, Gautham Krithiwas, Shreya Chakraborty, Suma Grandhi",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2023/MarlonBrando.png"
+      },
+      {
+        "year": "2023",
+        "title": "Megalodon",
+        "short_description": "A hydrodynamic AUV with efficient power design and image processing",
+        "long_description": "An autonomous underwater vehicle which features a streamlined hydrodynamic design teamed with a power efficient controller capable of navigation and collection of data for offboard post-processing.",
+        "keywords": "Hydrodynamic, AUV, Robust Control, Image Processing",
+        "mentors": "Samuel Thomas, Harshith Kumar, Shayak Bhadraray, Sriram Radhakrishna",
+        "interns": "Archanaa A Chandaragi, Dhriti Rajesh Krishnan, Himank Bansal, Pranav V Kumar",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2023/Megalodon.png"
+      },
+      {
+        "year": "2023",
+        "title": "TerraBot",
+        "short_description": "Terrain Navigation with reinforcement learning",
+        "long_description": "Terrabot revolutionizes robotics by seamlessly integrating wheeled and legged capabilities with state-of-the-art reinforcement learning. It navigates diverse terrains autonomously with remarkable versatility.",
+        "keywords": "Reinforcement Learning, ROS, Hardware, Autonomous, Robot",
+        "mentors": "Samuel Thomas, Shayak Bhadraray, Sriram Radhakrishna, Harshith Kumar",
+        "interns": "Arjun Achar, Pavvan Pradeep, Sanraj Lachhiramka, Srimitravinda Ponnada",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2023/TerraBot.jpg"
+      },
+      {
+        "year": "2023",
+        "title": "TPGAT WiLAN",
+        "short_description": "Throughput prediction in modern high density WLANs using Graph Attention Networks",
+        "long_description": "IEEE 802.11 Wi-Fi networks are crucial for demanding services like virtual reality, augmented reality, and IoT in densely connected areas. However, interference significantly degrades Wi-Fi performance in such scenarios. Though standards like 802.11n/ac introduce Channel Bonding (CB) to boost capacity, effectively assigning channels in dynamic environments remains complex. The challenge is exacerbated by wider spectrum channel usage. To tackle this, we propose a data-driven solution using a Graph Attention Network (GAT) model, which accurately predicts Wi-Fi performance by considering deployment topology and wireless interactions. This approach offers insights to enhance Wi-Fi in dense settings, aiding network administrators and practitioners in decision-making.",
+        "keywords": "Throughput Prediction, Graph Attention Networks, Pytorch, Throughput Optimization, Wi-Fi 6",
+        "mentors": "Prof. M Rajsekar, Shreyas S, Spoorti K, Varun S",
+        "interns": "Akash Kamalesh, Nischal H S, Shreyas M N",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2023/TPGATWiLAN.png"
+      },
+      {
+        "year": "2023",
+        "title": "Whisper Wire",
+        "short_description": "WhisperWire aims to hide data in human audible sound waves.",
+        "long_description": "WhisperWire aims to hide data in human audible sound waves. By leveraging the unassuming nature of audio, the goal was to transmit data without raising suspicion. The approach followed involved implementing source-level encoding techniques, ensuring that the audio remained unnoticeable even upon individual inspection.",
+        "keywords": "Audio, Stegnography, Communication, Trojan, Covert",
+        "mentors": "Sameer Raju Dhole, Murali Krishna",
+        "interns": "Anirudh Revanur, C.P.Sindhu, Shreesh Bajpai",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2023/WhisperWire.png"
+      }
+    ],
+    "length": 9
+  }
+}

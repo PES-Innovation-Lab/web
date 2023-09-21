@@ -4,7 +4,6 @@ import Layout from '../components/Layout';
 import Container from '@material-ui/core/Container';
 import { light } from '@material-ui/core/styles/createPalette';
 import CloseIcon from '@material-ui/icons/Close';
-import '../css/hashCode.css';
 import {
   Card,
   CardContent,
@@ -29,7 +28,7 @@ const mainTitleStyle = {
 const mainContentStyle = {
   fontFamily: 'Red Hat Display, sans-serif',
   fontSize: '1.8rem',
-  marginBottom: '30px',
+  marginBottom: '150px',
   textAlign: 'center',
   color: 'white',
 };
@@ -87,9 +86,7 @@ function Index() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch(
-        'https://api-vercel-mlabwebdev.vercel.app/stats'
-      );
+      const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/stats');
       if ((await result.status) !== 200) {
         alert('API Error. Try again later');
       } else {
@@ -122,20 +119,6 @@ function Index() {
             We are a student community dedicated to cultivating the spirit of
             research and innovation in budding engineers.
           </blockquote>
-          {/* <Grid
-            item
-            xs={12}
-            // sm={8}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <a href={process.env.ASSET_PREFIX + '/hashcode'}>
-              <button className="regButton">HASHCODE</button>
-            </a>
-          </Grid> */}
         </Container>
       </div>
 
