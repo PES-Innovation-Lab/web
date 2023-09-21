@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const withCSS = require('@zeit/next-css');
 const isProduction = (process.env.NODE_ENV || 'production') === 'production';
 
-const assetPrefix = isProduction ? '/web' : '';
+const assetPrefix = isProduction ? '' : '';
 
 module.exports = withCSS({
     trailingSlash: true,
