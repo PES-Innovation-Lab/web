@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useEffect, useState } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import Layout from '../components/Layout';
-import '../css/hashCode.css';
+// import '../css/hashCode.css';
 import '../node_modules/react-alice-carousel/lib/alice-carousel.css';
 import hashcodeData from '../public/data/events/hashcode.json';
 
@@ -95,7 +95,7 @@ function HashCode() {
             <Typography className='hashCodeDescription'>
                     {event.description}
             </Typography>
-            <Grid container spacing={3} style={{marginTop: 20}} justify="center">
+            <Grid container spacing={3} style={{marginTop: 20}} justifyContent="center">
                 <Grid item xs={12} sm={4}>
                     <img style={{width:"95%"}} src={`GOOGLE_DRIVE_LINK`}/>
                 </Grid>
@@ -134,7 +134,7 @@ function HashCode() {
                   container
                   spacing={3}
                   style={{ marginTop: 20 }}
-                  justify="center"
+                  justifyContent="center"
                 >
                   <Grid item xs={12} sm={4}>
                     <img

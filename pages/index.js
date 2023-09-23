@@ -1,22 +1,21 @@
 // pages/index.js
-import React, { useState, useEffect } from 'react';
-import Layout from '../components/Layout';
+import {
+  AppBar,
+  Card,
+  CardContent,
+  CardMedia,
+  Dialog,
+  Grid,
+  IconButton,
+  Slide,
+  Toolbar,
+  Typography,
+} from '@material-ui/core';
 import Container from '@material-ui/core/Container';
 import { light } from '@material-ui/core/styles/createPalette';
 import CloseIcon from '@material-ui/icons/Close';
-import {
-  Card,
-  CardContent,
-  Typography,
-  Grid,
-  CardMedia,
-  Dialog,
-  AppBar,
-  Toolbar,
-  IconButton,
-  Slide,
-} from '@material-ui/core';
-import '../css/index.css';
+import React, { useEffect, useState } from 'react';
+import Layout from '../components/Layout';
 
 const mainTitleStyle = {
   fontFamily: 'Poppins, sans-serif',
@@ -86,17 +85,19 @@ function Index() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/stats');
-      if ((await result.status) !== 200) {
-        alert('API Error. Try again later');
-      } else {
-        const output = await result.json();
-        const stats = [];
-        for (const key in output) {
-          stats.push({ key: key, data: output[key] });
-        }
-        setData({ stats: stats });
-      }
+      // const result = await fetch(
+      //   'https://api-vercel-mlabwebdev.vercel.app/stats'
+      // );
+      // if ((await result.status) !== 200) {
+      //   alert('API Error. Try again later');
+      // } else {
+      //   const output = await result.json();
+      //   const stats = [];
+      //   for (const key in output) {
+      //     stats.push({ key: key, data: output[key] });
+      //   }
+      //   setData({ stats: stats });
+      // }
     };
     fetchData();
   }, []);
@@ -149,9 +150,9 @@ function Index() {
 
       <div className="statSection">
         <Container>
-          <Grid container justify="center">
+          <Grid container justifyContent="center">
             {data.stats.map((key) => (
-              <Grid key={key.key} item sm={3} xs={12} justify="center">
+              <Grid key={key.key} item sm={3} xs={12} justifyContent="center">
                 <CardContent style={{ textAlign: 'center' }}>
                   <Typography className="statValue" component="p">
                     {key.data}
@@ -168,7 +169,7 @@ function Index() {
         PROFESSORS
       </p>
       <Container>
-        <Grid container justify="center" className="profContainer">
+        <Grid container justifyContent="center" className="profContainer">
           {profData.map((prof) => (
             <Grid
               key={prof.name}
@@ -176,7 +177,7 @@ function Index() {
               md={4}
               sm={12}
               xs={12}
-              justify="center"
+              justifyContent="center"
               style={{ textAlign: 'center', alignItems: 'center' }}
             >
               <Card

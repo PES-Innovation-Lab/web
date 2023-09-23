@@ -17,7 +17,6 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
-import '../css/members.css';
 import membersData from '../public/data/members.json';
 
 const designStyles = makeStyles({
@@ -84,7 +83,7 @@ function Members() {
             ) => (
               <Container key={item.key}>
                 <Typography className="pageSubHeader">{item.key}</Typography>
-                <Grid container spacing={3} justify="center">
+                <Grid container spacing={3} justifyContent="center">
                   {item.data.members.map(
                     (
                       member // each member is one member
@@ -105,6 +104,7 @@ function Members() {
                                 './images/members/unknown.png'
                               }
                               title={member.name}
+                              loading="lazy"
                             />
                             <CardContent>
                               <Typography
