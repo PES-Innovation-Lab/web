@@ -1,27 +1,27 @@
 .footer {
-    background-color: black;
-    min-height: 400px;
-    margin-top: 2em;
+  background-color: black;
+  min-height: 400px;
+  margin-top: 2em;
 }
 
 .footerLogo {
-    max-width: 300px;
+  max-width: 300px;
 }
 
 .footerSection {
-    flex: 1;
-    padding: 40px 40px !important;
+  flex: 1;
+  padding: 40px 40px !important;
 }
 
 .footerContent {
-    display: flex;
+  display: flex;
 }
 
-@media only screen and (max-device-width: 540px) {
-    .footerContent {
-        flex-direction: column;
-    }
-    .footerSection {
-        padding: 10px 10px !important;
-    }
+@media only screen and (max-device-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+  }
+  .footerSection {
+    padding: 10px 10px !important;
+  }
 }

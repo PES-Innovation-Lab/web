@@ -1,0 +1,8 @@
+/* HERO SECTION */
+
+/* ABOUT US SECTION */
+.abtus__section__highlight {
+  @apply text-lab-green font-semibold;
+}
+
+/* PROFESSOR INFO SECTION */

@@ -74,15 +74,15 @@
 /* tailwind apply */
 /* navbar --------------------------------------- */
 .navbar {
-  @apply fixed top-0 z-[10000] bg-opacity-90
-  bg-black text-white 
-  w-full
+  @apply fixed top-0 z-[10000] bg-opacity-60 my-2 mx-4 rounded-3xl backdrop-blur-sm
+  bg-lab-sec text-white 
+  w-[calc(100%-2rem)]
   flex flex-col sm:flex-col md:flex-row
   transition-all duration-700 ease-in-out;
 }
 
 .navbar__open {
-  @apply h-screen px-4 py-2 md:p-16;
+  @apply h-screen m-0 w-full px-4 py-2 md:p-16 rounded-2xl;
 }
 
 .navbar__closed {
@@ -94,7 +94,7 @@
 }
 
 .navbar__closed__menu-logo {
-  @apply flex gap-2 items-center;
+  @apply flex gap-2 items-center font-bold;
 }
 
 .navbar__logo {
@@ -103,7 +103,7 @@
 }
 
 .navbar__menu {
-  @apply absolute h-8 w-8 right-8 md:right-16 top-6 text-white;
+  @apply absolute h-7 w-7 md:h-8 md:w-8 right-8 md:right-16 top-6 text-white;
 }
 
 .navbar__menu svg {

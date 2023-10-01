@@ -52,37 +52,6 @@ function Projects() {
   };
 
   useEffect(() => {
-    const fetchData = async () => {
-      // const result = await fetch('https://api-vercel-mlabwebdev.vercel.app/projects');
-      const result = await fetch('/data/projects.json');
-      if ((await result.status) !== 200) {
-        alert('API Error. Try again later');
-      } else {
-        const output = await result.json();
-        const projects = [];
-        for (const key in output) {
-          for (const chipKey in output[key].projects) {
-            output[key].projects[chipKey].keywords =
-              output[key].projects[chipKey].keywords.split(',');
-            output[key].projects[chipKey].interns =
-              output[key].projects[chipKey].interns.split(',');
-            output[key].projects[chipKey].mentors =
-              output[key].projects[chipKey].mentors.split(',');
-            output[key].projects[chipKey].id = output[key].projects[
-              chipKey
-            ].title
-              .replace(/\s+/g, '-')
-              .toLowerCase();
-          }
-          projects.push({ key: key, data: output[key] });
-        }
-        projects.reverse();
-        setData({ projects: projects });
-      }
-      setDataLoaded(true);
-    };
-    // fetchData();
-
     const fetch = () => {
       const output = projectsData;
       const projects = [];

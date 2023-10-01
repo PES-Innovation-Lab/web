@@ -46,3 +46,37 @@
     flex-direction: column-reverse !important;
   }
 }
+
+/* ---------------------- */
+
+.proj__card {
+  @apply text-white bg-zinc-900 
+  w-full
+  h-full
+  p-4
+  flex flex-col items-center;
+}
+
+.proj__grid {
+  @apply max-w-7xl
+  p-4
+  mx-auto
+  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1
+  justify-center items-start place-items-center;
+}
+
+.proj__card__image {
+  @apply relative h-80 w-full overflow-hidden object-contain rounded-md;
+}
+
+.proj__card__title {
+  @apply text-step-2 mt-5 mb-2 bg-lab-green text-white font-semibold p-1 rounded-full text-center;
+}
+.proj__card__sdesc {
+  @apply text-justify p-1 mt-3 mb-5;
+}
+
+.card_round_image {
+  @apply relative border h-80 w-60 rounded-xl overflow-hidden;
+  transform: translateX(var(--x)) translateY(var(--y));
+}

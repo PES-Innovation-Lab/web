@@ -16,4 +16,5 @@ module.exports = {
     return config;
   },
   swcMinify: true,
+  images: { domains: ['pil-web.web.app'] },
 };

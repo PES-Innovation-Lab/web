@@ -24,10 +24,16 @@ module.exports = {
       colors: {
         'lab-green': '#068f13',
         'lab-light-green': '#8bc34a',
+        'lab-bg': '#070808',
+        'lab-sec': '#1b1b1d',
       },
       screens: {
         ph: { max: '1024px' },
         lg: { min: '1025px' },
+      },
+      fontFamily: {
+        'martian-mono': ['Martian Mono', 'monospace'],
+        'dm-sans': ['DM Sans', 'sans-serif'],
       },
     },
   },

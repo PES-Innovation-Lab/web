@@ -35,7 +35,7 @@ const Footer = () => (
           <Link href={`${process.env.ASSET_PREFIX}/`}>
             <IconButton disableFocusRipple edge="start">
               <img
-                style={{ width: '80%' }}
+                style={{ width: '70%' }}
                 className="footerLogo"
                 src={`${process.env.ASSET_PREFIX}/images/mlab/mlab_logo.png`}
               />
