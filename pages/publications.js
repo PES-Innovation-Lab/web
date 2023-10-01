@@ -18,7 +18,7 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import React, { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
-import '../css/projects.css';
+// import '../css/projects.css';
 import publicationsData from '../public/data/publications.json';
 
 const designStyles = makeStyles({

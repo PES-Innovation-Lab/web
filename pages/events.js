@@ -12,7 +12,7 @@ import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 import Layout from '../components/Layout';
-import '../css/events.css';
+// import '../css/events.css';
 
 const useStyles = makeStyles((theme) => ({
   paper: {

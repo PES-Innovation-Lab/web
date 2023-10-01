@@ -20,7 +20,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import Layout from '../components/Layout';
-import '../css/projects.css';
+// import '../css/projects.css';
 import projectsData from '../public/data/projects.json';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -201,6 +201,7 @@ function Projects() {
                                   `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`
                                 }
                                 title={project.title}
+                                loading="lazy"
                               />
                               <CardContent>
                                 <Typography

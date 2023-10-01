@@ -5,7 +5,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import EmailIcon from '@material-ui/icons/Email';
 import YouTubeIcon from '@material-ui/icons/YouTube';
-import '../css/contact_us.css';
+// import '../css/contact_us.css';
 
 function contactUs() {
   return (
@@ -15,7 +15,7 @@ function contactUs() {
       </Typography>
       <Container>
         <Typography className="contactPageSubHeader">Contact Us</Typography>
-        <Grid container justify="center" spacing={5}>
+        <Grid container justifyContent="center" spacing={5}>
           <Grid item xs={12} sm={6} style={{ textAlign: 'center' }}>
             <a
               href="mailto:innovationlab@pes.edu"
@@ -61,7 +61,7 @@ function contactUs() {
 
       <Container style={{ marginTop: '1em' }}>
         <Typography className="contactPageSubHeader">Social</Typography>
-        <Grid container justify="center" spacing={5}>
+        <Grid container justifyContent="center" spacing={5}>
           <Grid item xs={12} sm={6} style={{ textAlign: 'center' }}>
             <a
               href="https://www.linkedin.com/company/pes-innovation-lab"

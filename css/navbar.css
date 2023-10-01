@@ -1,73 +1,176 @@
-.navbar {
-    background-color: black !important;
-}
+/* .navbar {
+  background-color: black !important;
+} */
 
 .menuButton {
-    color: white !important;
-    display: none !important;
+  color: white !important;
+  display: none !important;
 }
 
 .title {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
-.logo{
-    max-width: 160;
+.logo {
+  max-width: 160;
 }
 
 .navButton {
-    margin-left: 20;
-    color: white !important;
-    background-color: black !important;
+  margin-left: 20;
+  color: white !important;
+  background-color: black !important;
 }
 
 .navButton:hover {
-    color: #8bc34a !important;
+  color: #8bc34a !important;
 }
 
 .navButton.active {
-    color: #8bc34a !important;
+  color: #8bc34a !important;
 }
 
 .logoButton {
-    background-color: black;
+  background-color: black;
 }
 
 .logoButton:hover {
-    background-color: black;
+  background-color: black;
 }
 
 .drawerMenu {
-    width: 250px !important;
-    color: white;
+  width: 250px !important;
+  color: white;
 }
 
 .navDrawer {
-    background-color: black;
-    height: 100%;
+  background-color: black;
+  height: 100%;
 }
 
 .drawerNavText {
-    color: white;
+  color: white;
 }
 
 .drawerNavText.active {
-    color: #8bc34a !important;
+  color: #8bc34a !important;
 }
 
 .MuiMenu-list {
-    background-color: black;
+  background-color: black;
 }
 
-
 @media only screen and (max-device-width: 540px) {
-    .navButton {
-        display: none !important;
-    }
-    .menuButton {
-        display: inline-flex !important;
-    }
-    .dropdown-desktop {
-        display: none !important;
-    }
+  .navButton {
+    display: none !important;
+  }
+  .menuButton {
+    display: inline-flex !important;
+  }
+  .dropdown-desktop {
+    display: none !important;
+  }
+}
+
+/* tailwind apply */
+/* navbar --------------------------------------- */
+.navbar {
+  @apply fixed top-0 z-[10000] bg-opacity-90
+  bg-black text-white 
+  w-full
+  flex flex-col sm:flex-col md:flex-row
+  transition-all duration-700 ease-in-out;
+}
+
+.navbar__open {
+  @apply h-screen px-4 py-2 md:p-16;
+}
+
+.navbar__closed {
+  @apply h-20 p-4;
+}
+
+.navbar__closed__menu {
+  @apply px-2 md:px-8 flex justify-between w-full items-center;
+}
+
+.navbar__closed__menu-logo {
+  @apply flex gap-2 items-center;
+}
+
+.navbar__logo {
+  @apply relative
+  h-12 w-12 lg:h-16 lg:w-16;
+}
+
+.navbar__menu {
+  @apply absolute h-8 w-8 right-8 md:right-16 top-6 text-white;
+}
+
+.navbar__menu svg {
+  @apply w-full h-full;
+}
+
+/* left ---------------------------------------*/
+.navbar__left {
+  @apply flex-auto lg:flex-1 
+  md:border-r md:border-b-0 border-white border-b
+  p-2 md:p-4 
+  flex flex-col justify-center items-center;
+}
+
+.navbar__l__logo {
+  @apply relative
+  h-32 w-32 md:h-80 md:w-80 lg:h-96 lg:w-96;
+}
+
+.navbar__l__content {
+  @apply flex flex-row md:flex-col justify-center items-center gap-1;
+}
+
+.navbar__l__content-title {
+  @apply text-step-3 md:text-step-5 font-bold;
+}
+
+.navbar__l__content-tagline {
+  @apply text-gray-500 text-center;
+}
+
+.navbar__l__content-socials {
+  @apply flex gap-2
+  mt-5;
+}
+
+.navbar__l__content-social {
+  @apply h-10 w-10 md:h-12 md:w-12
+  flex justify-center items-center
+  border
+  rounded-md
+  hover:bg-white hover:text-black
+  transition-colors duration-300;
+}
+
+/* right --------------------------------------*/
+.navbar__right {
+  @apply flex-auto lg:flex-1 
+  p-2 md:p-4;
+}
+
+.navbar__r__routes {
+  @apply text-lab-green
+  pt-4 md:pt-0
+  h-full 
+  text-step-4 lg:text-step-5
+  flex flex-col gap-4 justify-start md:justify-center items-center
+  hover:cursor-pointer
+  uppercase;
+}
+
+.route__active {
+  @apply text-step-6 lg:text-step-7 font-light text-opacity-100;
+}
+
+.route__passive {
+  @apply text-white
+  hover:text-step-6 hover:text-lab-green
+  transition-all duration-150 ease-in-out;
 }

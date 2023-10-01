@@ -18,7 +18,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import { useEffect, useState } from 'react';
 import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
-import '../css/hashCode.css';
+// import '../css/hashCode.css';
 import articlesData from '../public/data/articles.json';
 
 const designstyles = makeStyles({
