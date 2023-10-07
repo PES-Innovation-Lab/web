@@ -17,6 +17,12 @@ import CloseIcon from '@material-ui/icons/Close';
 import React, { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 
+// project spotlight
+import projectsData from '../public/data/projects.json';
+import Projects from './projects';
+import Projects_spotlight from './spotlight';
+
+
 const mainTitleStyle = {
   fontFamily: 'Poppins, sans-serif',
   textAlign: 'center',
@@ -261,7 +267,13 @@ function Index() {
           </Typography>
         </Container>
       </Dialog>
+
+      <div>
+        <Projects_spotlight />
+      </div>
+
     </Layout>
+
   );
 }
 
