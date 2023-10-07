@@ -1,6 +1,13 @@
+
 .projectCard {
   max-width: 345px;
   background-color: black !important;
+  animation: slide 10s linear infinite;
+}
+
+
+.paused {
+  animation-play-state: paused;
 }
 
 .projectCardTitle {
@@ -25,6 +32,7 @@
 .projectViewContainer {
   margin-top: 6em;
   display: flex;
+  
 }
 
 .projectViewSectionImage {
