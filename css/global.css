@@ -6,6 +6,18 @@
     min-height: 100vh;
 } */
 
+@keyframes slide {
+
+  0% {
+  transform: translateX(400%);
+    }
+    
+  100% {
+      transform: translateX(-400%);
+   }
+
+  };
+
 @import './contact_us.css';
 @import './events.css';
 @import './fonts.css';
