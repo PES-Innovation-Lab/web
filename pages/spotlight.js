@@ -212,9 +212,9 @@ import {
                       <Typography className="projectCardDescription">
                         {project.short_description}
                       </Typography>
-                      {project.keywords.map((item) => (
+                      {/* {project.keywords.map((item) => (
                         <Chip key={item} label={item} className="projectKeywordChip" />
-                      ))}
+                      ))} */}
                     </CardContent>
                   </CardActionArea>
                 </Card>
