@@ -146,6 +146,21 @@ function Projects() {
     mentors: [],
   });
   const designstyles = designStyles();
+  
+  function pauseRow() {
+    const cards = document.querySelectorAll('.projectCard');
+    cards.forEach(card => {
+      card.classList.add('paused');
+    });
+  }
+  
+  function playRow() {
+    const cards = document.querySelectorAll('.projectCard');
+    cards.forEach(card => {
+      card.classList.remove('paused');
+    });
+  }
+  
 
   return (
     <Layout
@@ -185,13 +200,16 @@ function Projects() {
                         item
                         sm={4}
                         className="projectCardContainer"
+                        onMouseEnter={() => pauseRow()}
+                        onMouseLeave={() => playRow()}
+                
                       >
                         <a
                           onClick={() => setIsProjectFromURL(false)}
                           href={'#' + project.id}
                           className={designstyles.linkStyle}
                         >
-                          <Card className="projectCard">
+                          <Card className="projectCard" onmouseover="pauseRow()">
                             <CardActionArea>
                               <CardMedia
                                 className="projectCardImage"
