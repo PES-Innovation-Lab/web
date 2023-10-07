@@ -209,7 +209,7 @@ function Projects() {
                           href={'#' + project.id}
                           className={designstyles.linkStyle}
                         >
-                          <Card className="projectCard" onmouseover="pauseRow()">
+                          <Card className="projectCard">
                             <CardActionArea>
                               <CardMedia
                                 className="projectCardImage"

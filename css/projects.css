@@ -1,8 +1,14 @@
 
 .projectCard {
-  max-width: 345px;
+  max-width: 350px;
   background-color: black !important;
   animation: slide 10s linear infinite;
+}
+
+.projectCard:hover {
+
+  scale: 105%;
+  box-shadow: 1px 1px 5px 5px #7cb342;
 }
 
 
