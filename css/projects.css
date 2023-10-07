@@ -2,7 +2,7 @@
 .projectCard {
   max-width: 345px;
   background-color: black !important;
-  animation: slide 10s linear infinite;
+  animation: slide-1 10s linear infinite;
 }
 
 .projectCard:hover {
@@ -63,34 +63,38 @@
 
 /* spotlight */
 .projectCardContainer_sp {
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto;
-  margin: 0 -10px; 
+  margin-top: 10px;
 }
 
-.projectCard_sp {
-  flex: auto;
+.projectCard_sp_1 {
   display: flex;
-  width: 150px; 
+  width: 180px; 
   margin: 0 10px; 
   background-color: black !important;
-  animation: slide 10s linear infinite;
+  animation: slide_1 10s linear infinite;
 }
 
-.projectCard_sp:hover {
+.projectCard_sp_2 {
+  display: flex;
+  width: 180px; 
+  margin: 0 10px; 
+  background-color: black !important;
+  animation: slide_2 10s linear infinite;
+}
+
+.projectCard_sp_1:hover {
 
   cursor: pointer;
-  scale: 105%;
+  scale: 103%;
   box-shadow: 1px 1px 5px 5px #7cb342;
 }
 
-.container {
-  /* overflow: hidden; */
-  margin-top: 100px;
-  flex-direction: row;
-}
+.projectCard_sp_2:hover {
 
+  cursor: pointer;
+  scale: 103%;
+  box-shadow: 1px 1px 5px 5px #7cb342;
+}
 
 
 

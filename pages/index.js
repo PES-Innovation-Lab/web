@@ -18,10 +18,11 @@ import React, { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 
 // project spotlight
-import projectsData from '../public/data/projects.json';
-import Projects from './projects';
 import Projects_spotlight from './spotlight';
+import CardCarousel from './CardCarousel';
+import projectsData from '../public/data/projects_common.json';
 
+const cardData = projectsData[''].projects;
 
 const mainTitleStyle = {
   fontFamily: 'Poppins, sans-serif',
@@ -269,7 +270,11 @@ function Index() {
       </Dialog>
 
       <div>
-        <Projects_spotlight />
+      <p id="spotlight_title" style={bodyHeadingStyle}>
+          SPOTLIGHT
+        </p>
+        {/* <Projects_spotlight /> */}
+        <CardCarousel cardData={cardData} />
       </div>
 
     </Layout>

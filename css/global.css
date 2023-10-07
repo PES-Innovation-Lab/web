@@ -6,15 +6,26 @@
     min-height: 100vh;
 } */
 
-@keyframes slide {
+@keyframes slide_1 {
 
   0% {
-  transform: translateX(400%);
-    }
-    
+    transform: translateX(100%);
+  }
+  
   100% {
-      transform: translateX(-400%);
-   }
+    transform: translateX(-300%);
+  }
+
+  };
+@keyframes slide_2 {
+
+  0% {
+    transform: translateX(-300%);
+  }
+  
+  100% {
+    transform: translateX(100%);
+  }
 
   };
 
@@ -27,6 +38,7 @@
 @import './members.css';
 @import './navbar.css';
 @import './projects.css';
+@import "./CardCarousel.css";
 
 @tailwind base;
 @tailwind components;

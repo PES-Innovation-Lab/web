@@ -147,19 +147,19 @@ import {
     });
     const designstyles = designStyles();
     
-    function pauseRow() {
-      const cards = document.querySelectorAll('.projectCard_sp');
-      cards.forEach(card => {
-        card.classList.add('paused');
-      });
-    }
+    // function pauseRow() {
+    //   const cards = document.querySelectorAll('.projectCard_sp');
+    //   cards.forEach(card => {
+    //     card.classList.add('paused');
+    //   });
+    // }
     
-    function playRow() {
-      const cards = document.querySelectorAll('.projectCard_sp');
-      cards.forEach(card => {
-        card.classList.remove('paused');
-      });
-    }
+    // function playRow() {
+    //   const cards = document.querySelectorAll('.projectCard_sp');
+    //   cards.forEach(card => {
+    //     card.classList.remove('paused');
+    //   });
+    // }
     
   
     return (
@@ -168,10 +168,11 @@ import {
         active={'Projects Spotlight'}
         search={true}
         searchSettings={{ targetClass: 'projectCardContainer_sp', default: 'block' }}
+        style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', paddingBottom: '2rem'}}
       >
         <Typography className="pageHeader">Project Spotlight</Typography>
   
-        <Container className='projectCardContainer_sp' style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', paddingBottom: '2rem'}}>
+        <Container style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', paddingBottom: '2rem'}}>
       {!isDataLoaded ? (
         <div className={designstyles.spinnerTextStyle}>
           <Typography style={{ fontSize: '1.5rem' }}>Loading Data</Typography>{' '}
@@ -179,7 +180,7 @@ import {
         </div>
       ) : (
         data.projects.map((item) => (
-          <Container key={item.key} style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }} >
+          <Container className='projectCardContainer_sp' key={item.key} style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }} >
             <Typography className="pageSubHeader">{item.key}</Typography>
             {item.data.projects.map((project) => (
               <a
@@ -188,7 +189,7 @@ import {
                 href={'#' + project.id}
                 className={designstyles.linkStyle}
               >
-                <Card className="projectCard_sp" style={{ marginRight: '1em', marginBottom: '1em', display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
+                <Card className="projectCard_sp_1" style={{ marginRight: '1em', marginBottom: '1em', display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
                   <CardActionArea>
                     <CardMedia
                       className="projectCardImage"
@@ -212,15 +213,13 @@ import {
                       <Typography className="projectCardDescription">
                         {project.short_description}
                       </Typography>
-                      {/* {project.keywords.map((item) => (
-                        <Chip key={item} label={item} className="projectKeywordChip" />
-                      ))} */}
                     </CardContent>
                   </CardActionArea>
                 </Card>
               </a>
             ))}
           </Container>
+          
               )
             )
           )}
