@@ -62,30 +62,20 @@
 }
 
 /* spotlight */
-/* .projectCardContainer_sp {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  margin: 0 -10px;
-  max-width: 350px;
-  background-color: black !important;
-  animation: slide 10s linear infinite;
-} */
-
-/* Add or modify the following CSS in your projects.css or relevant CSS file */
-
 .projectCardContainer_sp {
   display: flex;
+  flex-direction: row;
   overflow-x: auto;
   margin: 0 -10px; 
-  width: max-content;
 }
 
 .projectCard_sp {
-  flex: 0 0 auto;
-  width: 600px; 
+  flex: auto;
+  display: flex;
+  width: 150px; 
   margin: 0 10px; 
+  background-color: black !important;
+  animation: slide 10s linear infinite;
 }
 
 .projectCard_sp:hover {
@@ -94,4 +84,13 @@
   scale: 105%;
   box-shadow: 1px 1px 5px 5px #7cb342;
 }
+
+.container {
+  /* overflow: hidden; */
+  margin-top: 100px;
+  flex-direction: row;
+}
+
+
+
 

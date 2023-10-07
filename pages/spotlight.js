@@ -148,14 +148,14 @@ import {
     const designstyles = designStyles();
     
     function pauseRow() {
-      const cards = document.querySelectorAll('.projectCard');
+      const cards = document.querySelectorAll('.projectCard_sp');
       cards.forEach(card => {
         card.classList.add('paused');
       });
     }
     
     function playRow() {
-      const cards = document.querySelectorAll('.projectCard');
+      const cards = document.querySelectorAll('.projectCard_sp');
       cards.forEach(card => {
         card.classList.remove('paused');
       });
@@ -167,88 +167,60 @@ import {
         title={'PIL | Project_Spotlight'}
         active={'Projects Spotlight'}
         search={true}
-        searchSettings={{ targetClass: 'projectCardContainer', default: 'block' }}
+        searchSettings={{ targetClass: 'projectCardContainer_sp', default: 'block' }}
       >
         <Typography className="pageHeader">Project Spotlight</Typography>
-        <Typography
-          style={{ color: 'white', fontSize: '2rem', textAlign: 'center' }}
-        >
-          Click on a project to learn more
-        </Typography>
   
-        <Container>
-          {!isDataLoaded ? (
-            <div className={designstyles.spinnerTextStyle}>
-              <Typography style={{ fontSize: '1.5rem' }}>Loading Data</Typography>{' '}
-              <CircularProgress style={{ color: '#7cb342', marginTop: '1em' }} />
-            </div>
-          ) : (
-            data.projects.map(
-              (
-                item // each item is the data for one year
-              ) => (
-                <Container key={item.key}>
-                  <Typography className="pageSubHeader">{item.key}</Typography>
-                  <Grid container spacing={2}>
-                    {item.data.projects.map(
-                      (
-                        project // each project is one project
-                      ) => (
-                        <Grid
-                          key={project.title}
-                          id={project.id}
-                          item
-                          sm={4}
-                          className="projectCardContainer"
-                          onMouseEnter={() => pauseRow()}
-                          onMouseLeave={() => playRow()}
-                  
-                        >
-                          <a
-                            onClick={() => setIsProjectFromURL(false)}
-                            href={'#' + project.id}
-                            className={designstyles.linkStyle}
-                          >
-                            <Card className="projectCard">
-                              <CardActionArea>
-                                <CardMedia
-                                  className="projectCardImage"
-                                  component="img"
-                                  image={
-                                    project.poster_url ||
-                                    `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`
-                                  }
-                                  title={project.title}
-                                  loading="lazy"
-                                />
-                                <CardContent>
-                                  <Typography
-                                    className="projectCardTitle"
-                                    gutterBottom
-                                    variant="h5"
-                                    component="h2"
-                                  >
-                                    {project.title}
-                                  </Typography>
-                                  <Typography className="projectCardDescription">
-                                    {project.short_description}
-                                  </Typography>
-                                  {project.keywords.map((item) => (
-                                    <Chip
-                                      key={item}
-                                      label={item}
-                                      className="projectKeywordChip"
-                                    ></Chip>
-                                  ))}
-                                </CardContent>
-                              </CardActionArea>
-                            </Card>
-                          </a>
-                        </Grid>
-                      )
-                    )}
-                  </Grid>
-                </Container>
+        <Container className='projectCardContainer_sp' style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', paddingBottom: '2rem'}}>
+      {!isDataLoaded ? (
+        <div className={designstyles.spinnerTextStyle}>
+          <Typography style={{ fontSize: '1.5rem' }}>Loading Data</Typography>{' '}
+          <CircularProgress style={{ color: '#7cb342', marginTop: '1em' }} />
+        </div>
+      ) : (
+        data.projects.map((item) => (
+          <Container key={item.key} style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }} >
+            <Typography className="pageSubHeader">{item.key}</Typography>
+            {item.data.projects.map((project) => (
+              <a
+                key={project.id}
+                onClick={() => setIsProjectFromURL(false)}
+                href={'#' + project.id}
+                className={designstyles.linkStyle}
+              >
+                <Card className="projectCard_sp" style={{ marginRight: '1em', marginBottom: '1em', display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
+                  <CardActionArea>
+                    <CardMedia
+                      className="projectCardImage"
+                      component="img"
+                      image={
+                        project.poster_url ||
+                        `${process.env.ASSET_PREFIX}/images/mlab/no_project_image.png`
+                      }
+                      title={project.title}
+                      loading="lazy"
+                    />
+                    <CardContent>
+                      <Typography
+                        className="projectCardTitle"
+                        gutterBottom
+                        variant="h5"
+                        component="h2"
+                      >
+                        {project.title}
+                      </Typography>
+                      <Typography className="projectCardDescription">
+                        {project.short_description}
+                      </Typography>
+                      {project.keywords.map((item) => (
+                        <Chip key={item} label={item} className="projectKeywordChip" />
+                      ))}
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </a>
+            ))}
+          </Container>
               )
             )
           )}
