@@ -1,8 +1,32 @@
 import React, { useEffect, useState } from 'react'
 import LayoutAlt from '../components/LayoutAlt'
 import Timeline from '../components/Timeline'
+import timelineData from '../public/data/about.json';
+
 
 function History() {
+
+	const [data, setData] = useState({ timeline: [] })
+
+	useEffect(() => {
+		const fetchData = async () => {
+			const result = await fetch('data/about.json')
+			if ((await result.status) !== 200) {
+				alert('API Error. Try Again later')
+			}
+			else {
+				const timeline = await result.json()
+				setData({ timeline: timeline })
+			}
+		}
+
+		const fetch = () => {
+			const timeline = timelineData
+			setData({ timeline: timeline })
+		}
+		fetch()
+
+	}, [])
 
 	const [scrollPercentage, setScrollPercentage] = useState(0)
 
@@ -21,7 +45,7 @@ function History() {
 		}
 	}, [])
 
-	const maxScroll = Math.min(scrollPercentage, 80)
+	const maxScroll = Math.min(scrollPercentage, 90.5)
 
 	const style = {
 		height: `${maxScroll + 5}%`,
@@ -40,30 +64,9 @@ function History() {
 						<div className="container mx-auto w-full h-full">
 							<div className="relative wrap overflow-hidden p-4 h-full">
 								<div className=' w-[2px] left-1/2 absolute bg-gradient-to-b from-transparent to-lab-green' style={style}></div>
-								<Timeline
-									date="1-6 May, 2021"
-									title="Registration"
-									description="Pick your favourite event(s) and register in that event by filling the form corresponding to that event. It's that easy :)"
-									alignment="right"
-								/>
-								<Timeline
-									date="6-9 May, 2021"
-									title="Participation"
-									description="Participate online. The links for your registered events will be sent to you via email and WhatsApp groups. Use those links and show your talent."
-									alignment="left"
-								/>
-								<Timeline
-									date="10 May, 2021"
-									title="Result Declaration"
-									description="The ultimate genius will be revealed by our judging panel on 10th May, 2021, and the results will be announced on the WhatsApp groups and will be mailed to you."
-									alignment="right"
-								/>
-								<Timeline
-									date="12 May, 2021"
-									title="Prize Distribution"
-									description="The winners will be contacted by our team for their addresses, and the winning goodies will be sent to their addresses."
-									alignment="left"
-								/>
+								{timelineData.map((event, index) => (
+									<Timeline date={event.year} title={event.event_title} description={event.event_description} alignment={index % 2 === 0 ? "left" : "right"} />
+								))}
 							</div>
 						</div>
 					</div>

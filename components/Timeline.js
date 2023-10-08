@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Timeline({ date, title, description, alignment }) {
+function Timeline({ date, title, description, sponsors, alignment }) {
 
     const isRightAligned = alignment === 'right';
 
@@ -12,6 +12,9 @@ function Timeline({ date, title, description, alignment }) {
                 <h4 className="pb-1 font-bold text-lg md:text-2xl text-lab-green">{title}</h4>
                 <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
                     {description}
+                </p>
+                <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
+                    {sponsors}
                 </p>
             </div>
         </div>
