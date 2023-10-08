@@ -1,0 +1,308 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #dedede;
+  display: flex;
+  overflow: hidden;
+}
+
+.page {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.timeline__wrapper {
+  padding: 0 30px;
+  height: 130px;
+  display: flex;
+}
+
+.timeline {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  position: relative;
+}
+.timeline a {
+  text-decoration: none;
+}
+.timeline a:hover {
+  text-decoration: underline;
+}
+
+.timeline__all-cars,
+.timeline__exit {
+  padding: 1em 1.75em;
+  display: inline-block;
+  background: white;
+}
+
+.timeline__list {
+  flex: 1;
+  display: flex;
+  list-style-type: none;
+  margin: 0 30px;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  position: relative;
+}
+
+.timeline__item {
+  flex: 1;
+  position: relative;
+  border: 1px dashed rgba(0, 0, 0, 0.1);
+}
+.timeline__item:after {
+  content: "";
+  width: calc(100% - 5px*3);
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 5px - 1px);
+  background: white;
+  z-index: 5;
+  pointer-events: none;
+}
+.timeline__item:last-child:after {
+  display: none;
+}
+
+.timeline__item--active .timeline__item__point:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.timeline__link {
+  position: relative;
+  display: block;
+  padding: 10px 0;
+}
+
+.timeline__item__point {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border: 1px solid white;
+  z-index: 6;
+}
+.timeline__item__point:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 50% 50%;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+.timeline__item__content {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translate(-50%, -20px);
+  opacity: 0;
+  transition: all 0.75s ease-out;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.timeline__item__content:before, .timeline__item__content:after {
+  pointer-events: none;
+  content: "";
+  border: solid 90px transparent;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  transition: all 0.45s ease-out;
+  opacity: 0.75;
+}
+.timeline__item__content:before {
+  border-bottom-color: #e6e6e6;
+  transform: translate(-50%, -100%) scale(0.6);
+  transform-origin: 50% 100%;
+}
+.timeline__item__content:after {
+  border-top-color: white;
+  transform: translate(-50%, 0%) scale(0.8);
+  transform-origin: 50% 0%;
+}
+.clippath .timeline__item__content:after {
+  box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.1);
+  -webkit-clip-path: polygon(-2px -2px, calc(100% + 2px) -2px, 50% 100%);
+          clip-path: polygon(-2px -2px, calc(100% + 2px) -2px, 50% 100%);
+}
+.timeline__item--active .timeline__item__content, .timeline__link:hover + .timeline__item__content {
+  opacity: 1;
+  transform: translate(-50%, -55px);
+}
+.timeline__item--active .timeline__item__content:before, .timeline__link:hover + .timeline__item__content:before {
+  transform: translate(-50%, -100%) scale(1);
+  opacity: 1;
+}
+.timeline__item--active .timeline__item__content:after, .timeline__link:hover + .timeline__item__content:after {
+  transform: translate(-50%, 0%) scale(1);
+  opacity: 1;
+}
+
+.timeline__item__year {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+}
+.timeline__item--active .timeline__item__year, .timeline__link:hover ~ .timeline__item__year {
+  color: green;
+  font-size: 26px;
+  font-weight: bold;
+}
+.timeline__item:nth-child(3n+1) .timeline__item__year {
+  opacity: 1;
+}
+
+.timeline__item__thumb {
+  position: relative;
+  z-index: 5;
+}
+
+.timeline__item__shadow {
+  position: absolute;
+  top: calc(50% - 20/130 * 100%);
+  left: 50%;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 130px 130px 0 0;
+  border-color: rgba(0, 0, 0, 0.25) transparent transparent transparent;
+  transform-origin: 0 0;
+  transform: scale(0.5);
+  opacity: 0.6;
+  transition: all 0.3s;
+  transition-delay: 0.15s;
+}
+.timeline__item--active .timeline__item__shadow, .timeline__link:hover + .timeline__item__content .timeline__item__shadow {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.timeline__path {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  right: -30px;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.2) url(http://testuje.cz/noise.png) repeat 0 0;
+  -webkit-clip-path: polygon(130px 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(130px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.timeline__path__triangle {
+  display: block;
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.timeline__path__triangle--static-1,
+.timeline__path__triangle--static-2 {
+  top: 0;
+}
+
+.timeline__path__triangle--static-1 {
+  border-width: 260px 260px 0 260px;
+  border-color: rgba(0, 0, 0, 0.2) transparent transparent transparent;
+  left: 0;
+}
+
+.timeline__path__triangle--static-2 {
+  border-width: 260px 260px 0 260px;
+  border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
+  right: 0;
+}
+
+.timeline__path__triangle--static-3 {
+  border-width: 0 260px 260px 260px;
+  border-color: transparent transparent rgba(255, 255, 255, 0.4) transparent;
+  left: 30%;
+  bottom: 0;
+}
+
+.timeline__path__triangle--moving {
+  position: absolute;
+  border-width: 260px 260px 0 260px;
+  border-color: rgba(255, 255, 255, 0.2) transparent transparent transparent;
+  left: 0;
+  top: 0;
+  transition: transform 3s ease-out;
+}
+
+.views,
+.view {
+  width: 100vw;
+  height: 100vh;
+}
+
+.views {
+  background: pink;
+}
+
+.view__inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline__wrapper {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  width: calc(100% - 60px);
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.slick-arrow {
+  background: red;
+  z-index: 10;
+}
+
+.slick-prev {
+  left: 15px;
+}
+
+.slick-next {
+  right: 15px;
+}
