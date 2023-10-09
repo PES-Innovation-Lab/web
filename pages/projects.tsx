@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 import projectsData from '../public/data/projects.json';
-import Cards from "../components/Cards"
+import Cards from '../components/Cards';
 import LayoutAlt from '../components/LayoutAlt';
 
 type projectsType = {
@@ -30,8 +30,8 @@ export default function NewProjects() {
 			<button
 				key={ind}
 				onClick={() => setCurrentYear(year)}
-				className={`${
-					year == currentYear ? 'text-white font-bold' : ''
+				className={`lg:text-base text-sm ${
+					year == currentYear ? 'text-lab-green font-bold' : ''
 				}`}
 			>
 				{year}
@@ -39,28 +39,31 @@ export default function NewProjects() {
 		);
 	});
 
+	const projects = projectsData;
+
 	const currentProjects: projectsType =
-		projectsData[currentYear.toString()]['projects'];
-	
-	const AllProjects = Object.values(projectsData).map(
-		(item) => item.projects
-	);
-	const FlattenedAllProjects = AllProjects.flat(1);
+		projects[currentYear.toString()]['projects'];
+
+	// const AllProjects = Object.values(projectsData).map(
+	// 	(item) => item.projects
+	// );
+
+	// const FlattenedAllProjects = AllProjects.flat(1);
 
 	console.log('Selected ID IS', selectedId);
 
 	const cardLayout = (
-		<div className="flex flex-wrap gap-8 justify-center">
+		<div className="flex flex-wrap gap-8 lg:justify-start justify-around">
 			{currentProjects.map((card, i) => {
 				return (
 					<motion.div
 						className={
 							(card.year == currentYear.toString()
 								? ''
-								: 'hidden ') +
+								: 'hidden') +
 							(selectedId === i
-								? ' opened-card'
-								: 'p-1 bg-gray-800 rounded-lg overflow-hidden w-fit')
+								? ' opened-card lg:h-[75%] lg:w-[80%] md:h-[75%] md:w-[95%] h-[75%] w-[95%]'
+								: 'p-1 bg-gray-800 rounded-lg overflow-hidden w-fit inline-block phone:m-4')
 						}
 						onClick={() => {
 							if (selectedId == -1) setSelectedId(i);
@@ -70,22 +73,22 @@ export default function NewProjects() {
 						ref={(el) => (containerRefs.current[i] = el)}
 					>
 						{selectedId === i ? (
-							<div className="text-black gap-8 flex w-full h-full bg-black border-2 rounded-lg border-gray-700 overflow-hidden p-4">
+							<div className="text-black gap-8 flex w-full h-full bg-black border-2 rounded-lg border-gray-700 overflow-hidden p-4 pr-0">
 								<img
-									className="h-full aspect-auto self-center rounded-md"
+									className="h-full aspect-auto self-center rounded-md sm:block hidden"
 									src={card.poster_url}
 									alt={card.title}
 								/>
-								<div className="flex flex-col justify-between px-0">
+								<div className="flex flex-col justify-between pr-4 overflow-auto gap-4">
 									<div className="flex flex-col gap-4">
-										<div className="flex justify-between text-white">
-											<div className=" font-bold font-martian-mono text-4xl">
+										<div className="flex flex-row items-center sm:flex-col-reverse md:flex-row justify-between text-white gap-2 md:gap-0">
+											<div className=" font-bold font-martian-mono text-2xl xl:text-4xl lg:text-3xl">
 												{card.title}
 											</div>
-											<div className="flex gap-4 items-center">
+											<div className="flex gap-4 items-center shrink-0 sm:self-end md:self-auto h-fit">
 												{i != 0 && (
 													<button
-														className="relative w-8 h-8 shrink-0"
+														className="relative w-6 h-6 lg:w-8 lg:h-8 shrink-0"
 														onClick={(e) => {
 															e.stopPropagation();
 															setSelectedId(
@@ -114,7 +117,7 @@ export default function NewProjects() {
 													currentProjects.length -
 														1 && (
 													<button
-														className="relative w-8 h-8 shrink-0"
+														className="relative w-6 h-6 lg:w-8 lg:h-8 shrink-0"
 														onClick={(e) => {
 															e.stopPropagation();
 															setSelectedId(
@@ -140,7 +143,7 @@ export default function NewProjects() {
 													</button>
 												)}
 												<button
-													className="relative w-8 h-8 shrink-0 text-white"
+													className="relative w-6 h-6 lg:w-8 lg:h-8 shrink-0 text-white"
 													onClick={(e) => {
 														e.stopPropagation();
 														setSelectedId(-1);
@@ -163,11 +166,11 @@ export default function NewProjects() {
 												</button>
 											</div>
 										</div>
-										<div className="text-gray-400 font-martian-mono">
+										<div className="text-gray-400 font-martian-mono xl:text-base text-sm">
 											{card.long_description}
 										</div>
 									</div>
-									<div className="text-white flex flex-col font-martian-mono self-end text-lg w-fit">
+									<div className="text-white flex flex-col font-martian-mono self-end xl:text-lg w-fit">
 										<div className="font-martian-mono">
 											<span className="font-martian-mono text-lab-green">
 												{card.interns.includes(',') ? (
@@ -206,18 +209,18 @@ export default function NewProjects() {
 
 	return (
 		<LayoutAlt title={'PIL | Projects'} active={'Projects'} search={false}>
-
-		<div className="pb-20 pt-4 px-12 flex gap-10 flex-col">
-			<div className="flex items-center justify-between">
-				<div className="font-martian-mono text-lab-green text-4xl">
-					PROJECTS
+			{/* <div className={`pb-20 pt-8 px-12 flex gap-10 flex-col ${selectedId != -1 ? "overflow-hidden h-screen" : ""}`}> */}
+			<div className={`pb-20 pt-8 px-4 phone:px-6 sm:px-12 flex gap-10 flex-col`}>
+				<div className="flex items-center justify-between sm:flex-row flex-col gap-4 sm:gap-0">
+					<div className="font-martian-mono text-lab-green text-4xl lg:text-6xl">
+						PROJECTS
+					</div>
+					<div className="text-gray-400 grid grid-cols-4 phone:flex gap-4 text-lg border-2 border-gray-900 p-2 rounded-md">
+						{yearElements}
+					</div>
 				</div>
-				<div className="text-gray-400 flex gap-4 text-lg border-2 border-gray-900 p-2 rounded-md">
-					{yearElements}
-				</div>
+				{cardLayout}
 			</div>
-			{cardLayout}
-		</div>
 		</LayoutAlt>
 	);
 }
