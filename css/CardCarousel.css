@@ -1,0 +1,38 @@
+/* CardCarousel.css */
+
+.carousel-root {
+    max-width: 500px;
+    margin: auto;
+}
+
+.carousel .slide img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.card-details {
+    padding: 10px; 
+}
+
+
+.card-details h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 900;
+    color: greenyellow;
+}
+
+.card-details p {
+    font-size: 25px;
+    margin-bottom: 3px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+}
+
+.card-details .keywords,
+.card-details .mentors,
+.card-details .interns {
+    font-style: italic;
+    font-size: 20px;
+    color: aliceblue;
+}
