@@ -6,6 +6,24 @@
     min-height: 100vh;
 } */
 
+@keyframes slide_1 {
+	0% {
+		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateX(-300%);
+	}
+}
+@keyframes slide_2 {
+	0% {
+		transform: translateX(-300%);
+	}
+
+	100% {
+		transform: translateX(100%);
+	}
+}
 
 @import './contact_us.css';
 @import './events.css';
@@ -16,6 +34,7 @@
 @import './members.css';
 @import './navbar.css';
 @import './projects.css';
+@import './CardCarousel.css';
 @import './layout.css';
 @import './alt_home.css';
 /* @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;600;700&display=swap'); */
@@ -26,48 +45,48 @@
 @tailwind utilities;
 
 * {
-  user-select: none;
+	user-select: none;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  @apply bg-lab-bg;
+	margin: 0;
+	padding: 0;
+	@apply bg-lab-bg;
 }
 
 .dialogAppBar {
-  position: 'relative';
-  background-color: black !important;
+	position: 'relative';
+	background-color: black !important;
 }
 
 .dialogTitle {
-  flex: 1;
-  margin-left: 24px;
-  color: #8bc34a;
+	flex: 1;
+	margin-left: 24px;
+	color: #8bc34a;
 }
 
 .dialogContainer {
-  background-color: rgb(44, 44, 44) !important;
-  color: white !important;
+	background-color: rgb(44, 44, 44) !important;
+	color: white !important;
 }
 
 .pageHeader {
-  color: #8bc34a;
-  font-family: 'Red Hat Display', sans-serif !important;
-  text-align: center;
-  font-size: 3rem !important;
+	color: #8bc34a;
+	font-family: 'Red Hat Display', sans-serif !important;
+	text-align: center;
+	font-size: 3rem !important;
 }
 
 .pageSubHeader {
-  color: #8bc34a;
-  font-family: 'Red Hat Display', sans-serif !important;
-  font-size: 2rem !important;
-  margin-bottom: 20px !important;
+	color: #8bc34a;
+	font-family: 'Red Hat Display', sans-serif !important;
+	font-size: 2rem !important;
+	margin-bottom: 20px !important;
 }
 
 * {
-  font-family: 'Red Hat Display', sans-serif;
+	font-family: 'Red Hat Display', sans-serif;
 }
 
 h1,
@@ -76,9 +95,9 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-dm-sans;
+	@apply font-dm-sans;
 }
 
 .iiz__img {
-  width: 600px !important;
+	width: 600px !important;
 }

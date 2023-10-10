@@ -1,56 +1,103 @@
 .projectCard {
-  max-width: 345px;
-  background-color: black !important;
+	max-width: 345px;
+	background-color: black !important;
+	/* animation: slide-1 10s linear infinite; */
+	box-shadow: 1px 1px 5px rgba(124, 179, 66, 0.5);
+	transform: scale(1);
+	transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+}
+
+.projectCard:hover {
+	transform: scale(1.05);
+	box-shadow: 3px 3px 10px rgba(124, 179, 66, 0.7);
+}
+
+.paused {
+	animation-play-state: paused;
 }
 
 .projectCardTitle {
-  color: white;
+	color: white;
 }
 
 .projectCardDescription {
-  color: white;
+	color: white;
 }
 
 .projectCardImage {
-  max-height: 500px;
+	max-height: 500px;
 }
 
 .projectKeywordChip {
-  margin: 6px 3px;
-  background-color: #7cb342 !important;
-  color: black !important;
-  font-size: 15px !important;
+	margin: 6px 3px;
+	background-color: #7cb342 !important;
+	color: black !important;
+	font-size: 15px !important;
 }
 
 .projectViewContainer {
-  margin-top: 6em;
-  display: flex;
+	margin-top: 6em;
+	display: flex;
 }
 
 .projectViewSectionImage {
-  text-align: center;
-  flex: 1;
+	text-align: center;
+	flex: 1;
 }
 
 .projectViewSectionImage img {
-  border-radius: 0.4em;
+	border-radius: 0.4em;
 }
 
 .projectViewSectionText {
-  padding: 20px;
-  flex: 3;
+	padding: 20px;
+	flex: 3;
 }
 
 @media only screen and (max-device-width: 540px) {
-  .projectViewContainer {
-    flex-direction: column-reverse !important;
-  }
+	.projectViewContainer {
+		flex-direction: column-reverse !important;
+	}
+}
+
+/* spotlight */
+.projectCardContainer_sp {
+	margin-top: 10px;
+}
+
+.projectCard_sp_1 {
+	display: flex;
+	width: 180px;
+	margin: 0 10px;
+	background-color: black !important;
+	animation: slide_1 10s linear infinite;
+}
+
+.projectCard_sp_2 {
+	display: flex;
+	width: 180px;
+	margin: 0 10px;
+	background-color: black !important;
+	animation: slide_2 10s linear infinite;
+}
+
+.projectCard_sp_1:hover {
+	cursor: pointer;
+	scale: 103%;
+	box-shadow: 1px 1px 5px 5px #7cb342;
+}
+
+.projectCard_sp_2:hover {
+	cursor: pointer;
+	scale: 103%;
+	box-shadow: 1px 1px 5px 5px #7cb342;
 }
 
 /* ---------------------- */
 
 .proj__card {
-  @apply text-white bg-zinc-900 
+	@apply text-white bg-zinc-900 
   w-full
   h-full
   p-4
@@ -58,7 +105,7 @@
 }
 
 .proj__grid {
-  @apply max-w-7xl
+	@apply max-w-7xl
   p-4
   mx-auto
   grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1
@@ -66,17 +113,17 @@
 }
 
 .proj__card__image {
-  @apply relative h-80 w-full overflow-hidden object-contain rounded-md;
+	@apply relative h-80 w-full overflow-hidden object-contain rounded-md;
 }
 
 .proj__card__title {
-  @apply text-step-2 mt-5 mb-2 bg-lab-green text-white font-semibold p-1 rounded-full text-center;
+	@apply text-step-2 mt-5 mb-2 bg-lab-green text-white font-semibold p-1 rounded-full text-center;
 }
 .proj__card__sdesc {
-  @apply text-justify p-1 mt-3 mb-5;
+	@apply text-justify p-1 mt-3 mb-5;
 }
 
 .card_round_image {
-  @apply relative border h-80 w-60 rounded-xl overflow-hidden;
-  transform: translateX(var(--x)) translateY(var(--y));
+	@apply relative border h-80 w-60 rounded-xl overflow-hidden;
+	transform: translateX(var(--x)) translateY(var(--y));
 }
