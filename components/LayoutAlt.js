@@ -1,5 +1,5 @@
 import NavBar from './NavBar';
-// import Footer from './Footer';
+import Footer from './Footer';
 import Head from 'next/head';
 
 function LayoutAlt(props) {
@@ -18,6 +18,7 @@ function LayoutAlt(props) {
         searchSettings={props.searchSettings}
       />
       <div className="">{props.children}</div>
+      <Footer/>
     </div>
   );
 }
