@@ -2,13 +2,18 @@
 .projectCard {
   max-width: 345px;
   background-color: black !important;
-  animation: slide-1 10s linear infinite;
+  /* animation: slide-1 10s linear infinite; */
+  box-shadow: 1px 1px 5px rgba(124, 179, 66, 0.5);
+  transform: scale(1);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  
 }
 
 .projectCard:hover {
 
-  scale: 105%;
-  box-shadow: 1px 1px 5px 5px #7cb342;
+  transform: scale(1.05);
+  box-shadow: 3px 3px 10px rgba(124, 179, 66, 0.7);
 }
 
 
