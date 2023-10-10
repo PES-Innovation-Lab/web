@@ -8,9 +8,10 @@
 // import "../node_modules/react-alice-carousel/lib/alice-carousel.css";
 
 import '../css/global.css';
-import '../css/new_projects.scss';
 // import '../css/fonts.css';
 import Footer from '../components/Footer';
+import '../css/new_projects.css';
+
 
 export default function MyApp({ Component, pageProps }) {
   return (
