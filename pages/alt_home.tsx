@@ -2,7 +2,7 @@ import LayoutAlt from '../components/LayoutAlt';
 import AboutUs from '../components/index/AboutUs';
 import Hero from '../components/index/Hero';
 import ProfessorsInfo from '../components/index/Professors';
-import CardCarousel from './CardCarousel';
+import CardCarousel from '../components/CardCarousel';
 import Projects_spotlight from './spotlight';
 import projectsData from '../public/data/projects_common.json';
 
