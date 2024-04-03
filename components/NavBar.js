@@ -30,7 +30,7 @@ const routes = [
   { title: 'Members', route: `${process.env.ASSET_PREFIX}/members` },
   { title: 'Projects', route: `${process.env.ASSET_PREFIX}/projects` },
   { title: 'Publications', route: `${process.env.ASSET_PREFIX}/publications` },
-  { title: 'Our History', route: `${process.env.ASSET_PREFIX}/about_us` },
+  { title: 'Our History', route: `${process.env.ASSET_PREFIX}/history` },
   {
     title: 'Events',
     route: `${process.env.ASSET_PREFIX}/events`,
@@ -41,7 +41,7 @@ const routes = [
       { title: 'RoadShow', route: `${process.env.ASSET_PREFIX}/roadshow` },
     ],
   },
-  { title: 'Join Us', route: `${process.env.ASSET_PREFIX}/join_us` },
+  // { title: 'Join Us', route: `${process.env.ASSET_PREFIX}/join_us` },
   { title: 'Articles', route: `${process.env.ASSET_PREFIX}/articles` },
 ];
 
