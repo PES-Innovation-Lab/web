@@ -1,13 +1,13 @@
-import NavBar from './NavBar';
+import NavBar from './NavBar'
 // import Footer from './Footer';
-import Head from 'next/head';
+import Head from 'next/head'
 
 const layoutStyle = {
-  display: 'flex',
-  flexDirection: 'column',
-  minHeight: '50vh',
-  width: '100%',
-};
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '50vh',
+    width: '100%',
+}
 
 // const contentStyle = {
 //   flex: 1,
@@ -16,19 +16,16 @@ const layoutStyle = {
 // };
 
 function Layout(props) {
-  const backgroundImg = `${process.env.ASSET_PREFIX}/images/mlab/prism.png`;
-  const introImg = `${process.env.ASSET_PREFIX}/images/mlab/intro.jpg`;
-  const hwsImg = `${process.env.ASSET_PREFIX}/images/mlab/hws.jpg`;
-  const shattered = `${process.env.ASSET_PREFIX}/images/mlab/shattered.png`;
-  return (
-    <div style={layoutStyle}>
-      <Head>
-        <title>{props.title}</title>
-        <link
-          rel="shortcut icon"
-          href={`${process.env.ASSET_PREFIX}/images/favicon.ico`}
-        />
-        <style>{`
+    const backgroundImg = `/images/mlab/prism.png`
+    const introImg = `/images/mlab/intro.jpg`
+    const hwsImg = `/images/mlab/hws.jpg`
+    const shattered = `/images/mlab/shattered.png`
+    return (
+        <div style={layoutStyle}>
+            <Head>
+                <title>{props.title}</title>
+                <link rel="shortcut icon" href={`/images/favicon.ico`} />
+                <style>{`
                 html, body {
                     margin: 0;
                     padding: 0;
@@ -52,16 +49,16 @@ function Layout(props) {
                 }
                                 
             `}</style>
-      </Head>
-      <NavBar
-        active={props.active}
-        search={props.search}
-        searchSettings={props.searchSettings}
-      />
-      <div style={layoutStyle}>{props.children}</div>
-      {/* <Footer/> */}
-    </div>
-  );
+            </Head>
+            <NavBar
+                active={props.active}
+                search={props.search}
+                searchSettings={props.searchSettings}
+            />
+            <div style={layoutStyle}>{props.children}</div>
+            {/* <Footer/> */}
+        </div>
+    )
 }
 
-export default Layout;
+export default Layout
