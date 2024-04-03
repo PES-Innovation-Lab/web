@@ -63,7 +63,7 @@ function Events() {
             text: (
                 <div className="eventSection">
                     <div className="eventSectionText">
-                        <Link className="eventPageLink" href={`/incito`}>
+                        <Link className="eventPageLink" href={`/incito`} legacyBehavior>
                             <Typography className="eventHeading">
                                 Incito
                             </Typography>
@@ -93,7 +93,7 @@ function Events() {
             text: (
                 <div className="eventSection">
                     <div className="eventSectionText">
-                        <Link className="eventPageLink" href={`/join_us`}>
+                        <Link className="eventPageLink" href={`/join_us`} legacyBehavior>
                             <Typography className="eventHeading">
                                 Summer Internship Recruitment
                             </Typography>
@@ -120,7 +120,7 @@ function Events() {
             text: (
                 <div className="eventSection">
                     <div className="eventSectionText">
-                        <Link className="eventPageLink" href={`/summer`}>
+                        <Link className="eventPageLink" href={`/summer`} legacyBehavior>
                             <Typography className="eventHeading">
                                 Summer Internship Program
                             </Typography>
@@ -151,7 +151,7 @@ function Events() {
             text: (
                 <div className="eventSection">
                     <div className="eventSectionText">
-                        <Link className="eventPageLink" href={`/roadshow`}>
+                        <Link className="eventPageLink" href={`/roadshow`} legacyBehavior>
                             <Typography className="eventHeading">
                                 Roadshow
                             </Typography>
@@ -182,7 +182,7 @@ function Events() {
             text: (
                 <div className="eventSection">
                     <div className="eventSectionText">
-                        <Link className="eventPageLink" href={`/hashcode`}>
+                        <Link className="eventPageLink" href={`/hashcode`} legacyBehavior>
                             <Typography className="eventHeading">
                                 HashCode
                             </Typography>

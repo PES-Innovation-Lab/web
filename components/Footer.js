@@ -33,7 +33,7 @@ const Footer = () => (
             <div className="footerSection"></div>
             <div className="footerSection">
                 <Grid container justifyContent="center">
-                    <Link href={`/`}>
+                    <Link href={`/`} legacyBehavior>
                         <IconButton disableFocusRipple edge="start">
                             <img
                                 style={{ width: '70%' }}
