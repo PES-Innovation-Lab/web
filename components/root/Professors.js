@@ -34,16 +34,15 @@ export default function ProfessorsInfo() {
     const [professorInView, setProfessorInView] = useState(profData[0].name)
 
     return (
-        <>
-            <div className="bg-black p-8">
-                <h2 className="text-center text-step-6">PROFESSORS</h2>
-            </div>
-
+        <div className="mt-20">
+            <h1 className="opacity-80 mb-10 mx-auto max-w-7xl phone:text-4xl text-3xl p-4 phone:p-0">
+                Professors
+            </h1>
             <div className="flex flex-col md:flex-row">
                 {/* LEFT STICKY CONTAINER */}
                 <div className="sticky top-16 hidden h-screen flex-1 bg-black md:block">
                     <div className="grid h-full place-items-center">
-                        <div className="relative h-3/4 w-full md:h-1/3 md:w-1/3">
+                        <div className="relative h-3/4 w-full md:h-2/3 md:w-2/3">
                             <Image
                                 src={
                                     profData[
@@ -73,6 +72,6 @@ export default function ProfessorsInfo() {
                     })}
                 </div>
             </div>
-        </>
+        </div>
     )
 }

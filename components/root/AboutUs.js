@@ -2,8 +2,9 @@ import GreenHightlight from './GreenHighlight'
 
 export default function AboutUs() {
     return (
-        <div className="min-h-screen py-20 ">
-            <div className="mx-auto flex h-full max-w-5xl flex-col items-center justify-center p-4 text-step-2">
+        <div className="phone:mx-auto max-w-7xl p-4">
+            <h1 className='phone:text-4xl text-3xl opacity-80 mb-4 phone:mb-10'>About Us</h1>
+            <div className="font-light phone:leading-loose leading-relaxed tracking-wide phone:text-xl">
                 <p>
                     <GreenHightlight>Pes Innovation Lab</GreenHightlight> is a
                     unique community which inculcates the{' '}
@@ -15,7 +16,7 @@ export default function AboutUs() {
                     <GreenHightlight>real-world problems</GreenHightlight>. The
                     Lab’s activities include the flagship summer internship,{' '}
                     <GreenHightlight>HashCode</GreenHightlight> (a hackathon),
-                    <GreenHightlight>RoadShow</GreenHightlight> (A project
+                    <GreenHightlight> RoadShow</GreenHightlight> (A project
                     presentation event) and other enriching opportunities such
                     as workshops and tutorials.
                 </p>

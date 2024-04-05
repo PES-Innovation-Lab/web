@@ -43,6 +43,7 @@
 		"react-responsive-carousel": "^3.2.23",
 		"sass": "^1.69.0",
 		"sharp": "^0.33.3",
+		"typewriter-effect": "^2.21.0",
 		"webpack": "^4.44.1"
 	},
 	"devDependencies": {

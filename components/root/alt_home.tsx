@@ -11,7 +11,7 @@ const cardData = projectsData[''].projects
 
 function Home() {
     return (
-        <div className="bg-lab-bg pt-28 text-white">
+        <div className="bg-lab-bg text-white flex flex-col gap-10 phone:gap-0">
             {/* HERO SECTION */}
             <Hero />
 

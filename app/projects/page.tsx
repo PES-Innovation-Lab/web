@@ -81,7 +81,7 @@ export default function NewProjects() {
                                 <div className="flex flex-col justify-between gap-4 overflow-auto pr-4">
                                     <div className="flex flex-col gap-4">
                                         <div className="flex flex-row items-center justify-between gap-2 text-white sm:flex-col-reverse md:flex-row md:gap-0">
-                                            <div className=" font-martian-mono text-2xl font-bold lg:text-3xl xl:text-4xl">
+                                            <div className="   text-2xl font-bold lg:text-3xl xl:text-4xl">
                                                 {card.title}
                                             </div>
                                             <div className="flex h-fit shrink-0 items-center gap-4 sm:self-end md:self-auto">
@@ -165,13 +165,13 @@ export default function NewProjects() {
                                                 </button>
                                             </div>
                                         </div>
-                                        <div className="font-martian-mono text-sm text-gray-400 xl:text-base">
+                                        <div className="  text-sm text-gray-400 xl:text-base">
                                             {card.long_description}
                                         </div>
                                     </div>
-                                    <div className="flex w-fit flex-col self-end font-martian-mono text-white xl:text-lg">
-                                        <div className="font-martian-mono">
-                                            <span className="font-martian-mono text-lab-green">
+                                    <div className="flex w-fit flex-col self-end   text-white xl:text-lg">
+                                        <div className=" ">
+                                            <span className="  text-lab-green">
                                                 {card.interns.includes(',') ? (
                                                     <>INTERNS</>
                                                 ) : (
@@ -180,8 +180,8 @@ export default function NewProjects() {
                                             </span>{' '}
                                             : {card.interns}
                                         </div>
-                                        <div className="font-martian-mono">
-                                            <span className="font-martian-mono text-lab-green">
+                                        <div className=" ">
+                                            <span className="  text-lab-green">
                                                 {card.mentors.includes(',') ? (
                                                     <>MENTORS</>
                                                 ) : (
@@ -211,7 +211,7 @@ export default function NewProjects() {
             className={`flex flex-col gap-10 px-4 pb-20 pt-24 phone:px-6 sm:px-12`}
         >
             <div className="flex flex-col items-center justify-between gap-4 sm:flex-row sm:gap-0">
-                <div className="font-martian-mono text-4xl text-lab-green lg:text-6xl">
+                <div className="  text-4xl text-lab-green lg:text-6xl">
                     PROJECTS
                 </div>
                 <div className="grid grid-cols-4 gap-4 rounded-md border-2 border-gray-900 p-2 text-lg text-gray-400 phone:flex">

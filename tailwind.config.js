@@ -43,6 +43,7 @@ module.exports = {
             fontFamily: {
                 'martian-mono': ['Martian Mono', 'monospace'],
                 'dm-sans': ['DM Sans', 'sans-serif'],
+                 martian: ['var(--font-martian)'],
             },
         },
     },

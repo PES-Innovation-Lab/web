@@ -56,9 +56,7 @@ function Members() {
             >
                 <div className="mt-10 flex flex-col gap-10 px-12 pb-20 pt-4">
                     <div className="flex items-center justify-between">
-                        <div className="font-martian-mono text-4xl text-lab-green">
-                            MEMBERS
-                        </div>
+                        <div className="  text-4xl text-lab-green">MEMBERS</div>
                         <div className="flex gap-4 rounded-md border-2 border-lab-green p-2 text-lg text-gray-400">
                             {yearElements}
                         </div>

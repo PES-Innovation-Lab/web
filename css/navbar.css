@@ -74,7 +74,7 @@
 /* tailwind apply */
 /* navbar --------------------------------------- */
 .navbar {
-  @apply fixed top-0 z-[10000] bg-opacity-60 my-2 mx-4 rounded-3xl backdrop-blur-sm
+  @apply fixed top-0 z-[10000] bg-opacity-80 my-2 mx-4 rounded-md backdrop-blur-sm
   bg-lab-sec text-white 
   w-[calc(100%-2rem)]
   flex flex-col sm:flex-col md:flex-row
@@ -86,7 +86,7 @@
 }
 
 .navbar__closed {
-  @apply h-20 p-4;
+  @apply phone:h-20 phone:p-4;
 }
 
 .navbar__closed__menu {
@@ -103,7 +103,7 @@
 }
 
 .navbar__menu {
-  @apply absolute h-7 w-7 md:h-8 md:w-8 right-8 md:right-16 top-6 text-white;
+  @apply absolute h-7 w-7 md:h-8 md:w-8 phone:right-8 right-4 md:right-16 top-3 phone:top-6 text-white;
 }
 
 .navbar__menu svg {
@@ -128,11 +128,11 @@
 }
 
 .navbar__l__content-title {
-  @apply text-step-3 md:text-step-5 font-bold;
+  @apply text-base md:text-step-5 font-bold;
 }
 
 .navbar__l__content-tagline {
-  @apply text-gray-500 text-center;
+  @apply text-gray-500 text-center
 }
 
 .navbar__l__content-socials {
@@ -166,7 +166,7 @@
 }
 
 .route__active {
-  @apply text-step-6 lg:text-step-7 font-light text-opacity-100;
+  @apply font-light text-opacity-100;
 }
 
 .route__passive {

@@ -35,7 +35,7 @@ export default function ProfessorSectionRight({ prof, setProfessorInView }) {
                     {prof.designation}, {prof.org}
                 </p>
             </div>
-            <p className="mt-8 p-4 text-step-0 md:mx-4 md:p-8">
+            <p className="mt-8 p-4 phone:text-step-0 md:mx-4 md:p-8 font-light phone:leading-loose leading-relaxed tracking-wide ">
                 {prof.description}
             </p>
         </section>

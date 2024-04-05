@@ -44,9 +44,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-	user-select: none;
-}
 
 html,
 body {
