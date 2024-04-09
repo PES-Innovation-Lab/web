@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import projectsData from '../../public/data/projects.json'
 import Cards from '../../components/Cards'
 import LayoutAlt from '../../components/LayoutAlt'
+import Link from 'next/link'
 
 type projectsType = {
     year: string
@@ -169,28 +170,69 @@ export default function NewProjects() {
                                             {card.long_description}
                                         </div>
                                     </div>
-                                    <div className="flex w-fit flex-col self-end font-martian-mono text-white xl:text-lg">
-                                        <div className="font-martian-mono">
-                                            <span className="font-martian-mono text-lab-green">
-                                                {card.interns.includes(',') ? (
-                                                    <>INTERNS</>
-                                                ) : (
-                                                    <>INTERN&nbsp;</>
-                                                )}
-                                            </span>{' '}
-                                            : {card.interns}
+                                    {i === 8 ? (
+                                        <div className="flex w-fit flex-col self-end font-martian-mono text-white xl:text-lg">
+                                            <div className="font-martian-mono">
+                                                <span className="font-martian-mono text-lab-green">
+                                                    {card.interns.includes(
+                                                        ','
+                                                    ) ? (
+                                                        <>INTERNS</>
+                                                    ) : (
+                                                        <>INTERN&nbsp;</>
+                                                    )}
+                                                </span>{' '}
+                                                : {card.interns}
+                                            </div>
+                                            <div className="font-martian-mono">
+                                                <span className="font-martian-mono text-lab-green">
+                                                    {card.mentors.includes(
+                                                        ','
+                                                    ) ? (
+                                                        <>MENTORS</>
+                                                    ) : (
+                                                        <>MENTOR&nbsp;</>
+                                                    )}
+                                                </span>{' '}
+                                                :
+                                                <Link
+                                                    href={
+                                                        'https://drive.google.com/file/d/17zKMNSoI_-jI5c7Mlli-GaQXi7pWYaVx/view?usp=drive_link'
+                                                    }
+                                                    className='pl-2'
+                                                >
+                                                    {card.mentors}
+                                                </Link>
+                                            </div>
                                         </div>
-                                        <div className="font-martian-mono">
-                                            <span className="font-martian-mono text-lab-green">
-                                                {card.mentors.includes(',') ? (
-                                                    <>MENTORS</>
-                                                ) : (
-                                                    <>MENTOR&nbsp;</>
-                                                )}
-                                            </span>{' '}
-                                            : {card.mentors}
+                                    ) : (
+                                        <div className="flex w-fit flex-col self-end font-martian-mono text-white xl:text-lg">
+                                            <div className="font-martian-mono">
+                                                <span className="font-martian-mono text-lab-green">
+                                                    {card.interns.includes(
+                                                        ','
+                                                    ) ? (
+                                                        <>INTERNS</>
+                                                    ) : (
+                                                        <>INTERN&nbsp;</>
+                                                    )}
+                                                </span>{' '}
+                                                : {card.interns}
+                                            </div>
+                                            <div className="font-martian-mono">
+                                                <span className="font-martian-mono text-lab-green">
+                                                    {card.mentors.includes(
+                                                        ','
+                                                    ) ? (
+                                                        <>MENTORS</>
+                                                    ) : (
+                                                        <>MENTOR&nbsp;</>
+                                                    )}
+                                                </span>{' '}
+                                                : {card.mentors}
+                                            </div>
                                         </div>
-                                    </div>
+                                    )}
                                 </div>
                             </div>
                         ) : (
