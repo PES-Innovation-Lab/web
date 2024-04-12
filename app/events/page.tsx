@@ -243,7 +243,9 @@ function Events() {
 
     return (
         <Container>
-            <Typography className={'pageHeader'}>What we do</Typography>
+            <Typography className={'pageHeader'} style={{
+                marginTop: "8rem",
+            }}>What we do</Typography>
             <Typography
                 style={{
                     textAlign: 'center',
