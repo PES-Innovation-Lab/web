@@ -74,11 +74,26 @@ export default function NewProjects() {
                     >
                         {selectedId === i ? (
                             <div className="flex h-full w-full gap-8 overflow-hidden rounded-lg border-2 border-gray-700 bg-black p-4 pr-0 text-black">
-                                <img
-                                    className="hidden aspect-auto h-full self-center rounded-md sm:block"
-                                    src={card.poster_url}
-                                    alt={card.title}
-                                />
+                                {selectedId === 8 ? (
+                                    <Link
+                                        href={
+                                            'https://drive.google.com/file/d/17zKMNSoI_-jI5c7Mlli-GaQXi7pWYaVx/view?usp=drive_link'
+                                        }
+                                    >
+                                        <img
+                                            className="hidden aspect-auto h-full self-center rounded-md sm:block"
+                                            src={card.poster_url}
+                                            alt={card.title}
+                                        />
+                                    </Link>
+                                ) : (
+                                    <img
+                                        className="hidden aspect-auto h-full self-center rounded-md sm:block"
+                                        src={card.poster_url}
+                                        alt={card.title}
+                                    />
+                                )}
+
                                 <div className="flex flex-col justify-between gap-4 overflow-auto pr-4">
                                     <div className="flex flex-col gap-4">
                                         <div className="flex flex-row items-center justify-between gap-2 text-white sm:flex-col-reverse md:flex-row md:gap-0">
@@ -199,7 +214,7 @@ export default function NewProjects() {
                                                     href={
                                                         'https://drive.google.com/file/d/17zKMNSoI_-jI5c7Mlli-GaQXi7pWYaVx/view?usp=drive_link'
                                                     }
-                                                    className='pl-2'
+                                                    className="pl-2"
                                                 >
                                                     {card.mentors}
                                                 </Link>
