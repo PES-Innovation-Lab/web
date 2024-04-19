@@ -95,7 +95,7 @@ function contactUs() {
                     </Grid>
                     <Grid item xs={12} sm={6} style={{ textAlign: 'center' }}>
                         <a
-                            href="https://www.instagram.com/pes.lab/"
+                            href="https://www.instagram.com/innovationlab.pes/"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -107,12 +107,12 @@ function contactUs() {
                             </IconButton>
                         </a>
                         <a
-                            href="https://www.instagram.com/pes.lab/"
+                            href="https://www.instagram.com/innovationlab.pes/"
                             target="_blank"
                             rel="noreferrer"
                         >
                             <Typography className="contact_text">
-                                www.instagram.com/pes.lab/
+                                www.instagram.com/innovationlab.pes/
                             </Typography>
                         </a>
                     </Grid>

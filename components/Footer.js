@@ -75,7 +75,7 @@ const Footer = () => (
                     </Grid>
                     <Grid item xs={2} style={{ textAlign: 'center' }}>
                         <a
-                            href="https://www.instagram.com/pes.lab"
+                            href="https://www.instagram.com/innovationlab.pes"
                             target="_blank"
                             rel="noreferrer"
                         >
