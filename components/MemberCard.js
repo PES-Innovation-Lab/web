@@ -15,7 +15,7 @@ export default function MemberCard(props) {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
                 <div className="absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                    <h1 className="mb-7 text-3xl font-bold text-white">
+                    <h1 className="mb-10 text-3xl font-bold text-white">
                         {name}
                     </h1>
                     <p className="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
