@@ -92,7 +92,7 @@
 }
 
 .navbar__closed__menu-logo {
-  @apply flex gap-2 items-center font-bold;
+  @apply flex gap-2 items-center font-bold justify-between w-full;
 }
 
 .navbar__logo {
@@ -100,7 +100,7 @@
 }
 
 .navbar__menu {
-  @apply absolute h-7 w-7 md:h-8 md:w-8 right-8 md:right-16 top-6 text-white;
+  @apply h-7 w-7 md:h-8 md:w-8 right-8 md:right-16 top-6 text-white;
 }
 
 .navbar__menu svg {
