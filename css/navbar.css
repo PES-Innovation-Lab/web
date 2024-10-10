@@ -63,9 +63,11 @@
   .navButton {
     display: none !important;
   }
+
   .menuButton {
     display: inline-flex !important;
   }
+
   .dropdown-desktop {
     display: none !important;
   }
@@ -74,11 +76,7 @@
 /* tailwind apply */
 /* navbar --------------------------------------- */
 .navbar {
-  @apply fixed top-0 z-[10000] bg-opacity-60 my-2 mx-4 rounded-3xl backdrop-blur-sm
-  bg-lab-sec text-white 
-  w-[calc(100%-2rem)]
-  flex flex-col sm:flex-col md:flex-row
-  transition-all duration-700 ease-in-out;
+  @apply fixed top-0 z-[10000] bg-opacity-60 my-2 mx-4 rounded-3xl backdrop-blur-sm bg-lab-sec text-white w-[calc(100%-2rem)] flex flex-col sm:flex-col md:flex-row transition-all duration-700 ease-in-out;
 }
 
 .navbar__open {
@@ -98,8 +96,7 @@
 }
 
 .navbar__logo {
-  @apply relative
-  h-12 w-12 lg:h-16 lg:w-16;
+  @apply relative h-12 w-12 lg:h-16 lg:w-16;
 }
 
 .navbar__menu {
@@ -112,15 +109,11 @@
 
 /* left ---------------------------------------*/
 .navbar__left {
-  @apply flex-auto lg:flex-1 
-  md:border-r md:border-b-0 border-white border-b
-  p-2 md:p-4 
-  flex flex-col justify-center items-center;
+  @apply flex-auto lg:flex-1 md:border-r md:border-b-0 border-white border-b p-2 md:p-4 flex flex-col justify-center items-center;
 }
 
 .navbar__l__logo {
-  @apply relative
-  h-32 w-32 md:h-80 md:w-80 lg:h-96 lg:w-96;
+  @apply relative h-32 w-32 md:h-80 md:w-80 lg:h-96 lg:w-96;
 }
 
 .navbar__l__content {
@@ -136,33 +129,20 @@
 }
 
 .navbar__l__content-socials {
-  @apply flex gap-2
-  mt-5;
+  @apply flex gap-2 mt-5;
 }
 
 .navbar__l__content-social {
-  @apply h-10 w-10 md:h-12 md:w-12
-  flex justify-center items-center
-  border
-  rounded-md
-  hover:bg-white hover:text-black
-  transition-colors duration-300;
+  @apply h-10 w-10 md:h-12 md:w-12 flex justify-center items-center border rounded-md hover:bg-white hover:text-black transition-colors duration-300;
 }
 
 /* right --------------------------------------*/
 .navbar__right {
-  @apply flex-auto lg:flex-1 
-  p-2 md:p-4;
+  @apply flex-auto lg:flex-1 p-2 md:p-4;
 }
 
 .navbar__r__routes {
-  @apply text-lab-green
-  pt-4 md:pt-0
-  h-full 
-  text-step-4 lg:text-step-5
-  flex flex-col gap-4 justify-start md:justify-center items-center
-  hover:cursor-pointer
-  uppercase;
+  @apply text-lab-green pt-4 md:pt-0 h-full text-step-4 lg:text-step-5 flex flex-col gap-4 justify-start md:justify-center items-center hover:cursor-pointer uppercase;
 }
 
 .route__active {
@@ -170,7 +150,5 @@
 }
 
 .route__passive {
-  @apply text-white
-  hover:text-step-6 hover:text-lab-green
-  transition-all duration-150 ease-in-out;
+  @apply text-white hover:text-step-6 hover:text-lab-green transition-all duration-150 ease-in-out;
 }

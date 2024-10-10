@@ -297,9 +297,8 @@ function NavBar(props) {
 
     return (
         <div
-            className={`navbar font-martian-mono  ${
-                open ? 'navbar__open' : 'navbar__closed'
-            }`}
+            className={`navbar font-martian-mono  ${open ? 'navbar__open' : 'navbar__closed'
+                }`}
         >
             {showHeader ? (
                 <>
@@ -308,7 +307,7 @@ function NavBar(props) {
                         <div className="navbar__closed__menu-logo">
                             <Link
                                 href="/"
-                                className=" flex  items-center gap-4"
+                                className=" flex items-center gap-4"
                             >
                                 <div className="navbar__logo">
                                     <Image
@@ -319,7 +318,7 @@ function NavBar(props) {
                                     />
                                 </div>
                                 <div>
-                                    <h1 className="text-2xl">
+                                    <h1 className="lg:text-2xl text-[125%]">
                                         PES Innovation Lab
                                     </h1>
                                 </div>
@@ -358,7 +357,7 @@ function NavBar(props) {
                                 />
                             </div>
                             <div className="flex flex-col items-center justify-center">
-                                <h1 className="navbar__l__content-title">
+                                <h1 className="navbar__l__content-title text-center">
                                     PES Innovation Lab
                                 </h1>
                                 <p className="navbar__l__content-tagline">
