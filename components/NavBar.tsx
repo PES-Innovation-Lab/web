@@ -370,15 +370,15 @@ function NavBar(props) {
             }
             {
                 showContent ? (
-                    <div className='flex flex-col w-[98%] h-full'>
+                    <div className='flex flex-col w-full justify-start md:gap-8 gap-32'>
                         {/* navbar after open */}
                         <div
                             onClick={handleOpen}
-                            className='cursor-pointer navbar_menu w-full flex justify-end md:p-2 p-6'
+                            className='cursor-pointer navbar_menu w-full flex justify-end md:p-2 p-4'
                         >
                             <RxCross2 className='h-10 w-10' />
                         </div>
-                        <div className='flex md:flex-row flex-col justify-center items-center w-full h-full'>
+                        <div className='flex md:flex-row flex-col justify-center items-center w-full h-full gap-8'>
                             <div className="navbar__left">
                                 <div className="navbar__l__content">
                                     <div className="navbar__l__logo">
