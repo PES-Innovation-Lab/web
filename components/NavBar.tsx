@@ -307,7 +307,6 @@ function NavBar(props) {
                         <div className="navbar__closed__menu-logo md:hidden flex">
                             <Link
                                 href="/"
-                            // className=" flex items-center gap-4"
                             >
                                 <div className="navbar__logo">
                                     <Image
@@ -320,7 +319,6 @@ function NavBar(props) {
                             </Link>
                             <Link
                                 href="/"
-                            // className=" flex items-center gap-4"
                             >
                                 <div>
                                     <h1 className="lg:text-2xl text-[125%]">
@@ -370,12 +368,6 @@ function NavBar(props) {
                 <></>
             )
             }
-
-            {/* Handles open/close */}
-            {/* <div className="navbar__menu cursor-pointer" onClick={handleOpen}>
-                {!open ? <GiHamburger /> : <RxCross2 />}
-            </div> */}
-
             {
                 showContent ? (
                     <div className='flex flex-col w-[98%] h-full'>
