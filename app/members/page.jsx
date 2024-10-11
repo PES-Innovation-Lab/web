@@ -8,7 +8,7 @@ import LayoutAlt from '../../components/LayoutAlt'
 function Members() {
   const [currentYear, setCurrentYear] = useState(2024)
   const [showYears, setShowYears] = useState(false)
-  const years = [2024, 2023, 2022, 2020, 2019, 2018, 2017, 2016, 2015]
+  const years = [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015]
   const yearElementsMd = years.map((year, ind) => {
     return (
       <button
