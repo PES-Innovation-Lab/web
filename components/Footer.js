@@ -5,6 +5,7 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import Link from 'next/link'
+import { SiWhatsapp } from 'react-icons/si'
 
 // const headerStyle = {
 //   backgroundColor: 'black',
@@ -92,6 +93,17 @@ const Footer = () => (
                         >
                             <IconButton>
                                 <GitHubIcon className="memberCardSocialIcons" />
+                            </IconButton>
+                        </a>
+                    </Grid>
+                    <Grid item xs={2} style={{ textAlign: 'center' }}>
+                        <a
+                            href="https://chat.whatsapp.com/ELOGHQUFDjUAWpBmhOMnRR"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <IconButton>
+                                <SiWhatsapp className="memberCardSocialIcons" />
                             </IconButton>
                         </a>
                     </Grid>

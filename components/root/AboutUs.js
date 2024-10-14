@@ -36,6 +36,9 @@ export default function AboutUs() {
                     <GreenHightlight>close-knit family</GreenHightlight> who
                     contribute to the lab long after their graduation.
                 </p>
+
+                <a href="https://chat.whatsapp.com/ELOGHQUFDjUAWpBmhOMnRR" className=" mt-20 transition-all duration-500  ease-in-out hover:scale-110 hover:bg-gradient-to-r hover:from-emerald-600 hover:to-green-400 bg-gradient-to-r from-green-900 via-green-700 to-emerald-600 p-4 rounded-xl text-white">Learn More!</a>
+
             </div>
         </div>
     )
