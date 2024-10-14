@@ -23,18 +23,17 @@ export default function NewProjects() {
     const [selectedId, setSelectedId] = useState(-1)
     const containerRefs = useRef(new Array())
 
-    const [currentYear, setCurrentYear] = useState(2023)
+    const years = [2024, 2023, 2022, 2020, 2019, 2018, 2017, 2016]
 
-    const years = [2023, 2022, 2020, 2019, 2018, 2017, 2016]
+    const [currentYear, setCurrentYear] = useState(years.sort((a, b) => { return b - a })[0])
 
     const yearElements = years.map((year, ind) => {
         return (
             <button
                 key={ind}
                 onClick={() => setCurrentYear(year)}
-                className={`text-sm lg:text-base ${
-                    year == currentYear ? 'font-bold text-lab-green' : ''
-                }`}
+                className={`text-sm lg:text-base ${year == currentYear ? 'font-bold text-lab-green' : ''
+                    }`}
             >
                 {year}
             </button>
@@ -53,7 +52,7 @@ export default function NewProjects() {
     // const FlattenedAllProjects = AllProjects.flat(1);
 
     const cardLayout = (
-        <div className="flex flex-wrap justify-around gap-8 lg:justify-start">
+        <div className="flex flex-wrap justify-around gap-8 lg:justify-center">
             {currentProjects.map((card, i) => {
                 return (
                     <motion.div
@@ -130,33 +129,33 @@ export default function NewProjects() {
                                                 )}
                                                 {i !=
                                                     currentProjects.length -
-                                                        1 && (
-                                                    <button
-                                                        className="relative h-6 w-6 shrink-0 lg:h-8 lg:w-8"
-                                                        onClick={(e) => {
-                                                            e.stopPropagation()
-                                                            setSelectedId(
-                                                                (prev) =>
-                                                                    prev + 1
-                                                            )
-                                                        }}
-                                                    >
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="none"
-                                                            viewBox="0 0 24 24"
-                                                            strokeWidth={1.5}
-                                                            stroke="currentColor"
-                                                            className="h-full w-full text-white"
+                                                    1 && (
+                                                        <button
+                                                            className="relative h-6 w-6 shrink-0 lg:h-8 lg:w-8"
+                                                            onClick={(e) => {
+                                                                e.stopPropagation()
+                                                                setSelectedId(
+                                                                    (prev) =>
+                                                                        prev + 1
+                                                                )
+                                                            }}
                                                         >
-                                                            <path
-                                                                strokeLinecap="round"
-                                                                strokeLinejoin="round"
-                                                                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                                                            />
-                                                        </svg>
-                                                    </button>
-                                                )}
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                fill="none"
+                                                                viewBox="0 0 24 24"
+                                                                strokeWidth={1.5}
+                                                                stroke="currentColor"
+                                                                className="h-full w-full text-white"
+                                                            >
+                                                                <path
+                                                                    strokeLinecap="round"
+                                                                    strokeLinejoin="round"
+                                                                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                                                                />
+                                                            </svg>
+                                                        </button>
+                                                    )}
                                                 <button
                                                     className="relative h-6 w-6 shrink-0 text-white lg:h-8 lg:w-8"
                                                     onClick={(e) => {

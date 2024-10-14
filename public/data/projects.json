@@ -621,7 +621,6 @@
         "interns": "Darsh Agarwal, Rashi Bandi, Shreesh Bajpai",
         "poster_url": "https://pil-web.web.app/images/projects/posters2023/AQVis.png"
       },
-
       {
         "year": "2023",
         "title": "BIT* Connect",
@@ -704,5 +703,80 @@
       }
     ],
     "length": 9
+  },
+  "2024": {
+    "projects": [
+      {
+        "year": "2024",
+        "title": "CASNAV",
+        "short_description": "",
+        "long_description": "The goal is to enable seamless navigation through dense social crowds by developing a novel approach that integrates human trajectory prediction with Deep Reinforcement Learning techniques. The objective is for the robot to reach its destination while avoiding human paths in a socially appropriate manner. By adhering to social norms, the robot can smoothly and safely navigate within crowded environments, ensuring minimal disruption to human movement.",
+        "keywords": "Robotics, Social Navigation, RL",
+        "mentors": "Shayak Bhadraray, Harshith Kumar, Himank Bansal, Samuel Thomas",
+        "interns": "Jayant Anand, Kriti Bharadwaj, Samprith Jagtap D",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2024/CASNAV.jpeg"
+      },
+      {
+        "year": "2024",
+        "title": "(c)early data",
+        "short_description": "",
+        "long_description": "Implementing TLS 1.3 early data into libcurl, an open-source library for making network requests using URL syntax. This feature completely eliminates the TLS handshake overhead on resumed connections.",
+        "keywords": "Curl, Security, Early Data, C",
+        "mentors": "Murali Krishna, Anirudh Lakhotia, Akshobhya Jamadagni",
+        "interns": "Kiran Rajpurohit, Prajwal M, Varun Shenoy, Vibhav Tiwari",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2024/CEARLY_DATA.svg"
+      },
+      {
+        "year": "2024",
+        "title": "FredBots 2.0",
+        "short_description": "",
+        "long_description": "FRedBots 2.0 is a multi agent Automated Storage and Retrieval System for 3D environments.",
+        "keywords": "Robotics, ML, Autonomous Robots, Warehouse Managemnet, 3D Space",
+        "mentors": "Sriram Radhakrishna, Samuel Thomas, Vikas Menezes, Amulya Marali, Ashvin Bhat",
+        "interns": "Aditya Naskar, D L Rameshwar, Manisha Venkatesha, Sharanya Madhusudhan",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2024/FRED_BOTS.png"
+      },
+      {
+        "year": "2024",
+        "title": "RepViz",
+        "short_description": "",
+        "long_description": "Benchmarking a novel clock mechanism for keeping time in distributed systems - replay clocks - against the industry standard vector clocks in terms of time and space efficiency.",
+        "keywords": "Time, Vector Clocks, Synchronisation, Clocks, Physical Clocks",
+        "mentors": "Ishaan Lagwankar, Anirudh Rowjee, Smarak Jawalkar, Animesh ND",
+        "interns": "Sriprad Potukuchi, Suparna S Prasad",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2024/REPVIZ.jpeg"
+      },
+      {
+        "year": "2024",
+        "title": "Edge Bundle Based MAPF",
+        "short_description": "",
+        "long_description": "This project tackles the challenge of fast and optimal kinodynamic motion planning in Multi-Agent Path Finding (MAPF) by shifting from state sampling to edge sampling. Utilising Edge Bundles, which represent randomly selected viable paths between states, this approach enhances the efficiency of finding time-optimal, collision-free routes for multiple agents. It builds upon sampling-based motion planners like RRT* and SST* to address the persistent issues in kinodynamic MAPF.",
+        "keywords": "Kinodynamic Motion, Motion Planning, Robotics, Autonomous Robots",
+        "mentors": "SriKrishna Bangalore Raghu, Ayush Kale, Vikas Paul Menezes, Himank Bansal",
+        "interns": "Sanjana M, Pranav Muppuru",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2024/MAPF.jpeg"
+      },
+      {
+        "year": "2024",
+        "title": "Willow-Go",
+        "short_description": "",
+        "long_description": "Peer-to-Peer Data Storage Protocol Developed in Go and powered by QUIC, this protocol ensures fault-tolerant, decentralized data storage. It maintains network stability even when peers leave, ensuring high availability. Designed for efficiency, it operates with low complexity and can run smoothly on low-power machines.",
+        "keywords": "Distributed, Storage, 3D, Synchronisation, Partial, Sneakernets, Fault, Tolerance",
+        "mentors": "Rishit Chaudhary, Murali Krishna, Anirudh Lakhotia, Smaran Jawalkar",
+        "interns": "Achyuth Y Sosale, Samarth Bhat Y, Samar Garg, Manas G Mutalikdesai, Suyog Sampangi",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2024/WILLOW_GO.jpeg"
+      },
+      {
+        "year": "2024",
+        "title": "C.O.R.E",
+        "short_description": "",
+        "long_description": "CORE (Code Optimization and Review Evaluation) is a system that analyzes GitHub PRs in GoLang to identify custom functions that can be replaced with more efficient, standardized library functions or popular Go packages. Using a combination of Tree-sitter for code parsing and LLMs through RAG pipelines, CORE provides optimized suggestions to improve code performance and maintainability. The project’s novelty lies in its use of Tree-sitter, ensuring precise code analysis and minimization of hallucinations in LLM outputs.",
+        "keywords": "AST, ML, Code, Review, Github, Actions",
+        "mentors": "Rishit Chaudhary, Varuni H K, Gautham Krithiwas, Dhriti Krishnan, Akash Kamalesh",
+        "interns": "Nikita Anup, Prathamesh Devadiga, Siddhi Zanwar, Vishal Srinivasa ",
+        "poster_url": "https://pil-web.web.app/images/projects/posters2024/CORE.jpeg"
+      }
+    ],
+    "length": 7
   }
 }
